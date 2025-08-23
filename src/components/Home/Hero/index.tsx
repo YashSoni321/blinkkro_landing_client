@@ -8,12 +8,24 @@ const Hero: React.FC = () => {
       <div className="bg-gradient-to-b from-skyblue via-lightskyblue dark:via-[#4298b0] to-white/10 dark:to-black/10 overflow-hidden relative">
         <div className="container max-w-8xl mx-auto px-5 2xl:px-0 pt-32 md:pt-60 md:pb-68">
           <div className="relative text-white dark:text-dark text-center md:text-start z-10">
-            <p className="text-inherit text-xm font-medium">
+            <p className="text-sm sm:text-base font-bold uppercase tracking-widest text-white/70 dark:text-dark/70 animate-fadeIn">
               Book Anytime, Anywhere
             </p>
-            <h1 className="text-inherit text-6xl sm:text-8xl font-semibold -tracking-wider md:max-w-45p mt-4 mb-6">
-              Hassle-Free Service Booking
+
+            {/* Heading */}
+            <h1 className="text-5xl sm:text-4xl md:text-5xl font-extrabold leading-tight mt-4 md:max-w-[65%] animate-slideUp">
+              Hassle <span className="text-primary">Free</span>
             </h1>
+            <span className=" text-5xl font-extrabold sm:text-4xl md:text-5xl mb-5  bg-clip-text ">
+              Service <span className="text-primary">Booking</span>
+            </span>
+
+            {/* Subheading / Description */}
+            <p className="text-lg sm:text-xl text-white dark:text-dark/80 md:max-w-[55%] mb-10 leading-relaxed animate-fadeIn delay-100">
+              Get instant access to trusted professionals near you. From home
+              cleaning to car services — BlinkKaro makes booking effortless and
+              reliable.
+            </p>
             <div className="flex flex-col xs:flex-row justify-center md:justify-start gap-4">
               <Link
                 href="/book"
@@ -26,9 +38,9 @@ const Hero: React.FC = () => {
               </button>
             </div>
           </div>
-          <div className="hidden md:block absolute top-1/2 right-10 transform -translate-y-1/2">
+          <div className="hidden md:block absolute top-1/2 right-20 transform -translate-y-1/2">
             <Image
-              src="/images/hero/heroimagesvg.png"
+              src="/images/hero/pair_hero_image.png"
               alt="hero booking illustration"
               width={600}
               height={600}

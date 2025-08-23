@@ -51,11 +51,11 @@ const Header: React.FC = () => {
         className={`container mx-auto max-w-8xl flex items-center justify-between py-4 duration-300 
     ${
       sticky
-        ? "shadow-2xl bg-white dark:bg-dark rounded-full top-5 px-6 border-2 border-black dark:border-white/20 backdrop-blur-md"
+        ? "shadow-lg bg-white dark:bg-dark rounded-full top-5 px-6 border-1 border-black/30 dark:border-white/20 backdrop-blur-md"
         : "shadow-none top-0 px-4"
     }`}
       >
-        <div className="flex justify-between items-center gap-2 w-full">
+        {/* <div className="flex justify-between items-center gap-2 w-full">
           <div>
             <Link href="/">
               <Image
@@ -149,6 +149,120 @@ const Header: React.FC = () => {
                 <span className="hidden sm:block">Menu</span>
               </button>
             </div>
+          </div>
+        </div> */}
+        <div>
+          <Link href="/">
+            <Image
+              src={"/images/logo/logo-light.png"}
+              alt="logo"
+              width={150}
+              height={68}
+              unoptimized={true}
+              className={`${
+                isHomepage
+                  ? sticky
+                    ? "block dark:hidden"
+                    : "hidden"
+                  : sticky
+                  ? "block dark:hidden"
+                  : "block dark:hidden"
+              }`}
+            />
+            <Image
+              src={"/images/logo/logo-dark.png"}
+              alt="logo"
+              width={150}
+              height={68}
+              unoptimized={true}
+              className={`${
+                isHomepage
+                  ? sticky
+                    ? "hidden dark:block"
+                    : "block"
+                  : sticky
+                  ? "dark:block hidden"
+                  : "dark:block hidden"
+              }`}
+            />
+          </Link>
+        </div>
+        <div className="flex items-center gap-2 sm:gap-6">
+          {/* Desktop Navigation Links */}
+          <ul className="hidden lg:flex items-center gap-8">
+            {navLinks.map((item, index) => (
+              <li key={index}>
+                <Link
+                  href={item.href}
+                  className={`text-base font-medium transition-colors duration-200
+            ${
+              isHomepage
+                ? sticky
+                  ? "text-dark dark:text-white hover:text-primary"
+                  : "text-white hover:text-primary"
+                : "text-dark hover:text-primary"
+            }`}
+                >
+                  {item.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+
+          {/* Phone Number (still only on md+ screens) */}
+          {/* <div className="hidden md:block">
+            <Link
+              href="#"
+              className={`text-base text-inherit flex items-center gap-2 border-r pr-6 ${
+                isHomepage
+                  ? sticky
+                    ? "text-dark dark:text-white hover:text-primary border-dark dark:border-white"
+                    : "text-white hover:text-primary"
+                  : "text-dark hover:text-primary"
+              }`}
+            >
+              <Icon icon={"ph:phone-bold"} width={24} height={24} />
+              +1-212-456-789
+            </Link>
+          </div> */}
+          <button
+            className="hover:cursor-pointer"
+            onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+          >
+            <Icon
+              icon={"solar:sun-bold"}
+              width={32}
+              height={32}
+              className={`dark:hidden block ${
+                isHomepage ? (sticky ? "text-dark" : "text-white") : "text-dark"
+              }`}
+            />
+            <Icon
+              icon={"solar:moon-bold"}
+              width={32}
+              height={32}
+              className="dark:block hidden text-white"
+            />
+          </button>
+
+          {/* Menu Button → show on all screens */}
+          <div>
+            <button
+              onClick={() => setNavbarOpen(!navbarOpen)}
+              className={`flex items-center gap-3 p-2 sm:px-5 sm:py-3 rounded-full font-semibold hover:cursor-pointer border ${
+                isHomepage
+                  ? sticky
+                    ? "text-white bg-dark dark:bg-white dark:text-dark dark:hover:text-white dark:hover:bg-dark hover:text-dark hover:bg-white border-dark dark:border-white"
+                    : "text-dark bg-white dark:text-dark hover:bg-transparent hover:text-white border-white"
+                  : "bg-dark text-white hover:bg-transparent hover:text-dark dark:bg-white dark:text-dark dark:hover:bg-transparent dark:hover:text-white duration-300"
+              }`}
+              aria-label="Toggle menu"
+            >
+              <span>
+                <Icon icon={"ph:list"} width={24} height={24} />
+              </span>
+              <span className="hidden sm:block">Menu</span>
+            </button>
           </div>
         </div>
       </nav>

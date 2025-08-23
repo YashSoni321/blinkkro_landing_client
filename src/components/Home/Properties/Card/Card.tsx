@@ -33,7 +33,7 @@ const ServiceCard: React.FC<{ item: PropertyHomes }> = ({ item }) => {
             />
           </div>
         </div>
-        <div className="p-6">
+        <div className="p-6 h-56">
           <div className="flex flex-col mobile:flex-row gap-5 mobile:gap-0 justify-between mb-6">
             <div>
               <Link href={`/properties/${slug}`}>
