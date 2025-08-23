@@ -210,7 +210,7 @@ export const servicesTypes: PropertyHomes[] = [
     name: "Car Wash at Home",
     slug: "car-wash-at-home",
     location: "Eco-friendly doorstep wash",
-    rate: " ₹349",
+    rate: " 349",
     duration: "45 min",
     category: "Automobile",
     // name: "Majestic bay villas",

@@ -46,13 +46,12 @@ const ServiceCard: React.FC<{ item: PropertyHomes }> = ({ item }) => {
               </p>
             </div>
             <div>
-              {/* <button className="text-base font-normal text-primary d-flex px-3 py-2 rounded-full bg-primary/10">
-               
-              </button> */}
-              <p className="flex items-center gap-1 font-normal text-primary px-2 py-2 rounded-full ">
-                <span className="font-bold text-base">₹ {rate}</span>
-                {/* <span className="text-sm text-primary">onwards</span> */}
-              </p>
+              <button className="text-base font-normal text-primary d-flex px-2  rounded-full bg-primary/10">
+                <p className="flex items-center gap-1 font-normal text-primary px-2 py-2 rounded-full ">
+                  <span className="font-bold text-base">₹ {rate}</span>
+                  {/* <span className="text-sm text-primary">onwards</span> */}
+                </p>
+              </button>
             </div>
           </div>
           <div className="flex divide-x divide-black/10 dark:divide-white/20">

@@ -1,19 +1,9 @@
 {
-  "/_not-found/page": "app/_not-found/page.js",
   "/api/auth/[...nextauth]/route": "app/api/auth/[...nextauth]/route.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/(site)/aboutus/page": "app/(site)/aboutus/page.js",
-  "/(site)/blogs/[slug]/page": "app/(site)/blogs/[slug]/page.js",
-  "/(site)/services/[slug]/page": "app/(site)/services/[slug]/page.js",
   "/page": "app/page.js",
-  "/(site)/(auth)/signup/page": "app/(site)/(auth)/signup/page.js",
-  "/(site)/(auth)/signin/page": "app/(site)/(auth)/signin/page.js",
-  "/(site)/luxury-villa/page": "app/(site)/luxury-villa/page.js",
-  "/(site)/appartment/page": "app/(site)/appartment/page.js",
-  "/(site)/documentation/page": "app/(site)/documentation/page.js",
   "/(site)/blogs/page": "app/(site)/blogs/page.js",
-  "/(site)/residential-homes/page": "app/(site)/residential-homes/page.js",
-  "/(site)/office-spaces/page": "app/(site)/office-spaces/page.js",
-  "/(site)/contactus/page": "app/(site)/contactus/page.js",
-  "/(site)/services/page": "app/(site)/services/page.js"
+  "/(site)/blogs/[slug]/page": "app/(site)/blogs/[slug]/page.js",
+  "/(site)/aboutus/page": "app/(site)/aboutus/page.js",
+  "/(site)/services/page": "app/(site)/services/page.js",
+  "/_not-found/page": "app/_not-found/page.js"
 }
