@@ -48,11 +48,12 @@ const Header: React.FC = () => {
       }`}
     >
       <nav
-        className={`container mx-auto max-w-8xl flex items-center justify-between py-4 duration-300 ${
-          sticky
-            ? "shadow-lg bg-white dark:bg-dark rounded-full top-5 px-4 "
-            : "shadow-none top-0"
-        }`}
+        className={`container mx-auto max-w-8xl flex items-center justify-between py-4 duration-300 
+    ${
+      sticky
+        ? "shadow-2xl bg-white dark:bg-dark rounded-full top-5 px-6 border-2 border-black dark:border-white/20 backdrop-blur-md"
+        : "shadow-none top-0 px-4"
+    }`}
       >
         <div className="flex justify-between items-center gap-2 w-full">
           <div>
@@ -158,9 +159,9 @@ const Header: React.FC = () => {
 
       <div
         ref={sideMenuRef}
-        className={`fixed top-0 right-0 h-full w-full bg-dark shadow-lg transition-transform duration-300 max-w-2xl ${
-          navbarOpen ? "translate-x-0" : "translate-x-full"
-        } z-50 px-20 overflow-auto no-scrollbar`}
+        className={`fixed top-0 right-0 h-full w-full bg-dark shadow-lg transition-transform duration-300 max-w-2xl 
+    ${navbarOpen ? "translate-x-0" : "translate-x-full"}
+    z-50 px-6 sm:px-20 overflow-y-auto`}
       >
         <div className="flex flex-col h-full justify-between">
           <div className="">

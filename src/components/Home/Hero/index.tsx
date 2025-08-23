@@ -26,12 +26,12 @@ const Hero: React.FC = () => {
               </button>
             </div>
           </div>
-          <div className="hidden md:block absolute -top-2 -right-58">
+          <div className="hidden md:block absolute top-1/2 right-10 transform -translate-y-1/2">
             <Image
-              src={"/images/hero/heroBanner.png"}
+              src="/images/hero/heroimagesvg.png"
               alt="hero booking illustration"
-              width={1082}
-              height={1016}
+              width={600}
+              height={600}
               priority={false}
               unoptimized={true}
             />

@@ -46,7 +46,7 @@ export default function AboutUs() {
                 icon="mdi:lightning-bolt"
                 className="text-2xl text-primary"
               />
-              Why choose Blinkkaro ?
+              How to book services on Blinkkaro ?
             </p>
             <h2 className="lg:text-52 text-40 font-medium text-dark dark:text-white">
               Redefining How You Discover & Book Services

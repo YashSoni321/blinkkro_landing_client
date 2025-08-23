@@ -151,19 +151,22 @@ export default function AboutUs() {
           </h3>
           <div className="grid sm:grid-cols-3 gap-10">
             <TeamMember
-              img="/images/team/member1.jpg"
+              nickName="Mogambo"
+              img="/images/team/ankit_dp.jpeg"
               name="Ankit Jha"
               role="Co-Founder"
               socials={["ph:linkedin-logo-bold", "ph:twitter-logo-bold"]}
             />
             <TeamMember
-              img="/images/team/member2.jpg"
+              nickName="Gabbar"
+              img="/images/team/yash_dp.jpeg"
               name="Yash Soni"
               role="Co-Founder"
               socials={["ph:linkedin-logo-bold", "ph:instagram-logo-bold"]}
             />
             <TeamMember
-              img="/images/team/member3.jpg"
+              nickName="Shakaal"
+              img="/images/team/gaurang_dp.jpeg"
               name="Gaurang Tyagi"
               role="Co-Founder"
               socials={["ph:linkedin-logo-bold", "ph:github-logo-bold"]}
@@ -188,34 +191,55 @@ const Feature = ({ icon, title }: { icon: string; title: string }) => (
 const TeamMember = ({
   img,
   name,
+  nickName,
   role,
   socials,
 }: {
   img: string;
   name: string;
+  nickName: string;
   role: string;
   socials: string[];
 }) => (
-  <div className="p-6 border border-black/10 dark:border-white/10 rounded-2xl shadow-lg dark:shadow-white/10 text-center">
-    <Image
-      src={img}
-      alt={name}
-      width={180}
-      height={180}
-      className="rounded-full mx-auto mb-4 object-cover"
-    />
-    <h4 className="text-xl font-semibold text-black dark:text-white mb-1">
+  <div className="relative p-6 border border-black/10 dark:border-white/10 rounded-2xl shadow-xl dark:shadow-white/10 text-center bg-gradient-to-br from-yellow-50 via-white to-pink-50 dark:from-gray-900 dark:via-black dark:to-gray-800 transform hover:-rotate-1 hover:scale-105 transition-all duration-300">
+    {/* Funny nickname badge */}
+    {nickName && (
+      <span className="absolute -top-3 right-3 bg-primary dark:bg-yellow-400 text-white dark:text-black text-sm font-bold px-3 py-1 rounded-full shadow-md rotate-6">
+        {nickName}
+      </span>
+    )}
+
+    {/* Profile image in funky frame */}
+    <div className="w-[160px] h-[160px] mx-auto mb-4 rounded-full overflow-hidden ring-4 ring-primary/50 shadow-md hover:scale-110 transition-transform duration-300">
+      <Image
+        src={img}
+        alt={name}
+        width={160}
+        height={160}
+        className="w-full h-full object-contain bg-white p-2"
+      />
+    </div>
+
+    {/* Name */}
+    <h4 className="text-2xl font-extrabold text-black dark:text-white mb-1 tracking-wide">
       {name}
     </h4>
-    <p className="text-sm text-black/60 dark:text-white/60 mb-4">{role}</p>
-    <div className="flex justify-center gap-4">
+
+    {/* Role inside a speech bubble */}
+    <p className="relative inline-block text-sm text-black/70 dark:text-white/70 mb-4 px-3 py-1 bg-white dark:bg-gray-800 rounded-xl shadow-sm">
+      {role}
+      <span className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-0 h-0 border-l-8 border-r-8 border-t-8 border-l-transparent border-r-transparent border-t-white dark:border-t-gray-800"></span>
+    </p>
+
+    {/* Socials with hover bounce */}
+    <div className="flex justify-center gap-5 mt-2">
       {socials.map((icon, i) => (
         <Icon
           key={i}
           icon={icon}
-          width={22}
-          height={22}
-          className="text-black/60 dark:text-white/60 hover:text-primary cursor-pointer"
+          width={24}
+          height={24}
+          className="text-black/60 dark:text-white/60 hover:text-primary hover:scale-125 transition-transform cursor-pointer"
         />
       ))}
     </div>
