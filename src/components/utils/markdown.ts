@@ -7,55 +7,70 @@ const postsDirectory = join(process.cwd(), "markdown/blogs");
 export function getPostSlugs() {
   return fs.readdirSync(postsDirectory);
 }
+export type Post = {
+  slug?: string;
+  title?: string;
+  date?: string;
+  excerpt?: string;
+  coverImage?: string;
+  author?: string;
+  authorImage?: string;
+  content?: string;
+  tag?: string;
+  detail?: string;
+  metadata?: Record<string, unknown>;
+};
 
-export function getPostBySlug(slug: string, fields: string[] = []) {
+export function getPostBySlug(slug: string, fields: (keyof Post)[] = []): Post {
   const realSlug = slug.replace(/\.mdx$/, "");
   const fullPath = join(postsDirectory, `${realSlug}.mdx`);
   const fileContents = fs.readFileSync(fullPath, "utf8");
   const { data, content } = matter(fileContents);
 
-  type Items = {
-    // [key: string]: string;
-    [key: string]: string | object;
-  };
-
-  const items: any = {};
+  const items: Post = {};
 
   function processImages(content: string) {
-    // You can modify this function to handle image processing
-    // For example, replace image paths with actual HTML image tags
     return content.replace(/!\[.*?\]\((.*?)\)/g, '<img src="$1" alt="" />');
   }
 
-  // Ensure only the minimal needed data is exposed
+  // Cast the data object to a more specific type
+  const postData = data as Post;
+
   fields.forEach((field) => {
     if (field === "slug") {
-      items[field] = realSlug;
+      items.slug = realSlug;
+      return;
     }
     if (field === "content") {
-      // You can modify the content here to include images
-      items[field] = processImages(content);
+      items.content = processImages(content);
+      return;
     }
-
     if (field === "metadata") {
-      // Include metadata, including the image information
-      items[field] = { ...data, coverImage: data.coverImage || null };
+      items.metadata = { ...postData, coverImage: postData.coverImage || null };
+      return;
     }
 
-    if (typeof data[field] !== "undefined") {
-      items[field] = data[field];
+    // Check if the property exists on the postData object before assigning it
+    if (postData[field]) {
+      items[field] = postData[field];
     }
   });
 
   return items;
 }
 
-export function getAllPosts(fields: string[] = []) {
+export function getAllPosts(fields: (keyof Post)[] = []) {
   const slugs = getPostSlugs();
   const posts = slugs
     .map((slug) => getPostBySlug(slug, fields))
     // sort posts by date in descending order
-    .sort((post1, post2) => (post1.date > post2.date ? -1 : 1));
+    .sort((post1, post2) => {
+      // Handle cases where date is undefined
+      const date1 = post1.date || '0';
+      const date2 = post2.date || '0';
+
+      return date1 > date2 ? -1 : 1;
+    });
 
   return posts;
 }
