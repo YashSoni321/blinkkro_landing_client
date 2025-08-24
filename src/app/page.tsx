@@ -13,8 +13,8 @@ export default function Home() {
   return (
     <main>
       <Hero />
-      <Services />
       <AboutBlinkKaro />
+      <Services />
       <Properties />
       <FeaturedProperty />
       <Testimonial />

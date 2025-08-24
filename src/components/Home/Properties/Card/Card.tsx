@@ -12,18 +12,19 @@ const ServiceCard: React.FC<{ item: PropertyHomes }> = ({ item }) => {
     <div>
       <div className="relative rounded-2xl border border-dark/10 dark:border-white/10 group hover:shadow-3xl duration-300 dark:hover:shadow-white/20">
         <div className="overflow-hidden rounded-t-2xl">
-          <Link href={`/properties/${slug}`}>
-            {mainImage && (
-              <Image
-                src={mainImage}
-                alt={name}
-                width={440}
-                height={300}
-                className="w-full rounded-t-2xl group-hover:brightness-50 group-hover:scale-125 transition duration-300 delay-75"
-                unoptimized={true}
-              />
-            )}
-          </Link>
+          <div className="h-80 relative overflow-hidden rounded-t-2xl bg-gray-100 group">
+            <Link href={`/properties/${slug}`}>
+              {mainImage && (
+                <Image
+                  src={mainImage}
+                  alt={name}
+                  fill
+                  className="object-contain w-full h-full transition-transform duration-300 delay-75 group-hover:scale-105"
+                  unoptimized={true}
+                />
+              )}
+            </Link>
+          </div>
           <div className="absolute top-6 right-6 p-4 bg-white rounded-full hidden group-hover:block">
             <Icon
               icon={"solar:arrow-right-linear"}

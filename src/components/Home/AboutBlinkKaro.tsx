@@ -31,63 +31,6 @@ export default function AboutBlinkKaro() {
       <div className="container max-w-8xl mx-auto px-5 2xl:px-0">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Left Content */}
-          <div>
-            <div className="flex gap-2.5 items-center mb-6">
-              <Icon
-                icon={"ph:lightning"}
-                width={24}
-                height={24}
-                className="text-primary"
-              />
-              <p className="text-base font-semibold text-primary">
-                What is BlinkKaro?
-              </p>
-            </div>
-
-            <h2 className="text-4xl sm:text-52 font-bold tracking-tighter text-dark dark:text-white mb-6">
-              Life Made Simple,
-              <span className="text-primary"> In a Blink</span>
-            </h2>
-
-            <p className="text-xm text-dark/70 dark:text-white/70 mb-8 leading-relaxed">
-              BlinkKaro transforms how you access services. From home cleaning
-              to event planning, we connect you with trusted professionals
-              instantly. No more endless calls or unreliable service providers.
-            </p>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
-              {features.map((feature, index) => (
-                <div key={index} className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
-                    <Icon
-                      icon={feature.icon}
-                      width={24}
-                      height={24}
-                      className="text-primary"
-                    />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-dark dark:text-white mb-1">
-                      {feature.title}
-                    </h4>
-                    <p className="text-sm text-dark/60 dark:text-white/60">
-                      {feature.description}
-                    </p>
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            <div className="flex flex-col sm:flex-row gap-4">
-              <button className="px-8 py-4 bg-primary text-white rounded-full font-semibold hover:bg-dark transition-colors duration-300">
-                Start Booking Now
-              </button>
-              <button className="px-8 py-4 border-2 border-primary text-primary rounded-full font-semibold hover:bg-primary hover:text-white transition-all duration-300">
-                Become a Provider
-              </button>
-            </div>
-          </div>
-
           {/* Right Visual */}
           <div className="relative">
             <div className="relative z-10">
@@ -176,6 +119,70 @@ export default function AboutBlinkKaro() {
                 height={20}
                 className="text-green-500"
               />
+            </div>
+          </div>
+          <div>
+            <div className="flex gap-2.5 items-center mb-6">
+              <Icon
+                icon={"ph:lightning"}
+                width={24}
+                height={24}
+                className="text-primary"
+              />
+              <p className="text-base font-semibold text-primary">
+                What is BlinkKaro?
+              </p>
+            </div>
+
+            <h2 className="text-4xl sm:text-52 font-bold tracking-tighter text-dark dark:text-white mb-6">
+              Your <span className="text-primary">All-in-One</span> Service
+              Partner
+            </h2>
+
+            <p className="text-xm text-dark/70 dark:text-white/70 mb-8 leading-relaxed">
+              BlinkKaro makes life effortless by bringing **everyday services to
+              your fingertips**. Whether it’s fixing a leaky tap, getting a
+              quick AC repair, booking a salon at home, or planning your next
+              big celebration—BlinkKaro connects you with **trusted, verified
+              professionals in seconds**.
+            </p>
+
+            <p className="text-xm text-dark/70 dark:text-white/70 mb-8 leading-relaxed">
+              No more long searches, confusing prices, or unreliable providers.
+              With BlinkKaro, you get **speed, transparency, and peace of
+              mind**—all in a blink ✨.
+            </p>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
+              {features.map((feature, index) => (
+                <div key={index} className="flex items-start gap-4">
+                  <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+                    <Icon
+                      icon={feature.icon}
+                      width={24}
+                      height={24}
+                      className="text-primary"
+                    />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-dark dark:text-white mb-1">
+                      {feature.title}
+                    </h4>
+                    <p className="text-sm text-dark/60 dark:text-white/60">
+                      {feature.description}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <div className="flex flex-col sm:flex-row gap-4">
+              <button className="px-8 py-4 bg-primary text-white rounded-full font-semibold hover:bg-dark transition-colors duration-300">
+                Book Your First Service
+              </button>
+              <button className="px-8 py-4 border-2 border-primary text-primary rounded-full font-semibold hover:bg-primary hover:text-white transition-all duration-300">
+                Join as a Provider
+              </button>
             </div>
           </div>
         </div>

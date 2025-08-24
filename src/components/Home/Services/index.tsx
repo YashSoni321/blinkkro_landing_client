@@ -26,103 +26,37 @@ const Categories = () => {
       <div className="container max-w-8xl mx-auto px-5 2xl:px-0 relative z-10">
         <div className="grid grid-cols-12 items-center gap-10">
           <div className="lg:col-span-6 col-span-12">
-            {/* <p className="text-dark/75 dark:text-white/75 text-base font-semibold flex gap-2.5">
-              <Icon
-                icon="ph:house-simple-fill"
-                className="text-2xl text-primary "
-              />
-              Categories
-            </p> */}
             <p className="text-dark/75 dark:text-white/75 text-base font-semibold flex gap-2.5">
               <Icon
                 icon="ph:calendar-check-fill"
                 className="text-2xl text-primary"
               />
-              Services
+              Categories
             </p>
             <h2 className="lg:text-52 text-40 mt-4 mb-2 lg:max-w-full font-medium leading-[1.2] text-dark dark:text-white">
-              Book trusted services with{" "}
+              Explore famous service categories with{" "}
               <span className="text-primary">BlinkKaro</span>.
             </h2>
             <p className="text-dark/50 dark:text-white/50 text-lg lg:max-w-full leading-[1.3] md:max-w-3/4">
-              From beauty and wellness to home care and fitness, BlinkKaro
-              connects you with verified professionals — making your daily life
-              simple, smooth, and stress-free.
+              Discover the most popular services people trust — from astrology,
+              beauty & wellness, home care, and fitness to professional
+              consultations. BlinkKaro makes finding reliable experts easier
+              than ever.
             </p>
             <Link
-              href="/properties"
+              href="/categories"
               className="py-4 px-8 bg-primary text-base leading-4 block w-fit text-white rounded-full font-semibold mt-8 hover:bg-dark duration-300"
             >
-              Explore Services
+              Browse Categories
             </Link>
           </div>
-          <div className="lg:col-span-6 col-span-12">
-            <div className="relative rounded-2xl overflow-hidden group">
-              <Link href="/residential-homes">
-                <Image
-                  src="/images/blinkkaro_categories/blinkkaro_home_salon_1-min.jpg"
-                  alt="villas"
-                  width={680}
-                  height={386}
-                  className="w-full"
-                  unoptimized={true}
-                />
-              </Link>
-              <Link
-                href="/residential-homes"
-                className="absolute w-full h-full bg-gradient-to-b from-black/0 to-black/80 top-full flex flex-col justify-between pl-10 pb-10 group-hover:top-0 duration-500"
-              >
-                <div className="flex justify-end mt-6 mr-6">
-                  <div className="bg-white text-dark rounded-full w-fit p-4">
-                    <Icon icon="ph:arrow-right" width={24} height={24} />
-                  </div>
-                </div>
-                <div className="flex flex-col gap-2.5">
-                  <h3 className="text-white text-2xl">Salon & Spa</h3>
-                  <p className="text-white/80 text-base leading-6">
-                    Book beauty, grooming, and relaxation services at your
-                    convenience.
-                  </p>
-                </div>
-              </Link>
-            </div>
-          </div>
-          <div className="lg:col-span-6 col-span-12">
-            <div className="relative rounded-2xl overflow-hidden group">
-              <Link href="/luxury-villa">
-                <Image
-                  src="/images/blinkkaro_categories/blinkkaro_fitness_category-min.jpg"
-                  alt="villas"
-                  width={680}
-                  height={386}
-                  className="w-full"
-                  unoptimized={true}
-                />
-              </Link>
-              <Link
-                href="/luxury-villa"
-                className="absolute w-full h-full bg-gradient-to-b from-black/0 to-black/80 top-full flex flex-col justify-between pl-10 pb-10 group-hover:top-0 duration-500"
-              >
-                <div className="flex justify-end mt-6 mr-6">
-                  <div className="bg-white text-dark rounded-full w-fit p-4">
-                    <Icon icon="ph:arrow-right" width={24} height={24} />
-                  </div>
-                </div>
-                <div className="flex flex-col gap-2.5">
-                  <h3 className="text-white text-2xl">Fitness & Training</h3>
-                  <p className="text-white/80 text-base leading-6">
-                    Book personal trainers, yoga instructors, and group classes.
-                  </p>
-                </div>
-              </Link>
-            </div>
-          </div>
+
           <div className="lg:col-span-3 col-span-6">
             <div className="relative rounded-2xl overflow-hidden group">
-              <Link href="/appartment">
+              <Link href="/house_services">
                 <Image
-                  src="/images/blinkkaro_categories/blinkkaro_home_services_1-min.jpg"
-                  alt="villas"
+                  src="/images/blinkkaro_main_categories/house_cleaning.png"
+                  alt="house_services"
                   width={320}
                   height={380}
                   className="w-full"
@@ -130,8 +64,8 @@ const Categories = () => {
                 />
               </Link>
               <Link
-                href="/appartment"
-                className="absolute w-full h-full bg-gradient-to-b from-black/0 to-black/80 top-full flex flex-col justify-between pl-10 pb-10 group-hover:top-0 duration-500"
+                href="/house_services"
+                className="absolute w-full h-full bg-gradient-to-b from-black/0 to-black/80 top-full flex flex-col justify-between pl-2 pb-10 group-hover:top-0 duration-500"
               >
                 <div className="flex justify-end mt-6 mr-6">
                   <div className="bg-white text-dark rounded-full w-fit p-4">
@@ -139,20 +73,58 @@ const Categories = () => {
                   </div>
                 </div>
                 <div className="flex flex-col gap-2.5">
-                  <h3 className="text-white text-2xl">Home Services</h3>
+                  <h3 className="text-white text-2xl font-bold">
+                    Wellness & Personal Care
+                  </h3>
                   <p className="text-white/80 text-base leading-6">
-                    Cleaning, repairs, and home maintenance made effortless.
+                    Salon at home, spa, massage, fitness trainers - all at your
+                    fingertips.
                   </p>
                 </div>
               </Link>
             </div>
           </div>
+
           <div className="lg:col-span-3 col-span-6">
             <div className="relative rounded-2xl overflow-hidden group">
-              <Link href="/office-spaces">
+              <Link href="/wellness">
                 <Image
-                  src="/images/blinkkaro_categories/blinkkaro_events_category-min.jpg"
-                  alt="office"
+                  src="/images/blinkkaro_main_categories/home_services.png"
+                  alt="wellness"
+                  width={320}
+                  height={380}
+                  className="w-full"
+                  unoptimized={false}
+                />
+              </Link>
+              <Link
+                href="/wellness"
+                className="absolute w-full h-full bg-gradient-to-b from-black/0 to-black/80 top-full flex flex-col justify-between pl-2 pb-10 group-hover:top-0 duration-500"
+              >
+                <div className="flex justify-end mt-6 mr-6">
+                  <div className="bg-white text-dark rounded-full w-fit p-4">
+                    <Icon icon="ph:arrow-right" width={24} height={24} />
+                  </div>
+                </div>
+                <div className="flex flex-col gap-2.5">
+                  <h3 className="text-white text-2xl font-bold">
+                    Cleaning Services
+                  </h3>
+                  <p className="text-white/80 text-base leading-6">
+                    Deep cleaning, sofa cleaning, kitchen cleaning, pest control
+                    and more — all at your fingertips.
+                  </p>
+                </div>
+              </Link>
+            </div>
+          </div>
+
+          <div className="lg:col-span-3 col-span-6">
+            <div className="relative rounded-2xl overflow-hidden group">
+              <Link href="/events">
+                <Image
+                  src="/images/blinkkaro_main_categories/event.png"
+                  alt="events"
                   width={320}
                   height={386}
                   className="w-full"
@@ -160,8 +132,8 @@ const Categories = () => {
                 />
               </Link>
               <Link
-                href="/office-spaces"
-                className="absolute w-full h-full bg-gradient-to-b from-black/0 to-black/80 top-full flex flex-col justify-between pl-10 pb-10 group-hover:top-0 duration-500"
+                href="/events"
+                className="absolute w-full h-full bg-gradient-to-b from-black/0 to-black/80 top-full flex flex-col justify-between pl-2 pb-10 group-hover:top-0 duration-500"
               >
                 <div className="flex justify-end mt-6 mr-6">
                   <div className="bg-white text-dark rounded-full w-fit p-4">
@@ -169,10 +141,113 @@ const Categories = () => {
                   </div>
                 </div>
                 <div className="flex flex-col gap-2.5">
-                  <h3 className="text-white text-2xl">Events</h3>
+                  <h3 className="text-white text-2xl font-bold">
+                    Events & Celebrations
+                  </h3>
                   <p className="text-white/80 text-base leading-6">
-                    Plan birthdays, parties, and corporate events with trusted
-                    vendors.
+                    Birthday planners, catering, photography, DJ & decorators
+                    and more — all at your fingertips.
+                  </p>
+                </div>
+              </Link>
+            </div>
+          </div>
+
+          <div className="lg:col-span-3 col-span-6">
+            <div className="relative rounded-2xl overflow-hidden group">
+              <Link href="/entertainment">
+                <Image
+                  src="/images/blinkkaro_main_categories/astro.png"
+                  alt="Astrology & Consultation"
+                  width={320}
+                  height={386}
+                  className="w-full"
+                  unoptimized={true}
+                />
+              </Link>
+              <Link
+                href="/entertainment"
+                className="absolute w-full h-full bg-gradient-to-b from-black/0 to-black/80 top-full flex flex-col justify-between pl-2 pb-10 group-hover:top-0 duration-500"
+              >
+                <div className="flex justify-end mt-6 mr-6">
+                  <div className="bg-white text-dark rounded-full w-fit p-4">
+                    <Icon icon="ph:arrow-right" width={24} height={24} />
+                  </div>
+                </div>
+                <div className="flex flex-col gap-2.5">
+                  <h3 className="text-white text-2xl font-bold">
+                    Astrology & Consultation
+                  </h3>
+                  <p className="text-white/80 text-base leading-6">
+                    Astrologers, tarot readers, vastu experts, numerology and
+                    more — all at your fingertips.
+                  </p>
+                </div>
+              </Link>
+            </div>
+          </div>
+          <div className="lg:col-span-3 col-span-6">
+            <div className="relative rounded-2xl overflow-hidden group">
+              <Link href="/home-services">
+                <Image
+                  src="/images/blinkkaro_main_categories/chef.png"
+                  alt="home services"
+                  width={320}
+                  height={380}
+                  className="w-full"
+                  unoptimized={false}
+                />
+              </Link>
+              <Link
+                href="/home-services"
+                className="absolute w-full h-full bg-gradient-to-b from-black/0 to-black/80 top-full flex flex-col justify-between pl-2 pb-10 group-hover:top-0 duration-500"
+              >
+                <div className="flex justify-end mt-6 mr-6">
+                  <div className="bg-white text-dark rounded-full w-fit p-4">
+                    <Icon icon="ph:arrow-right" width={24} height={24} />
+                  </div>
+                </div>
+                <div className="flex flex-col gap-2.5">
+                  <h3 className="text-white font-bold text-2xl">
+                    Personal Chefs
+                  </h3>
+                  <p className="text-white/80 text-base leading-6">
+                    Hire chefs and catering for private dining and special
+                    occasions.
+                  </p>
+                </div>
+              </Link>
+            </div>
+          </div>
+
+          <div className="lg:col-span-3 col-span-6">
+            <div className="relative rounded-2xl overflow-hidden group">
+              <Link href="/personal-chefs">
+                <Image
+                  src="/images/blinkkaro_main_categories/tutor.png"
+                  alt="tutor"
+                  width={320}
+                  height={386}
+                  className="w-full"
+                  unoptimized={true}
+                />
+              </Link>
+              <Link
+                href="/personal-chefs"
+                className="absolute w-full h-full bg-gradient-to-b from-black/0 to-black/80 top-full flex flex-col justify-between pl-2 pb-10 group-hover:top-0 duration-500"
+              >
+                <div className="flex justify-end mt-6 mr-6">
+                  <div className="bg-white text-dark rounded-full w-fit p-4">
+                    <Icon icon="ph:arrow-right" width={24} height={24} />
+                  </div>
+                </div>
+                <div className="flex flex-col gap-2.5">
+                  <h3 className="text-white text-2xl font-bold">
+                    Tutors & Learning
+                  </h3>
+                  <p className="text-white/80 text-center leading-6">
+                    Music, coding, language tutors, exam prep and more — all at
+                    your fingertips.
                   </p>
                 </div>
               </Link>

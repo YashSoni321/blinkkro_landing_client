@@ -38,7 +38,7 @@ const Hero: React.FC = () => {
               </button>
             </div>
           </div>
-          <div className="hidden md:block absolute top-1/2 right-20 transform -translate-y-1/2">
+          <div className="hidden md:block absolute top-1/2 right-0 transform -translate-y-1/2">
             <Image
               src="/images/hero/pair_hero_image.png"
               alt="hero booking illustration"

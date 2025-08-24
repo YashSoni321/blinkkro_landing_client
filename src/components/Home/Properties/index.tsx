@@ -28,7 +28,7 @@ const Properties: React.FC = () => {
             you with trusted professionals, instantly.
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-1 xl:grid-cols-3 gap-10">
           {servicesTypes.slice(0, 6).map((item, index) => (
             <div key={index} className="">
               <PropertyCard item={item} />
