@@ -7,35 +7,28 @@ const Hero: React.FC = () => {
     <section className="!py-0">
       <div className="bg-gradient-to-b from-skyblue via-lightskyblue dark:via-[#4298b0] to-white/10 dark:to-black/10 overflow-hidden relative">
         <div className="container max-w-8xl mx-auto px-5 2xl:px-0 pt-32 md:pt-60 md:pb-68">
-          <div className="relative text-white dark:text-dark text-center md:text-start z-10">
-            <p className="text-sm sm:text-base font-bold uppercase tracking-widest text-white/70 dark:text-dark/70 animate-fadeIn">
-              Book Anytime, Anywhere
-            </p>
-
-            {/* Heading */}
-            <h1 className="text-5xl sm:text-4xl md:text-5xl font-extrabold leading-tight mt-4 md:max-w-[65%] animate-slideUp">
-              Hassle <span className="text-primary">Free</span>
+          <div className="text-center md:text-left max-w-2xl">
+            <h1 className="text-4xl md:text-6xl font-extrabold text-white dark:text-gray-100 leading-tight mb-6">
+              <span className="text-primary">BlinkKaro</span>: Your One-Stop
+              Service Booking Hub
             </h1>
-            <span className=" text-5xl font-extrabold sm:text-4xl md:text-5xl mb-5  bg-clip-text ">
-              Service <span className="text-primary">Booking</span>
-            </span>
-
-            {/* Subheading / Description */}
-            <p className="text-lg sm:text-xl text-white dark:text-dark/80 md:max-w-[55%] mb-10 leading-relaxed animate-fadeIn delay-100">
-              Get instant access to trusted professionals near you. From home
-              cleaning to car services — BlinkKaro makes booking effortless and
-              reliable.
+            <p className="text-lg md:text-xl text-white/90 dark:text-gray-300 mb-8">
+              Choose your provider, pick your time—plumbing, AC repair,
+              tutoring, events, and more—all in a blink.
             </p>
-            <div className="flex flex-col xs:flex-row justify-center md:justify-start gap-4">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
               <Link
                 href="/book"
-                className="px-8 py-4 border border-white dark:border-dark bg-white dark:bg-dark text-dark dark:text-white duration-300 dark:hover:text-dark hover:bg-transparent hover:text-white text-base font-semibold rounded-full hover:cursor-pointer"
+                className="px-8 py-4 bg-white text-blue-600 font-semibold rounded-full shadow-lg hover:scale-105 transition-transform"
               >
                 Book a Service
               </Link>
-              <button className="px-8 py-4 border border-white dark:border-dark bg-transparent text-white dark:text-dark hover:bg-white dark:hover:bg-dark dark:hover:text-white hover:text-dark duration-300 text-base font-semibold rounded-full hover:cursor-pointer">
-                Learn More
-              </button>
+              <Link
+                href="/providers"
+                className="px-8 py-4 border-2 border-white text-white font-semibold rounded-full hover:bg-white hover:text-blue-600 transition-colors"
+              >
+                Become a Provider
+              </Link>
             </div>
           </div>
           <div className="hidden md:block absolute top-1/2 right-0 transform -translate-y-1/2">
