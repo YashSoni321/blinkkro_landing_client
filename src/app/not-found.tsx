@@ -3,7 +3,12 @@ import { Metadata } from "next";
 import { Icon } from "@iconify/react/dist/iconify.js"
 
 export const metadata: Metadata = {
-  title: "404 Page | BlinkKaro ",
+  title: "Page Not Found - BlinkKaro | 404 Error",
+  description: "The page you're looking for doesn't exist. Return to BlinkKaro's homepage to discover trusted home services, events, and professional bookings.",
+  robots: {
+    index: false,
+    follow: true,
+  },
 };
 
 const ErrorPage = () => {

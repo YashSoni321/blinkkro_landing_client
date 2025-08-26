@@ -21,7 +21,7 @@ const Hero: React.FC = () => {
                 href="/book"
                 className="px-8 py-4 bg-white text-blue-600 font-semibold rounded-full shadow-lg hover:scale-105 transition-transform"
               >
-                Book a Service
+                Join Waitlist
               </Link>
               <Link
                 href="/providers"
@@ -67,13 +67,27 @@ const Hero: React.FC = () => {
               </p>
             </div>
 
-            <div className="flex flex-col sm:items-center gap-3">
-              {/* <Users className="w-8 h-8 text-sky-600 dark:text-sky-400" /> */}
+            {/* <div className="flex flex-col sm:items-center gap-3">
+              {/* <Users className="w-8 h-8 text-sky-600 dark:text-sky-400" /> 
               <p className="text-2xl sm:text-3xl font-medium text-inherit">
                 5000+ Bookings
               </p>
               <p className="text-sm sm:text-base font-normal text-black/50 dark:text-white/50">
                 And growing daily
+              </p>
+            </div> */}
+            <div className="flex flex-col sm:items-center gap-3">
+              {/* Icon */}
+              <Users className="w-8 h-8 text-sky-600 dark:text-sky-400" />
+
+              {/* Main Stat */}
+              <p className="text-2xl sm:text-3xl font-semibold text-inherit">
+                500+ Users
+              </p>
+
+              {/* Subtext */}
+              <p className="text-sm sm:text-base font-normal text-black/50 dark:text-white/50">
+                Have already joined the waitlist 🚀
               </p>
             </div>
           </div>

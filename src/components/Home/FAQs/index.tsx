@@ -13,13 +13,13 @@ const FAQ: React.FC = () => {
       <div className="container max-w-8xl mx-auto px-5 2xl:px-0">
         <div className="grid lg:grid-cols-2 gap-10 ">
           {/* Image Section */}
-          <div className="lg:mx-0 mx-auto">
+          <div className="lg:mx-0 mx-auto  ">
             <Image
-              src="/images/faqs/faq-image.png"
+              src="/images/hero/girl_hero_section.png"
               alt="faq-image"
-              width={680}
-              height={644}
-              className="lg:w-full"
+              width={600}
+              height={600}
+              className="object-contain lg:h-[600px] h-[350px]"
               unoptimized={true}
             />
           </div>

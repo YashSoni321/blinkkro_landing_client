@@ -2,7 +2,17 @@ import HeroSub from "@/components/shared/HeroSub";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Events | BlinkKaro",
+  title: "Upcoming Events - BlinkKaro Community & Service Events | Join Us",
+  description: "Stay updated with BlinkKaro's upcoming events, workshops, and community gatherings. Connect with service providers and fellow customers across India.",
+  keywords: ["BlinkKaro events", "service events", "community gatherings", "workshops", "networking events", "upcoming events"],
+  openGraph: {
+    title: "Upcoming Events - BlinkKaro Community & Service Events",
+    description: "Join BlinkKaro's exciting events that inspire, connect, and energize your lifestyle journey. Stay tuned for upcoming community events.",
+    url: "https://blinkkaro.com/events",
+  },
+  alternates: {
+    canonical: "https://blinkkaro.com/events",
+  },
 };
 
 const Events = () => {

@@ -29,7 +29,7 @@ export default function AboutUs() {
                     alt={item.alt}
                     width={680}
                     height={530}
-                    className="rounded-2xl w-full h-540"
+                    className="rounded-2xl w-full object-contain h-540"
                     unoptimized={true}
                   />
                 </CarouselItem>

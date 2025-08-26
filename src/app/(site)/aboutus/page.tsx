@@ -1,8 +1,6 @@
-"use client";
 import * as React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import { Icon } from "@iconify/react";
 import {
   Carousel,
@@ -11,12 +9,34 @@ import {
   type CarouselApi,
 } from "@/components/ui/carousel";
 import HeroSub from "@/components/shared/HeroSub";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title:
+    "About BlinkKaro - India's Most Trusted Service Booking Platform | Our Story",
+  description:
+    "Learn about BlinkKaro's journey from 3 passionate founders to India's leading service platform. Connecting 10K+ customers with verified professionals since 2023.",
+  keywords: [
+    "about BlinkKaro",
+    "service platform India",
+    "founders story",
+    "trusted professionals",
+    "home services company",
+  ],
+  openGraph: {
+    title: "About BlinkKaro - India's Most Trusted Service Platform",
+    description:
+      "Discover how BlinkKaro revolutionized service booking in India. Meet our team and learn our mission to simplify life through smart service discovery.",
+    url: "https://blinkkaro.com/aboutus",
+  },
+  alternates: {
+    canonical: "https://blinkkaro.com/aboutus",
+  },
+};
 
 export default function AboutUs() {
-  const pathname = usePathname();
-  const [sticky, setSticky] = React.useState(false);
-  const [api, setApi] = React.useState<CarouselApi | undefined>(undefined);
-  const isHomepage = pathname === "/";
+  // const [sticky, setSticky] = React.useState(false);
+  // const [api, setApi] = React.useState<CarouselApi | undefined>(undefined);
 
   return (
     <>
@@ -37,11 +57,11 @@ export default function AboutUs() {
               height={100}
               unoptimized={true}
               className={`${
-                isHomepage
-                  ? sticky
+                false
+                  ? false
                     ? "block dark:hidden"
                     : "hidden"
-                  : sticky
+                  : false
                   ? "block dark:hidden"
                   : "block dark:hidden"
               }`}
@@ -53,11 +73,11 @@ export default function AboutUs() {
               height={100}
               unoptimized={true}
               className={`${
-                isHomepage
-                  ? sticky
+                false
+                  ? false
                     ? "hidden dark:block"
                     : "block"
-                  : sticky
+                  : false
                   ? "dark:block hidden"
                   : "dark:block hidden"
               }`}

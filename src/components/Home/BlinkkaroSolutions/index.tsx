@@ -39,14 +39,14 @@ const BlinkKaroSolutions: React.FC = () => {
           <div className="relative order-1 lg:order-2">
             <Carousel setApi={setApi} opts={{ loop: true }}>
               <CarouselContent>
-                {featuredProprty.map((item, index) => (
+                {featuredProprty.slice(1).map((item, index) => (
                   <CarouselItem key={index}>
                     <Image
                       src={item.scr}
                       alt={item.alt}
                       width={680}
                       height={530}
-                      className="rounded-2xl w-full h-540"
+                      className="rounded-2xl w-full object-contain h-540"
                       unoptimized={true}
                     />
                   </CarouselItem>

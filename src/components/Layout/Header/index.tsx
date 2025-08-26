@@ -200,7 +200,7 @@ const Header: React.FC = () => {
                 ? sticky
                   ? "text-dark dark:text-white hover:text-primary"
                   : "text-white hover:text-primary"
-                : "text-dark hover:text-primary"
+                : "dark:text-white hover:text-primary"
             }`}
                 >
                   {item.label}

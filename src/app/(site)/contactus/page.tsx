@@ -4,7 +4,26 @@ import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact Us | BlinkKaro",
+  title: "Contact BlinkKaro - Get Help & Support | Customer Service India",
+  description:
+    "Need help with BlinkKaro services? Contact our 24/7 support team. Get instant assistance for bookings, payments, or service queries. We're here to help!",
+  keywords: [
+    "BlinkKaro contact",
+    "customer support",
+    "help center",
+    "service support",
+    "24/7 assistance",
+    "BlinkKaro help",
+  ],
+  openGraph: {
+    title: "Contact BlinkKaro - Get Help & Support",
+    description:
+      "Reach out to BlinkKaro's support team for any assistance. Quick response guaranteed for all your service booking needs.",
+    url: "https://blinkkaro.com/contactus",
+  },
+  alternates: {
+    canonical: "https://blinkkaro.com/contactus",
+  },
 };
 
 export default function ContactUs() {
