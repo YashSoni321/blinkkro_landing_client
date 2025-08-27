@@ -8,6 +8,7 @@ import GetInTouch from "@/components/Home/GetInTouch";
 import FAQ from "@/components/Home/FAQs";
 import AboutBlinkKaro from "@/components/Home/AboutBlinkKaro";
 import BlinkKaroSolutions from "@/components/Home/BlinkkaroSolutions";
+import IndustriesSection from "@/components/Home/Industries/page";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <AboutBlinkKaro />
       <Services />
       <Properties />
+      <IndustriesSection />
       <FeaturedProperty />
       <Testimonial />
       <BlinkKaroSolutions />
