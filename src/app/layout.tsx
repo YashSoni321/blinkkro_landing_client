@@ -68,7 +68,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${font.className} antialiased`}>
+      <body className={`${font.className} antialiased overflow-x-hidden`}>
         <NextTopLoader color="#07be8a" />
         <SessionProviderComp>
           <ThemeProviderComp>
