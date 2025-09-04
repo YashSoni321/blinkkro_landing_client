@@ -12,7 +12,7 @@ import IndustriesSection from "@/components/Home/Industries/page";
 
 export default function Home() {
   return (
-    <main>
+    <main className="overflow-x-hidden">
       <Hero />
       <AboutBlinkKaro />
       <Services />

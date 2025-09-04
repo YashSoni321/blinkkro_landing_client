@@ -28,14 +28,14 @@ export default function AboutBlinkKaro() {
 
   return (
     <section className="relative overflow-hidden">
-      <div className="container max-w-8xl mx-auto px-5 2xl:px-0">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <div className="container max-w-8xl mx-auto px-4 sm:px-5 2xl:px-0 overflow-hidden">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
           {/* Left Content */}
           {/* Right Visual */}
           <div className="relative">
             <div className="relative z-10">
               {/* Main Phone Mockup */}
-              <div className="bg-white dark:bg-gray-800 rounded-3xl p-6 shadow-2xl mx-auto w-80">
+              <div className="bg-white dark:bg-gray-800 rounded-3xl p-4 sm:p-6 shadow-2xl mx-auto w-full max-w-80">
                 <div className="bg-gradient-to-br from-primary to-primary/80 rounded-2xl p-6 text-white mb-4">
                   <div className="flex items-center justify-between mb-4">
                     <h3 className="font-bold text-lg">BlinkKaro</h3>

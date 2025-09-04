@@ -110,7 +110,7 @@ export default async function PostPage(props: PageProps<"/blogs/[slug]">) {
               width={1170}
               height={766}
               quality={100}
-              className="h-full w-full object-cover object-center rounded-3xl"
+              className="h-full w-full object-contain object-center rounded-3xl"
             />
           </div>
         </div>

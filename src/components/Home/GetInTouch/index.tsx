@@ -6,7 +6,7 @@ const GetInTouch: React.FC = () => {
     //   <div className="container max-w-8xl mx-auto px-5 2xl:px-0">
     //     <div className="relative rounded-t-2xl overflow-hidden">
     // <video
-    //   className="w-full absolute top-0 left-0 object-cover -z-10"
+    //   className="w-full absolute top-0 left-0 object-contain -z-10"
     //   autoPlay
     //   loop
     //   muted
@@ -55,7 +55,7 @@ const GetInTouch: React.FC = () => {
       <div className="container max-w-8xl mx-auto px-5 2xl:px-0">
         <div className="relative rounded-t-2xl overflow-hidden">
           <video
-            className="w-full absolute top-0 left-0 object-cover -z-10"
+            className="w-full absolute top-0 left-0 object-contain -z-10"
             autoPlay
             loop
             muted

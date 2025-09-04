@@ -15,9 +15,9 @@ export default function AboutUs() {
   const [api, setApi] = React.useState<CarouselApi | undefined>(undefined);
 
   return (
-    <section className="container max-w-8xl mx-auto px-5 2xl:px-0 pt-32 md:pt-44 pb-14 md:pb-28">
+    <section className="container max-w-8xl mx-auto px-4 sm:px-5 2xl:px-0 overflow-hidden">
       {/* What is BlinkKaro */}
-      <div className="grid lg:grid-cols-2 gap-10 items-center mb-28">
+      <div className="grid lg:grid-cols-2 gap-8 lg:gap-10 items-center">
         {/* Carousel */}
         <div className="relative order-1 lg:order-2">
           <Carousel setApi={setApi} opts={{ loop: true }}>
@@ -29,8 +29,12 @@ export default function AboutUs() {
                     alt={item.alt}
                     width={680}
                     height={530}
-                    className="rounded-2xl w-full object-contain h-540"
-                    unoptimized={true}
+                    className="rounded-2xl w-full h-auto object-contain max-h-[400px] sm:max-h-[500px]"
+                    priority={index === 0}
+                    loading={index === 0 ? "eager" : "lazy"}
+                    quality={75}
+                    placeholder="blur"
+                    blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=="
                   />
                 </CarouselItem>
               ))}
@@ -131,7 +135,7 @@ const TeamMember = ({
       alt={name}
       width={180}
       height={180}
-      className="rounded-full mx-auto mb-4 object-cover"
+      className="rounded-full mx-auto mb-4 object-contain"
     />
     <h4 className="text-xl font-semibold text-black dark:text-white mb-1">
       {name}

@@ -5,7 +5,7 @@ import { servicesTypes } from "@/app/api/propertyhomes";
 const Properties: React.FC = () => {
   return (
     <section>
-      <div className="container max-w-8xl mx-auto px-5 2xl:px-0">
+      <div className="container max-w-8xl mx-auto px-4 sm:px-5 2xl:px-0 overflow-hidden">
         <div className="mb-16 flex flex-col gap-3 ">
           <div className="flex gap-2.5 items-center justify-center">
             <span>
@@ -28,7 +28,7 @@ const Properties: React.FC = () => {
             you with trusted professionals, instantly.
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-1 xl:grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {servicesTypes.slice(0, 6).map((item, index) => (
             <div key={index} className="">
               <PropertyCard item={item} />
