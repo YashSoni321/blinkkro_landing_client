@@ -48,7 +48,7 @@ const Header: React.FC = () => {
       }`}
     >
       <nav
-        className={`container mx-auto max-w-8xl flex items-center justify-between py-4 duration-300 
+        className={`container mx-auto max-w-screen-xl flex items-center justify-between py-3 px-2 sm:px-6 duration-300
     ${
       sticky
         ? "shadow-lg bg-white dark:bg-dark rounded-full top-5 px-6 border-1 border-black/30 dark:border-white/20 backdrop-blur-md"
