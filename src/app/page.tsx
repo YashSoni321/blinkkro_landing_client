@@ -15,8 +15,8 @@ export default function Home() {
     <main className="overflow-x-hidden">
       <Hero />
       <AboutBlinkKaro />
-      {/* <Services />
-      <Properties /> */}
+      <Services />
+      <Properties />
       <IndustriesSection />
       <FeaturedProperty />
       <Testimonial />

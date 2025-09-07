@@ -9,29 +9,23 @@ const Hero: React.FC = () => {
         <div className="container max-w-8xl mx-auto px-4 sm:px-5 2xl:px-0 pt-32 md:pt-60 md:pb-68">
           <div className="text-center md:text-left max-w-2xl">
             <h1 className="text-4xl md:text-6xl font-extrabold text-white dark:text-gray-100 leading-tight mb-6">
-              <span className="text-primary">BlinkKaro</span>: Your One-Stop
-              Service Booking Hub
+              Life's Too Short for <span className="text-primary">Service Hassles</span>
             </h1>
             <p className="text-lg md:text-xl text-white/90 dark:text-gray-300 mb-8">
-              Choose your provider, pick your time—plumbing, AC repair,
-              tutoring, events, and more—all in a blink.
+              From emergency plumbing to weekend parties, from home cleaning to personal tutoring — get trusted professionals at your doorstep in just one tap. Because your time matters!
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
               <Link
                 href="/contactus"
                 className="px-8 py-4 bg-white text-blue-600 font-semibold rounded-full shadow-lg hover:scale-105 transition-transform"
               >
-                Join Waitlist
+Get Early Access
               </Link>
               <Link
                 href="/"
                 className="px-8 py-4 border-2 border-white text-white font-semibold rounded-full hover:bg-white hover:text-blue-600 transition-colors"
               >
-                <span className="font-bold text-black">
-                  {" "}
-                  Become a Provider{" "}
-                </span>
-                (Opening Sooon...)
+Earn with BlinkKaro
               </Link>
             </div>
           </div>

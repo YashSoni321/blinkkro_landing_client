@@ -135,8 +135,7 @@ export default function AboutBlinkKaro() {
             </div>
 
             <h2 className="text-4xl sm:text-52 font-bold tracking-tighter text-dark dark:text-white mb-6">
-              Your <span className="text-primary">All-in-One</span> Service
-              Partner
+              Why Waste Time When You Can <span className="text-primary">BlinkKaro</span>?
             </h2>
 
             <p className="text-xm text-dark/70 dark:text-white/70 mb-8 leading-relaxed">
@@ -178,10 +177,10 @@ export default function AboutBlinkKaro() {
 
             <div className="flex flex-col sm:flex-row gap-4">
               <button className="px-8 py-4 bg-primary text-white rounded-full font-semibold hover:bg-dark transition-colors duration-300">
-                Book Your First Service
+                Try BlinkKaro Now
               </button>
               <button className="px-8 py-4 border-2 border-primary text-primary rounded-full font-semibold hover:bg-primary hover:text-white transition-all duration-300">
-                Join as a Provider
+                Start Earning Today
               </button>
             </div>
           </div>

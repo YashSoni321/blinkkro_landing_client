@@ -34,20 +34,16 @@ const Categories = () => {
               Categories
             </p>
             <h2 className="lg:text-52 text-40 mt-4 mb-2 lg:max-w-full font-medium leading-[1.2] text-dark dark:text-white">
-              Explore famous service categories with{" "}
-              <span className="text-primary">BlinkKaro</span>.
+              Every Service You Need, <span className="text-primary">Right Here</span>
             </h2>
             <p className="text-dark/50 dark:text-white/50 text-lg lg:max-w-full leading-[1.3] md:max-w-3/4">
-              Discover the most popular services people trust — from astrology,
-              beauty & wellness, home care, and fitness to professional
-              consultations. BlinkKaro makes finding reliable experts easier
-              than ever.
+              From fixing your morning coffee machine to planning your dream wedding — we've curated the most trusted professionals across every category. No more hunting through contacts or taking chances with strangers.
             </p>
             <Link
               href="/categories"
               className="py-4 px-8 bg-primary text-base leading-4 block w-fit text-white rounded-full font-semibold mt-8 hover:bg-dark duration-300"
             >
-              Browse Categories
+Explore All Services
             </Link>
           </div>
 

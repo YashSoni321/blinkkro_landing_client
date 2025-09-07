@@ -21,11 +21,10 @@ const Properties: React.FC = () => {
             </p>
           </div>
           <h2 className="text-40 lg:text-52 font-medium text-black dark:text-white text-center tracking-tight leading-11 mb-2">
-            Book everyday services in just a blink ✨
+            Your Favorite Services, <span className="text-primary">Just a Tap Away</span> ✨
           </h2>
           <p className="text-xm font-normal text-black/50 dark:text-white/50 text-center">
-            From beauty & home cleaning to fitness & events — BlinkKaro connects
-            you with trusted professionals, instantly.
+            Skip the hassle of finding reliable people. These are the services our customers love most — vetted professionals, transparent pricing, and guaranteed satisfaction.
           </p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">

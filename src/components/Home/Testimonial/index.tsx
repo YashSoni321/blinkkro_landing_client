@@ -76,7 +76,7 @@ const Testimonial = () => {
             Testimonials
           </p>
           <h2 className="lg:text-52 text-40 font-medium text-white">
-            What our clients say
+            Real Stories from <span className="text-primary">Happy Customers</span>
           </h2>
         </div>
         <Carousel

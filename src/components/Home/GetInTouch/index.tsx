@@ -70,13 +70,13 @@ const GetInTouch: React.FC = () => {
           <div className="bg-black/40 lg:py-64 md:py-28 py-10">
             <div className="flex flex-col items-center gap-8">
               <h2 className="text-white lg:text-52 md:text-40 text-3xl max-w-3/4 text-center font-medium">
-                Discover. Book. Enjoy. All your favorite services in one place.
+                Ready to Make Your Life <span className="text-primary">10x Easier</span>?
               </h2>
               <Link
-                href="/get-started"
+                href="/contactus"
                 className="bg-white py-4 px-8 rounded-full text-dark hover:bg-dark hover:text-white duration-300"
               >
-                Get Started with BlinkKaro
+                Join the Waitlist Now
               </Link>
             </div>
           </div>
@@ -86,16 +86,16 @@ const GetInTouch: React.FC = () => {
         <div className="w-full py-5 bg-primary rounded-b-2xl overflow-hidden">
           <div className="flex items-center gap-40 animate-slide">
             <p className="text-white whitespace-nowrap relative after:absolute after:w-20 after:h-px after:bg-white after:top-3 after:-right-32">
-              INSTANTLY BOOK SALONS, SPAS, AND WELLNESS SERVICES!
+              ✨ BOOK YOUR DREAM SALON APPOINTMENT IN JUST 30 SECONDS!
             </p>
             <p className="text-white whitespace-nowrap relative after:absolute after:w-20 after:h-px after:bg-white after:top-3 after:-right-32">
-              DISCOVER TRUSTED PROVIDERS NEAR YOU—ANYTIME, ANYWHERE!
+              🔧 EMERGENCY PLUMBER? WE'VE GOT YOU COVERED 24/7!
             </p>
             <p className="text-white whitespace-nowrap relative after:absolute after:w-20 after:h-px after:bg-white after:top-3 after:-right-32">
-              SAFE & SECURE PAYMENTS FOR EVERY SERVICE YOU BOOK!
+              🎉 PLANNING A PARTY? FIND THE PERFECT CATERER TODAY!
             </p>
             <p className="text-white whitespace-nowrap relative after:absolute after:w-20 after:h-px after:bg-white after:top-3 after:-right-32">
-              TRENDING SERVICES IN BEAUTY, HOME CARE, EVENTS & MORE!
+              🏠 HOME DEEP CLEANING STARTING AT JUST ₹499!
             </p>
           </div>
         </div>

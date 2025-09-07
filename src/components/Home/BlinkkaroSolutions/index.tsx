@@ -76,7 +76,7 @@ const BlinkKaroSolutions: React.FC = () => {
                 Why Choose BlinkKaro?
               </p>
               <h2 className="lg:text-52 text-40 font-medium text-dark dark:text-white">
-                Solving Everyday Service Hassles
+                Life's Too Complicated. <span className="text-primary">We Made It Simple</span>
               </h2>
               <div className="flex items-center gap-2.5">
                 <Icon
@@ -86,7 +86,7 @@ const BlinkKaroSolutions: React.FC = () => {
                   className="text-dark/50 dark:text-white/50"
                 />
                 <p className="text-dark/50 dark:text-white/50 text-base">
-                  One app to save time, money & effort on your daily needs.
+                  Stop juggling multiple apps and contacts. Everything you need, one tap away.
                 </p>
               </div>
             </div>
@@ -107,7 +107,7 @@ const BlinkKaroSolutions: React.FC = () => {
                     className="text-xl text-primary"
                   />
                 </div>
-                <h6 className="">No More Waiting</h6>
+                <h6 className="text-dark dark:text-white">Get Help in Minutes</h6>
               </div>
               <div className="flex items-center gap-4">
                 <div className="bg-dark/5 dark:bg-white/5 p-2.5 rounded-[6px]">
@@ -116,7 +116,7 @@ const BlinkKaroSolutions: React.FC = () => {
                     className="text-xl text-primary"
                   />
                 </div>
-                <h6 className="">Transparent Pricing</h6>
+                <h6 className="text-dark dark:text-white">Know Costs Upfront</h6>
               </div>
               <div className="flex items-center gap-4">
                 <div className="bg-dark/5 dark:bg-white/5 p-2.5 rounded-[6px]">
@@ -125,7 +125,7 @@ const BlinkKaroSolutions: React.FC = () => {
                     className="text-xl text-primary"
                   />
                 </div>
-                <h6 className="">Verified Professionals</h6>
+                <h6 className="text-dark dark:text-white">Background-Checked Pros</h6>
               </div>
               <div className="flex items-center gap-4">
                 <div className="bg-dark/5 dark:bg-white/5 p-2.5 rounded-[6px]">
@@ -134,7 +134,7 @@ const BlinkKaroSolutions: React.FC = () => {
                     className="text-xl text-primary"
                   />
                 </div>
-                <h6 className="">Instant Booking</h6>
+                <h6 className="text-dark dark:text-white">Book in 30 Seconds</h6>
               </div>
             </div>
 
@@ -144,14 +144,14 @@ const BlinkKaroSolutions: React.FC = () => {
                 href="/get-started"
                 className="py-4 px-8 bg-primary hover:bg-dark duration-300 rounded-full text-white"
               >
-                Start Using BlinkKaro
+Join 10K+ Happy Users
               </Link>
               <div>
                 <h4 className="text-3xl text-dark dark:text-white font-medium">
-                  99% Problems Solved
+                  2 Min Average
                 </h4>
                 <p className="text-base text-dark/50">
-                  All your services, one tap away
+                  From booking to confirmation
                 </p>
               </div>
             </div>

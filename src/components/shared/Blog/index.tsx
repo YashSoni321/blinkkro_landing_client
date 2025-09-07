@@ -54,11 +54,10 @@ const BlogSmall: React.FC = () => {
               BlinkKaro Blog
             </p>
             <h2 className="lg:text-52 text-40 font-medium dark:text-white">
-              Tips & Insights for Smarter Living
+              <span className="text-primary">Smart Tips</span> for Busy Lives
             </h2>
             <p className="text-dark/50 dark:text-white/50 text-xm">
-              Explore expert guides, wellness hacks, and lifestyle updates to
-              make your daily life easier with BlinkKaro.
+              From home maintenance hacks to wellness secrets — discover insider tips that save you time, money, and stress in your daily routine.
             </p>
           </div>
           <Link
@@ -66,7 +65,7 @@ const BlogSmall: React.FC = () => {
             className="bg-dark dark:bg-white text-white dark:text-dark py-4 px-8 rounded-full hover:bg-primary duration-300"
             aria-label="Read all blog articles"
           >
-            View all articles
+Read More Tips
           </Link>
         </div>
         <div className="grid sm:grid-cols-2 grid-cols-1 lg:grid-cols-3 gap-12">
