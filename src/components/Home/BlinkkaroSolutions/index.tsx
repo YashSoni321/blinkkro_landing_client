@@ -76,7 +76,7 @@ const BlinkKaroSolutions: React.FC = () => {
                 Why Choose BlinkKaro?
               </p>
               <h2 className="lg:text-52 text-40 font-medium text-dark dark:text-white">
-                Life's Too Complicated. <span className="text-primary">We Made It Simple</span>
+                Life&apos;s Too Complicated. <span className="text-primary">We Made It Simple</span>
               </h2>
               <div className="flex items-center gap-2.5">
                 <Icon

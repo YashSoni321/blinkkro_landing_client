@@ -9,7 +9,7 @@ const Hero: React.FC = () => {
         <div className="container max-w-8xl mx-auto px-4 sm:px-5 2xl:px-0 pt-32 md:pt-60 md:pb-68">
           <div className="text-center md:text-left max-w-2xl">
             <h1 className="text-4xl md:text-6xl font-extrabold text-white dark:text-gray-100 leading-tight mb-6">
-              Life's Too Short for <span className="text-primary">Service Hassles</span>
+              Life&apos;s Too Short for <span className="text-primary">Service Hassles</span>
             </h1>
             <p className="text-lg md:text-xl text-white/90 dark:text-gray-300 mb-8">
               From emergency plumbing to weekend parties, from home cleaning to personal tutoring — get trusted professionals at your doorstep in just one tap. Because your time matters!

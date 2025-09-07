@@ -173,7 +173,7 @@ const IndustriesOrbit: React.FC = () => {
             <h2 className="text-40 lg:text-52 my-6 font-medium text-black dark:text-white text-center tracking-tight leading-11 mb-6">
               Powering{" "}
               <span className="text-primary bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">
-                India's Economy
+                India&apos;s Economy
               </span>
             </h2>
             <p className="text-base font-normal text-black/50 dark:text-white/50 text-center mb-6">

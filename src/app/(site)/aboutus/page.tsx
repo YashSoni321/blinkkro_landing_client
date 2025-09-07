@@ -7,9 +7,9 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title:
-    "Our Story - How 3 Friends Built India's Most Loved Service Platform | BlinkKaro",
+    "Our Story - How 3 Friends Built India&apos;s Most Loved Service Platform | BlinkKaro",
   description:
-    "From a midnight plumbing crisis to building BlinkKaro - discover the inspiring journey of 3 friends who solved India's biggest service booking problem. Join 50K+ happy customers today!",
+    "From a midnight plumbing crisis to building BlinkKaro - discover the inspiring journey of 3 friends who solved India&apos;s biggest service booking problem. Join 50K+ happy customers today!",
   keywords: [
     "BlinkKaro founders story",
     "startup journey India",
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     "BlinkKaro mission vision",
   ],
   openGraph: {
-    title: "Our Story - How 3 Friends Built India's Most Loved Service Platform",
+    title: "Our Story - How 3 Friends Built India&apos;s Most Loved Service Platform",
     description:
       "From a midnight crisis to serving 50K+ customers - the inspiring BlinkKaro story. Meet the founders who revolutionized how India books services.",
     url: "https://blinkkaro.com/aboutus",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "The BlinkKaro Story - 3 Friends, 1 Mission",
-    description: "How a midnight plumbing crisis led to India's most trusted service platform.",
+    description: "How a midnight plumbing crisis led to India&apos;s most trusted service platform.",
   },
   alternates: {
     canonical: "https://blinkkaro.com/aboutus",
@@ -41,7 +41,7 @@ export default function AboutUs() {
     <>
       <HeroSub
         title="The Story Behind Your Favorite Service App"
-        description="What started as a midnight crisis became India's most trusted service platform. This is the story of 3 friends who refused to accept that finding reliable help should be this hard."
+        description="What started as a midnight crisis became India&apos;s most trusted service platform. This is the story of 3 friends who refused to accept that finding reliable help should be this hard."
         badge="Our Story"
       />
       
@@ -55,7 +55,7 @@ export default function AboutUs() {
                 It Started with a Crisis
               </h3>
               <p className="text-dark/70 dark:text-white/70 leading-relaxed">
-                <strong>2 AM, Bangalore.</strong> Yash's apartment was flooding. The pipe had burst, water everywhere, and he desperately needed a plumber. After 47 phone calls, 3 hours of waiting, and ₹2000 later, he realized something was fundamentally broken.
+                <strong>2 AM, Bangalore.</strong> Yash&apos;s apartment was flooding. The pipe had burst, water everywhere, and he desperately needed a plumber. After 47 phone calls, 3 hours of waiting, and ₹2000 later, he realized something was fundamentally broken.
               </p>
             </div>
           </div>
@@ -67,20 +67,20 @@ export default function AboutUs() {
             </div>
             
             <h2 className="text-4xl sm:text-52 font-bold text-dark dark:text-white mb-6">
-              "Why Is Finding Help So <span className="text-primary">Damn Hard</span>?"
+              &ldquo;Why Is Finding Help So <span className="text-primary">Damn Hard</span>?&rdquo;
             </h2>
             
             <p className="text-lg text-dark/70 dark:text-white/70 mb-6 leading-relaxed">
-              That night, Yash called his college buddies Ankit and Gaurang. They'd all faced the same frustration - unreliable contacts, hidden charges, no-shows, and zero accountability.
+              That night, Yash called his college buddies Ankit and Gaurang. They&apos;d all faced the same frustration - unreliable contacts, hidden charges, no-shows, and zero accountability.
             </p>
             
             <p className="text-lg text-dark/70 dark:text-white/70 mb-8 leading-relaxed">
-              <strong>"What if we could fix this for everyone?"</strong> That question changed everything.
+              <strong>&ldquo;What if we could fix this for everyone?&rdquo;</strong> That question changed everything.
             </p>
             
             <div className="bg-yellow-50 dark:bg-yellow-900/20 border-l-4 border-yellow-400 p-6 rounded-r-lg">
               <p className="text-dark dark:text-white font-medium italic">
-                "We weren't trying to build a unicorn. We just wanted to solve a problem that affected millions of Indians every single day."
+                &ldquo;We weren&apos;t trying to build a unicorn. We just wanted to solve a problem that affected millions of Indians every single day.&rdquo;
               </p>
               <p className="text-sm text-dark/60 dark:text-white/60 mt-2">- Yash, Co-Founder</p>
             </div>
@@ -96,7 +96,7 @@ export default function AboutUs() {
               From Idea to <span className="text-primary">Impact</span>
             </h2>
             <p className="text-lg text-dark/60 dark:text-white/60 max-w-2xl mx-auto">
-              Here's how three friends with zero funding built something that now serves thousands of families across India.
+              Here&apos;s how three friends with zero funding built something that now serves thousands of families across India.
             </p>
           </div>
           
@@ -104,7 +104,7 @@ export default function AboutUs() {
             <JourneyCard 
               icon="ph:rocket-launch"
               title="The Garage Days"
-              description="6 months of coding in Yash's garage. Living on Maggi and dreams. First prototype ready with 10 local service providers."
+              description="6 months of coding in Yash&apos;s garage. Living on Maggi and dreams. First prototype ready with 10 local service providers."
               stat="₹0 funding"
             />
             <JourneyCard 
@@ -116,7 +116,7 @@ export default function AboutUs() {
             <JourneyCard 
               icon="ph:chart-line-up"
               title="Growing Impact"
-              description="Today, we've helped 50,000+ customers find reliable services. From plumbers to party planners, we've got India covered."
+              description="Today, we&apos;ve helped 50,000+ customers find reliable services. From plumbers to party planners, we&apos;ve got India covered."
               stat="50K+ happy customers"
             />
           </div>
@@ -138,7 +138,7 @@ export default function AboutUs() {
           <ValueCard 
             icon="ph:heart"
             title="Customer First"
-            description="Every decision we make starts with 'How does this help our customers?'"
+            description="Every decision we make starts with &apos;How does this help our customers?&apos;"
           />
           <ValueCard 
             icon="ph:handshake"
@@ -148,12 +148,12 @@ export default function AboutUs() {
           <ValueCard 
             icon="ph:lightning"
             title="Speed & Simplicity"
-            description="Life's complicated enough. We make getting help as simple as ordering food."
+            description="Life&apos;s complicated enough. We make getting help as simple as ordering food."
           />
           <ValueCard 
             icon="ph:users"
             title="Empowering Providers"
-            description="We don't just serve customers - we help service providers build better businesses."
+            description="We don&apos;t just serve customers - we help service providers build better businesses."
           />
         </div>
       </section>
@@ -166,7 +166,7 @@ export default function AboutUs() {
               Meet the <span className="text-primary">Dream Team</span>
             </h2>
             <p className="text-lg text-dark/60 dark:text-white/60 max-w-2xl mx-auto">
-              Three friends who turned a midnight crisis into India's most trusted service platform.
+              Three friends who turned a midnight crisis into India&apos;s most trusted service platform.
             </p>
           </div>
           
@@ -176,7 +176,7 @@ export default function AboutUs() {
               img="/images/team/yash_dp.jpeg"
               name="Yash Soni"
               role="Co-Founder & CEO"
-              story="The guy whose flooded apartment started it all. Now he's obsessed with making sure no one else has to go through 47 phone calls to find help."
+              story="The guy whose flooded apartment started it all. Now he&apos;s obsessed with making sure no one else has to go through 47 phone calls to find help."
               superpower="Turning problems into opportunities"
               socials={["ph:linkedin-logo-bold", "ph:instagram-logo-bold"]}
             />
@@ -194,7 +194,7 @@ export default function AboutUs() {
               img="/images/team/gaurang_dp.jpeg"
               name="Gaurang Tyagi"
               role="Co-Founder & COO"
-              story="The people person who convinced our first 100 service providers to join. If there's a way to make it work, Gaurang will find it."
+              story="The people person who convinced our first 100 service providers to join. If there&apos;s a way to make it work, Gaurang will find it."
               superpower="Turning strangers into believers"
               socials={["ph:linkedin-logo-bold", "ph:github-logo-bold"]}
             />
@@ -206,10 +206,10 @@ export default function AboutUs() {
       <section className="container max-w-8xl mx-auto px-4 sm:px-5 2xl:px-0 py-16">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-dark dark:text-white mb-4">
-            The <span className="text-primary">Impact</span> We're Making
+            The <span className="text-primary">Impact</span> We&apos;re Making
           </h2>
           <p className="text-lg text-dark/60 dark:text-white/60 max-w-2xl mx-auto">
-            Numbers tell a story, but behind each number is a real person whose life we've made a little bit easier.
+            Numbers tell a story, but behind each number is a real person whose life we&apos;ve made a little bit easier.
           </p>
         </div>
         
@@ -228,7 +228,7 @@ export default function AboutUs() {
             Want to Be Part of Our <span className="text-primary">Story</span>?
           </h2>
           <p className="text-xl text-white/80 mb-8 max-w-2xl mx-auto">
-            Whether you're a customer looking for reliable services or a professional wanting to grow your business, there's a place for you in the BlinkKaro family.
+            Whether you&apos;re a customer looking for reliable services or a professional wanting to grow your business, there&apos;s a place for you in the BlinkKaro family.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

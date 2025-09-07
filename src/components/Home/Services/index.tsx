@@ -37,7 +37,7 @@ const Categories = () => {
               Every Service You Need, <span className="text-primary">Right Here</span>
             </h2>
             <p className="text-dark/50 dark:text-white/50 text-lg lg:max-w-full leading-[1.3] md:max-w-3/4">
-              From fixing your morning coffee machine to planning your dream wedding — we've curated the most trusted professionals across every category. No more hunting through contacts or taking chances with strangers.
+              From fixing your morning coffee machine to planning your dream wedding — we&apos;ve curated the most trusted professionals across every category. No more hunting through contacts or taking chances with strangers.
             </p>
             <Link
               href="/categories"

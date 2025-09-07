@@ -12,7 +12,7 @@ import {
 import { featuredProprty } from "@/app/api/featuredproperty";
 
 export default function AboutUs() {
-  const [api, setApi] = React.useState<CarouselApi | undefined>(undefined);
+  const [, setApi] = React.useState<CarouselApi | undefined>(undefined);
 
   return (
     <section className="container max-w-8xl mx-auto px-4 sm:px-5 2xl:px-0 overflow-hidden">
@@ -69,7 +69,7 @@ export default function AboutUs() {
           </div>
 
           <p className="text-base text-dark/50 dark:text-white/50">
-            Whether you need a plumber at midnight or a chef for tomorrow's party, BlinkKaro makes it happen. Our smart matching connects you with the perfect professional in your area, handles payments securely, and ensures quality every time.
+            Whether you need a plumber at midnight or a chef for tomorrow&apos;s party, BlinkKaro makes it happen. Our smart matching connects you with the perfect professional in your area, handles payments securely, and ensures quality every time.
           </p>
 
           {/* Steps Grid */}
@@ -116,48 +116,49 @@ const Step = ({ number, icon, title }: { number: string; icon: string; title: st
   </div>
 );
 
-const Feature = ({ icon, title }: { icon: string; title: string }) => (
-  <div className="flex items-center gap-4">
-    <div className="bg-dark/5 dark:bg-white/5 p-2.5 rounded-[6px]">
-      <Icon icon={icon} className="text-xl text-primary" />
-    </div>
-    <h6 className="text-base text-dark dark:text-white">{title}</h6>
-  </div>
-);
+// Unused components - keeping for potential future use
+// const Feature = ({ icon, title }: { icon: string; title: string }) => (
+//   <div className="flex items-center gap-4">
+//     <div className="bg-dark/5 dark:bg-white/5 p-2.5 rounded-[6px]">
+//       <Icon icon={icon} className="text-xl text-primary" />
+//     </div>
+//     <h6 className="text-base text-dark dark:text-white">{title}</h6>
+//   </div>
+// );
 
-const TeamMember = ({
-  img,
-  name,
-  role,
-  socials,
-}: {
-  img: string;
-  name: string;
-  role: string;
-  socials: string[];
-}) => (
-  <div className="p-6 border border-black/10 dark:border-white/10 rounded-2xl shadow-lg dark:shadow-white/10 text-center">
-    <Image
-      src={img}
-      alt={name}
-      width={180}
-      height={180}
-      className="rounded-full mx-auto mb-4 object-contain"
-    />
-    <h4 className="text-xl font-semibold text-black dark:text-white mb-1">
-      {name}
-    </h4>
-    <p className="text-sm text-black/60 dark:text-white/60 mb-4">{role}</p>
-    <div className="flex justify-center gap-4">
-      {socials.map((icon, i) => (
-        <Icon
-          key={i}
-          icon={icon}
-          width={22}
-          height={22}
-          className="text-black/60 dark:text-white/60 hover:text-primary cursor-pointer"
-        />
-      ))}
-    </div>
-  </div>
-);
+// const TeamMember = ({
+//   img,
+//   name,
+//   role,
+//   socials,
+// }: {
+//   img: string;
+//   name: string;
+//   role: string;
+//   socials: string[];
+// }) => (
+//   <div className="p-6 border border-black/10 dark:border-white/10 rounded-2xl shadow-lg dark:shadow-white/10 text-center">
+//     <Image
+//       src={img}
+//       alt={name}
+//       width={180}
+//       height={180}
+//       className="rounded-full mx-auto mb-4 object-contain"
+//     />
+//     <h4 className="text-xl font-semibold text-black dark:text-white mb-1">
+//       {name}
+//     </h4>
+//     <p className="text-sm text-black/60 dark:text-white/60 mb-4">{role}</p>
+//     <div className="flex justify-center gap-4">
+//       {socials.map((icon, i) => (
+//         <Icon
+//           key={i}
+//           icon={icon}
+//           width={22}
+//           height={22}
+//           className="text-black/60 dark:text-white/60 hover:text-primary cursor-pointer"
+//         />
+//       ))}
+//     </div>
+//   </div>
+// );

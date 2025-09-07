@@ -89,7 +89,7 @@ const GetInTouch: React.FC = () => {
               ✨ BOOK YOUR DREAM SALON APPOINTMENT IN JUST 30 SECONDS!
             </p>
             <p className="text-white whitespace-nowrap relative after:absolute after:w-20 after:h-px after:bg-white after:top-3 after:-right-32">
-              🔧 EMERGENCY PLUMBER? WE'VE GOT YOU COVERED 24/7!
+              🔧 EMERGENCY PLUMBER? WE&apos;VE GOT YOU COVERED 24/7!
             </p>
             <p className="text-white whitespace-nowrap relative after:absolute after:w-20 after:h-px after:bg-white after:top-3 after:-right-32">
               🎉 PLANNING A PARTY? FIND THE PERFECT CATERER TODAY!
