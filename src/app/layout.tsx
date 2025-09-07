@@ -11,7 +11,8 @@ import ThemeProviderComp from "@/components/provider/ThemeProviderComp";
 const font = Bricolage_Grotesque({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "BlinkKaro - Book Trusted Home Services & Events Instantly | India's #1 Service Platform",
+  title:
+    "BlinkKaro - Book Trusted Home Services & Events Instantly | India's #1 Service Platform",
   description:
     "BlinkKaro connects you with verified professionals for home services, events, beauty, repairs & more. Book in seconds with transparent pricing. 10K+ happy customers across India.",
   keywords: [
@@ -26,7 +27,7 @@ export const metadata: Metadata = {
     "instant booking",
     "transparent pricing",
     "BlinkKaro",
-    "service platform India"
+    "service platform India",
   ],
   authors: [{ name: "BlinkKaro Team" }],
   creator: "BlinkKaro",
@@ -47,13 +48,15 @@ export const metadata: Metadata = {
     locale: "en_IN",
     url: "https://blinkkaro.com",
     title: "BlinkKaro - Book Trusted Home Services & Events Instantly",
-    description: "India's most trusted platform for booking home services, events, beauty treatments & repairs. Verified professionals, transparent pricing, instant booking.",
+    description:
+      "India's most trusted platform for booking home services, events, beauty treatments & repairs. Verified professionals, transparent pricing, instant booking.",
     siteName: "BlinkKaro",
   },
   twitter: {
     card: "summary_large_image",
     title: "BlinkKaro - Book Trusted Services Instantly",
-    description: "Connect with verified professionals for home services, events & more. Book in seconds with transparent pricing.",
+    description:
+      "Connect with verified professionals for home services, events & more. Book in seconds with transparent pricing.",
     creator: "@BlinkKaro",
   },
   alternates: {

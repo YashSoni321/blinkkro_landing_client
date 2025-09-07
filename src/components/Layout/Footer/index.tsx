@@ -19,9 +19,9 @@ const Footer = () => {
                 placeholder="Enter your email"
                 className="rounded-full py-4 px-6 bg-white/10 placeholder:text-white text-white focus-visible:outline-0"
               />
-              <button className="text-dark bg-white py-4 px-8 font-semibold rounded-full hover:bg-primary hover:text-white duration-300 hover:cursor-pointer">
+              {/* <button className="text-dark bg-white py-4 px-8 font-semibold rounded-full hover:bg-primary hover:text-white duration-300 hover:cursor-pointer">
                 Subscribe
-              </button>
+              </button> */}
             </div>
             <p className="text-white/40 text-sm lg:max-w-[45%] order-1 lg:order-2">
               By subscribing, you agree to receive BlinkKaro updates. You can
