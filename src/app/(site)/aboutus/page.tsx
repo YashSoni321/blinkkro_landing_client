@@ -255,9 +255,9 @@ export default function AboutUs() {
 
               <TeamCard
                 img="/images/team/bhinsar_dp.jpeg"
-                name="Bhinar Jagdish"
+                name="Bhinsar Jagdish"
                 role="Software Engineer"
-                bio="Bhinar is a backend and DevOps specialist focused on scalable systems, automation, and reliable infrastructure."
+                bio="Bhinsar is a backend and DevOps specialist focused on scalable systems, automation, and reliable infrastructure."
                 specialty="Backend & DevOps"
                 socials={["ph:linkedin-logo-bold", "ph:github-logo-bold"]}
               />
