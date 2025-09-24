@@ -245,8 +245,8 @@ export default function AboutUs() {
             </h3>
             <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
               <TeamCard
-                img="/images/team/ankit_dp.jpeg"
-                name="Rahul Chanchalni"
+                img="/images/team/rahul_dp.png"
+                name="Rahul Chanchlani"
                 role="Software Engineer"
                 bio="Rahul is a frontend and mobile engineer who loves building intuitive, high-performance apps with a user-first approach."
                 specialty="Frontend & Mobile"
@@ -254,7 +254,7 @@ export default function AboutUs() {
               />
 
               <TeamCard
-                img="/images/team/ankit_dp.jpeg"
+                img="/images/team/bhinsar_dp.jpeg"
                 name="Bhinar Jagdish"
                 role="Software Engineer"
                 bio="Bhinar is a backend and DevOps specialist focused on scalable systems, automation, and reliable infrastructure."
@@ -263,7 +263,7 @@ export default function AboutUs() {
               />
 
               <TeamCard
-                img="/images/team/ankit_dp.jpeg"
+                img="/images/team/pratham_dp.png"
                 name="Pratham Mittal"
                 role="Head of Marketing"
                 bio="Pratham drives growth and brand strategy, blending creativity with data-driven insights to scale impact and engagement."
@@ -454,15 +454,15 @@ const TeamCard = ({
   socials: string[];
 }) => (
   <div className="bg-white dark:bg-gray-800 p-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
-    <div className="w-20 h-20 mx-auto rounded-full overflow-hidden ring-2 ring-primary/20 mb-4">
-      <Image
-        src={img}
-        alt={name}
-        width={80}
-        height={80}
-        className="w-full h-full object-cover"
-      />
-    </div>
+   <div className="w-32 h-32 mx-auto rounded-full overflow-hidden ring-4 ring-primary/20">
+        <Image
+          src={img}
+          alt={name}
+          width={128}
+          height={128}
+          className="w-full h-full object-cover"
+        />
+      </div>
     <div className="text-center">
       <h4 className="text-lg font-bold text-dark dark:text-white mb-1">
         {name}
