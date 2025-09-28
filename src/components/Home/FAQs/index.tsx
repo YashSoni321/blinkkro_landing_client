@@ -34,12 +34,12 @@ const FAQ: React.FC = () => {
               FAQs
             </p>
             <h2 className="lg:text-52 text-40 leading-[1.2] font-medium text-dark dark:text-white">
-              Everything about BlinkKaro
+              Everything about KartSquare
             </h2>
             <p className="text-dark/50 dark:text-white/50 pr-20">
               We believe booking services should be simple, safe, and valuable.
               Here are some frequently asked questions to help you trust and use
-              BlinkKaro with ease.
+              KartSquare with ease.
             </p>
 
             {/* Accordion */}
@@ -52,10 +52,10 @@ const FAQ: React.FC = () => {
               >
                 <AccordionItem value="item-1">
                   <AccordionTrigger>
-                    1. Is BlinkKaro easy to use?
+                    1. Is KartSquare easy to use?
                   </AccordionTrigger>
                   <AccordionContent>
-                    Yes! BlinkKaro is designed with a simple and intuitive
+                    Yes! KartSquare is designed with a simple and intuitive
                     interface. Search, compare, and book services in just a few
                     taps — no confusion, just convenience.
                   </AccordionContent>
@@ -63,7 +63,7 @@ const FAQ: React.FC = () => {
 
                 <AccordionItem value="item-2">
                   <AccordionTrigger>
-                    2. Is BlinkKaro safe and secure?
+                    2. Is KartSquare safe and secure?
                   </AccordionTrigger>
                   <AccordionContent>
                     Absolutely. We use secure payment gateways, verified service
@@ -74,10 +74,10 @@ const FAQ: React.FC = () => {
 
                 <AccordionItem value="item-3">
                   <AccordionTrigger>
-                    3. How does BlinkKaro provide value?
+                    3. How does KartSquare provide value?
                   </AccordionTrigger>
                   <AccordionContent>
-                    BlinkKaro saves you time and effort by connecting you to
+                    KartSquare saves you time and effort by connecting you to
                     trending services instantly. From real-time availability to
                     exclusive offers, we make sure you always get the best deal
                     and experience.

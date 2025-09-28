@@ -51,7 +51,7 @@ const BlogSmall: React.FC = () => {
                 className="text-2xl text-primary"
                 aria-label="Blog icon"
               />
-              BlinkKaro Blog
+              KartSquare Blog
             </p>
             <h2 className="lg:text-52 text-40 font-medium dark:text-white">
               <span className="text-primary">Smart Tips</span> for Busy Lives

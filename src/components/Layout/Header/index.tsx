@@ -242,7 +242,7 @@ const Header: React.FC = () => {
               href="#"
               className="text-base sm:text-xm font-medium text-inherit hover:text-primary"
             >
-              hello@blinkkaro.com
+              hello@kartsquare.com
             </Link>
             <Link
               href="#"

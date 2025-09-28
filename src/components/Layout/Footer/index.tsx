@@ -9,7 +9,7 @@ const Footer = () => {
         {/* Newsletter Section */}
         <div className="flex lg:items-center justify-between items-end lg:gap-11 pb-14 border-b border-white/10 lg:flex-nowrap flex-wrap gap-6">
           <p className="text-white text-sm lg:max-w-1/5">
-            Stay updated with the latest BlinkKaro news, service updates, and
+            Stay updated with the latest KartSquare news, service updates, and
             exclusive offers.
           </p>
           <div className="flex lg:flex-row flex-col items-center lg:gap-10 gap-3">
@@ -24,7 +24,7 @@ const Footer = () => {
               </button> */}
             </div>
             <p className="text-white/40 text-sm lg:max-w-[45%] order-1 lg:order-2">
-              By subscribing, you agree to receive BlinkKaro updates. You can
+              By subscribing, you agree to receive KartSquare updates. You can
               unsubscribe at any time.
             </p>
           </div>
@@ -62,7 +62,7 @@ const Footer = () => {
           <div className="grid grid-cols-12 sm:gap-10 gap-y-6">
             <div className="md:col-span-7 col-span-12">
               <h2 className="text-white leading-[1.2] text-40 font-medium mb-6 lg:max-w-3/4">
-                Simplify your bookings. Get started with BlinkKaro today.
+                Simplify your bookings. Get started with KartSquare today.
               </h2>
               <Link
                 href="/contactus"
@@ -105,7 +105,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="flex justify-between md:flex-nowrap flex-wrap items-center py-6 gap-6">
           <p className="text-white/40 text-sm">
-            ©2025 BlinkKaro — Designed & Developed with ❤️
+            ©2025 KartSquare — Designed & Developed with ❤️
           </p>
           <div className="flex gap-8 items-center">
             <Link href="#" className="text-white/40 hover:text-primary text-sm">

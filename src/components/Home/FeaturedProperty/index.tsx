@@ -16,7 +16,7 @@ export default function AboutUs() {
 
   return (
     <section className="container max-w-8xl mx-auto px-4 sm:px-5 2xl:px-0 overflow-hidden">
-      {/* What is BlinkKaro */}
+      {/* What is KartSquare */}
       <div className="grid lg:grid-cols-2 gap-8 lg:gap-10 items-center">
         {/* Carousel */}
         <div className="relative order-1 lg:order-2">
@@ -50,7 +50,7 @@ export default function AboutUs() {
                 icon="mdi:lightning-bolt"
                 className="text-2xl text-primary"
               />
-              How BlinkKaro Works
+              How KartSquare Works
             </p>
             <h2 className="lg:text-52 text-40 font-medium text-dark dark:text-white">
               <span className="text-primary">3 Simple Steps</span> to Get Any Service Done
@@ -69,7 +69,7 @@ export default function AboutUs() {
           </div>
 
           <p className="text-base text-dark/50 dark:text-white/50">
-            Whether you need a plumber at midnight or a chef for tomorrow&apos;s party, BlinkKaro makes it happen. Our smart matching connects you with the perfect professional in your area, handles payments securely, and ensures quality every time.
+            Whether you need a plumber at midnight or a chef for tomorrow&apos;s party, KartSquare makes it happen. Our smart matching connects you with the perfect professional in your area, handles payments securely, and ensures quality every time.
           </p>
 
           {/* Steps Grid */}

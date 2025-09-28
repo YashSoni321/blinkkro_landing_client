@@ -6,21 +6,21 @@ import Testimonial from "@/components/Home/Testimonial";
 import BlogSmall from "@/components/shared/Blog";
 import GetInTouch from "@/components/Home/GetInTouch";
 import FAQ from "@/components/Home/FAQs";
-import AboutBlinkKaro from "@/components/Home/AboutBlinkKaro";
-import BlinkKaroSolutions from "@/components/Home/BlinkkaroSolutions";
+import AboutKartSquare from "@/components/Home/AboutKartSquare";
+import KartSquareSolutions from "@/components/Home/KartSquareSolutions";
 import IndustriesSection from "@/components/Home/Industries/page";
 
 export default function Home() {
   return (
     <main className="overflow-x-hidden">
       <Hero />
-      <AboutBlinkKaro />
+      <AboutKartSquare />
       <Services />
       <Properties />
       <IndustriesSection />
       <FeaturedProperty />
       <Testimonial />
-      <BlinkKaroSolutions />
+      <KartSquareSolutions />
       <BlogSmall />
       <GetInTouch />
       <FAQ />

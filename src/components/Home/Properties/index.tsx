@@ -17,7 +17,7 @@ const Properties: React.FC = () => {
               />
             </span>
             <p className="text-base font-semibold text-dark/75 dark:text-white/75">
-              BlinkKaro Services
+              KartSquare Services
             </p>
           </div>
           <h2 className="text-40 lg:text-52 font-medium text-black dark:text-white text-center tracking-tight leading-11 mb-2">

@@ -7,34 +7,34 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title:
-    "Our Story - How 3 Friends Built India&apos;s Most Loved Service Platform | BlinkKaro",
+    "Our Story - How 3 Friends Built India&apos;s Most Loved Service Platform | KartSquare",
   description:
-    "From a midnight plumbing crisis to building BlinkKaro - discover the inspiring journey of 3 friends who solved India&apos;s biggest service booking problem. Join 50K+ happy customers today!",
+    "From a midnight plumbing crisis to building KartSquare - discover the inspiring journey of 3 friends who solved India&apos;s biggest service booking problem. Join 50K+ happy customers today!",
   keywords: [
-    "BlinkKaro founders story",
+    "KartSquare founders story",
     "startup journey India",
     "service booking revolution",
     "trusted home services",
     "Indian startup success",
     "service platform founders",
-    "BlinkKaro mission vision",
+    "KartSquare mission vision",
   ],
   openGraph: {
     title:
       "Our Story - How 3 Friends Built India&apos;s Most Loved Service Platform",
     description:
-      "From a midnight crisis to serving 50K+ customers - the inspiring BlinkKaro story. Meet the founders who revolutionized how India books services.",
-    url: "https://blinkkaro.com/aboutus",
+      "From a midnight crisis to serving 50K+ customers - the inspiring KartSquare story. Meet the founders who revolutionized how India books services.",
+    url: "https://kartsquare.com/aboutus",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "The BlinkKaro Story - 3 Friends, 1 Mission",
+    title: "The KartSquare Story - 3 Friends, 1 Mission",
     description:
       "How a midnight plumbing crisis led to India&apos;s most trusted service platform.",
   },
   alternates: {
-    canonical: "https://blinkkaro.com/aboutus",
+    canonical: "https://kartsquare.com/aboutus",
   },
 };
 
@@ -304,7 +304,7 @@ export default function AboutUs() {
           <p className="text-xl text-white/80 mb-8 max-w-2xl mx-auto">
             Whether you&apos;re a customer looking for reliable services or a
             professional wanting to grow your business, there&apos;s a place for
-            you in the BlinkKaro family.
+            you in the KartSquare family.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

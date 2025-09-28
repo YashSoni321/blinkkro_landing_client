@@ -1,7 +1,7 @@
 "use client";
 import { Icon } from "@iconify/react";
 
-export default function AboutBlinkKaro() {
+export default function AboutKartSquare() {
   const features = [
     {
       icon: "ph:clock-clockwise",
@@ -37,7 +37,7 @@ export default function AboutBlinkKaro() {
               <div className="bg-white dark:bg-gray-800 rounded-3xl p-4 sm:p-6 shadow-2xl mx-auto w-full max-w-80">
                 <div className="bg-gradient-to-br from-primary to-primary/80 rounded-2xl p-6 text-white mb-4">
                   <div className="flex items-center justify-between mb-4">
-                    <h3 className="font-bold text-lg">BlinkKaro</h3>
+                    <h3 className="font-bold text-lg">KartSquare</h3>
                     <Icon icon={"ph:bell"} width={24} height={24} />
                   </div>
                   <p className="text-sm opacity-90">Find services near you</p>
@@ -129,26 +129,26 @@ export default function AboutBlinkKaro() {
                 className="text-primary"
               />
               <p className="text-base font-semibold text-primary">
-                What is BlinkKaro?
+                What is KartSquare?
               </p>
             </div>
 
             <h2 className="text-4xl sm:text-52 font-bold tracking-tighter text-dark dark:text-white mb-6">
-              Why Waste Time When You Can <span className="text-primary">BlinkKaro</span>?
+              Why Waste Time When You Can <span className="text-primary">KartSquare</span>?
             </h2>
 
             <p className="text-xm text-dark/70 dark:text-white/70 mb-8 leading-relaxed">
-              BlinkKaro makes life effortless by bringing **everyday services to
+              KartSquare makes life effortless by bringing **everyday services to
               your fingertips**. Whether it’s fixing a leaky tap, getting a
               quick AC repair, booking a salon at home, or planning your next
-              big celebration—BlinkKaro connects you with **trusted, verified
+              big celebration—KartSquare connects you with **trusted, verified
               professionals in seconds**.
             </p>
 
             <p className="text-xm text-dark/70 dark:text-white/70 mb-8 leading-relaxed">
               No more long searches, confusing prices, or unreliable providers.
-              With BlinkKaro, you get **speed, transparency, and peace of
-              mind**—all in a blink ✨.
+              With KartSquare, you get **speed, transparency, and peace of
+              mind**—all in one square ✨.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
@@ -176,7 +176,7 @@ export default function AboutBlinkKaro() {
 
             <div className="flex flex-col sm:flex-row gap-4">
               <button className="px-8 py-4 bg-primary text-white rounded-full font-semibold hover:bg-dark transition-colors duration-300">
-                Try BlinkKaro Now
+                Try KartSquare Now
               </button>
               <button className="px-8 py-4 border-2 border-primary text-primary rounded-full font-semibold hover:bg-primary hover:text-white transition-all duration-300">
                 Start Earning Today

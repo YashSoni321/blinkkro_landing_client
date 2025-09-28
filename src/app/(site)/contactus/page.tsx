@@ -4,25 +4,25 @@ import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact BlinkKaro - Get Help & Support | Customer Service India",
+  title: "Contact KartSquare - Get Help & Support | Customer Service India",
   description:
-    "Need help with BlinkKaro services? Contact our 24/7 support team. Get instant assistance for bookings, payments, or service queries. We're here to help!",
+    "Need help with KartSquare services? Contact our 24/7 support team. Get instant assistance for bookings, payments, or service queries. We're here to help!",
   keywords: [
-    "BlinkKaro contact",
+    "KartSquare contact",
     "customer support",
     "help center",
     "service support",
     "24/7 assistance",
-    "BlinkKaro help",
+    "KartSquare help",
   ],
   openGraph: {
-    title: "Contact BlinkKaro - Get Help & Support",
+    title: "Contact KartSquare - Get Help & Support",
     description:
-      "Reach out to BlinkKaro's support team for any assistance. Quick response guaranteed for all your service booking needs.",
-    url: "https://blinkkaro.com/contactus",
+      "Reach out to KartSquare's support team for any assistance. Quick response guaranteed for all your service booking needs.",
+    url: "https://kartsquare.com/contactus",
   },
   alternates: {
-    canonical: "https://blinkkaro.com/contactus",
+    canonical: "https://kartsquare.com/contactus",
   },
 };
 
@@ -48,7 +48,7 @@ export default function ContactUs() {
             Have questions? We’re here to help.
           </h3>
           <p className="text-xm font-normal tracking-tight text-black/50 dark:text-white/50 leading-6">
-            BlinkKaro is built to be easy, safe, and valuable for everyone.
+            KartSquare is built to be easy, safe, and valuable for everyone.
             Reach out to us anytime — whether it’s about our services, your
             account, or how we can make your experience even better.
           </p>
@@ -88,14 +88,14 @@ export default function ContactUs() {
                 <div className="flex items-center gap-4 group w-fit">
                   <Icon icon={"ph:envelope-simple"} width={32} height={32} />
                   <p className="text-sm xs:text-base mobile:text-xm font-normal group-hover:text-primary">
-                    support@blinkkaro.com
+                    support@kartsquare.com
                   </p>
                 </div>
               </Link>
               <div className="flex items-center gap-4">
                 <Icon icon={"ph:map-pin"} width={32} height={32} />
                 <p className="text-sm xs:text-base mobile:text-xm font-normal">
-                  BlinkKaro HQ, Bangalore, India
+                  KartSquare HQ, Bangalore, India
                 </p>
               </div>
             </div>

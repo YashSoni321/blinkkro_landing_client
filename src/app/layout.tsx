@@ -12,18 +12,18 @@ const font = Bricolage_Grotesque({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title:
-    "BlinkKaro - Service Booking App | Book Home Services, Plumber, Electrician, Cleaning | Blink Karo India",
+    "KartSquare - Service Booking App | Book Home Services, Plumber, Electrician, Cleaning | KartSquare India",
   description:
-    "Book trusted home services instantly with BlinkKaro! Find verified plumbers, electricians, cleaners, AC repair, salon services & more. Same-day booking, transparent pricing. India's #1 service booking platform with 50K+ services delivered. Download BlinkKaro app now!",
+    "Book trusted home services instantly with KartSquare! Find verified plumbers, electricians, cleaners, AC repair, salon services & more. Same-day booking, transparent pricing. India's #1 service booking platform with 50K+ services delivered. Download KartSquare app now!",
   keywords: [
     "service booking",
     "service booking app",
     "book services online",
     "home service booking",
-    "BlinkKaro",
-    "Blink Karo",
-    "blinkkaro",
-    "blink",
+    "KartSquare",
+    "Kart Square",
+    "kartsquare",
+    "kart",
     "book plumber online",
     "book electrician",
     "home services near me",
@@ -64,9 +64,9 @@ export const metadata: Metadata = {
     "Jaipur service booking",
     "Lucknow home services"
   ],
-  authors: [{ name: "BlinkKaro Team" }],
-  creator: "BlinkKaro",
-  publisher: "BlinkKaro",
+  authors: [{ name: "KartSquare Team" }],
+  creator: "KartSquare",
+  publisher: "KartSquare",
   robots: {
     index: true,
     follow: true,
@@ -81,30 +81,30 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_IN",
-    url: "https://blinkkaro.com",
-    title: "BlinkKaro - India's #1 Service Booking App | Book Home Services Instantly",
+    url: "https://kartsquare.com",
+    title: "KartSquare - India's #1 Service Booking App | Book Home Services Instantly",
     description:
       "Book trusted home services in seconds! Verified plumbers, electricians, cleaners, AC repair, salon services & more. 50K+ services delivered across India. Same-day booking with transparent pricing.",
-    siteName: "BlinkKaro",
+    siteName: "KartSquare",
     images: [
       {
-        url: "/images/hero/blinkkaro-service-booking.jpg",
+        url: "/images/hero/kartsquare-service-booking.jpg",
         width: 1200,
         height: 630,
-        alt: "BlinkKaro - Book Home Services Instantly",
+        alt: "KartSquare - Book Home Services Instantly",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "BlinkKaro - Book Home Services Instantly | Service Booking App",
+    title: "KartSquare - Book Home Services Instantly | Service Booking App",
     description:
       "India's most trusted service booking platform. Book plumbers, electricians, cleaners & more in seconds. 50K+ services delivered with transparent pricing.",
-    creator: "@BlinkKaro",
-    images: ["/images/hero/blinkkaro-service-booking.jpg"],
+    creator: "@KartSquare",
+    images: ["/images/hero/kartsquare-service-booking.jpg"],
   },
   alternates: {
-    canonical: "https://blinkkaro.com",
+    canonical: "https://kartsquare.com",
   },
   other: {
     "google-site-verification": "your-google-verification-code",

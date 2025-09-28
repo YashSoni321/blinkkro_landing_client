@@ -11,7 +11,7 @@ import {
   type CarouselApi,
 } from "@/components/ui/carousel";
 
-const BlinkKaroSolutions: React.FC = () => {
+const KartSquareSolutions: React.FC = () => {
   const [api, setApi] = React.useState<CarouselApi | undefined>(undefined);
   const [current, setCurrent] = React.useState(0);
   const [count, setCount] = React.useState(0);
@@ -65,7 +65,7 @@ const BlinkKaroSolutions: React.FC = () => {
               ))}
             </div>
           </div>
-          {/* Left Side - BlinkKaro Content */}
+          {/* Left Side - KartSquare Content */}
           <div className="flex flex-col gap-10 order-2 lg:order-1">
             <div>
               <p className="text-dark/75 dark:text-white/75 text-base font-semibold flex gap-2">
@@ -73,7 +73,7 @@ const BlinkKaroSolutions: React.FC = () => {
                   icon="mdi:lightning-bolt"
                   className="text-2xl text-primary"
                 />
-                Why Choose BlinkKaro?
+                Why Choose KartSquare?
               </p>
               <h2 className="lg:text-52 text-40 font-medium text-dark dark:text-white">
                 Life&apos;s Too Complicated. <span className="text-primary">We Made It Simple</span>
@@ -92,10 +92,10 @@ const BlinkKaroSolutions: React.FC = () => {
             </div>
 
             <p className="text-base text-dark/50 dark:text-white/50">
-              BlinkKaro eliminates the frustration of searching endlessly,
+              KartSquare eliminates the frustration of searching endlessly,
               calling multiple providers, and worrying about trust or payments.
               Whether it’s beauty, wellness, home services, or events —
-              BlinkKaro brings everything under one secure and smart platform.
+              KartSquare brings everything under one secure and smart platform.
             </p>
 
             {/* Problems Solved Grid */}
@@ -162,4 +162,4 @@ Join 10K+ Happy Users
   );
 };
 
-export default BlinkKaroSolutions;
+export default KartSquareSolutions;
