@@ -3,12 +3,23 @@ import PropertiesListing from "@/components/Properties/PropertyList";
 import React from "react";
 import { Metadata } from "next";
 export const metadata: Metadata = {
-  title: "All Services - Home, Beauty, Events & More | BlinkKaro Service Marketplace",
-  description: "Browse 50+ verified services on BlinkKaro. From home cleaning to event planning, beauty treatments to repairs - find trusted professionals with transparent pricing.",
-  keywords: ["home services", "beauty services", "event planning", "repair services", "verified professionals", "service marketplace", "BlinkKaro services"],
+  title:
+    "All Services - Home, Beauty, Join Waitlist & More | BlinkKaro Service Marketplace",
+  description:
+    "Browse 50+ verified services on BlinkKaro. From home cleaning to event planning, beauty treatments to repairs - find trusted professionals with transparent pricing.",
+  keywords: [
+    "home services",
+    "beauty services",
+    "event planning",
+    "repair services",
+    "verified professionals",
+    "service marketplace",
+    "BlinkKaro services",
+  ],
   openGraph: {
-    title: "All Services - Home, Beauty, Events & More | BlinkKaro",
-    description: "Discover 50+ trusted services with verified professionals. Book instantly with transparent pricing and 24/7 support.",
+    title: "All Services - Home, Beauty, Join Waitlist & More | BlinkKaro",
+    description:
+      "Discover 50+ trusted services with verified professionals. Book instantly with transparent pricing and 24/7 support.",
     url: "https://blinkkaro.com/services",
   },
   alternates: {
