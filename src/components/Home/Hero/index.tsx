@@ -9,23 +9,26 @@ const Hero: React.FC = () => {
         <div className="container max-w-8xl mx-auto px-4 sm:px-5 2xl:px-0 pt-32 md:pt-60 md:pb-68">
           <div className="text-center md:text-left max-w-2xl">
             <h1 className="text-4xl md:text-6xl font-extrabold text-white dark:text-gray-100 leading-tight mb-6">
-              Life&apos;s Too Short for <span className="text-primary">Service Hassles</span>
+              Life&apos;s Too Short for{" "}
+              <span className="text-primary">Service Hassles</span>
             </h1>
             <p className="text-lg md:text-xl text-white/90 dark:text-gray-300 mb-8">
-              From emergency plumbing to weekend parties, from home cleaning to personal tutoring — get trusted professionals at your doorstep in just one tap. Because your time matters!
+              From emergency plumbing to weekend parties, from home cleaning to
+              personal tutoring — get trusted professionals at your doorstep in
+              just one tap. Because your time matters!
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
               <Link
-                href="/contactus"
+                href="/waitlist"
                 className="px-8 py-4 bg-white text-blue-600 font-semibold rounded-full shadow-lg hover:scale-105 transition-transform"
               >
-Get Early Access
+                Get Early Access
               </Link>
               <Link
                 href="/"
                 className="px-8 py-4 border-2 border-white text-white font-semibold rounded-full hover:bg-white hover:text-blue-600 transition-colors"
               >
-Earn with BlinkKaro
+                Earn with BlinkKaro
               </Link>
             </div>
           </div>
@@ -33,8 +36,8 @@ Earn with BlinkKaro
             <Image
               src="/images/hero/pair_hero_image.png"
               alt="hero booking illustration"
-              width={600}
-              height={600}
+              width={400}
+              height={100}
               priority={false}
               unoptimized={true}
             />

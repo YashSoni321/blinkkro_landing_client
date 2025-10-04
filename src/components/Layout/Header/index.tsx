@@ -153,19 +153,19 @@ const Header: React.FC = () => {
           <div>
             <button
               onClick={() => setNavbarOpen(!navbarOpen)}
-              className={`flex items-center gap-3 p-2 sm:px-5 sm:py-3 rounded-full font-semibold hover:cursor-pointer border ${
+              className={`flex items-center gap-2 sm:gap-3 px-3 py-2 sm:px-5 sm:py-3 rounded-full font-semibold hover:cursor-pointer border transition-all duration-300 ${
                 isHomepage
                   ? sticky
                     ? "text-white bg-dark dark:bg-white dark:text-dark dark:hover:text-white dark:hover:bg-dark hover:text-dark hover:bg-white border-dark dark:border-white"
                     : "text-dark bg-white dark:text-dark hover:bg-transparent hover:text-white border-white"
-                  : "bg-dark text-white hover:bg-transparent hover:text-dark dark:bg-white dark:text-dark dark:hover:bg-transparent dark:hover:text-white duration-300"
+                  : "bg-dark text-white hover:bg-transparent hover:text-dark dark:bg-white dark:text-dark dark:hover:bg-transparent dark:hover:text-white"
               }`}
               aria-label="Toggle menu"
             >
               <span>
-                <Icon icon={"ph:list"} width={24} height={24} />
+                <Icon icon={"ph:list"} width={20} height={20} className="sm:w-6 sm:h-6" />
               </span>
-              <span className="hidden sm:block">Menu</span>
+              <span className="hidden sm:block text-sm sm:text-base">Menu</span>
             </button>
           </div>
         </div>
@@ -179,22 +179,23 @@ const Header: React.FC = () => {
         ref={sideMenuRef}
         className={`fixed top-0 right-0 h-full bg-dark shadow-lg transition-transform duration-300 
     ${navbarOpen ? "translate-x-0" : "translate-x-full"}
-    z-50 px-6 sm:px-20 overflow-y-auto
-    w-4/5 sm:w-[400px]`}
+    z-50 px-4 sm:px-6 lg:px-8 overflow-y-auto
+    w-full xs:w-4/5 sm:w-96 md:w-[400px] max-w-md`}
       >
         <div className="flex flex-col h-full justify-between">
           <div className="">
-            <div className="flex items-center justify-start py-10">
+            <div className="flex items-center justify-start py-6 sm:py-8 lg:py-10">
               <button
                 onClick={() => setNavbarOpen(false)}
                 aria-label="Close mobile menu"
-                className="bg-white p-3 rounded-full hover:cursor-pointer"
+                className="bg-white p-2 sm:p-3 rounded-full hover:cursor-pointer transition-transform hover:scale-105"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
+                  width="20"
+                  height="20"
                   viewBox="0 0 24 24"
+                  className="sm:w-6 sm:h-6"
                 >
                   <path
                     fill="none"
@@ -207,8 +208,8 @@ const Header: React.FC = () => {
                 </svg>
               </button>
             </div>
-            <nav className="flex flex-col items-start gap-4">
-              <ul className="w-full">
+            <nav className="flex flex-col items-start gap-2 sm:gap-4">
+              <ul className="w-full space-y-1">
                 {navLinks.map((item, index) => (
                   <NavLink
                     key={index}
@@ -216,16 +217,16 @@ const Header: React.FC = () => {
                     onClick={() => setNavbarOpen(false)}
                   />
                 ))}
-                <li className="flex items-center gap-4">
+                <li className="flex flex-col xs:flex-row items-start xs:items-center gap-3 xs:gap-4 pt-4">
                   <Link
                     href="/signin"
-                    className="py-4 px-8 bg-primary text-base leading-4 block w-fit text-white rounded-full border border-primary font-semibold mt-3 hover:bg-transparent hover:text-primary duration-300"
+                    className="py-3 px-6 sm:py-4 sm:px-8 bg-primary text-sm sm:text-base leading-4 block w-full xs:w-fit text-center text-white rounded-full border border-primary font-semibold hover:bg-transparent hover:text-primary duration-300"
                   >
                     Sign In
                   </Link>
                   <Link
                     href="/"
-                    className="py-4 px-8 bg-transparent border border-primary text-base leading-4 block w-fit text-primary rounded-full font-semibold mt-3 hover:bg-primary hover:text-white duration-300"
+                    className="py-3 px-6 sm:py-4 sm:px-8 bg-transparent border border-primary text-sm sm:text-base leading-4 block w-full xs:w-fit text-center text-primary rounded-full font-semibold hover:bg-primary hover:text-white duration-300"
                   >
                     Sign up
                   </Link>
@@ -234,21 +235,21 @@ const Header: React.FC = () => {
             </nav>
           </div>
 
-          <div className="flex flex-col gap-1 my-16 text-white">
-            <p className="text-base sm:text-xm font-normal text-white/40">
+          <div className="flex flex-col gap-1 sm:gap-2 my-8 sm:my-12 lg:my-16 text-white">
+            <p className="text-sm sm:text-base font-normal text-white/40">
               Contact
             </p>
             <Link
               href="#"
-              className="text-base sm:text-xm font-medium text-inherit hover:text-primary"
+              className="text-sm sm:text-base font-medium text-inherit hover:text-primary transition-colors duration-200 break-all"
             >
               hello@blinkkaro.com
             </Link>
             <Link
               href="#"
-              className="text-base sm:text-xm font-medium text-inherit hover:text-primary"
+              className="text-sm sm:text-base font-medium text-inherit hover:text-primary transition-colors duration-200"
             >
-              +1-212-456-7890{" "}
+              +1-212-456-7890
             </Link>
           </div>
         </div>
