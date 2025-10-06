@@ -4,9 +4,9 @@ import React from "react";
 import { Metadata } from "next";
 export const metadata: Metadata = {
   title:
-    "All Services - Home, Beauty, Events & More | KartSquare Service Marketplace",
+    "All Services - Home, Beauty, Join Waitlist & More | BlinkKaro Service Marketplace",
   description:
-    "Browse 50+ verified services on kartsquare. From home cleaning to event planning, beauty treatments to repairs - find trusted professionals with transparent pricing.",
+    "Browse 50+ verified services on BlinkKaro. From home cleaning to event planning, beauty treatments to repairs - find trusted professionals with transparent pricing.",
   keywords: [
     "home services",
     "beauty services",
@@ -14,13 +14,13 @@ export const metadata: Metadata = {
     "repair services",
     "verified professionals",
     "service marketplace",
-    "KartSquare services",
+    "BlinkKaro services",
   ],
   openGraph: {
-    title: "All Services - Home, Beauty, Events & More | kartsquare",
+    title: "All Services - Home, Beauty, Join Waitlist & More | BlinkKaro",
     description:
       "Discover 50+ trusted services with verified professionals. Book instantly with transparent pricing and 24/7 support.",
-    url: "https://kartsquare.com/services",
+    url: "https://blinkkaro.com/services",
   },
   alternates: {
     canonical: "https://kartsquare.com/services",

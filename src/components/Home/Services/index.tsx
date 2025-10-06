@@ -24,8 +24,8 @@ const Categories = () => {
         />
       </div>
       <div className="container max-w-8xl mx-auto px-5 2xl:px-0 relative z-10">
-        <div className="grid grid-cols-12 items-center gap-10">
-          <div className="lg:col-span-6 col-span-12">
+        <div className="grid grid-cols-12 items-start gap-4 sm:gap-6 lg:gap-10">
+          <div className="lg:col-span-6 col-span-12 mb-6 lg:mb-0">
             <p className="text-dark/75 dark:text-white/75 text-base font-semibold flex gap-2.5">
               <Icon
                 icon="ph:calendar-check-fill"
@@ -52,14 +52,14 @@ const Categories = () => {
           </div>
 
           <div className="lg:col-span-3 col-span-6">
-            <div className="relative rounded-2xl overflow-hidden group">
+            <div className="relative rounded-2xl overflow-hidden group h-64 sm:h-80 lg:h-96">
               <Link href="/house_services">
                 <Image
                   src="/images/kartsquare_main_categories/house_cleaning.png"
                   alt="house_services"
                   width={320}
                   height={380}
-                  className="w-full"
+                  className="w-full h-full object-cover"
                   unoptimized={false}
                 />
               </Link>
@@ -86,14 +86,14 @@ const Categories = () => {
           </div>
 
           <div className="lg:col-span-3 col-span-6">
-            <div className="relative rounded-2xl overflow-hidden group">
+            <div className="relative rounded-2xl overflow-hidden group h-64 sm:h-80 lg:h-96">
               <Link href="/wellness">
                 <Image
                   src="/images/kartsquare_main_categories/home_services.png"
                   alt="wellness"
                   width={320}
                   height={380}
-                  className="w-full"
+                  className="w-full h-full object-cover"
                   unoptimized={false}
                 />
               </Link>
@@ -120,14 +120,14 @@ const Categories = () => {
           </div>
 
           <div className="lg:col-span-3 col-span-6">
-            <div className="relative rounded-2xl overflow-hidden group">
+            <div className="relative rounded-2xl overflow-hidden group h-64 sm:h-80 lg:h-96">
               <Link href="/events">
                 <Image
-                  src="/images/kartsquare_main_categories/event.png"
-                  alt="events"
+                  src="/images/blinkkaro_main_categories/event.png"
+                  alt="events222"
                   width={320}
                   height={386}
-                  className="w-full"
+                  className="w-full h-full object-cover"
                   unoptimized={true}
                 />
               </Link>
@@ -154,14 +154,14 @@ const Categories = () => {
           </div>
 
           <div className="lg:col-span-3 col-span-6">
-            <div className="relative rounded-2xl overflow-hidden group">
+            <div className="relative rounded-2xl overflow-hidden group h-64 sm:h-80 lg:h-96">
               <Link href="/entertainment">
                 <Image
                   src="/images/kartsquare_main_categories/astro.png"
                   alt="Astrology & Consultation"
                   width={320}
                   height={386}
-                  className="w-full"
+                  className="w-full h-full object-cover"
                   unoptimized={true}
                 />
               </Link>
@@ -187,14 +187,14 @@ const Categories = () => {
             </div>
           </div>
           <div className="lg:col-span-3 col-span-6">
-            <div className="relative rounded-2xl overflow-hidden group">
+            <div className="relative rounded-2xl overflow-hidden group h-64 sm:h-80 lg:h-96">
               <Link href="/home-services">
                 <Image
                   src="/images/kartsquare_main_categories/chef.png"
                   alt="home services"
                   width={320}
                   height={380}
-                  className="w-full"
+                  className="w-full h-full object-cover"
                   unoptimized={false}
                 />
               </Link>
@@ -221,14 +221,14 @@ const Categories = () => {
           </div>
 
           <div className="lg:col-span-3 col-span-6">
-            <div className="relative rounded-2xl overflow-hidden group">
+            <div className="relative rounded-2xl overflow-hidden group h-64 sm:h-80 lg:h-96">
               <Link href="/personal-chefs">
                 <Image
                   src="/images/kartsquare_main_categories/tutor.png"
                   alt="tutor"
                   width={320}
                   height={386}
-                  className="w-full"
+                  className="w-full h-full object-cover"
                   unoptimized={true}
                 />
               </Link>

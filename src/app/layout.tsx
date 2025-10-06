@@ -7,6 +7,7 @@ import { ThemeProvider } from "next-themes";
 import NextTopLoader from "nextjs-toploader";
 import SessionProviderComp from "@/components/nextauth/SessionProvider";
 import ThemeProviderComp from "@/components/provider/ThemeProviderComp";
+import { Toaster } from "react-hot-toast";
 
 const font = Bricolage_Grotesque({ subsets: ["latin"] });
 
@@ -62,7 +63,7 @@ export const metadata: Metadata = {
     "Kolkata service providers",
     "Ahmedabad home services",
     "Jaipur service booking",
-    "Lucknow home services"
+    "Lucknow home services",
   ],
   authors: [{ name: "KartSquare Team" }],
   creator: "KartSquare",
@@ -81,8 +82,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_IN",
-    url: "https://kartsquare.com",
-    title: "KartSquare - India's #1 Service Booking App | Book Home Services Instantly",
+    url: "https://blinkkaro.com",
+    title:
+      "BlinkKaro - India's #1 Service Booking App | Book Home Services Instantly",
     description:
       "Book trusted home services in seconds! Verified plumbers, electricians, cleaners, AC repair, salon services & more. 50K+ services delivered across India. Same-day booking with transparent pricing.",
     siteName: "KartSquare",
@@ -124,6 +126,34 @@ export default function RootLayout({
         <SessionProviderComp>
           <ThemeProviderComp>
             <Header />
+            {/* <Toaster position="bottom-right" reverseOrder={false} /> */}
+            <Toaster
+              position="bottom-right" // top-left, bottom-right, etc.
+              reverseOrder={false} // newest toast at bottom
+              toastOptions={{
+                // Default options for all toasts
+                duration: 2000, // 2 seconds
+                style: {
+                  background: "#333",
+                  color: "#fff",
+                  padding: "16px",
+                  borderRadius: "10px",
+                  fontSize: "16px",
+                  fontWeight: "500",
+                },
+                success: {
+                  icon: "✅", // custom success icon
+                  style: { background: "#4BB543" },
+                },
+                error: {
+                  icon: "❌", // custom error icon
+                  style: { background: "#FF4D4F" },
+                },
+                loading: {
+                  style: { background: "#FFA500" },
+                },
+              }}
+            />
             {children}
             <Footer />
           </ThemeProviderComp>
