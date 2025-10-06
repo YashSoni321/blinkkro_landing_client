@@ -1,0 +1,18 @@
+{
+  "navigation": {
+    "home": "होम",
+    "about us": "हमारे बारे में",
+    "services": "सेवाएं",
+    "join waitlist": "प्रतीक्षा सूची में शामिल हों",
+    "blog": "ब्लॉग",
+    "contact": "संपर्क",
+    "signin": "साइन इन",
+    "signup": "साइन अप"
+  },
+  "common": {
+    "menu": "मेनू",
+    "contact": "संपर्क",
+    "phone": "+1-212-456-7890",
+    "email": "hello@kartsquare.com"
+  }
+}

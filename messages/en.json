@@ -1,0 +1,18 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about us": "About Us",
+    "services": "Services",
+    "join waitlist": "Join Waitlist",
+    "blog": "Blog",
+    "contact": "Contact",
+    "signin": "Sign In",
+    "signup": "Sign up"
+  },
+  "common": {
+    "menu": "Menu",
+    "contact": "Contact",
+    "phone": "+1-212-456-7890",
+    "email": "hello@kartsquare.com"
+  }
+}

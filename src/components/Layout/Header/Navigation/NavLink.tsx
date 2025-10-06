@@ -1,7 +1,7 @@
 import { NavLinks } from '@/types/navlink'
 import clsx from 'clsx'
-import Link from 'next/link'
-import { usePathname } from 'next/navigation'
+import { Link, usePathname } from '@/i18n/routing'
+import { useTranslations } from 'next-intl'
 
 interface NavLinkProps {
   item: NavLinks;
@@ -10,6 +10,7 @@ interface NavLinkProps {
 
 const NavLink: React.FC<NavLinkProps> = ({ item, onClick }) => {
   const path = usePathname()
+  const t = useTranslations()
   const itemLabelToPath = `/${item.label.toLowerCase().replace(/\s+/g, '-')}`
 
   const linkclasses = clsx(
@@ -33,7 +34,7 @@ const NavLink: React.FC<NavLinkProps> = ({ item, onClick }) => {
     <li className='flex items-center group w-full py-1'>
       <div className={liststyle} />
       <Link href={item.href} className={linkclasses} onClick={onClick}>
-        {item.label}
+        {t(`navigation.${item.label.toLowerCase()}`)}
       </Link>
     </li>
   )

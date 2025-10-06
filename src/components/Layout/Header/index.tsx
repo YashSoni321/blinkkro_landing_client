@@ -1,11 +1,13 @@
 "use client";
 import { navLinks } from "@/app/api/navlink";
 import { Icon } from "@iconify/react";
-import Link from "next/link";
 import { useEffect, useRef, useState, useCallback } from "react";
 import NavLink from "./Navigation/NavLink";
 import { useTheme } from "next-themes";
-import { usePathname } from "next/navigation";
+import { usePathname } from "@/i18n/routing";
+import { Link } from "@/i18n/routing";
+import { useTranslations } from "next-intl";
+import LanguageSwitcher from "../LanguageSwitcher";
 import Image from "next/image";
 
 const Header: React.FC = () => {
@@ -13,6 +15,7 @@ const Header: React.FC = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
   const { theme, setTheme } = useTheme();
   const pathname = usePathname();
+  const t = useTranslations();
 
   const sideMenuRef = useRef<HTMLDivElement>(null);
 
@@ -112,11 +115,14 @@ const Header: React.FC = () => {
                 : "dark:text-white hover:text-primary"
             }`}
                 >
-                  {item.label}
+                  {t(`navigation.${item.label.toLowerCase()}`)}
                 </Link>
               </li>
             ))}
           </ul>
+
+          {/* Language Switcher */}
+          <LanguageSwitcher isHomepage={isHomepage} sticky={sticky} />
 
           {/* Phone Number (still only on md+ screens) */}
           {/* <div className="hidden md:block">
@@ -170,7 +176,7 @@ const Header: React.FC = () => {
               <span>
                 <Icon icon={"ph:list"} width={20} height={20} className="sm:w-6 sm:h-6" />
               </span>
-              <span className="hidden sm:block text-sm sm:text-base">Menu</span>
+              <span className="hidden sm:block text-sm sm:text-base">{t('common.menu')}</span>
             </button>
           </div>
         </div>
@@ -227,13 +233,13 @@ const Header: React.FC = () => {
                     href="/signin"
                     className="py-3 px-6 sm:py-4 sm:px-8 bg-primary text-sm sm:text-base leading-4 block w-full xs:w-fit text-center text-white rounded-full border border-primary font-semibold hover:bg-transparent hover:text-primary duration-300"
                   >
-                    Sign In
+                    {t('navigation.signin')}
                   </Link>
                   <Link
                     href="/"
                     className="py-3 px-6 sm:py-4 sm:px-8 bg-transparent border border-primary text-sm sm:text-base leading-4 block w-full xs:w-fit text-center text-primary rounded-full font-semibold hover:bg-primary hover:text-white duration-300"
                   >
-                    Sign up
+                    {t('navigation.signup')}
                   </Link>
                 </li>
               </ul>
@@ -242,19 +248,19 @@ const Header: React.FC = () => {
 
           <div className="flex flex-col gap-1 sm:gap-2 my-8 sm:my-12 lg:my-16 text-white">
             <p className="text-sm sm:text-base font-normal text-white/40">
-              Contact
+              {t('common.contact')}
             </p>
             <Link
               href="#"
               className="text-sm sm:text-base font-medium text-inherit hover:text-primary transition-colors duration-200 break-all"
             >
-              hello@kartsquare.com
+              {t('common.email')}
             </Link>
             <Link
               href="#"
               className="text-sm sm:text-base font-medium text-inherit hover:text-primary transition-colors duration-200"
             >
-              +1-212-456-7890
+              {t('common.phone')}
             </Link>
           </div>
         </div>
