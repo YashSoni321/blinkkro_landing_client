@@ -2,7 +2,7 @@ import SignUp from "@/components/Auth/SignUp";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Sign Up | blinkkaro",
+  title: "Sign Up | KartSquare",
 };
 
 const SignUpPage = () => {

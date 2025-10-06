@@ -3,7 +3,7 @@ import OfficeSpace from "@/components/Properties/OfficeSpaces";
 import React from "react";
 import { Metadata } from "next";
 export const metadata: Metadata = {
-  title: "Property List | blinkkaro",
+  title: "Property List | KartSquare",
 };
 
 const page = () => {

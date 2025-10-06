@@ -56,7 +56,7 @@ const Header: React.FC = () => {
     }`}
       >
         <div>
-          <Link href="/">
+          {/* <Link href="/">
             <Image
               src={"/images/logo/logo-light.png"}
               alt="logo"
@@ -89,7 +89,12 @@ const Header: React.FC = () => {
                   : "dark:block hidden"
               }`}
             />
-          </Link>
+          </Link> */}
+          <div className="flex items-center justify-center">
+            <p className="text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-wide flex items-center gap-1">
+              Kart Square
+            </p>
+          </div>
         </div>
         <div className="flex items-center gap-2 sm:gap-6">
           {/* Desktop Navigation Links */}

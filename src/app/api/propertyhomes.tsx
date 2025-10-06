@@ -18,7 +18,7 @@ export const servicesTypes: PropertyHomes[] = [
 
     images: [
       {
-        src: "/images/blinkkaro_main_categories/house_cleaning.png",
+        src: "/images/kartsquare_main_categories/house_cleaning.png",
       },
       {
         src: "/images/properties/property1/image-2.jpg",
@@ -47,7 +47,7 @@ export const servicesTypes: PropertyHomes[] = [
     area: 150,
     images: [
       {
-        src: "/images/blinkkaro_main_categories/home_services.png",
+        src: "/images/kartsquare_main_categories/home_services.png",
       },
       {
         src: "/images/properties/property2/image-2.jpg",
@@ -76,7 +76,7 @@ export const servicesTypes: PropertyHomes[] = [
     area: 180,
     images: [
       {
-        src: "/images/blinkkaro_main_categories/home_services.png",
+        src: "/images/kartsquare_main_categories/home_services.png",
       },
       {
         src: "/images/properties/property3/image-2.jpg",
@@ -105,7 +105,7 @@ export const servicesTypes: PropertyHomes[] = [
     area: 200,
     images: [
       {
-        src: "/images/blinkkaro_main_categories/house_cleaning.png",
+        src: "/images/kartsquare_main_categories/house_cleaning.png",
       },
       {
         src: "/images/properties/property4/image-2.jpg",
@@ -134,7 +134,7 @@ export const servicesTypes: PropertyHomes[] = [
     area: 90,
     images: [
       {
-        src: "/images/blinkkaro_main_categories/chef.png",
+        src: "/images/kartsquare_main_categories/chef.png",
       },
       {
         src: "/images/properties/property5/image-2.jpg",
@@ -164,7 +164,7 @@ export const servicesTypes: PropertyHomes[] = [
     area: 180,
     images: [
       {
-        src: "/images/blinkkaro_main_categories/tutor.png",
+        src: "/images/kartsquare_main_categories/tutor.png",
       },
       {
         src: "/images/properties/property9.jpg",
@@ -193,7 +193,7 @@ export const servicesTypes: PropertyHomes[] = [
     area: 150,
     images: [
       {
-        src: "/images/blinkkaro_main_categories/event.png",
+        src: "/images/kartsquare_main_categories/event.png",
       },
       {
         src: "/images/properties/property2.jpg",
@@ -222,7 +222,7 @@ export const servicesTypes: PropertyHomes[] = [
     area: 120,
     images: [
       {
-        src: "/images/blinkkaro_main_categories/house_cleaning.png",
+        src: "/images/kartsquare_main_categories/house_cleaning.png",
       },
       {
         src: "/images/properties/property3.jpg",

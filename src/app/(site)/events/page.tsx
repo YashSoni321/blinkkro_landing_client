@@ -2,16 +2,25 @@ import HeroSub from "@/components/shared/HeroSub";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Upcoming Events - BlinkKaro Community & Service Events | Join Us",
-  description: "Stay updated with BlinkKaro's upcoming events, workshops, and community gatherings. Connect with service providers and fellow customers across India.",
-  keywords: ["BlinkKaro events", "service events", "community gatherings", "workshops", "networking events", "upcoming events"],
+  title: "Upcoming Events - Kartsquare Community & Service Events | Join Us",
+  description:
+    "Stay updated with kartsquare's upcoming events, workshops, and community gatherings. Connect with service providers and fellow customers across India.",
+  keywords: [
+    "Kartsquare events",
+    "service events",
+    "community gatherings",
+    "workshops",
+    "networking events",
+    "upcoming events",
+  ],
   openGraph: {
-    title: "Upcoming Events - BlinkKaro Community & Service Events",
-    description: "Join BlinkKaro's exciting events that inspire, connect, and energize your lifestyle journey. Stay tuned for upcoming community events.",
-    url: "https://blinkkaro.com/events",
+    title: "Upcoming Events - Kartsquare Community & Service Events",
+    description:
+      "Join kartsquare's exciting events that inspire, connect, and energize your lifestyle journey. Stay tuned for upcoming community events.",
+    url: "https://kartsquare.com/events",
   },
   alternates: {
-    canonical: "https://blinkkaro.com/events",
+    canonical: "https://kartsquare.com/events",
   },
 };
 
@@ -20,7 +29,7 @@ const Events = () => {
     <>
       <HeroSub
         title="Exciting Events Ahead!"
-        description="Stay tuned for BlinkKaro's upcoming events that inspire, connect, and energize your lifestyle journey."
+        description="Stay tuned for kartsquare's upcoming events that inspire, connect, and energize your lifestyle journey."
         badge="Events"
       />
 

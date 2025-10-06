@@ -83,7 +83,7 @@ export const Introduction = () => {
         </div>
         <div className="mt-5">
           <p className="text-base font-medium text-midnight_text dark:text-white dark:text-opacity-50">
-            blinkkaro Tailwind NextJs Template is built with Tailwindcss and
+            KartSquare Tailwind NextJs Template is built with Tailwindcss and
             Nextjs.
           </p>
           <p className="text-base font-medium text-midnight_text dark:text-white dark:text-opacity-50">

@@ -1,10 +1,11 @@
 import Image from "next/image";
 import { Metadata } from "next";
-import { Icon } from "@iconify/react/dist/iconify.js"
+import { Icon } from "@iconify/react/dist/iconify.js";
 
 export const metadata: Metadata = {
-  title: "Page Not Found - BlinkKaro | 404 Error",
-  description: "The page you're looking for doesn't exist. Return to BlinkKaro's homepage to discover trusted home services, events, and professional bookings.",
+  title: "Page Not Found - KartSquare | 404 Error",
+  description:
+    "The page you're looking for doesn't exist. Return to KartSquare's homepage to discover trusted home services, events, and professional bookings.",
   robots: {
     index: false,
     follow: true,
@@ -23,25 +24,26 @@ const ErrorPage = () => {
           unoptimized={true}
         />
       </section>
-      <section className="text-center bg-cover relative overflow-x-hidden" >
-        <div className='flex gap-2.5 items-center justify-center'>
+      <section className="text-center bg-cover relative overflow-x-hidden">
+        <div className="flex gap-2.5 items-center justify-center">
           <span>
             <Icon
-              icon={'ph:wrench'}
+              icon={"ph:wrench"}
               width={20}
               height={20}
-              className='text-primary'
+              className="text-primary"
             />
           </span>
-          <p className='text-base font-semibold text-dark/75 dark:text-white/75'>
+          <p className="text-base font-semibold text-dark/75 dark:text-white/75">
             Error 404
           </p>
         </div>
-        <h2 className="text-dark text-52 relative font-bold dark:text-white " >
+        <h2 className="text-dark text-52 relative font-bold dark:text-white ">
           Lost? Let’s Help You Find Home.
         </h2>
         <p className="text-lg text-dark/50 dark:text-white/50 font-normal w-full mx-auto">
-          Looks like you’ve hit a dead end — but don’t worry, we’ll help you get back on track
+          Looks like you’ve hit a dead end — but don’t worry, we’ll help you get
+          back on track
         </p>
       </section>
     </>

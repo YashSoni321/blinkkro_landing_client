@@ -20,7 +20,7 @@ export async function generateMetadata(
 
   if (post) {
     return {
-      title: `${post.title} | Blinkkaro - Blogs`,
+      title: `${post.title} | KartSquare - Blogs`,
       authors: [{ name: "Yash" }],
     };
   }

@@ -2,15 +2,15 @@ import { FeaturedProperty } from "@/types/featuredProperty";
 
 export const featuredProprty: FeaturedProperty[] = [
   {
-    scr: "/images/blinkkaro_main_categories/home_services.png",
+    scr: "/images/kartsquare_main_categories/home_services.png",
     alt: "property6",
   },
   {
-    scr: "/images/blinkkaro_main_categories/chef.png",
+    scr: "/images/kartsquare_main_categories/chef.png",
     alt: "property7",
   },
   {
-    scr: "/images/blinkkaro_main_categories/tutor.png",
+    scr: "/images/kartsquare_main_categories/tutor.png",
     alt: "property8",
   },
   {

@@ -84,7 +84,7 @@ export default function ContactUs() {
                   </p>
                 </div>
               </Link>
-              <Link href={"mailto:support@blinkkaro.com"} className="w-fit">
+              <Link href={"mailto:support@KartSquare.com"} className="w-fit">
                 <div className="flex items-center gap-4 group w-fit">
                   <Icon icon={"ph:envelope-simple"} width={32} height={32} />
                   <p className="text-sm xs:text-base mobile:text-xm font-normal group-hover:text-primary">

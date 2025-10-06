@@ -34,16 +34,20 @@ const Categories = () => {
               Categories
             </p>
             <h2 className="lg:text-52 text-40 mt-4 mb-2 lg:max-w-full font-medium leading-[1.2] text-dark dark:text-white">
-              Every Service You Need, <span className="text-primary">Right Here</span>
+              Every Service You Need,{" "}
+              <span className="text-primary">Right Here</span>
             </h2>
             <p className="text-dark/50 dark:text-white/50 text-lg lg:max-w-full leading-[1.3] md:max-w-3/4">
-              From fixing your morning coffee machine to planning your dream wedding — we&apos;ve curated the most trusted professionals across every category. No more hunting through contacts or taking chances with strangers.
+              From fixing your morning coffee machine to planning your dream
+              wedding — we&apos;ve curated the most trusted professionals across
+              every category. No more hunting through contacts or taking chances
+              with strangers.
             </p>
             <Link
               href="/categories"
               className="py-4 px-8 bg-primary text-base leading-4 block w-fit text-white rounded-full font-semibold mt-8 hover:bg-dark duration-300"
             >
-Explore All Services
+              Explore All Services
             </Link>
           </div>
 
@@ -51,7 +55,7 @@ Explore All Services
             <div className="relative rounded-2xl overflow-hidden group">
               <Link href="/house_services">
                 <Image
-                  src="/images/blinkkaro_main_categories/house_cleaning.png"
+                  src="/images/kartsquare_main_categories/house_cleaning.png"
                   alt="house_services"
                   width={320}
                   height={380}
@@ -85,7 +89,7 @@ Explore All Services
             <div className="relative rounded-2xl overflow-hidden group">
               <Link href="/wellness">
                 <Image
-                  src="/images/blinkkaro_main_categories/home_services.png"
+                  src="/images/kartsquare_main_categories/home_services.png"
                   alt="wellness"
                   width={320}
                   height={380}
@@ -119,7 +123,7 @@ Explore All Services
             <div className="relative rounded-2xl overflow-hidden group">
               <Link href="/events">
                 <Image
-                  src="/images/blinkkaro_main_categories/event.png"
+                  src="/images/kartsquare_main_categories/event.png"
                   alt="events"
                   width={320}
                   height={386}
@@ -153,7 +157,7 @@ Explore All Services
             <div className="relative rounded-2xl overflow-hidden group">
               <Link href="/entertainment">
                 <Image
-                  src="/images/blinkkaro_main_categories/astro.png"
+                  src="/images/kartsquare_main_categories/astro.png"
                   alt="Astrology & Consultation"
                   width={320}
                   height={386}
@@ -186,7 +190,7 @@ Explore All Services
             <div className="relative rounded-2xl overflow-hidden group">
               <Link href="/home-services">
                 <Image
-                  src="/images/blinkkaro_main_categories/chef.png"
+                  src="/images/kartsquare_main_categories/chef.png"
                   alt="home services"
                   width={320}
                   height={380}
@@ -220,7 +224,7 @@ Explore All Services
             <div className="relative rounded-2xl overflow-hidden group">
               <Link href="/personal-chefs">
                 <Image
-                  src="/images/blinkkaro_main_categories/tutor.png"
+                  src="/images/kartsquare_main_categories/tutor.png"
                   alt="tutor"
                   width={320}
                   height={386}
