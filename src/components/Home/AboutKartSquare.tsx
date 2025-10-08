@@ -1,27 +1,30 @@
 "use client";
 import { Icon } from "@iconify/react";
+import { useTranslations } from "next-intl";
 
 export default function AboutKartSquare() {
+  const t = useTranslations("aboutKartSquareQuestions");
+
   const features = [
     {
       icon: "ph:clock-clockwise",
-      title: "Book in Seconds",
-      description: "Find and book services instantly with just a few taps",
+      title: t("features.bookSeconds.title"),
+      description: t("features.bookSeconds.description"),
     },
     {
       icon: "ph:shield-check",
-      title: "Verified Providers",
-      description: "All service providers are background-checked and verified",
+      title: t("features.verifiedProviders.title"),
+      description: t("features.verifiedProviders.description"),
     },
     {
       icon: "ph:money",
-      title: "Transparent Pricing",
-      description: "No hidden fees. See exact costs upfront before booking",
+      title: t("features.transparentPricing.title"),
+      description: t("features.transparentPricing.description"),
     },
     {
       icon: "ph:headset",
-      title: "24/7 Support",
-      description: "Round-the-clock customer support for peace of mind",
+      title: t("features.support.title"),
+      description: t("features.support.description"),
     },
   ];
 
@@ -29,7 +32,6 @@ export default function AboutKartSquare() {
     <section className="relative overflow-hidden">
       <div className="container max-w-8xl mx-auto px-4 sm:px-5 2xl:px-0 overflow-hidden">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
-          {/* Left Content */}
           {/* Right Visual */}
           <div className="relative">
             <div className="relative z-10">
@@ -37,10 +39,10 @@ export default function AboutKartSquare() {
               <div className="bg-white dark:bg-gray-800 rounded-3xl p-4 sm:p-6 shadow-2xl mx-auto w-full max-w-80">
                 <div className="bg-gradient-to-br from-primary to-primary/80 rounded-2xl p-6 text-white mb-4">
                   <div className="flex items-center justify-between mb-4">
-                    <h3 className="font-bold text-lg">KartSquare</h3>
+                    <h3 className="font-bold text-lg">{t("app.title")}</h3>
                     <Icon icon={"ph:bell"} width={24} height={24} />
                   </div>
-                  <p className="text-sm opacity-90">Find services near you</p>
+                  <p className="text-sm opacity-90">{t("app.subtitle")}</p>
                 </div>
 
                 {/* Service Cards */}
@@ -56,10 +58,10 @@ export default function AboutKartSquare() {
                     </div>
                     <div className="flex-1">
                       <p className="font-medium text-sm text-dark dark:text-white">
-                        House Cleaning
+                        {t("app.services.houseCleaning.name")}
                       </p>
                       <p className="text-xs text-dark/60 dark:text-white/60">
-                        Available now
+                        {t("app.services.houseCleaning.status")}
                       </p>
                     </div>
                     <span className="text-primary font-bold text-sm">₹50</span>
@@ -76,10 +78,10 @@ export default function AboutKartSquare() {
                     </div>
                     <div className="flex-1">
                       <p className="font-medium text-sm text-dark dark:text-white">
-                        Plumbing
+                        {t("app.services.plumbing.name")}
                       </p>
                       <p className="text-xs text-dark/60 dark:text-white/60">
-                        2 providers nearby
+                        {t("app.services.plumbing.status")}
                       </p>
                     </div>
                     <span className="text-primary font-bold text-sm">₹75</span>
@@ -87,7 +89,7 @@ export default function AboutKartSquare() {
                 </div>
 
                 <button className="w-full bg-primary text-white py-3 rounded-xl font-semibold mt-4">
-                  Book Service
+                  {t("buttons.bookService")}
                 </button>
               </div>
             </div>
@@ -120,6 +122,8 @@ export default function AboutKartSquare() {
               />
             </div>
           </div>
+
+          {/* Left Content */}
           <div>
             <div className="flex gap-2.5 items-center mb-6">
               <Icon
@@ -129,26 +133,25 @@ export default function AboutKartSquare() {
                 className="text-primary"
               />
               <p className="text-base font-semibold text-primary">
-                What is KartSquare?
+                {t("title")}
               </p>
             </div>
 
             <h2 className="text-4xl sm:text-52 font-bold tracking-tighter text-dark dark:text-white mb-6">
-              Why Waste Time When You Can <span className="text-primary">KartSquare</span>?
+              {t("heading")}{" "}
+              <span className="text-primary">{t("kartSquareText")}</span>
             </h2>
 
             <p className="text-xm text-dark/70 dark:text-white/70 mb-8 leading-relaxed">
-              KartSquare makes life effortless by bringing **everyday services to
-              your fingertips**. Whether it’s fixing a leaky tap, getting a
-              quick AC repair, booking a salon at home, or planning your next
-              big celebration—KartSquare connects you with **trusted, verified
-              professionals in seconds**.
+              {t.rich("description1", {
+                bold: (chunks) => <strong>{chunks}</strong>,
+              })}
             </p>
 
             <p className="text-xm text-dark/70 dark:text-white/70 mb-8 leading-relaxed">
-              No more long searches, confusing prices, or unreliable providers.
-              With KartSquare, you get **speed, transparency, and peace of
-              mind**—all in one square ✨.
+              {t.rich("description2", {
+                bold: (chunks) => <strong>{chunks}</strong>,
+              })}
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
@@ -176,34 +179,14 @@ export default function AboutKartSquare() {
 
             <div className="flex flex-col sm:flex-row gap-4">
               <button className="px-8 py-4 bg-primary text-white rounded-full font-semibold hover:bg-dark transition-colors duration-300">
-                Try KartSquare Now
+                {t("buttons.tryNow")}
               </button>
               <button className="px-8 py-4 border-2 border-primary text-primary rounded-full font-semibold hover:bg-primary hover:text-white transition-all duration-300">
-                Start Earning Today
+                {t("buttons.startEarning")}
               </button>
             </div>
           </div>
         </div>
-
-        {/* Stats Section */}
-        {/* <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-20 pt-16 border-t border-dark/10 dark:border-white/10">
-          <div className="text-center">
-            <h3 className="text-3xl font-bold text-primary mb-2">10K+</h3>
-            <p className="text-dark/60 dark:text-white/60">Happy Customers</p>
-          </div>
-          <div className="text-center">
-            <h3 className="text-3xl font-bold text-primary mb-2">500+</h3>
-            <p className="text-dark/60 dark:text-white/60">Service Providers</p>
-          </div>
-          <div className="text-center">
-            <h3 className="text-3xl font-bold text-primary mb-2">50+</h3>
-            <p className="text-dark/60 dark:text-white/60">Service Categories</p>
-          </div>
-          <div className="text-center">
-            <h3 className="text-3xl font-bold text-primary mb-2">4.9★</h3>
-            <p className="text-dark/60 dark:text-white/60">Average Rating</p>
-          </div>
-        </div> */}
       </div>
     </section>
   );

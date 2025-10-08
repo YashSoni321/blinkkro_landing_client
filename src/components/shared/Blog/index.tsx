@@ -3,6 +3,7 @@ import BlogCard from "@/components/shared/Blog/blogCard";
 import { getAllPosts } from "@/components/utils/markdown";
 import { Icon } from "@iconify/react";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 interface Blog {
   title: string;
@@ -15,6 +16,8 @@ interface Blog {
 }
 
 const BlogSmall: React.FC = () => {
+  const t = useTranslations("blogSmall");
+
   // Get all posts and map over them to ensure each field is a string
   const posts: Blog[] = getAllPosts([
     "title",
@@ -49,23 +52,24 @@ const BlogSmall: React.FC = () => {
               <Icon
                 icon="mdi:book-open-page-variant"
                 className="text-2xl text-primary"
-                aria-label="Blog icon"
+                aria-label={t("ariaLabels.blogIcon")}
               />
-              KartSquare Blog
+              {t("title")}
             </p>
             <h2 className="lg:text-52 text-40 font-medium dark:text-white">
-              <span className="text-primary">Smart Tips</span> for Busy Lives
+              <span className="text-primary">{t("smartTips")}</span>{" "}
+              {t("heading")}
             </h2>
             <p className="text-dark/50 dark:text-white/50 text-xm">
-              From home maintenance hacks to wellness secrets — discover insider tips that save you time, money, and stress in your daily routine.
+              {t("subtitle")}
             </p>
           </div>
           <Link
             href="/blogs"
             className="bg-dark dark:bg-white text-white dark:text-dark py-4 px-8 rounded-full hover:bg-primary duration-300"
-            aria-label="Read all blog articles"
+            aria-label={t("ariaLabels.readAll")}
           >
-Read More Tips
+            {t("readMore")}
           </Link>
         </div>
         <div className="grid sm:grid-cols-2 grid-cols-1 lg:grid-cols-3 gap-12">

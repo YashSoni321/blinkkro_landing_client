@@ -1,28 +1,15 @@
 import BlogList from "@/components/Blog";
 import HeroSub from "@/components/shared/HeroSub";
 import { Metadata } from "next";
+import { useTranslations } from "next-intl"; // or your i18n library
 
 export const metadata: Metadata = {
-  title:
-    "KartSquare Blog - Real Stories, Smart Tips & Service Secrets | India's #1 Service Platform",
-  description:
-    "From midnight plumbing disasters to wedding day beauty wins - discover real customer stories, insider tips, and service hacks that'll save your day. Read how Indians are revolutionizing their service experience.",
-  keywords: [
-    "service booking tips India",
-    "home service hacks",
-    "beauty salon stories",
-    "event planning India",
-    "customer success stories",
-    "KartSquare reviews",
-    "service provider tips",
-    "lifestyle hacks India",
-    "home maintenance tips",
-    "wedding planning guide India",
-  ],
+  title: "blogPage.metadata.title",
+  description: "blogPage.metadata.description",
+  keywords: "blogPage.metadata.keywords",
   openGraph: {
     title: "Real Stories & Service Secrets - KartSquare Blog",
-    description:
-      "Discover how Indians are transforming their service experience. Real stories, insider tips, and hacks that actually work. From beauty wins to home disasters turned success stories.",
+    description: "blogPage.metadata.description",
     url: "https://kartsquare.com/blogs",
     type: "website",
     images: [
@@ -37,8 +24,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Real Stories & Service Secrets - KartSquare Blog",
-    description:
-      "From midnight disasters to perfect service wins - discover stories and tips that'll change how you book services in India.",
+    description: "blogPage.metadata.description",
     images: ["/images/blog/blog-hero.jpg"],
   },
   alternates: {
@@ -47,12 +33,14 @@ export const metadata: Metadata = {
 };
 
 const Blog = () => {
+  const t = useTranslations();
+
   return (
     <>
       <HeroSub
-        title="Real Stories. Smart Tips. Service Secrets."
-        description="From midnight plumbing disasters to wedding day beauty wins — discover how Indians are revolutionizing their service experience with insider tips that actually work."
-        badge="Blog"
+        title={t("blogPage.hero.title")}
+        description={t("blogPage.hero.description")}
+        badge={t("blogPage.hero.badge")}
       />
       <BlogList />
     </>

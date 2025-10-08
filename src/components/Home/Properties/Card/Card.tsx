@@ -2,9 +2,11 @@ import { PropertyHomes } from "@/types/properyHomes";
 import { Icon } from "@iconify/react";
 import Image from "next/image";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 const ServiceCard: React.FC<{ item: PropertyHomes }> = ({ item }) => {
   const { name, location, duration, rate, category, slug, images } = item;
+  const t = useTranslations("serviceCard");
 
   const mainImage = images[0]?.src;
 
@@ -53,7 +55,7 @@ const ServiceCard: React.FC<{ item: PropertyHomes }> = ({ item }) => {
             </div>
             <div className="shrink-0">
               <span className="inline-block text-sm sm:text-base font-medium text-primary px-3 py-1 rounded-full bg-primary/10">
-                ₹ {rate}
+                {t("currency")} {rate}
               </span>
             </div>
           </div>
@@ -66,6 +68,9 @@ const ServiceCard: React.FC<{ item: PropertyHomes }> = ({ item }) => {
               <p className="text-xs sm:text-sm font-normal text-black dark:text-white text-center">
                 {duration}
               </p>
+              <p className="text-xs text-black/50 dark:text-white/50 text-center">
+                {t("infoLabels.duration")}
+              </p>
             </div>
 
             {/* Price */}
@@ -74,6 +79,9 @@ const ServiceCard: React.FC<{ item: PropertyHomes }> = ({ item }) => {
               <p className="text-xs sm:text-sm font-normal text-black dark:text-white text-center">
                 {rate}
               </p>
+              <p className="text-xs text-black/50 dark:text-white/50 text-center">
+                {t("infoLabels.price")}
+              </p>
             </div>
 
             {/* Category */}
@@ -81,6 +89,9 @@ const ServiceCard: React.FC<{ item: PropertyHomes }> = ({ item }) => {
               <Icon icon="mdi:briefcase-outline" width={18} height={18} />
               <p className="text-xs sm:text-sm font-normal text-black dark:text-white text-center">
                 {category}
+              </p>
+              <p className="text-xs text-black/50 dark:text-white/50 text-center">
+                {t("infoLabels.category")}
               </p>
             </div>
           </div>

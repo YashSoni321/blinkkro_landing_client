@@ -14,5 +14,679 @@
     "contact": "Contact",
     "phone": "+1-212-456-7890",
     "email": "hello@kartsquare.com"
+  },
+
+  "aboutPage": {
+    "metadata": {
+      "title": "Our Story - How 3 Friends Built India's Most Loved Service Platform | KartSquare",
+      "description": "From a midnight plumbing crisis to building KartSquare - discover the inspiring journey of 3 friends who solved India's biggest service booking problem. Join 50K+ happy customers today!",
+      "keywords": [
+        "KartSquare founders story",
+        "startup journey India",
+        "service booking revolution",
+        "trusted home services",
+        "Indian startup success",
+        "service platform founders",
+        "KartSquare mission vision"
+      ]
+    },
+    "hero": {
+      "title": "The Story Behind Your Favorite Service App",
+      "description": "What started as a midnight crisis became India's most trusted service platform. This is the story of 3 friends who refused to accept that finding reliable help should be this hard.",
+      "badge": "Our Story"
+    },
+    "originStory": {
+      "title": "It Started with a Crisis",
+      "crisisText": "2 AM, Bangalore. Yash's apartment was flooding. The pipe had burst, water everywhere, and he desperately needed a plumber. After 47 phone calls, 3 hours of waiting, and ₹2000 later, he realized something was fundamentally broken.",
+      "revelation": "The Midnight Revelation",
+      "mainQuote": "Why Is Finding Help So Damn Hard?",
+      "storyPart1": "That night, Yash called his college buddies Ankit and Gaurang. They'd all faced the same frustration - unreliable contacts, hidden charges, no-shows, and zero accountability.",
+      "storyPart2": "What if we could fix this for everyone? That question changed everything.",
+      "founderQuote": "We weren't trying to build a unicorn. We just wanted to solve a problem that affected millions of Indians every single day.",
+      "founderName": "- Yash, Co-Founder"
+    },
+    "journey": {
+      "title": "From Idea to Impact",
+      "subtitle": "Here's how three friends with zero funding built something that now serves thousands of families across India.",
+      "cards": {
+        "garageDays": {
+          "title": "The Garage Days",
+          "description": "6 months of coding in Yash's garage. Living on Maggi and dreams. First prototype ready with 10 local service providers.",
+          "stat": "₹0 funding"
+        },
+        "firstCustomers": {
+          "title": "First 100 Customers",
+          "description": "Word spread fast. Neighbors became customers, customers became advocates. We were solving a real problem.",
+          "stat": "4.9★ rating"
+        },
+        "growingImpact": {
+          "title": "Growing Impact",
+          "description": "Today, we've helped 50,000+ customers find reliable services. From plumbers to party planners, we've got India covered.",
+          "stat": "50K+ happy customers"
+        }
+      }
+    },
+    "mission": {
+      "title": "Our Mission & Values",
+      "subtitle": "Everything we do is guided by these core beliefs that keep us grounded and focused on what matters most.",
+      "values": {
+        "customerFirst": {
+          "title": "Customer First",
+          "description": "Every decision we make starts with 'How does this help our customers?'"
+        },
+        "trust": {
+          "title": "Trust & Transparency",
+          "description": "No hidden fees, no fake reviews, no empty promises. Just honest service."
+        },
+        "speed": {
+          "title": "Speed & Simplicity",
+          "description": "Life's complicated enough. We make getting help as simple as ordering food."
+        },
+        "empowering": {
+          "title": "Empowering Providers",
+          "description": "We don't just serve customers - we help service providers build better businesses."
+        }
+      }
+    },
+    "team": {
+      "title": "Meet Our Team",
+      "subtitle": "From founders to engineers to marketing - the passionate team building India's most trusted service platform.",
+      "founders": "Founders",
+      "coreTeam": "Core Team",
+      "members": {
+        "yash": {
+          "nickname": "The Visionary",
+          "name": "Yash Soni",
+          "role": "Co-Founder & CEO",
+          "story": "The guy whose flooded apartment started it all. Now he's obsessed with making sure no one else has to go through 47 phone calls to find help.",
+          "superpower": "Turning problems into opportunities"
+        },
+        "gaurang": {
+          "nickname": "The Builder",
+          "name": "Gaurang Tyagi",
+          "role": "Co-Founder & CTO",
+          "story": "The tech wizard who built our rock-solid platform. When others see problems, Gaurang sees elegant solutions waiting to be coded.",
+          "superpower": "Building scalable tech magic"
+        },
+        "rahul": {
+          "name": "Rahul Chanchlani",
+          "role": "Software Engineer",
+          "bio": "Rahul is a frontend and mobile engineer who loves building intuitive, high-performance apps with a user-first approach.",
+          "specialty": "Frontend & Mobile"
+        },
+        "bhinsar": {
+          "name": "Bhinsar Jagdish",
+          "role": "Software Engineer",
+          "bio": "Bhinsar is a backend and DevOps specialist focused on scalable systems, automation, and reliable infrastructure.",
+          "specialty": "Backend & DevOps"
+        },
+        "pratham": {
+          "name": "Pratham Mittal",
+          "role": "Head of Marketing",
+          "bio": "Pratham drives growth and brand strategy, blending creativity with data-driven insights to scale impact and engagement.",
+          "specialty": "Growth & Brand"
+        }
+      }
+    },
+    "impact": {
+      "title": "The Impact We're Making",
+      "subtitle": "Numbers tell a story, but behind each number is a real person whose life we've made a little bit easier.",
+      "stats": {
+        "customers": "50K+",
+        "customersLabel": "Happy Customers",
+        "providers": "2K+",
+        "providersLabel": "Trusted Providers",
+        "cities": "15+",
+        "citiesLabel": "Cities Covered",
+        "rating": "4.8★",
+        "ratingLabel": "Average Rating"
+      }
+    },
+    "cta": {
+      "title": "Want to Be Part of Our Story?",
+      "description": "Whether you're a customer looking for reliable services or a professional wanting to grow your business, there's a place for you in the KartSquare family.",
+      "customerButton": "Join as a Customer",
+      "providerButton": "Become a Provider"
+    }
+  },
+
+  "contactPage": {
+    "metadata": {
+      "title": "Contact KartSquare - Get Help & Support | Customer Service India",
+      "description": "Need help with KartSquare services? Contact our 24/7 support team. Get instant assistance for bookings, payments, or service queries. We're here to help!",
+      "keywords": [
+        "KartSquare contact",
+        "customer support",
+        "help center",
+        "service support",
+        "24/7 assistance",
+        "KartSquare help"
+      ]
+    },
+    "hero": {
+      "badge": "Contact us",
+      "title": "Have questions? We're here to help.",
+      "description": "KartSquare is built to be easy, safe, and valuable for everyone. Reach out to us anytime — whether it's about our services, your account, or how we can make your experience even better."
+    },
+    "contactInfo": {
+      "title": "Contact information",
+      "description": "Have a question or need support? We'll respond quickly and guide you with care.",
+      "phone": "+1 0239 0310 1122",
+      "email": "support@kartsquare.com",
+      "address": "KartSquare HQ, Bangalore, India"
+    },
+    "form": {
+      "name": {
+        "label": "Name*",
+        "placeholder": "Name*"
+      },
+      "phone": {
+        "label": "Phone number*",
+        "placeholder": "Phone number*"
+      },
+      "email": {
+        "label": "Email address*",
+        "placeholder": "Email address*"
+      },
+      "message": {
+        "label": "Write your message here...",
+        "placeholder": "Write your message here..."
+      },
+      "submit": "Send message"
+    }
+  },
+  "eventsPage": {
+    "metadata": {
+      "title": "Upcoming Events - Kartsquare Community & Service Events | Join Us",
+      "description": "Stay updated with kartsquare's upcoming events, workshops, and community gatherings. Connect with service providers and fellow customers across India.",
+      "keywords": [
+        "Kartsquare events",
+        "service events",
+        "community gatherings",
+        "workshops",
+        "networking events",
+        "upcoming events"
+      ]
+    },
+    "hero": {
+      "title": "Exciting Events Ahead!",
+      "description": "Stay tuned for kartsquare's upcoming events that inspire, connect, and energize your lifestyle journey.",
+      "badge": "Events"
+    },
+    "content": {
+      "notifyButton": "Notify Me"
+    }
+  },
+  "servicesPage": {
+    "metadata": {
+      "title": "All Services - Home, Beauty, Join Waitlist & More | BlinkKaro Service Marketplace",
+      "description": "Browse 50+ verified services on BlinkKaro. From home cleaning to event planning, beauty treatments to repairs - find trusted professionals with transparent pricing.",
+      "keywords": [
+        "home services",
+        "beauty services",
+        "event planning",
+        "repair services",
+        "verified professionals",
+        "service marketplace",
+        "BlinkKaro services"
+      ]
+    },
+    "hero": {
+      "title": "All your favorite services in one app.",
+      "description": "From travel and food to wellness and more — KartSquare makes it safe, simple, and rewarding to book everything you need.",
+      "badge": "Services"
+    }
+  },
+  "blogPage": {
+    "metadata": {
+      "title": "KartSquare Blog - Real Stories, Smart Tips & Service Secrets | India's #1 Service Platform",
+      "description": "From midnight plumbing disasters to wedding day beauty wins - discover real customer stories, insider tips, and service hacks that'll save your day. Read how Indians are revolutionizing their service experience.",
+      "keywords": [
+        "service booking tips India",
+        "home service hacks",
+        "beauty salon stories",
+        "event planning India",
+        "customer success stories",
+        "KartSquare reviews",
+        "service provider tips",
+        "lifestyle hacks India",
+        "home maintenance tips",
+        "wedding planning guide India"
+      ]
+    },
+    "hero": {
+      "title": "Real Stories. Smart Tips. Service Secrets.",
+      "description": "From midnight plumbing disasters to wedding day beauty wins — discover how Indians are revolutionizing their service experience with insider tips that actually work.",
+      "badge": "Blog"
+    }
+  },
+  "waitlistPage": {
+    "hero": {
+      "badge": "Join the Waitlist",
+      "title": "Be the First to Experience BlinkKaro",
+      "description": "Exciting things are on the way! Sign up now to join our exclusive waitlist and be the first to try BlinkKaro when we launch. Early access, exclusive updates, and special perks await our first users."
+    },
+    "contactCard": {
+      "imageAlt": "waitlist illustration",
+      "title": "Early Access",
+      "description": "Reserve your spot and get exclusive early access to BlinkKaro's upcoming app before anyone else.",
+      "perks": {
+        "gift": "Special perks for early members",
+        "notification": "Get notified at launch"
+      }
+    },
+    "form": {
+      "fields": {
+        "name": {
+          "label": "Name*",
+          "placeholder": "Name*"
+        },
+        "email": {
+          "label": "Email address*",
+          "placeholder": "Email address*"
+        },
+        "phone": {
+          "label": "Phone Number*",
+          "placeholder": "Phone Number*"
+        },
+        "message": {
+          "label": "Tell us why you're excited to join BlinkKaro...",
+          "placeholder": "Tell us why you're excited to join BlinkKaro..."
+        }
+      },
+      "countrySelect": {
+        "searchPlaceholder": "Search country or code...",
+        "noResults": "No countries found"
+      },
+      "submit": {
+        "default": "Join Waitlist",
+        "loading": "Joining..."
+      }
+    },
+    "notifications": {
+      "success": "Successfully joined the waitlist!",
+      "error": "Failed to join waitlist. Please try again."
+    }
+  },
+  "footer": {
+    "newsletter": {
+      "description": "Stay updated with the latest KartSquare news, service updates, and exclusive offers.",
+      "emailPlaceholder": "Enter your email",
+      "subscribeButton": "Subscribe",
+      "privacyNote": "By subscribing, you agree to receive KartSquare updates. You can unsubscribe at any time."
+    },
+    "contact": {
+      "title": "Simplify your bookings. Get started with KartSquare today.",
+      "button": "Contact Us"
+    },
+    "bottomBar": {
+      "copyright": "©2025 KartSquare — Designed & Developed with ❤️",
+      "terms": "Terms of Service",
+      "privacy": "Privacy Policy"
+    }
+  },
+  "aboutKartSquare": {
+    "badge": "KartSquare Services",
+    "title": "Everyday services, just a square away.",
+    "description": "From beauty & wellness to home care and events — KartSquare makes it easy to book trusted professionals anytime, anywhere."
+  },
+  "faq": {
+    "badge": "FAQs",
+    "title": "Everything about KartSquare",
+    "description": "We believe booking services should be simple, safe, and valuable. Here are some frequently asked questions to help you trust and use KartSquare with ease.",
+    "questions": {
+      "easyToUse": {
+        "question": "Is KartSquare easy to use?",
+        "answer": "Yes! KartSquare is designed with a simple and intuitive interface. Search, compare, and book services in just a few taps — no confusion, just convenience."
+      },
+      "safeSecure": {
+        "question": "Is KartSquare safe and secure?",
+        "answer": "Absolutely. We use secure payment gateways, verified service providers, and trusted reviews so you can book with confidence and peace of mind."
+      },
+      "provideValue": {
+        "question": "How does KartSquare provide value?",
+        "answer": "KartSquare saves you time and effort by connecting you to trending services instantly. From real-time availability to exclusive offers, we make sure you always get the best deal and experience."
+      }
+    }
+  },
+  "howItWorks": {
+    "badge": "How KartSquare Works",
+    "title": "3 Simple Steps to Get Any Service Done",
+    "mapDescription": "No more calling multiple people, comparing prices, or worrying about quality. Just tell us what you need!",
+    "description": "Whether you need a plumber at midnight or a chef for tomorrow's party, KartSquare makes it happen. Our smart matching connects you with the perfect professional in your area, handles payments securely, and ensures quality every time.",
+    "steps": {
+      "step1": {
+        "number": "1",
+        "title": "Tell Us What You Need"
+      },
+      "step2": {
+        "number": "2",
+        "title": "Pick Your Time Slot"
+      },
+      "step3": {
+        "number": "3",
+        "title": "Pay After Service"
+      },
+      "step4": {
+        "number": "4",
+        "title": "Rate Your Experience"
+      }
+    },
+    "cta": {
+      "button": "Book Your First Service",
+      "rating": "4.8★ Rating",
+      "customers": "From 1000+ happy customers"
+    }
+  },
+  "getInTouch": {
+    "title": "Ready to Make Your Life 10x Easier?",
+    "button": "Join the Waitlist Now",
+    "marquee": {
+      "salon": "✨ BOOK YOUR DREAM SALON APPOINTMENT IN JUST 30 SECONDS!",
+      "plumber": "🔧 EMERGENCY PLUMBER? WE'VE GOT YOU COVERED 24/7!",
+      "caterer": "🎉 PLANNING A PARTY? FIND THE PERFECT CATERER TODAY!",
+      "cleaning": "🏠 HOME DEEP CLEANING STARTING AT JUST ₹499!"
+    }
+  },
+  "hero": {
+    "title": "Life's Too Short for Service Hassles",
+    "description": "From emergency plumbing to weekend parties, from home cleaning to personal tutoring — get trusted professionals at your doorstep in just one tap. Because your time matters!",
+    "buttons": {
+      "earlyAccess": "Get Early Access",
+      "earn": "Earn with BlinkKaro"
+    },
+    "highlights": {
+      "instantBooking": "Instant Booking",
+      "support": "24/7 Support",
+      "trustedProviders": "Trusted Providers",
+      "users": "500+ Users",
+      "usersSubtext": "Have already joined the waitlist 🚀"
+    }
+  },
+  "industriesOrbit": {
+    "badge": "Trusted Industries",
+    "title": "Serving 2500+ Companies Across India",
+    "industries": [
+      {
+        "name": "IT & Software",
+        "clients": "500+"
+      },
+      {
+        "name": "Manufacturing",
+        "clients": "300+"
+      },
+      {
+        "name": "Banking & Finance",
+        "clients": "150+"
+      },
+      {
+        "name": "Healthcare",
+        "clients": "200+"
+      },
+      {
+        "name": "Real Estate",
+        "clients": "400+"
+      },
+      {
+        "name": "Retail & E-commerce",
+        "clients": "350+"
+      },
+      {
+        "name": "Education",
+        "clients": "250+"
+      },
+      {
+        "name": "Hospitality",
+        "clients": "180+"
+      },
+      {
+        "name": "Automotive",
+        "clients": "120+"
+      },
+      {
+        "name": "Telecommunications",
+        "clients": "80+"
+      },
+      {
+        "name": "Energy & Power",
+        "clients": "90+"
+      },
+      {
+        "name": "Pharmaceuticals",
+        "clients": "110+"
+      }
+    ],
+    "stats": {
+      "companies": "Companies",
+      "services": "Services",
+      "satisfaction": "Satisfaction"
+    }
+  },
+  "kartSquareSolutions": {
+    "badge": "Why Choose KartSquare?",
+    "title": "Life's Too Complicated. We Made It Simple",
+    "targetDescription": "Stop juggling multiple apps and contacts. Everything you need, one tap away.",
+    "description": "KartSquare eliminates the frustration of searching endlessly, calling multiple providers, and worrying about trust or payments. Whether it's beauty, wellness, home services, or events — KartSquare brings everything under one secure and smart platform.",
+    "problemsSolved": {
+      "helpMinutes": "Get Help in Minutes",
+      "knowCosts": "Know Costs Upfront",
+      "backgroundChecked": "Background-Checked Pros",
+      "bookSeconds": "Book in 30 Seconds"
+    },
+    "cta": {
+      "button": "Join 10K+ Happy Users",
+      "averageTime": "2 Min Average",
+      "confirmation": "From booking to confirmation"
+    }
+  },
+  "serviceCard": {
+    "currency": "₹",
+    "infoLabels": {
+      "duration": "Duration",
+      "price": "Price",
+      "category": "Category"
+    }
+  },
+  "properties": {
+    "badge": "KartSquare Services",
+    "title": "Your Favorite Services, Just a Tap Away",
+    "description": "Skip the hassle of finding reliable people. These are the services our customers love most — vetted professionals, transparent pricing, and guaranteed satisfaction."
+  },
+  "categories": {
+    "badge": "Categories",
+    "title": "Every Service You Need, Right Here",
+    "description": "From fixing your morning coffee machine to planning your dream wedding — we've curated the most trusted professionals across every category. No more hunting through contacts or taking chances with strangers.",
+    "ctaButton": "Explore All Services",
+    "categoriesList": {
+      "wellness": {
+        "title": "Wellness & Personal Care",
+        "description": "Salon at home, spa, massage, fitness trainers - all at your fingertips."
+      },
+      "cleaning": {
+        "title": "Cleaning Services",
+        "description": "Deep cleaning, sofa cleaning, kitchen cleaning, pest control and more — all at your fingertips."
+      },
+      "events": {
+        "title": "Events & Celebrations",
+        "description": "Birthday planners, catering, photography, DJ & decorators and more — all at your fingertips."
+      },
+      "astrology": {
+        "title": "Astrology & Consultation",
+        "description": "Astrologers, tarot readers, vastu experts, numerology and more — all at your fingertips."
+      },
+      "chefs": {
+        "title": "Personal Chefs",
+        "description": "Hire chefs and catering for private dining and special occasions."
+      },
+      "tutors": {
+        "title": "Tutors & Learning",
+        "description": "Music, coding, language tutors, exam prep and more — all at your fingertips."
+      }
+    }
+  },
+  "testimonial": {
+    "title": "Testimonials",
+    "heading": "Real Stories from Happy Customers",
+    "happyCustomers": "Happy Customers"
+  },
+  "featuredServices": {
+    "title": "Featured Services",
+    "heading": "Premium Service Providers",
+    "subtitle": "Hand-picked professionals delivering exceptional quality",
+    "featured": "Featured",
+    "bookNow": "Book Now",
+    "viewAll": "View All Featured Services",
+    "rating": "Rating",
+    "duration": "Duration",
+    "category": "Category"
+  },
+  "aboutKartSquareQuestions": {
+    "title": "What is KartSquare?",
+    "heading": "Why Waste Time When You Can",
+    "kartSquareText": "KartSquare?",
+    "description1": "KartSquare makes life effortless by bringing **everyday services to your fingertips**. Whether it's fixing a leaky tap, getting a quick AC repair, booking a salon at home, or planning your next big celebration—KartSquare connects you with **trusted, verified professionals in seconds**.",
+    "description2": "No more long searches, confusing prices, or unreliable providers. With KartSquare, you get **speed, transparency, and peace of mind**—all in one square ✨.",
+    "features": {
+      "bookSeconds": {
+        "title": "Book in Seconds",
+        "description": "Find and book services instantly with just a few taps"
+      },
+      "verifiedProviders": {
+        "title": "Verified Providers",
+        "description": "All service providers are background-checked and verified"
+      },
+      "transparentPricing": {
+        "title": "Transparent Pricing",
+        "description": "No hidden fees. See exact costs upfront before booking"
+      },
+      "support": {
+        "title": "24/7 Support",
+        "description": "Round-the-clock customer support for peace of mind"
+      }
+    },
+    "buttons": {
+      "tryNow": "Try KartSquare Now",
+      "startEarning": "Start Earning Today",
+      "bookService": "Book Service"
+    },
+    "app": {
+      "title": "KartSquare",
+      "subtitle": "Find services near you",
+      "services": {
+        "houseCleaning": {
+          "name": "House Cleaning",
+          "status": "Available now"
+        },
+        "plumbing": {
+          "name": "Plumbing",
+          "status": "2 providers nearby"
+        }
+      }
+    }
+  },
+  "popularServices": {
+    "title": "Popular Services",
+    "heading": "Most Booked Services",
+    "subtitle": "Discover the services that customers love most",
+    "viewAll": "View All Services",
+    "by": "by",
+    "reviews": "reviews",
+    "price": "Price"
+  },
+  "serviceCategories": {
+    "title": "Service Categories",
+    "heading": "Browse by Category",
+    "subtitle": "Find the perfect service for your needs from our wide range of categories",
+    "services": "services"
+  },
+  "blogSmall": {
+    "title": "KartSquare Blog",
+    "heading": "Smart Tips for Busy Lives",
+    "smartTips": "Smart Tips",
+    "subtitle": "From home maintenance hacks to wellness secrets — discover insider tips that save you time, money, and stress in your daily routine.",
+    "readMore": "Read More Tips",
+    "ariaLabels": {
+      "blogIcon": "Blog icon",
+      "readAll": "Read all blog articles"
+    }
+  },
+  "serviceCategoriesData": {
+    "homeServices": {
+      "name": "Home Services",
+      "description": "Cleaning, repairs, maintenance",
+      "serviceCount": 45
+    },
+    "eventPlanning": {
+      "name": "Event Planning",
+      "description": "Weddings, parties, corporate events",
+      "serviceCount": 28
+    },
+    "healthFitness": {
+      "name": "Health & Fitness",
+      "description": "Personal training, wellness",
+      "serviceCount": 32
+    },
+    "professionalServices": {
+      "name": "Professional Services",
+      "description": "Consulting, legal, accounting",
+      "serviceCount": 19
+    },
+    "beautyWellness": {
+      "name": "Beauty & Wellness",
+      "description": "Spa, salon, massage therapy",
+      "serviceCount": 38
+    },
+    "techSupport": {
+      "name": "Tech Support",
+      "description": "IT support, device repair",
+      "serviceCount": 24
+    }
+  },
+  "footerLinksData": {
+    "homeServices": "Home Services",
+    "eventPlanning": "Event Planning",
+    "professionalServices": "Professional Services",
+    "contactUs": "Contact Us",
+    "blog": "Blog",
+    "becomeProvider": "Become a Providerr",
+    "helpCenter": "Help Center"
+  },
+  "servicesData": {
+    "homeCleaning": {
+      "name": "Home Cleaning Service",
+      "provider": "CleanPro Services",
+      "category": "Home Services",
+      "duration": "2-3 hours"
+    },
+    "weddingPhotography": {
+      "name": "Wedding Photography",
+      "provider": "Capture Moments Studio",
+      "category": "Event Services",
+      "duration": "8-10 hours"
+    },
+    "plumbingRepair": {
+      "name": "Plumbing Repair",
+      "provider": "FixIt Plumbing",
+      "category": "Home Services",
+      "duration": "1-2 hours"
+    },
+    "eventPlanning": {
+      "name": "Event Planning",
+      "provider": "Perfect Events Co.",
+      "category": "Event Services",
+      "duration": "Full service"
+    },
+    "personalTraining": {
+      "name": "Personal Training",
+      "provider": "FitLife Trainers",
+      "category": "Health & Fitness",
+      "duration": "1 hour"
+    },
+    "electricalRepair": {
+      "name": "Electrical Repair",
+      "provider": "PowerFix Electricians",
+      "category": "Home Services",
+      "duration": "1-3 hours"
+    }
   }
 }

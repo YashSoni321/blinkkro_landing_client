@@ -10,9 +10,11 @@ import {
   type CarouselApi,
 } from "@/components/ui/carousel";
 import { featuredProprty } from "@/app/api/featuredproperty";
+import { useTranslations } from "next-intl";
 
 export default function AboutUs() {
   const [, setApi] = React.useState<CarouselApi | undefined>(undefined);
+  const t = useTranslations("howItWorks");
 
   return (
     <section className="container max-w-8xl mx-auto px-4 sm:px-5 2xl:px-0 overflow-hidden">
@@ -50,10 +52,10 @@ export default function AboutUs() {
                 icon="mdi:lightning-bolt"
                 className="text-2xl text-primary"
               />
-              How KartSquare Works
+              {t("badge")}
             </p>
             <h2 className="lg:text-52 text-40 font-medium text-dark dark:text-white">
-              <span className="text-primary">3 Simple Steps</span> to Get Any Service Done
+              <span className="text-primary">{t("title")}</span>
             </h2>
             <div className="flex items-center gap-2.5">
               <Icon
@@ -63,21 +65,37 @@ export default function AboutUs() {
                 className="text-dark/50 dark:text-white/50"
               />
               <p className="text-dark/50 dark:text-white/50 text-base">
-                No more calling multiple people, comparing prices, or worrying about quality. Just tell us what you need!
+                {t("mapDescription")}
               </p>
             </div>
           </div>
 
           <p className="text-base text-dark/50 dark:text-white/50">
-            Whether you need a plumber at midnight or a chef for tomorrow&apos;s party, KartSquare makes it happen. Our smart matching connects you with the perfect professional in your area, handles payments securely, and ensures quality every time.
+            {t("description")}
           </p>
 
           {/* Steps Grid */}
           <div className="grid grid-cols-2 gap-10">
-            <Step number="1" icon="mdi:magnify" title="Tell Us What You Need" />
-            <Step number="2" icon="mdi:calendar-check" title="Pick Your Time Slot" />
-            <Step number="3" icon="mdi:credit-card-outline" title="Pay After Service" />
-            <Step number="4" icon="mdi:account-check" title="Rate Your Experience" />
+            <Step
+              number={t("steps.step1.number")}
+              icon="mdi:magnify"
+              title={t("steps.step1.title")}
+            />
+            <Step
+              number={t("steps.step2.number")}
+              icon="mdi:calendar-check"
+              title={t("steps.step2.title")}
+            />
+            <Step
+              number={t("steps.step3.number")}
+              icon="mdi:credit-card-outline"
+              title={t("steps.step3.title")}
+            />
+            <Step
+              number={t("steps.step4.number")}
+              icon="mdi:account-check"
+              title={t("steps.step4.title")}
+            />
           </div>
 
           {/* CTA */}
@@ -86,15 +104,13 @@ export default function AboutUs() {
               href="/get-started"
               className="py-4 px-8 bg-primary hover:bg-dark duration-300 rounded-full text-white"
             >
-Book Your First Service
+              {t("cta.button")}
             </Link>
             <div>
               <h4 className="text-3xl text-dark dark:text-white font-medium">
-                4.8★ Rating
+                {t("cta.rating")}
               </h4>
-              <p className="text-base text-dark/50">
-                From 1000+ happy customers
-              </p>
+              <p className="text-base text-dark/50">{t("cta.customers")}</p>
             </div>
           </div>
         </div>
@@ -104,7 +120,15 @@ Book Your First Service
 }
 
 /* ----------------- Reusable Components ----------------- */
-const Step = ({ number, icon, title }: { number: string; icon: string; title: string }) => (
+const Step = ({
+  number,
+  icon,
+  title,
+}: {
+  number: string;
+  icon: string;
+  title: string;
+}) => (
   <div className="flex items-center gap-4">
     <div className="relative bg-primary/10 p-3 rounded-full">
       <Icon icon={icon} className="text-xl text-primary" />
@@ -115,50 +139,3 @@ const Step = ({ number, icon, title }: { number: string; icon: string; title: st
     <h6 className="text-base text-dark dark:text-white font-medium">{title}</h6>
   </div>
 );
-
-// Unused components - keeping for potential future use
-// const Feature = ({ icon, title }: { icon: string; title: string }) => (
-//   <div className="flex items-center gap-4">
-//     <div className="bg-dark/5 dark:bg-white/5 p-2.5 rounded-[6px]">
-//       <Icon icon={icon} className="text-xl text-primary" />
-//     </div>
-//     <h6 className="text-base text-dark dark:text-white">{title}</h6>
-//   </div>
-// );
-
-// const TeamMember = ({
-//   img,
-//   name,
-//   role,
-//   socials,
-// }: {
-//   img: string;
-//   name: string;
-//   role: string;
-//   socials: string[];
-// }) => (
-//   <div className="p-6 border border-black/10 dark:border-white/10 rounded-2xl shadow-lg dark:shadow-white/10 text-center">
-//     <Image
-//       src={img}
-//       alt={name}
-//       width={180}
-//       height={180}
-//       className="rounded-full mx-auto mb-4 object-contain"
-//     />
-//     <h4 className="text-xl font-semibold text-black dark:text-white mb-1">
-//       {name}
-//     </h4>
-//     <p className="text-sm text-black/60 dark:text-white/60 mb-4">{role}</p>
-//     <div className="flex justify-center gap-4">
-//       {socials.map((icon, i) => (
-//         <Icon
-//           key={i}
-//           icon={icon}
-//           width={22}
-//           height={22}
-//           className="text-black/60 dark:text-white/60 hover:text-primary cursor-pointer"
-//         />
-//       ))}
-//     </div>
-//   </div>
-// );

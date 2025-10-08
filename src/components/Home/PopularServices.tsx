@@ -3,9 +3,11 @@ import { Icon } from "@iconify/react";
 import { services } from "@/app/api/services";
 import Link from "next/link";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 export default function PopularServices() {
   const popularServices = services.slice(0, 4);
+  const t = useTranslations("popularServices");
 
   return (
     <section>
@@ -19,14 +21,14 @@ export default function PopularServices() {
               className="text-primary"
             />
             <p className="text-base font-semibold text-dark/75 dark:text-white/75">
-              Popular Services
+              {t("title")}
             </p>
           </div>
           <h2 className="text-4xl sm:text-52 font-medium tracking-tighter text-black dark:text-white mb-3">
-            Most Booked Services
+            {t("heading")}
           </h2>
           <p className="text-xm font-normal text-black/50 dark:text-white/50">
-            Discover the services that customers love most
+            {t("subtitle")}
           </p>
         </div>
 
@@ -67,7 +69,7 @@ export default function PopularServices() {
                       </span>
                     </div>
                     <span className="text-sm text-dark/50 dark:text-white/50">
-                      ({service.reviews} reviews)
+                      ({service.reviews} {t("reviews")})
                     </span>
                   </div>
 
@@ -76,7 +78,7 @@ export default function PopularServices() {
                   </h3>
 
                   <p className="text-sm text-dark/70 dark:text-white/70 mb-3">
-                    by {service.provider}
+                    {t("by")} {service.provider}
                   </p>
 
                   <div className="flex items-center justify-between">
@@ -98,7 +100,7 @@ export default function PopularServices() {
             href="/services"
             className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-white rounded-full hover:bg-dark transition-colors duration-300"
           >
-            View All Services
+            {t("viewAll")}
             <Icon icon={"ph:arrow-right"} width={20} height={20} />
           </Link>
         </div>

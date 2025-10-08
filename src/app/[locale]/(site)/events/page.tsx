@@ -1,22 +1,14 @@
 import HeroSub from "@/components/shared/HeroSub";
 import { Metadata } from "next";
+import { useTranslations } from "next-intl"; // or your i18n library
 
 export const metadata: Metadata = {
-  title: "Upcoming Events - Kartsquare Community & Service Events | Join Us",
-  description:
-    "Stay updated with kartsquare's upcoming events, workshops, and community gatherings. Connect with service providers and fellow customers across India.",
-  keywords: [
-    "Kartsquare events",
-    "service events",
-    "community gatherings",
-    "workshops",
-    "networking events",
-    "upcoming events",
-  ],
+  title: "eventsPage.metadata.title",
+  description: "eventsPage.metadata.description",
+  keywords: "eventsPage.metadata.keywords",
   openGraph: {
     title: "Upcoming Events - Kartsquare Community & Service Events",
-    description:
-      "Join kartsquare's exciting events that inspire, connect, and energize your lifestyle journey. Stay tuned for upcoming community events.",
+    description: "eventsPage.metadata.description",
     url: "https://kartsquare.com/events",
   },
   alternates: {
@@ -25,18 +17,20 @@ export const metadata: Metadata = {
 };
 
 const Events = () => {
+  const t = useTranslations();
+
   return (
     <>
       <HeroSub
-        title="Exciting Events Ahead!"
-        description="Stay tuned for kartsquare's upcoming events that inspire, connect, and energize your lifestyle journey."
-        badge="Events"
+        title={t("eventsPage.hero.title")}
+        description={t("eventsPage.hero.description")}
+        badge={t("eventsPage.hero.badge")}
       />
 
-      <section className="flex flex-col items-center justify-center  text-center">
+      <section className="flex flex-col items-center justify-center text-center">
         <div className="">
           <button className="px-8 py-4 rounded-full bg-primary text-white font-semibold hover:bg-primary/80 transition">
-            Notify Me
+            {t("eventsPage.content.notifyButton")}
           </button>
         </div>
       </section>

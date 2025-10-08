@@ -1,84 +1,79 @@
 "use client";
 import { useState } from "react";
 import { Icon } from "@iconify/react";
+import { useTranslations } from "next-intl";
 
-const industries = [
+const industriesData = [
   {
     name: "IT & Software",
     icon: "mdi:laptop",
-    clients: "500+",
     color: "bg-blue-500",
   },
   {
     name: "Manufacturing",
     icon: "mdi:factory",
-    clients: "300+",
     color: "bg-orange-500",
   },
   {
     name: "Banking & Finance",
     icon: "mdi:bank",
-    clients: "150+",
     color: "bg-green-500",
   },
   {
     name: "Healthcare",
     icon: "mdi:hospital-building",
-    clients: "200+",
     color: "bg-red-500",
   },
   {
     name: "Real Estate",
     icon: "mdi:office-building",
-    clients: "400+",
     color: "bg-purple-500",
   },
   {
     name: "Retail & E-commerce",
     icon: "mdi:storefront",
-    clients: "350+",
     color: "bg-pink-500",
   },
   {
     name: "Education",
     icon: "mdi:school",
-    clients: "250+",
     color: "bg-indigo-500",
   },
   {
     name: "Hospitality",
     icon: "mdi:silverware-fork-knife",
-    clients: "180+",
     color: "bg-yellow-500",
   },
   {
     name: "Automotive",
     icon: "mdi:car",
-    clients: "120+",
     color: "bg-gray-500",
   },
   {
     name: "Telecommunications",
     icon: "mdi:cellphone-wireless",
-    clients: "80+",
     color: "bg-cyan-500",
   },
   {
     name: "Energy & Power",
     icon: "mdi:lightning-bolt",
-    clients: "90+",
     color: "bg-amber-500",
   },
   {
     name: "Pharmaceuticals",
     icon: "mdi:pill",
-    clients: "110+",
     color: "bg-teal-500",
   },
 ];
 
 const IndustriesOrbit: React.FC = () => {
   const [hoveredIndustry, setHoveredIndustry] = useState<number | null>(null);
+  const t = useTranslations("industriesOrbit");
+
+  const industries = industriesData.map((industry, index) => ({
+    ...industry,
+    clients: t.raw("industries")[index].clients,
+  }));
 
   return (
     <section className="py-6 sm:py-8 lg:py-12 relative bg-gradient-to-r from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800 overflow-hidden">
@@ -93,12 +88,11 @@ const IndustriesOrbit: React.FC = () => {
               className="text-primary"
             />
             <p className="text-sm font-semibold text-gray-600 dark:text-gray-400">
-              Trusted Industries
+              {t("badge")}
             </p>
           </div>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-black dark:text-white mb-3">
-            Serving <span className="text-primary">2500+ Companies</span> Across
-            India
+            {t("title")}
           </h2>
         </div>
 
@@ -136,7 +130,7 @@ const IndustriesOrbit: React.FC = () => {
                       : "text-gray-800 dark:text-white"
                   }`}
                 >
-                  {industry.name.split(" ")[0]}
+                  {t.raw("industries")[i].name.split(" ")[0]}
                 </h3>
 
                 {/* Client Count */}
@@ -159,7 +153,7 @@ const IndustriesOrbit: React.FC = () => {
               2500+
             </div>
             <div className="text-xs sm:text-sm text-gray-600 dark:text-gray-400">
-              Companies
+              {t("stats.companies")}
             </div>
           </div>
           <div className="text-center">
@@ -167,7 +161,7 @@ const IndustriesOrbit: React.FC = () => {
               50K+
             </div>
             <div className="text-xs sm:text-sm text-gray-600 dark:text-gray-400">
-              Services
+              {t("stats.services")}
             </div>
           </div>
           <div className="text-center">
@@ -175,7 +169,7 @@ const IndustriesOrbit: React.FC = () => {
               99.2%
             </div>
             <div className="text-xs sm:text-sm text-gray-600 dark:text-gray-400">
-              Satisfaction
+              {t("stats.satisfaction")}
             </div>
           </div>
         </div>

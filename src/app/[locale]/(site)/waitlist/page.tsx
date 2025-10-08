@@ -9,6 +9,7 @@ import {
   getCountryCallingCode,
 } from "react-phone-number-input/input";
 import en from "react-phone-number-input/locale/en.json";
+import { useTranslations } from "next-intl"; // or your i18n library
 
 type Country = {
   code: string;
@@ -18,6 +19,7 @@ type Country = {
 };
 
 export default function JoinWaitlist() {
+  const t = useTranslations();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -70,8 +72,8 @@ export default function JoinWaitlist() {
       );
       console.log("Response:", response);
       if (response && response?.data && response?.data?.status === "success") {
-        console.log("toast egenrated successfully");
-        toast.success("Successfully joined the waitlist!");
+        console.log("toast generated successfully");
+        toast.success(t("waitlistPage.notifications.success"));
         setFormData({
           name: "",
           email: "",
@@ -81,7 +83,7 @@ export default function JoinWaitlist() {
         });
       }
     } catch (error: unknown) {
-      toast.error("Failed to join waitlist. Please try again.");
+      toast.error(t("waitlistPage.notifications.error"));
       console.error("Error:", error);
     } finally {
       setIsSubmitting(false);
@@ -105,17 +107,15 @@ export default function JoinWaitlist() {
             />
           </span>
           <p className="text-base font-semibold text-badge dark:text-white/90">
-            Join the Waitlist
+            {t("waitlistPage.hero.badge")}
           </p>
         </div>
         <div className="text-center">
           <h3 className="text-4xl sm:text-52 font-medium tracking-tighter text-black dark:text-white mb-3 leading-10 sm:leading-14">
-            Be the First to Experience BlinkKaro
+            {t("waitlistPage.hero.title")}
           </h3>
           <p className="text-xm font-normal tracking-tight text-black/50 dark:text-white/50 leading-6">
-            Exciting things are on the way! Sign up now to join our exclusive
-            waitlist and be the first to try BlinkKaro when we launch. Early
-            access, exclusive updates, and special perks await our first users.
+            {t("waitlistPage.hero.description")}
           </p>
         </div>
       </div>
@@ -126,7 +126,7 @@ export default function JoinWaitlist() {
           <div className="relative w-fit">
             <Image
               src={"/images/waitlist/waitlist.png"}
-              alt="waitlist illustration"
+              alt={t("waitlistPage.contactCard.imageAlt")}
               width={497}
               height={535}
               className="rounded-2xl brightness-50 h-full"
@@ -135,24 +135,23 @@ export default function JoinWaitlist() {
 
             <div className="absolute top-6 left-6 lg:top-12 lg:left-12 flex flex-col gap-2">
               <h5 className="text-xl xs:text-2xl mobile:text-3xl font-medium tracking-tight text-white">
-                Early Access
+                {t("waitlistPage.contactCard.title")}
               </h5>
               <p className="text-sm xs:text-base mobile:text-xm font-normal text-white/80">
-                Reserve your spot and get exclusive early access to BlinkKaro’s
-                upcoming app before anyone else.
+                {t("waitlistPage.contactCard.description")}
               </p>
             </div>
             <div className="absolute bottom-6 left-6 lg:bottom-12 lg:left-12 flex flex-col gap-4 text-white">
               <div className="flex items-center gap-4">
                 <Icon icon={"ph:gift"} width={32} height={32} />
                 <p className="text-sm xs:text-base mobile:text-xm font-normal">
-                  Special perks for early members
+                  {t("waitlistPage.contactCard.perks.gift")}
                 </p>
               </div>
               <div className="flex items-center gap-4">
                 <Icon icon={"ph:bell-simple"} width={32} height={32} />
                 <p className="text-sm xs:text-base mobile:text-xm font-normal">
-                  Get notified at launch
+                  {t("waitlistPage.contactCard.perks.notification")}
                 </p>
               </div>
             </div>
@@ -169,7 +168,7 @@ export default function JoinWaitlist() {
                     value={formData.name}
                     onChange={handleInputChange}
                     autoComplete="name"
-                    placeholder="Name*"
+                    placeholder={t("waitlistPage.form.fields.name.placeholder")}
                     required
                     className="px-6 py-3.5 border border-black/10 dark:border-white/10 rounded-full outline-primary focus:outline w-full"
                   />
@@ -180,7 +179,9 @@ export default function JoinWaitlist() {
                     value={formData.email}
                     onChange={handleInputChange}
                     autoComplete="email"
-                    placeholder="Email address*"
+                    placeholder={t(
+                      "waitlistPage.form.fields.email.placeholder"
+                    )}
                     required
                     className="px-6 py-3.5 border border-black/10 dark:border-white/10 rounded-full outline-primary focus:outline w-full"
                   />
@@ -212,29 +213,37 @@ export default function JoinWaitlist() {
                         <div className="p-3">
                           <input
                             type="text"
-                            placeholder="Search country or code..."
+                            placeholder={t(
+                              "waitlistPage.form.countrySelect.searchPlaceholder"
+                            )}
                             value={searchTerm}
                             onChange={(e) => setSearchTerm(e.target.value)}
                             className="w-full px-3 py-2 border border-black/10 dark:border-white/10 rounded-lg outline-primary focus:outline text-sm"
                           />
                         </div>
                         <div className="max-h-40 overflow-y-auto">
-                          {filteredCountries.map((country) => (
-                            <button
-                              key={country.code}
-                              type="button"
-                              onClick={() =>
-                                handleCountrySelect(country.callingCode)
-                              }
-                              className="w-full px-6 py-2 text-left hover:bg-gray-100 dark:hover:bg-gray-700 flex items-center gap-3"
-                            >
-                              <span>{country.flag}</span>
-                              <span className="text-sm">{country.name}</span>
-                              <span className="text-sm text-gray-500 ml-auto">
-                                {country.callingCode}
-                              </span>
-                            </button>
-                          ))}
+                          {filteredCountries.length > 0 ? (
+                            filteredCountries.map((country) => (
+                              <button
+                                key={country.code}
+                                type="button"
+                                onClick={() =>
+                                  handleCountrySelect(country.callingCode)
+                                }
+                                className="w-full px-6 py-2 text-left hover:bg-gray-100 dark:hover:bg-gray-700 flex items-center gap-3"
+                              >
+                                <span>{country.flag}</span>
+                                <span className="text-sm">{country.name}</span>
+                                <span className="text-sm text-gray-500 ml-auto">
+                                  {country.callingCode}
+                                </span>
+                              </button>
+                            ))
+                          ) : (
+                            <div className="px-6 py-2 text-sm text-gray-500 text-center">
+                              {t("waitlistPage.form.countrySelect.noResults")}
+                            </div>
+                          )}
                         </div>
                       </div>
                     )}
@@ -246,7 +255,9 @@ export default function JoinWaitlist() {
                     value={formData.phone}
                     onChange={handleInputChange}
                     autoComplete="tel"
-                    placeholder="Phone Number*"
+                    placeholder={t(
+                      "waitlistPage.form.fields.phone.placeholder"
+                    )}
                     required
                     className="px-6 py-3.5 border border-black/10 dark:border-white/10 rounded-full outline-primary focus:outline w-full"
                   />
@@ -258,7 +269,9 @@ export default function JoinWaitlist() {
                   id="message"
                   value={formData.message}
                   onChange={handleInputChange}
-                  placeholder="Tell us why you're excited to join BlinkKaro..."
+                  placeholder={t(
+                    "waitlistPage.form.fields.message.placeholder"
+                  )}
                   className="px-6 py-3.5 border border-black/10 dark:border-white/10 rounded-2xl outline-primary focus:outline"
                 ></textarea>
                 <button
@@ -266,7 +279,9 @@ export default function JoinWaitlist() {
                   disabled={isSubmitting}
                   className="px-8 py-4 rounded-full bg-primary text-white text-base font-semibold w-full mobile:w-fit hover:cursor-pointer hover:bg-dark duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
                 >
-                  {isSubmitting ? "Joining..." : "Join Waitlist"}
+                  {isSubmitting
+                    ? t("waitlistPage.form.submit.loading")
+                    : t("waitlistPage.form.submit.default")}
                 </button>
               </div>
             </form>
