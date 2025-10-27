@@ -15,6 +15,6 @@ export const featuredProprty: FeaturedProperty[] = [
   },
   {
     scr: "/images/featuredproperty/image-4.jpg",
-    alt: "property9",
+    alt: "property91",
   },
 ];
