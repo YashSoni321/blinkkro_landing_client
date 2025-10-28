@@ -9,6 +9,7 @@ import {
   getCountryCallingCode,
 } from "react-phone-number-input/input";
 import en from "react-phone-number-input/locale/en.json";
+import ThankYouModel from "@/components/waitList/thankYouModel";
 
 type Country = {
   code: string;
@@ -28,6 +29,7 @@ export default function JoinWaitlist() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [searchTerm, setSearchTerm] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isThankYouOpen, setIsThankYouOpen] = useState(false);
 
   const countries: Country[] = getCountries().map((country) => ({
     code: country,
@@ -79,6 +81,7 @@ export default function JoinWaitlist() {
           phone: "",
           message: "",
         });
+        setIsThankYouOpen(true);
       }
     } catch (error: unknown) {
       toast.error("Failed to join waitlist. Please try again.");
@@ -273,6 +276,10 @@ export default function JoinWaitlist() {
           </div>
         </div>
       </div>
+      {/* thank you model */}
+      {isThankYouOpen && (
+        <ThankYouModel onclose={() => setIsThankYouOpen(false)} />
+      )}
     </div>
   );
 }
