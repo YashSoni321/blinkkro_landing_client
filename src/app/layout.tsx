@@ -8,6 +8,7 @@ import NextTopLoader from "nextjs-toploader";
 import SessionProviderComp from "@/components/nextauth/SessionProvider";
 import ThemeProviderComp from "@/components/provider/ThemeProviderComp";
 import { Toaster } from "react-hot-toast";
+import FloatingButton from "@/components/Layout/FloatingButton";
 
 const font = Bricolage_Grotesque({ subsets: ["latin"] });
 
@@ -155,6 +156,7 @@ export default function RootLayout({
               }}
             />
             {children}
+            <FloatingButton />
             <Footer />
           </ThemeProviderComp>
         </SessionProviderComp>
