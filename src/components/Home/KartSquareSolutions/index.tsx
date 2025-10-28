@@ -10,11 +10,13 @@ import {
   CarouselItem,
   type CarouselApi,
 } from "@/components/ui/carousel";
+import { useTranslations } from "next-intl";
 
 const KartSquareSolutions: React.FC = () => {
   const [api, setApi] = React.useState<CarouselApi | undefined>(undefined);
   const [current, setCurrent] = React.useState(0);
   const [count, setCount] = React.useState(0);
+  const t = useTranslations("kartSquareSolutions");
 
   React.useEffect(() => {
     if (!api) return;
@@ -73,10 +75,10 @@ const KartSquareSolutions: React.FC = () => {
                   icon="mdi:lightning-bolt"
                   className="text-2xl text-primary"
                 />
-                Why Choose KartSquare?
+                {t("badge")}
               </p>
               <h2 className="lg:text-52 text-40 font-medium text-dark dark:text-white">
-                Life&apos;s Too Complicated. <span className="text-primary">We Made It Simple</span>
+                {t("title")}
               </h2>
               <div className="flex items-center gap-2.5">
                 <Icon
@@ -86,16 +88,13 @@ const KartSquareSolutions: React.FC = () => {
                   className="text-dark/50 dark:text-white/50"
                 />
                 <p className="text-dark/50 dark:text-white/50 text-base">
-                  Stop juggling multiple apps and contacts. Everything you need, one tap away.
+                  {t("targetDescription")}
                 </p>
               </div>
             </div>
 
             <p className="text-base text-dark/50 dark:text-white/50">
-              KartSquare eliminates the frustration of searching endlessly,
-              calling multiple providers, and worrying about trust or payments.
-              Whether it’s beauty, wellness, home services, or events —
-              KartSquare brings everything under one secure and smart platform.
+              {t("description")}
             </p>
 
             {/* Problems Solved Grid */}
@@ -107,7 +106,9 @@ const KartSquareSolutions: React.FC = () => {
                     className="text-xl text-primary"
                   />
                 </div>
-                <h6 className="text-dark dark:text-white">Get Help in Minutes</h6>
+                <h6 className="text-dark dark:text-white">
+                  {t("problemsSolved.helpMinutes")}
+                </h6>
               </div>
               <div className="flex items-center gap-4">
                 <div className="bg-dark/5 dark:bg-white/5 p-2.5 rounded-[6px]">
@@ -116,7 +117,9 @@ const KartSquareSolutions: React.FC = () => {
                     className="text-xl text-primary"
                   />
                 </div>
-                <h6 className="text-dark dark:text-white">Know Costs Upfront</h6>
+                <h6 className="text-dark dark:text-white">
+                  {t("problemsSolved.knowCosts")}
+                </h6>
               </div>
               <div className="flex items-center gap-4">
                 <div className="bg-dark/5 dark:bg-white/5 p-2.5 rounded-[6px]">
@@ -125,7 +128,9 @@ const KartSquareSolutions: React.FC = () => {
                     className="text-xl text-primary"
                   />
                 </div>
-                <h6 className="text-dark dark:text-white">Background-Checked Pros</h6>
+                <h6 className="text-dark dark:text-white">
+                  {t("problemsSolved.backgroundChecked")}
+                </h6>
               </div>
               <div className="flex items-center gap-4">
                 <div className="bg-dark/5 dark:bg-white/5 p-2.5 rounded-[6px]">
@@ -134,7 +139,9 @@ const KartSquareSolutions: React.FC = () => {
                     className="text-xl text-primary"
                   />
                 </div>
-                <h6 className="text-dark dark:text-white">Book in 30 Seconds</h6>
+                <h6 className="text-dark dark:text-white">
+                  {t("problemsSolved.bookSeconds")}
+                </h6>
               </div>
             </div>
 
@@ -144,14 +151,14 @@ const KartSquareSolutions: React.FC = () => {
                 href="/get-started"
                 className="py-4 px-8 bg-primary hover:bg-dark duration-300 rounded-full text-white"
               >
-Join 10K+ Happy Users
+                {t("cta.button")}
               </Link>
               <div>
                 <h4 className="text-3xl text-dark dark:text-white font-medium">
-                  2 Min Average
+                  {t("cta.averageTime")}
                 </h4>
                 <p className="text-base text-dark/50">
-                  From booking to confirmation
+                  {t("cta.confirmation")}
                 </p>
               </div>
             </div>

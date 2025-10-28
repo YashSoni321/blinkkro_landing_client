@@ -32,7 +32,7 @@ const ThankYouModel = ({ onclose }) => {
         </h2>
 
         <p className='mt-2 text-base text-gray-600 dark:text-gray-300'>
-          We've successfully added you to the waitlist for Kart Square. You'll be among the first to know when we launch! Stay connected with us for updates and sneak peeks
+          We&apos;ve successfully added you to the waitlist for Kart Square. You&apos;ll be among the first to know when we launch! Stay connected with us for updates and sneak peeks
         </p>
 
         <button

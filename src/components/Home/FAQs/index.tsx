@@ -6,8 +6,11 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { useTranslations } from "next-intl";
 
 const FAQ: React.FC = () => {
+  const t = useTranslations("faq");
+
   return (
     <section id="faqs">
       <div className="container max-w-8xl mx-auto px-5 2xl:px-0">
@@ -31,15 +34,13 @@ const FAQ: React.FC = () => {
                 icon="mdi:comment-question-outline"
                 className="text-2xl text-primary "
               />
-              FAQs
+              {t("badge")}
             </p>
             <h2 className="lg:text-52 text-40 leading-[1.2] font-medium text-dark dark:text-white">
-              Everything about KartSquare
+              {t("title")}
             </h2>
             <p className="text-dark/50 dark:text-white/50 pr-20">
-              We believe booking services should be simple, safe, and valuable.
-              Here are some frequently asked questions to help you trust and use
-              KartSquare with ease.
+              {t("description")}
             </p>
 
             {/* Accordion */}
@@ -52,35 +53,28 @@ const FAQ: React.FC = () => {
               >
                 <AccordionItem value="item-1">
                   <AccordionTrigger>
-                    1. Is KartSquare easy to use?
+                    1. {t("questions.easyToUse.question")}
                   </AccordionTrigger>
                   <AccordionContent>
-                    Yes! KartSquare is designed with a simple and intuitive
-                    interface. Search, compare, and book services in just a few
-                    taps — no confusion, just convenience.
+                    {t("questions.easyToUse.answer")}
                   </AccordionContent>
                 </AccordionItem>
 
                 <AccordionItem value="item-2">
                   <AccordionTrigger>
-                    2. Is KartSquare safe and secure?
+                    2. {t("questions.safeSecure.question")}
                   </AccordionTrigger>
                   <AccordionContent>
-                    Absolutely. We use secure payment gateways, verified service
-                    providers, and trusted reviews so you can book with
-                    confidence and peace of mind.
+                    {t("questions.safeSecure.answer")}
                   </AccordionContent>
                 </AccordionItem>
 
                 <AccordionItem value="item-3">
                   <AccordionTrigger>
-                    3. How does KartSquare provide value?
+                    3. {t("questions.provideValue.question")}
                   </AccordionTrigger>
                   <AccordionContent>
-                    KartSquare saves you time and effort by connecting you to
-                    trending services instantly. From real-time availability to
-                    exclusive offers, we make sure you always get the best deal
-                    and experience.
+                    {t("questions.provideValue.answer")}
                   </AccordionContent>
                 </AccordionItem>
               </Accordion>

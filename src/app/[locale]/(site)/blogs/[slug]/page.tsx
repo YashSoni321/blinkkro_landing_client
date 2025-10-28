@@ -2,15 +2,15 @@ import { format } from "date-fns";
 import Image from "next/image";
 import Link from "next/link";
 import { Icon } from "@iconify/react";
-import { getAllPosts, getPostBySlug } from "@/components/utils/markdown";
+import { getPostBySlug } from "@/components/utils/markdown";
 import markdownToHtml from "@/components/utils/markdownToHtml";
 import type { Metadata } from "next";
 
 // --------- Metadata ---------
 export async function generateMetadata(
-  props: PageProps<"/blogs/[slug]">
+  props: PageProps<any>
 ): Promise<Metadata> {
-  const { slug } = await props.params; // <-- await here
+  const { slug }: any = await props.params; // <-- await here
   const post = getPostBySlug(slug as string, [
     "title",
     "author",
@@ -29,7 +29,7 @@ export async function generateMetadata(
 }
 
 // --------- Page Component ---------
-export default async function PostPage(props: PageProps<"/blogs/[slug]">) {
+export default async function PostPage(props: PageProps<any>) {
   const { slug } = await props.params;
   const post = getPostBySlug(slug, [
     "title",

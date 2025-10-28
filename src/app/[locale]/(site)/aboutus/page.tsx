@@ -4,12 +4,13 @@ import Link from "next/link";
 import { Icon } from "@iconify/react";
 import HeroSub from "@/components/shared/HeroSub";
 import { Metadata } from "next";
+import { getTranslations } from "next-intl/server";
 
 export const metadata: Metadata = {
   title:
-    "Our Story - How 3 Friends Built India&apos;s Most Loved Service Platform | KartSquare",
+    "Our Story - How 3 Friends Built India's Most Loved Service Platform | KartSquare",
   description:
-    "From a midnight plumbing crisis to building KartSquare - discover the inspiring journey of 3 friends who solved India&apos;s biggest service booking problem. Join 50K+ happy customers today!",
+    "From a midnight plumbing crisis to building KartSquare - discover the inspiring journey of 3 friends who solved India's biggest service booking problem. Join 50K+ happy customers today!",
   keywords: [
     "KartSquare founders story",
     "startup journey India",
@@ -21,7 +22,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title:
-      "Our Story - How 3 Friends Built India&apos;s Most Loved Service Platform",
+      "Our Story - How 3 Friends Built India's Most Loved Service Platform",
     description:
       "From a midnight crisis to serving 50K+ customers - the inspiring KartSquare story. Meet the founders who revolutionized how India books services.",
     url: "https://kartsquare.com/aboutus",
@@ -31,20 +32,22 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "The KartSquare Story - 3 Friends, 1 Mission",
     description:
-      "How a midnight plumbing crisis led to India&apos;s most trusted service platform.",
+      "How a midnight plumbing crisis led to India's most trusted service platform.",
   },
   alternates: {
     canonical: "https://kartsquare.com/aboutus",
   },
 };
 
-export default function AboutUs() {
+export default async function AboutUs() {
+  const t = await getTranslations("aboutPage");
+
   return (
     <>
       <HeroSub
-        title="The Story Behind Your Favorite Service App"
-        description="What started as a midnight crisis became India's most trusted service platform. This is the story of 3 friends who refused to accept that finding reliable help should be this hard."
-        badge="Our Story"
+        title={t("hero.title")}
+        description={t("hero.description")}
+        badge={t("hero.badge")}
       />
 
       {/* The Origin Story */}
@@ -56,14 +59,10 @@ export default function AboutUs() {
                 💡
               </div>
               <h3 className="text-2xl font-bold text-dark dark:text-white mb-4">
-                It Started with a Crisis
+                {t("originStory.title")}
               </h3>
               <p className="text-dark/70 dark:text-white/70 leading-relaxed">
-                <strong>2 AM, Bangalore.</strong> Yash&apos;s apartment was
-                flooding. The pipe had burst, water everywhere, and he
-                desperately needed a plumber. After 47 phone calls, 3 hours of
-                waiting, and ₹2000 later, he realized something was
-                fundamentally broken.
+                {t("originStory.crisisText")}
               </p>
             </div>
           </div>
@@ -77,36 +76,28 @@ export default function AboutUs() {
                 className="text-primary"
               />
               <p className="text-base font-semibold text-primary">
-                The Midnight Revelation
+                {t("originStory.revelation")}
               </p>
             </div>
 
             <h2 className="text-4xl sm:text-52 font-bold text-dark dark:text-white mb-6">
-              &ldquo;Why Is Finding Help So{" "}
-              <span className="text-primary">Damn Hard</span>?&rdquo;
+              &ldquo;{t("originStory.mainQuote")}&rdquo;
             </h2>
 
             <p className="text-lg text-dark/70 dark:text-white/70 mb-6 leading-relaxed">
-              That night, Yash called his college buddies Ankit and Gaurang.
-              They&apos;d all faced the same frustration - unreliable contacts,
-              hidden charges, no-shows, and zero accountability.
+              {t("originStory.storyPart1")}
             </p>
 
             <p className="text-lg text-dark/70 dark:text-white/70 mb-8 leading-relaxed">
-              <strong>
-                &ldquo;What if we could fix this for everyone?&rdquo;
-              </strong>{" "}
-              That question changed everything.
+              <strong>&ldquo;{t("originStory.storyPart2")}&rdquo;</strong>
             </p>
 
             <div className="bg-yellow-50 dark:bg-yellow-900/20 border-l-4 border-yellow-400 p-6 rounded-r-lg">
               <p className="text-dark dark:text-white font-medium italic">
-                &ldquo;We weren&apos;t trying to build a unicorn. We just wanted
-                to solve a problem that affected millions of Indians every
-                single day.&rdquo;
+                &ldquo;{t("originStory.founderQuote")}&rdquo;
               </p>
               <p className="text-sm text-dark/60 dark:text-white/60 mt-2">
-                - Yash, Co-Founder
+                {t("originStory.founderName")}
               </p>
             </div>
           </div>
@@ -118,32 +109,31 @@ export default function AboutUs() {
         <div className="container max-w-8xl mx-auto px-4 sm:px-5 2xl:px-0">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-dark dark:text-white mb-4">
-              From Idea to <span className="text-primary">Impact</span>
+              {t("journey.title")}
             </h2>
             <p className="text-lg text-dark/60 dark:text-white/60 max-w-2xl mx-auto">
-              Here&apos;s how three friends with zero funding built something
-              that now serves thousands of families across India.
+              {t("journey.subtitle")}
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
             <JourneyCard
               icon="ph:rocket-launch"
-              title="The Garage Days"
-              description="6 months of coding in Yash's garage. Living on Maggi and dreams. First prototype ready with 10 local service providers."
-              stat="₹0 funding"
+              title={t("journey.cards.garageDays.title")}
+              description={t("journey.cards.garageDays.description")}
+              stat={t("journey.cards.garageDays.stat")}
             />
             <JourneyCard
               icon="ph:users-three"
-              title="First 100 Customers"
-              description="Word spread fast. Neighbors became customers, customers became advocates. We were solving a real problem."
-              stat="4.9★ rating"
+              title={t("journey.cards.firstCustomers.title")}
+              description={t("journey.cards.firstCustomers.description")}
+              stat={t("journey.cards.firstCustomers.stat")}
             />
             <JourneyCard
               icon="ph:chart-line-up"
-              title="Growing Impact"
-              description="Today, we've helped 50,000+ customers find reliable services. From plumbers to party planners, we've got India covered."
-              stat="50K+ happy customers"
+              title={t("journey.cards.growingImpact.title")}
+              description={t("journey.cards.growingImpact.description")}
+              stat={t("journey.cards.growingImpact.stat")}
             />
           </div>
         </div>
@@ -153,34 +143,33 @@ export default function AboutUs() {
       <section className="container max-w-8xl mx-auto px-4 sm:px-5 2xl:px-0 py-16">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-dark dark:text-white mb-4">
-            Our <span className="text-primary">Mission</span> & Values
+            {t("mission.title")}
           </h2>
           <p className="text-lg text-dark/60 dark:text-white/60 max-w-2xl mx-auto">
-            Everything we do is guided by these core beliefs that keep us
-            grounded and focused on what matters most.
+            {t("mission.subtitle")}
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           <ValueCard
             icon="ph:heart"
-            title="Customer First"
-            description="Every decision we make starts with 'How does this help our customers?'"
+            title={t("mission.values.customerFirst.title")}
+            description={t("mission.values.customerFirst.description")}
           />
           <ValueCard
             icon="ph:handshake"
-            title="Trust & Transparency"
-            description="No hidden fees, no fake reviews, no empty promises. Just honest service."
+            title={t("mission.values.trust.title")}
+            description={t("mission.values.trust.description")}
           />
           <ValueCard
             icon="ph:lightning"
-            title="Speed & Simplicity"
-            description="Life's complicated enough. We make getting help as simple as ordering food."
+            title={t("mission.values.speed.title")}
+            description={t("mission.values.speed.description")}
           />
           <ValueCard
             icon="ph:users"
-            title="Empowering Providers"
-            description="We don't just serve customers - we help service providers build better businesses."
+            title={t("mission.values.empowering.title")}
+            description={t("mission.values.empowering.description")}
           />
         </div>
       </section>
@@ -190,36 +179,35 @@ export default function AboutUs() {
         <div className="container max-w-8xl mx-auto px-4 sm:px-5 2xl:px-0">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-dark dark:text-white mb-4">
-              Meet Our <span className="text-primary">Team</span>
+              {t("team.title")}
             </h2>
             <p className="text-lg text-dark/60 dark:text-white/60 max-w-3xl mx-auto">
-              From founders to engineers to marketing - the passionate team
-              building India&apos;s most trusted service platform.
+              {t("team.subtitle")}
             </p>
           </div>
 
           {/* Founders Row */}
           <div className="mb-12">
             <h3 className="text-2xl font-bold text-center text-dark dark:text-white mb-8">
-              <span className="text-primary">Founders</span>
+              <span className="text-primary">{t("team.founders")}</span>
             </h3>
             <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
               <FounderCard
-                nickName="The Visionary"
+                nickName={t("team.members.yash.nickname")}
                 img="/images/team/yash_dp.jpeg"
-                name="Yash Soni"
-                role="Co-Founder & CEO"
-                story="The guy whose flooded apartment started it all. Now he's obsessed with making sure no one else has to go through 47 phone calls to find help."
-                superpower="Turning problems into opportunities"
+                name={t("team.members.yash.name")}
+                role={t("team.members.yash.role")}
+                story={t("team.members.yash.story")}
+                superpower={t("team.members.yash.superpower")}
                 socials={["ph:linkedin-logo-bold", "ph:instagram-logo-bold"]}
               />
               <FounderCard
-                nickName="The Builder"
+                nickName={t("team.members.gaurang.nickname")}
                 img="/images/team/gaurang_dp.jpeg"
-                name="Gaurang Tyagi"
-                role="Co-Founder & CTO"
-                story="The tech wizard who built our rock-solid platform. When others see problems, Gaurang sees elegant solutions waiting to be coded."
-                superpower="Building scalable tech magic"
+                name={t("team.members.gaurang.name")}
+                role={t("team.members.gaurang.role")}
+                story={t("team.members.gaurang.story")}
+                superpower={t("team.members.gaurang.superpower")}
                 socials={["ph:linkedin-logo-bold", "ph:github-logo-bold"]}
               />
             </div>
@@ -241,33 +229,33 @@ export default function AboutUs() {
           {/* Team Members Row */}
           <div>
             <h3 className="text-2xl font-bold text-center text-dark dark:text-white mb-8">
-              <span className="text-primary">Core Team</span>
+              <span className="text-primary">{t("team.coreTeam")}</span>
             </h3>
             <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
               <TeamCard
                 img="/images/team/rahul_dp.png"
-                name="Rahul Chanchlani"
-                role="Software Engineer"
-                bio="Rahul is a frontend and mobile engineer who loves building intuitive, high-performance apps with a user-first approach."
-                specialty="Frontend & Mobile"
+                name={t("team.members.rahul.name")}
+                role={t("team.members.rahul.role")}
+                bio={t("team.members.rahul.bio")}
+                specialty={t("team.members.rahul.specialty")}
                 socials={["ph:linkedin-logo-bold", "ph:github-logo-bold"]}
               />
 
               <TeamCard
                 img="/images/team/bhinsar_dp.jpeg"
-                name="Bhinsar Jagdish"
-                role="Software Engineer"
-                bio="Bhinsar is a backend and DevOps specialist focused on scalable systems, automation, and reliable infrastructure."
-                specialty="Backend & DevOps"
+                name={t("team.members.bhinsar.name")}
+                role={t("team.members.bhinsar.role")}
+                bio={t("team.members.bhinsar.bio")}
+                specialty={t("team.members.bhinsar.specialty")}
                 socials={["ph:linkedin-logo-bold", "ph:github-logo-bold"]}
               />
 
               <TeamCard
                 img="/images/team/pratham_dp.png"
-                name="Pratham Mittal"
-                role="Head of Marketing"
-                bio="Pratham drives growth and brand strategy, blending creativity with data-driven insights to scale impact and engagement."
-                specialty="Growth & Brand"
+                name={t("team.members.pratham.name")}
+                role={t("team.members.pratham.role")}
+                bio={t("team.members.pratham.bio")}
+                specialty={t("team.members.pratham.specialty")}
                 socials={["ph:linkedin-logo-bold", "ph:twitter-logo-bold"]}
               />
             </div>
@@ -290,13 +278,13 @@ export default function AboutUs() {
           {/* Content Column */}
           <div>
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
-              More Than a Platform. <br /> We're a{" "}
+              More Than a Platform. <br /> We&apos;re a{" "}
               <span className="text-primary">Partnership.</span>
             </h2>
             <p className="mt-6 text-lg leading-8 text-gray-600 dark:text-white/80">
               Finding a reliable electrician or a skilled plumber in a bustling
               city like Jaipur has always been a challenge of trust and timing.
-              At KartSquare, we're changing that narrative. We aren't just a
+              At KartSquare, we&apos;re changing that narrative. We aren&apos;t just a
               booking app, we are the bridge connecting thousands of households
               with our community of vetted, skilled, and dedicated service
               professionals.
@@ -315,19 +303,30 @@ export default function AboutUs() {
       <section className="container max-w-8xl mx-auto px-4 sm:px-5 2xl:px-0 py-16">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-dark dark:text-white mb-4">
-            The <span className="text-primary">Impact</span> We&apos;re Making
+            {t("impact.title")}
           </h2>
           <p className="text-lg text-dark/60 dark:text-white/60 max-w-2xl mx-auto">
-            Numbers tell a story, but behind each number is a real person whose
-            life we&apos;ve made a little bit easier.
+            {t("impact.subtitle")}
           </p>
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-          <StatCard number="50K+" label="Happy Customers" />
-          <StatCard number="2K+" label="Trusted Providers" />
-          <StatCard number="15+" label="Cities Covered" />
-          <StatCard number="4.8★" label="Average Rating" />
+          <StatCard
+            number={t("impact.stats.customers")}
+            label={t("impact.stats.customersLabel")}
+          />
+          <StatCard
+            number={t("impact.stats.providers")}
+            label={t("impact.stats.providersLabel")}
+          />
+          <StatCard
+            number={t("impact.stats.cities")}
+            label={t("impact.stats.citiesLabel")}
+          />
+          <StatCard
+            number={t("impact.stats.rating")}
+            label={t("impact.stats.ratingLabel")}
+          />
         </div>
       </section>
 
@@ -335,12 +334,10 @@ export default function AboutUs() {
       <section className="bg-dark py-16">
         <div className="container max-w-8xl mx-auto px-4 sm:px-5 2xl:px-0 text-center">
           <h2 className="text-4xl font-bold text-white mb-6">
-            Want to Be Part of Our <span className="text-primary">Story</span>?
+            {t("cta.title")}
           </h2>
           <p className="text-xl text-white/80 mb-8 max-w-2xl mx-auto">
-            Whether you&apos;re a customer looking for reliable services or a
-            professional wanting to grow your business, there&apos;s a place for
-            you in the KartSquare family.
+            {t("cta.description")}
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -348,13 +345,13 @@ export default function AboutUs() {
               href="/contactus"
               className="px-8 py-4 bg-primary text-white rounded-full font-semibold hover:bg-primary/80 transition-colors"
             >
-              Join as a Customer
+              {t("cta.customerButton")}
             </Link>
             <Link
               href="/contactus"
               className="px-8 py-4 border-2 border-white text-white rounded-full font-semibold hover:bg-white hover:text-dark transition-all"
             >
-              Become a Provider
+              {t("cta.providerButton")}
             </Link>
           </div>
         </div>
@@ -490,15 +487,15 @@ const TeamCard = ({
   socials: string[];
 }) => (
   <div className="bg-white dark:bg-gray-800 p-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
-   <div className="w-32 h-32 mx-auto rounded-full overflow-hidden ring-4 ring-primary/20">
-        <Image
-          src={img}
-          alt={name}
-          width={128}
-          height={128}
-          className="w-full h-full object-cover"
-        />
-      </div>
+    <div className="w-32 h-32 mx-auto rounded-full overflow-hidden ring-4 ring-primary/20">
+      <Image
+        src={img}
+        alt={name}
+        width={128}
+        height={128}
+        className="w-full h-full object-cover"
+      />
+    </div>
     <div className="text-center">
       <h4 className="text-lg font-bold text-dark dark:text-white mb-1">
         {name}

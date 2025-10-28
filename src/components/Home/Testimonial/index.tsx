@@ -9,22 +9,14 @@ import {
   type CarouselApi,
 } from "@/components/ui/carousel";
 import { testimonials } from "@/app/api/testimonial";
+import { useTranslations } from "next-intl";
 
 const Testimonial = () => {
   const [api, setApi] = React.useState<CarouselApi | undefined>(undefined);
   const [current, setCurrent] = React.useState(0);
   const [count, setCount] = React.useState(0);
+  const t = useTranslations("testimonial");
 
-  //   React.useEffect(() => {
-  //     if (!api) return;
-
-  //     setCount(api.scrollSnapList().length);
-  //     setCurrent(api.selectedScrollSnap() + 1);
-
-  //     api.on("select", () => {
-  //       setCurrent(api.selectedScrollSnap() + 1);
-  //     });
-  //   }, [api]);
   React.useEffect(() => {
     if (!api) return;
 
@@ -73,10 +65,11 @@ const Testimonial = () => {
               icon="ph:house-simple-fill"
               className="text-2xl text-primary"
             />
-            Testimonials
+            {t("title")}
           </p>
           <h2 className="lg:text-52 text-40 font-medium text-white">
-            Real Stories from <span className="text-primary">Happy Customers</span>
+            {t("heading")}{" "}
+            <span className="text-primary">{t("happyCustomers")}</span>
           </h2>
         </div>
         <Carousel

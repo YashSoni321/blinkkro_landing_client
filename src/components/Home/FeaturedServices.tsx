@@ -3,9 +3,11 @@ import { Icon } from "@iconify/react";
 import { services } from "@/app/api/services";
 import Link from "next/link";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 export default function FeaturedServices() {
   const featuredServices = services.slice(2, 5);
+  const t = useTranslations("featuredServices");
 
   return (
     <section className="bg-gray-50 dark:bg-gray-900/50">
@@ -19,14 +21,14 @@ export default function FeaturedServices() {
               className="text-primary"
             />
             <p className="text-base font-semibold text-dark/75 dark:text-white/75">
-              Featured Services
+              {t("title")}
             </p>
           </div>
           <h2 className="text-4xl sm:text-52 font-medium tracking-tighter text-black dark:text-white mb-3">
-            Premium Service Providers
+            {t("heading")}
           </h2>
           <p className="text-xm font-normal text-black/50 dark:text-white/50">
-            Hand-picked professionals delivering exceptional quality
+            {t("subtitle")}
           </p>
         </div>
 
@@ -43,7 +45,7 @@ export default function FeaturedServices() {
                     unoptimized={true}
                   />
                   <div className="absolute top-4 left-4 bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold">
-                    Featured
+                    {t("featured")}
                   </div>
                   <div className="absolute top-4 right-4 bg-white/90 dark:bg-black/90 px-3 py-1 rounded-full">
                     <span className="text-lg font-bold text-primary">
@@ -97,7 +99,7 @@ export default function FeaturedServices() {
                     href={`/services/${service.slug}`}
                     className="w-full bg-primary text-white py-3 px-6 rounded-full text-center font-semibold hover:bg-dark transition-colors duration-300 block"
                   >
-                    Book Now
+                    {t("bookNow")}
                   </Link>
                 </div>
               </div>
@@ -110,7 +112,7 @@ export default function FeaturedServices() {
             href="/featured-services"
             className="inline-flex items-center gap-2 px-8 py-4 border-2 border-primary text-primary rounded-full hover:bg-primary hover:text-white transition-all duration-300"
           >
-            View All Featured Services
+            {t("viewAll")}
             <Icon icon={"ph:arrow-right"} width={20} height={20} />
           </Link>
         </div>

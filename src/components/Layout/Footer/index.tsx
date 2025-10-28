@@ -1,31 +1,34 @@
 import Link from "next/link";
 import { Icon } from "@iconify/react";
-import { FooterLinks } from "@/app/api/footerlinks";
+import { useFooterLinks } from "@/app/api/footerlinks";
+import { useTranslations } from "next-intl";
 
 const Footer = () => {
+  const t = useTranslations("footer");
+  const FooterLinks = useFooterLinks();
+
   return (
     <footer className="relative z-10 bg-dark">
       <div className="container mx-auto max-w-8xl pt-14 px-4 sm:px-6 lg:px-0">
         {/* Newsletter Section */}
         <div className="flex lg:items-center justify-between items-end lg:gap-11 pb-14 border-b border-white/10 lg:flex-nowrap flex-wrap gap-6">
           <p className="text-white text-sm lg:max-w-1/5">
-            Stay updated with the latest KartSquare news, service updates, and
-            exclusive offers.
+            {t("newsletter.description")}
           </p>
           <div className="flex lg:flex-row flex-col items-center lg:gap-10 gap-3">
             <div className="flex gap-2 lg:order-1 order-2">
               <input
                 type="email"
-                placeholder="Enter your email"
+                placeholder={t("newsletter.emailPlaceholder")}
                 className="rounded-full py-4 px-6 bg-white/10 placeholder:text-white text-white focus-visible:outline-0"
               />
+              {/* Uncomment if you want to use the subscribe button */}
               {/* <button className="text-dark bg-white py-4 px-8 font-semibold rounded-full hover:bg-primary hover:text-white duration-300 hover:cursor-pointer">
-                Subscribe
+                {t('newsletter.subscribeButton')}
               </button> */}
             </div>
             <p className="text-white/40 text-sm lg:max-w-[45%] order-1 lg:order-2">
-              By subscribing, you agree to receive KartSquare updates. You can
-              unsubscribe at any time.
+              {t("newsletter.privacyNote")}
             </p>
           </div>
           {/* Social Media */}
@@ -62,13 +65,13 @@ const Footer = () => {
           <div className="grid grid-cols-12 sm:gap-10 gap-y-6">
             <div className="md:col-span-7 col-span-12">
               <h2 className="text-white leading-[1.2] text-40 font-medium mb-6 lg:max-w-3/4">
-                Simplify your bookings. Get started with KartSquare today.
+                {t("contact.title")}
               </h2>
               <Link
                 href="/contactus"
                 className="bg-primary text-base font-semibold py-4 px-8 rounded-full text-white hover:bg-white hover:text-dark duration-300 hover:cursor-pointer"
               >
-                Contact Us
+                {t("contact.button")}
               </Link>
             </div>
             <div className="md:col-span-3 sm:col-span-6 col-span-12">
@@ -104,15 +107,13 @@ const Footer = () => {
 
         {/* Bottom Bar */}
         <div className="flex justify-between md:flex-nowrap flex-wrap items-center py-6 gap-6">
-          <p className="text-white/40 text-sm">
-            ©2025 KartSquare — Designed & Developed with ❤️
-          </p>
+          <p className="text-white/40 text-sm">{t("bottomBar.copyright")}</p>
           <div className="flex gap-8 items-center">
             <Link href="#" className="text-white/40 hover:text-primary text-sm">
-              Terms of Service
+              {t("bottomBar.terms")}
             </Link>
             <Link href="#" className="text-white/40 hover:text-primary text-sm">
-              Privacy Policy
+              {t("bottomBar.privacy")}
             </Link>
           </div>
         </div>

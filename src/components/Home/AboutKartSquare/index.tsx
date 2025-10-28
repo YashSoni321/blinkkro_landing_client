@@ -1,9 +1,11 @@
 import { Icon } from "@iconify/react";
-// import PropertyCard from "./Card/Card";
 import { servicesTypes } from "@/app/api/propertyhomes";
 import PropertyCard from "../Properties/Card/Card";
+import { useTranslations } from "next-intl";
 
 const AboutKartSquare: React.FC = () => {
+  const t = useTranslations("aboutKartSquare");
+
   return (
     <section>
       <div className="container max-w-8xl mx-auto px-5 2xl:px-0">
@@ -18,15 +20,14 @@ const AboutKartSquare: React.FC = () => {
               />
             </span>
             <p className="text-base font-semibold text-dark/75 dark:text-white/75">
-              KartSquare Services
+              {t("badge")}
             </p>
           </div>
           <h2 className="text-40 lg:text-52 font-medium text-black dark:text-white text-center tracking-tight leading-11 mb-2">
-            Everyday services, just a square away.
+            {t("title")}
           </h2>
           <p className="text-xm font-normal text-black/50 dark:text-white/50 text-center">
-            From beauty & wellness to home care and events — KartSquare makes it
-            easy to book trusted professionals anytime, anywhere.
+            {t("description")}
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10">
