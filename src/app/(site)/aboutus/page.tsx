@@ -275,6 +275,42 @@ export default function AboutUs() {
         </div>
       </section>
 
+      {/* Group Section */}
+      <section className="bg-white dark:bg-dark py-20 sm:py-24">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          {/* Image Column */}
+          <div className="relative h-96 w-full lg:h-[32rem]">
+            <img
+              src="/images/team/team.JPG"
+              alt="The KartSquare Team collaborating"
+              className="absolute inset-0 h-full w-full rounded-2xl bg-gray-50 object-cover shadow-xl"
+            />
+          </div>
+
+          {/* Content Column */}
+          <div>
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
+              More Than a Platform. <br /> We're a{" "}
+              <span className="text-primary">Partnership.</span>
+            </h2>
+            <p className="mt-6 text-lg leading-8 text-gray-600 dark:text-white/80">
+              Finding a reliable electrician or a skilled plumber in a bustling
+              city like Jaipur has always been a challenge of trust and timing.
+              At KartSquare, we're changing that narrative. We aren't just a
+              booking app, we are the bridge connecting thousands of households
+              with our community of vetted, skilled, and dedicated service
+              professionals.
+            </p>
+            <p className="mt-4 text-lg leading-8 text-gray-600 dark:text-white/80">
+              Our mission is twofold to bring you peace of mind with safe,
+              high-quality home services, and to empower local technicians with
+              the tools and opportunities to grow their businesses and secure
+              their livelihoods.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Impact Stats */}
       <section className="container max-w-8xl mx-auto px-4 sm:px-5 2xl:px-0 py-16">
         <div className="text-center mb-16">
