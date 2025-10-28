@@ -3,7 +3,6 @@ import Hero from "@/components/Home/Hero";
 import Properties from "@/components/Home/Properties";
 import Services from "@/components/Home/Services";
 import Testimonial from "@/components/Home/Testimonial";
-import BlogSmall from "@/components/shared/Blog";
 import GetInTouch from "@/components/Home/GetInTouch";
 import FAQ from "@/components/Home/FAQs";
 import AboutKartSquare from "@/components/Home/AboutKartSquare";
@@ -21,7 +20,6 @@ export default function Home() {
       <FeaturedProperty />
       <Testimonial />
       <KartSquareSolutions />
-      <BlogSmall />
       <GetInTouch />
       <FAQ />
     </main>
