@@ -33,7 +33,7 @@ export default function AboutKartSquare() {
       <div className="container max-w-8xl mx-auto px-4 sm:px-5 2xl:px-0 overflow-hidden">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
           {/* Right Visual */}
-          <div className="relative">
+          <div className="relative hidden lg:block">
             <div className="relative z-10">
               {/* Main Phone Mockup */}
               <div className="bg-white dark:bg-gray-800 rounded-3xl p-4 sm:p-6 shadow-2xl mx-auto w-full max-w-80">
@@ -137,7 +137,7 @@ export default function AboutKartSquare() {
               </p>
             </div>
 
-            <h2 className="text-4xl sm:text-52 font-bold tracking-tighter text-dark dark:text-white mb-6">
+            <h2 className="text-4xl sm:text-52 font-bold tracking-tighter text-dark dark:text-white ">
               {t("heading")}{" "}
               <span className="text-primary">{t("kartSquareText")}</span>
             </h2>

@@ -284,10 +284,10 @@ export default async function AboutUs() {
             <p className="mt-6 text-lg leading-8 text-gray-600 dark:text-white/80">
               Finding a reliable electrician or a skilled plumber in a bustling
               city like Jaipur has always been a challenge of trust and timing.
-              At KartSquare, we&apos;re changing that narrative. We aren&apos;t just a
-              booking app, we are the bridge connecting thousands of households
-              with our community of vetted, skilled, and dedicated service
-              professionals.
+              At KartSquare, we&apos;re changing that narrative. We aren&apos;t
+              just a booking app, we are the bridge connecting thousands of
+              households with our community of vetted, skilled, and dedicated
+              service professionals.
             </p>
             <p className="mt-4 text-lg leading-8 text-gray-600 dark:text-white/80">
               Our mission is twofold to bring you peace of mind with safe,

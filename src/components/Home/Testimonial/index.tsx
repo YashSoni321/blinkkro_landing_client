@@ -58,7 +58,7 @@ const Testimonial = () => {
           unoptimized={true}
         />
       </div>
-      <div className="container max-w-8xl mx-auto px-5 2xl:px-0">
+      <div className="container max-w-8xl mx-auto px-5 sm:px-0">
         <div>
           <p className="text-white text-base font-semibold flex gap-2">
             <Icon
@@ -81,7 +81,7 @@ const Testimonial = () => {
           <CarouselContent>
             {testimonials.map((item, index) => (
               <CarouselItem key={index} className="mt-9">
-                <div className="lg:flex items-center gap-11">
+                <div className="lg:flex items-center gap-11 sm:gap-5">
                   <div className="w-full h-full rounded-2xl overflow-hidden">
                     <Image
                       src={item.image}
@@ -92,7 +92,7 @@ const Testimonial = () => {
                       unoptimized={true}
                     />
                   </div>
-                  <div className="flex items-start gap-11 lg:pr-20">
+                  <div className="flex items-start gap-11 sm:gap-5 lg:pr-20">
                     <div>
                       <Icon
                         icon="ph:house-simple"
@@ -102,7 +102,7 @@ const Testimonial = () => {
                       />
                     </div>
                     <div>
-                      <h4 className="text-white lg:text-3xl text-2xl">
+                      <h4 className="text-white lg:text-3xl text-xxl">
                         {item.review}
                       </h4>
                       <div className="flex items-center mt-8 gap-6">
@@ -128,7 +128,7 @@ const Testimonial = () => {
             ))}
           </CarouselContent>
         </Carousel>
-        <div className="absolute bottom-24 left-1/2 transform -translate-x-1/2 flex gap-2.5 p-2.5 bg-white/20 rounded-full">
+        {/* <div className="absolute bottom-24 left-1/2 transform -translate-x-1/2 flex gap-2.5 p-2.5 bg-white/20 rounded-full">
           {Array.from({ length: count }).map((_, index) => (
             <button
               key={index}
@@ -139,7 +139,7 @@ const Testimonial = () => {
               aria-label={`Go to slide ${index + 1}`}
             />
           ))}
-        </div>
+        </div> */}
       </div>
     </section>
   );

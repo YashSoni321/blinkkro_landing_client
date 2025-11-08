@@ -8,113 +8,196 @@ const Footer = () => {
   const FooterLinks = useFooterLinks();
 
   return (
-    <footer className="relative z-10 bg-dark py-2">
-      <div className="container mx-auto max-w-8xl pt-14 px-6 ">
-        {/* Newsletter Section */}
-        <div className="flex lg:items-center justify-between items-end lg:gap-11 pb-14 border-b border-white/10 lg:flex-nowrap flex-wrap gap-6">
-          <p className="text-white text-sm lg:max-w-1/5">
-            {t("newsletter.description")}
-          </p>
-          <div className="flex lg:flex-row flex-col items-center lg:gap-10 gap-3">
-            <div className="flex gap-2 lg:order-1 order-2">
-              <input
-                type="email"
-                placeholder={t("newsletter.emailPlaceholder")}
-                className="rounded-full py-4 px-6 bg-white/10 placeholder:text-white text-white focus-visible:outline-0"
-              />
-              {/* Uncomment if you want to use the subscribe button */}
-              {/* <button className="text-dark bg-white py-4 px-8 font-semibold rounded-full hover:bg-primary hover:text-white duration-300 hover:cursor-pointer">
-                {t('newsletter.subscribeButton')}
-              </button> */}
-            </div>
-            <p className="text-white/40 text-sm lg:max-w-[45%] order-1 lg:order-2">
-              {t("newsletter.privacyNote")}
+    <footer className="bg-gradient-to-br from-dark via-dark to-dark/95 relative overflow-hidden">
+      {/* Background Pattern */}
+      <div className="absolute inset-0 opacity-5">
+        <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.1),transparent_50%)]" />
+      </div>
+
+      <div className="container mx-auto max-w-8xl px-4 sm:px-6 relative z-10">
+        {/* Mobile Layout */}
+        <div className="md:hidden py-6">
+          <div className="text-center space-y-4">
+            <h3 className="text-white text-2xl font-bold bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
+              KartSquare
+            </h3>
+            <p className="text-white/70 text-sm mb-6 leading-relaxed max-w-md">
+              {t("newsletter.description")}
             </p>
-          </div>
-          {/* Social Media */}
-          <div className="flex items-center gap-6">
-            <Link href="#">
-              <Icon
-                icon="ph:x-logo-bold"
-                width={24}
-                height={24}
-                className="text-white hover:text-primary duration-300"
-              />
+            <div className="flex justify-center gap-6">
+              <Link
+                href="#"
+                className="p-2 bg-white/10 rounded-full hover:bg-primary/20 transition-all duration-300"
+              >
+                <Icon
+                  icon="ph:facebook-logo-bold"
+                  width={18}
+                  height={18}
+                  className="text-white"
+                />
+              </Link>
+              <Link
+                href="#"
+                className="p-2 bg-white/10 rounded-full hover:bg-primary/20 transition-all duration-300"
+              >
+                <Icon
+                  icon="ph:instagram-logo-bold"
+                  width={18}
+                  height={18}
+                  className="text-white"
+                />
+              </Link>
+              <Link
+                href="#"
+                className="p-2 bg-white/10 rounded-full hover:bg-primary/20 transition-all duration-300"
+              >
+                <Icon
+                  icon="ph:x-logo-bold"
+                  width={18}
+                  height={18}
+                  className="text-white"
+                />
+              </Link>
+            </div>
+            <Link
+              href="/contactus"
+              className="inline-flex items-center gap-2 bg-gradient-to-r from-primary to-primary/80 text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:shadow-lg hover:shadow-primary/25 transition-all duration-300"
+            >
+              <Icon icon="ph:chat-circle-dots" width={16} height={16} />
+              {t("contact.button")}
             </Link>
-            <Link href="#">
-              <Icon
-                icon="ph:facebook-logo-bold"
-                width={24}
-                height={24}
-                className="text-white hover:text-primary duration-300"
-              />
-            </Link>
-            <Link href="#">
-              <Icon
-                icon="ph:instagram-logo-bold"
-                width={24}
-                height={24}
-                className="text-white hover:text-primary duration-300"
-              />
-            </Link>
+            <div className="pt-3 border-t border-white/10">
+              <div className="flex justify-center gap-6 mb-3">
+                <Link
+                  href="/terms"
+                  className="text-white/50 hover:text-primary text-xs transition-colors duration-300"
+                >
+                  Terms
+                </Link>
+                <Link
+                  href="/privacy"
+                  className="text-white/50 hover:text-primary text-xs transition-colors duration-300"
+                >
+                  Privacy
+                </Link>
+              </div>
+              <p className="text-white/50 text-xs">
+                {t("bottomBar.copyright")}
+              </p>
+            </div>
           </div>
         </div>
 
-        {/* Contact & Links */}
-        <div className="py-16 border-b border-white/10">
-          <div className="grid grid-cols-12 sm:gap-10 gap-y-6">
-            <div className="md:col-span-7 col-span-12">
-              <h2 className="text-white leading-[1.2] text-40 font-medium mb-6 lg:max-w-3/4">
-                {t("contact.title")}
-              </h2>
+        {/* Desktop Layout */}
+        <div className="hidden md:block py-12">
+          <div className="grid grid-cols-4 gap-8 mb-8">
+            {/* Company Info */}
+            <div className="col-span-2">
+              <h3 className="text-white text-3xl font-bold mb-4 bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
+                KartSquare
+              </h3>
+              <p className="text-white/70 text-sm mb-6 leading-relaxed max-w-md">
+                {t("newsletter.description")}
+              </p>
+              <div className="flex gap-3">
+                <Link
+                  href="#"
+                  className="p-3 bg-white/10 rounded-full hover:bg-primary/20 hover:scale-110 transition-all duration-300"
+                >
+                  <Icon
+                    icon="ph:facebook-logo-bold"
+                    width={20}
+                    height={20}
+                    className="text-white"
+                  />
+                </Link>
+                <Link
+                  href="#"
+                  className="p-3 bg-white/10 rounded-full hover:bg-primary/20 hover:scale-110 transition-all duration-300"
+                >
+                  <Icon
+                    icon="ph:instagram-logo-bold"
+                    width={20}
+                    height={20}
+                    className="text-white"
+                  />
+                </Link>
+                <Link
+                  href="#"
+                  className="p-3 bg-white/10 rounded-full hover:bg-primary/20 hover:scale-110 transition-all duration-300"
+                >
+                  <Icon
+                    icon="ph:x-logo-bold"
+                    width={20}
+                    height={20}
+                    className="text-white"
+                  />
+                </Link>
+              </div>
+            </div>
+
+            {/* Quick Links */}
+            <div>
+              <h4 className="text-white font-semibold mb-6 text-lg">
+                Quick Links
+              </h4>
+              <div className="space-y-3">
+                {FooterLinks.slice(0, 4).map((item, index) => (
+                  <Link
+                    key={index}
+                    href={item.href}
+                    className="block text-white/60 hover:text-primary text-sm transition-all duration-300 hover:translate-x-1"
+                  >
+                    {item.label}
+                  </Link>
+                ))}
+                <Link
+                  href="/terms"
+                  className="block text-white/60 hover:text-primary text-sm transition-all duration-300 hover:translate-x-1"
+                >
+                  Terms & Conditions
+                </Link>
+                <Link
+                  href="/privacy"
+                  className="block text-white/60 hover:text-primary text-sm transition-all duration-300 hover:translate-x-1"
+                >
+                  Privacy Policy
+                </Link>
+              </div>
+            </div>
+
+            {/* Contact */}
+            <div>
+              <h4 className="text-white font-semibold mb-6 text-lg">
+                Get in Touch
+              </h4>
               <Link
                 href="/contactus"
-                className="bg-primary text-base font-semibold py-4 px-8 rounded-full text-white hover:bg-white hover:text-dark duration-300 hover:cursor-pointer"
+                className="inline-flex items-center gap-2 bg-gradient-to-r from-primary to-primary/80 text-white px-6 py-3 rounded-full text-sm font-semibold hover:shadow-lg hover:shadow-primary/25 hover:scale-105 transition-all duration-300"
               >
+                <Icon icon="ph:chat-circle-dots" width={18} height={18} />
                 {t("contact.button")}
               </Link>
             </div>
-            <div className="md:col-span-3 sm:col-span-6 col-span-12">
-              <div className="flex flex-col gap-4 w-fit">
-                {FooterLinks.slice(0, 4).map((item, index) => (
-                  <div key={index}>
-                    <Link
-                      href={item.href}
-                      className="text-white/40 text-xm hover:text-white"
-                    >
-                      {item.label}
-                    </Link>
-                  </div>
-                ))}
-              </div>
-            </div>
-            <div className="md:col-span-2 sm:col-span-6 col-span-12">
-              <div className="flex flex-col gap-4 w-fit">
-                {FooterLinks.slice(4, 8).map((item, index) => (
-                  <div key={index}>
-                    <Link
-                      href={item.href}
-                      className="text-white/40 text-xm hover:text-white"
-                    >
-                      {item.label}
-                    </Link>
-                  </div>
-                ))}
-              </div>
-            </div>
           </div>
-        </div>
 
-        {/* Bottom Bar */}
-        <div className="flex justify-between md:flex-nowrap flex-wrap items-center py-6 gap-6">
-          <p className="text-white/40 text-sm">{t("bottomBar.copyright")}</p>
-          <div className="flex gap-8 items-center">
-            <Link href="#" className="text-white/40 hover:text-primary text-sm">
-              {t("bottomBar.terms")}
-            </Link>
-            <Link href="#" className="text-white/40 hover:text-primary text-sm">
-              {t("bottomBar.privacy")}
-            </Link>
+          {/* Bottom Bar */}
+          <div className="flex justify-between items-center pt-8 border-t border-white/10">
+            <p className="text-white/50 text-sm">{t("bottomBar.copyright")}</p>
+            <div className="flex gap-8">
+              <Link
+                href="/terms"
+                className="text-white/50 hover:text-primary text-sm transition-colors duration-300"
+              >
+                {t("bottomBar.terms")}
+              </Link>
+              <Link
+                href="/privacy"
+                className="text-white/50 hover:text-primary text-sm transition-colors duration-300"
+              >
+                {t("bottomBar.privacy")}
+              </Link>
+            </div>
           </div>
         </div>
       </div>

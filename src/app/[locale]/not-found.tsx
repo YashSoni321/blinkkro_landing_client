@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Metadata } from "next";
 import { Icon } from "@iconify/react/dist/iconify.js";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Page Not Found - KartSquare | 404 Error",
@@ -39,12 +40,19 @@ const ErrorPage = () => {
           </p>
         </div>
         <h2 className="text-dark text-52 relative font-bold dark:text-white ">
-          Lost? Let’s Help You Find Home.
+          Lost? Let's Help You Find Home.
         </h2>
-        <p className="text-lg text-dark/50 dark:text-white/50 font-normal w-full mx-auto">
-          Looks like you’ve hit a dead end — but don’t worry, we’ll help you get
+        <p className="text-lg text-dark/50 dark:text-white/50 font-normal w-full mx-auto mb-8">
+          Looks like you've hit a dead end — but don't worry, we'll help you get
           back on track
         </p>
+        <Link
+          href="/"
+          className="inline-flex items-center gap-2 bg-primary text-white px-8 py-4 rounded-full font-semibold hover:bg-primary/90 transition-all duration-300"
+        >
+          <Icon icon="ph:house" width={20} height={20} />
+          Go Home
+        </Link>
       </section>
     </>
   );

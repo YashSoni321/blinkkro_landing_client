@@ -38,7 +38,7 @@ const KartSquareSolutions: React.FC = () => {
       <div className="container max-w-8xl mx-auto px-5 2xl:px-0">
         <div className="grid lg:grid-cols-2 gap-10 items-center">
           {/* Right Side - Carousel */}
-          <div className="relative order-1 lg:order-2">
+          <div className="relative order-1 lg:order-2 h-96 sm:h-96 md:h-96">
             <Carousel setApi={setApi} opts={{ loop: true }}>
               <CarouselContent>
                 {featuredProprty.slice(1).map((item, index) => (
@@ -55,17 +55,6 @@ const KartSquareSolutions: React.FC = () => {
                 ))}
               </CarouselContent>
             </Carousel>
-            <div className="absolute left-2/5 bg-dark/50 rounded-full py-2.5 bottom-10 flex justify-center mt-4 gap-2.5 px-2.5">
-              {Array.from({ length: count }).map((_, index) => (
-                <button
-                  key={index}
-                  onClick={() => handleDotClick(index)}
-                  className={`w-2.5 h-2.5 rounded-full ${
-                    current === index + 1 ? "bg-white" : "bg-white/50"
-                  }`}
-                />
-              ))}
-            </div>
           </div>
           {/* Left Side - KartSquare Content */}
           <div className="flex flex-col gap-10 order-2 lg:order-1">
@@ -149,7 +138,7 @@ const KartSquareSolutions: React.FC = () => {
             <div className="flex gap-10 items-center">
               <Link
                 href="/get-started"
-                className="py-4 px-8 bg-primary hover:bg-dark duration-300 rounded-full text-white"
+                className="px-8 py-4 text-sm sm:text-2xl md:text-2xl font-medium bg-primary text-white rounded-full hover:bg-primary/90 active:scale-95 transition-all duration-300"
               >
                 {t("cta.button")}
               </Link>

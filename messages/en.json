@@ -149,6 +149,79 @@
       "providerButton": "Become a Provider"
     }
   },
+  "termsPage": {
+    "title": "Terms and Conditions",
+    "lastUpdated": "Last updated: 08-10-2025",
+    "acceptance": {
+      "heading": "1. Acceptance of Terms",
+      "paragraph1": "By accessing, browsing, or using KartSquare’s services — including booking home services, event management, and professional consultations — you acknowledge that you have read, understood, and agree to comply with these <strong>Terms and Conditions</strong>.",
+      "paragraph2": "If you do not agree with these terms, please discontinue the use of our platform immediately."
+    },
+    "serviceDescription": {
+      "heading": "2. Our Services",
+      "paragraph1": "KartSquare provides an online marketplace that connects users ('Users') with independent third-party service providers ('Service Providers'). Our platform facilitates the booking, payment, and communication for services but does not provide the services directly. KartSquare's role is strictly that of a technology intermediary.",
+      "paragraph2": "Services may include, but are not limited to, home cleaning, plumbing, catering, photography, event planning, and personalized consultations."
+    },
+    "userResponsibilities": {
+      "heading": "3. User Accounts and Conduct",
+      "item1": "Provide accurate, up-to-date, and complete information during registration and booking, and maintain the security of your account password.",
+      "item2": "Ensure service areas are safe and accessible for providers and provide a cooperative environment.",
+      "item3": "Refrain from using the platform for any unlawful, fraudulent, or harmful purpose, or to transmit any abusive or objectionable content.",
+      "item4": "Pay all applicable fees, taxes, and charges for services booked through your account in a timely manner.",
+      "item5": "Treat Service Providers with respect and professionalism. Any form of harassment or discrimination will result in immediate account termination."
+    },
+    "providerObligations": {
+      "heading": "4. Service Provider Obligations",
+      "item1": "Deliver services to a professional standard, as advertised and agreed upon at the time of booking.",
+      "item2": "Maintain professional, courteous, and respectful behavior when interacting with Users.",
+      "item3": "Comply with all applicable laws, safety regulations, and hygiene standards relevant to their services.",
+      "item4": "Respect User privacy and property, and not disclose any personal information obtained during a service."
+    },
+    "bookingPolicy": {
+      "heading": "5. Event Booking Policy",
+      "paragraph1": "When booking large-scale services or events (e.g., parties, weddings, corporate gatherings), specific terms from the Service Provider may apply in addition to these general terms.",
+      "item1": "Non-refundable deposits may be required to secure event dates and services.",
+      "item2": "Final payment must be completed by the date specified by the Service Provider, typically before the event.",
+      "item3": "Cancellations made within a specified timeframe (e.g., 7-14 days) of the scheduled date may result in partial or full forfeiture of the deposit and other payments.",
+      "item4": "KartSquare is not liable for event cancellations or failures caused by circumstances beyond our reasonable control (force majeure), including natural disasters, government actions, or third-party failures."
+    },
+    "paymentPolicy": {
+      "heading": "6. Payment and Refund Policy",
+      "paragraph1": "Payments for services are processed securely through our third-party payment gateway partners. By booking, you authorize KartSquare to charge your selected payment method for the total amount, including service fees, taxes, and any tips.",
+      "paragraph2": "Refund eligibility is determined by the Service Provider’s cancellation policy and the timing of the cancellation. Refund requests must be submitted through the KartSquare support center within 24 hours of a completed or cancelled service.",
+      "paragraph3": "KartSquare reserves the right to issue refunds or credits at our sole discretion. Disputes between Users and Service Providers should be reported to us for mediation, but we are not obligated to provide a refund."
+    },
+    "intellectualProperty": {
+      "heading": "7. Intellectual Property",
+      "paragraph1": "All content on the KartSquare platform, including logos, text, graphics, software, and trademarks, is the exclusive property of KartSquare or its licensors and is protected by copyright and other intellectual property laws. You may not use, reproduce, or distribute any content from the platform without our prior written permission."
+    },
+    "privacy": {
+      "heading": "8. Privacy",
+      "paragraph1": "Your privacy is paramount. Our collection and use of your personal information are governed by our <link>Privacy Policy</link>, which is incorporated into these Terms by reference.",
+      "paragraph2": "We implement robust security measures to protect your data, but we cannot guarantee absolute security against unauthorized breaches."
+    },
+    "liability": {
+      "heading": "9. Limitation of Liability",
+      "paragraph1": "KartSquare serves as a facilitator and is not liable for the actions, negligence, or conduct of Users or Service Providers. We do not assume responsibility for any damages, losses, injuries, or disputes arising from services booked through our platform.",
+      "paragraph2": "To the fullest extent permitted by law, KartSquare, its directors, employees, and affiliates shall not be liable for any indirect, incidental, special, or consequential damages resulting from your use of the platform."
+    },
+    "termination": {
+      "heading": "10. Termination",
+      "paragraph1": "We reserve the right to suspend or terminate your account and access to the platform at our discretion, without notice, for any conduct that we believe violates these Terms, is harmful to other users, or is otherwise fraudulent or illegal."
+    },
+    "governingLaw": {
+      "heading": "11. Governing Law and Dispute Resolution",
+      "paragraph1": "These Terms and Conditions shall be governed by and construed in accordance with the laws of India. Any disputes arising out of or in connection with these terms shall be subject to the exclusive jurisdiction of the courts in Bangalore, Karnataka."
+    },
+    "changes": {
+      "heading": "12. Changes to Terms",
+      "paragraph1": "KartSquare reserves the right to modify or update these Terms and Conditions at any time. We will notify you of significant changes via email or in-app notifications. Your continued use of the platform after such changes constitutes your acceptance of the new terms."
+    },
+    "contact": {
+      "heading": "13. Contact Information",
+      "paragraph1": "For any questions or support regarding these Terms, please contact us at <email>support@kartsquare.com</email> or visit our <contactLink>Contact Page</contactLink>."
+    }
+  },
 
   "contactPage": {
     "metadata": {
@@ -528,7 +601,7 @@
   },
   "testimonial": {
     "title": "Testimonials",
-    "heading": "Real Stories from Happy Customers",
+    "heading": "Real Stories from",
     "happyCustomers": "Happy Customers"
   },
   "featuredServices": {

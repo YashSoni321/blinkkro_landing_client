@@ -1,10 +1,25 @@
+"use client";
 import { Icon } from "@iconify/react";
 import PropertyCard from "./Card/Card";
 import { servicesTypes } from "@/app/api/propertyhomes";
 import { useTranslations } from "next-intl";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const Properties: React.FC = () => {
   const t = useTranslations("properties");
+
+  const sliderSettings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    arrows: false,
+  };
 
   return (
     <section>
@@ -30,7 +45,19 @@ const Properties: React.FC = () => {
             {t("description")}
           </p>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+        {/* Mobile Slider */}
+        <div className="lg:hidden">
+          <Slider {...sliderSettings}>
+            {servicesTypes.slice(0, 6).map((item, index) => (
+              <div key={index} className="px-2">
+                <PropertyCard item={item} />
+              </div>
+            ))}
+          </Slider>
+        </div>
+
+        {/* Desktop Grid */}
+        <div className="hidden lg:grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {servicesTypes.slice(0, 6).map((item, index) => (
             <div key={index} className="">
               <PropertyCard item={item} />

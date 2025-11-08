@@ -99,18 +99,21 @@ export default function AboutUs() {
           </div>
 
           {/* CTA */}
-          <div className="flex gap-10 items-center">
+          <div className="flex flex-col sm:flex-row items-center justify-center sm:justify-start gap-6 sm:gap-10 text-center sm:text-left">
             <Link
               href="/get-started"
-              className="py-4 px-8 bg-primary hover:bg-dark duration-300 rounded-full text-white"
+              className="px-8 py-4 text-sm sm:text-2xl md:text-2xl font-medium bg-primary text-white rounded-full hover:bg-primary/90 active:scale-95 transition-all duration-300"
             >
               {t("cta.button")}
             </Link>
+
             <div>
-              <h4 className="text-3xl text-dark dark:text-white font-medium">
+              <h4 className="text-2xl sm:text-4xl font-semibold text-dark dark:text-white">
                 {t("cta.rating")}
               </h4>
-              <p className="text-base text-dark/50">{t("cta.customers")}</p>
+              <p className="text-sm sm:text-base text-dark/60 dark:text-white/70">
+                {t("cta.customers")}
+              </p>
             </div>
           </div>
         </div>
