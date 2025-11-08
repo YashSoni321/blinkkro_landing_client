@@ -23,7 +23,7 @@ const GetInTouch: React.FC = () => {
 
           <div className="bg-black/40 lg:py-64 md:py-28 py-10">
             <div className="flex flex-col items-center gap-8">
-              <h2 className="text-white lg:text-52 md:text-40 text-3xl max-w-3/4 text-center font-medium">
+              <h2 className="text-white lg:text-52 md:text-40 font-medium text-3xl max-w-3/4 text-center">
                 {t("title")}
               </h2>
               <Link

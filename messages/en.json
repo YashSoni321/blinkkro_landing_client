@@ -405,57 +405,59 @@
   },
   "industriesOrbit": {
     "badge": "Trusted Industries",
+    "intro": "Discover tailored services for your business sector. Whether you’re in IT, healthcare, or real estate, we connect you with trusted professionals to streamline your operations and help your business grow efficiently.",
     "title": "Serving 2500+ Companies Across India",
     "industries": [
       {
-        "name": "IT & Software",
-        "clients": "500+"
+        "name": "Tech",
+        "clients": "500+ users"
       },
       {
-        "name": "Manufacturing",
-        "clients": "300+"
+        "name": "Factories",
+        "clients": "300+ partners"
       },
       {
-        "name": "Banking & Finance",
-        "clients": "150+"
+        "name": "Finance",
+        "clients": "150+ businesses"
       },
       {
-        "name": "Healthcare",
-        "clients": "200+"
+        "name": "Health",
+        "clients": "200+ clinics"
       },
       {
-        "name": "Real Estate",
-        "clients": "400+"
+        "name": "Property",
+        "clients": "400+ agents"
       },
       {
-        "name": "Retail & E-commerce",
-        "clients": "350+"
+        "name": "Shopping",
+        "clients": "350+ stores"
       },
       {
         "name": "Education",
-        "clients": "250+"
+        "clients": "250+ schools"
       },
       {
-        "name": "Hospitality",
-        "clients": "180+"
+        "name": "Food & Stay",
+        "clients": "180+ hotels"
       },
       {
-        "name": "Automotive",
-        "clients": "120+"
+        "name": "Cars",
+        "clients": "120+ dealers"
       },
       {
-        "name": "Telecommunications",
-        "clients": "80+"
+        "name": "Mobile",
+        "clients": "80+ companies"
       },
       {
-        "name": "Energy & Power",
-        "clients": "90+"
+        "name": "Energy",
+        "clients": "90+ providers"
       },
       {
-        "name": "Pharmaceuticals",
-        "clients": "110+"
+        "name": "Medicine",
+        "clients": "110+ brands"
       }
     ],
+
     "stats": {
       "companies": "Companies",
       "services": "Services",

@@ -1,20 +1,25 @@
 "use client";
 
-import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { Link, usePathname } from "@/i18n/routing";
+import { Icon } from "@iconify/react";
+import { useTranslations } from "next-intl";
 import React from "react";
 
 const FloatingButton = () => {
   const pathname = usePathname();
+  const t = useTranslations("waitlistPage.form.submit");
+
   if (pathname === "/waitlist") {
     return null;
   }
+
   return (
     <Link
       href="/waitlist"
-      className={`fixed bottom-10 right-10 z-[9999] bg-primary shadow-primary text-white p-4 rounded-full shadow-md font-bold text-lg hover:bg-red-600 transition-colors duration-300 cursor-pointer`}
+      className="fixed bottom-8 right-8 z-50 flex items-center gap-2 rounded-full bg-primary px-4 py-3 text-sm font-semibold text-white shadow-lg shadow-primary/40 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-primary/50"
     >
-      Application Coming Soon...
+      <Icon icon="ph:rocket-launch-bold" width={20} height={20} />
+      <span>{t("default")}</span>
     </Link>
   );
 };

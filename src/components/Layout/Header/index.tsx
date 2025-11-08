@@ -45,7 +45,7 @@ const Header: React.FC = () => {
 
   return (
     <header
-      className={`fixed h-24 py-1 z-50 w-full bg-transparent transition-all duration-300 lg:px-0 px-4 ${
+      className={`fixed h-24 py-1 z-50 w-full bg-transparent transition-all duration-300  px-4 ${
         sticky ? "top-3" : "top-0"
       }`}
     >
@@ -58,43 +58,9 @@ const Header: React.FC = () => {
     }`}
       >
         <div>
-          {/* <Link href="/">
-            <Image
-              src={"/images/logo/logo-light.png"}
-              alt="logo"
-              width={150}
-              height={68}
-              unoptimized={true}
-              className={`${
-                isHomepage
-                  ? sticky
-                    ? "block dark:hidden"
-                    : "hidden"
-                  : sticky
-                  ? "block dark:hidden"
-                  : "block dark:hidden"
-              }`}
-            />
-            <Image
-              src={"/images/logo/logo-dark.png"}
-              alt="logo"
-              width={150}
-              height={68}
-              unoptimized={true}
-              className={`${
-                isHomepage
-                  ? sticky
-                    ? "hidden dark:block"
-                    : "block"
-                  : sticky
-                  ? "dark:block hidden"
-                  : "dark:block hidden"
-              }`}
-            />
-          </Link> */}
           <div className="flex items-center justify-center">
-            <p className="text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-wide flex items-center gap-1">
-              Kart Square
+            <p className="text-xl sm:text-3xl md:text-4xl font-extrabold tracking-wide flex items-center gap-1">
+              KartSquare
             </p>
           </div>
         </div>
@@ -169,7 +135,7 @@ const Header: React.FC = () => {
                     ? "text-white bg-dark dark:bg-white dark:text-dark dark:hover:text-white dark:hover:bg-dark hover:text-dark hover:bg-white border-dark dark:border-white"
                     : "text-dark bg-white dark:text-dark hover:bg-transparent hover:text-white border-white"
                   : "bg-dark text-white hover:bg-transparent hover:text-dark dark:bg-white dark:text-dark dark:hover:bg-transparent dark:hover:text-white"
-              }`}
+              } `}
               aria-label="Toggle menu"
             >
               <span>

@@ -73,10 +73,10 @@ const Categories = () => {
                 </div>
                 <div className="flex flex-col gap-2.5">
                   <h3 className="text-white text-2xl font-bold">
-                    {t("categoriesList.wellness.title")}
+                    {t("categoriesList.wellness.title")} 121
                   </h3>
                   <p className="text-white/80 text-base leading-6">
-                    {t("categoriesList.wellness.description")}
+                    {t("categoriesList.wellness.description")} 121
                   </p>
                 </div>
               </Link>
@@ -118,16 +118,16 @@ const Categories = () => {
 
           <div className="lg:col-span-3 col-span-6">
             <div className="relative rounded-2xl overflow-hidden group h-64 sm:h-80 lg:h-96">
-              <Link href="/events">
-                <Image
-                  src="/images/blinkkaro_main_categories/event.png"
-                  alt="events222"
-                  width={320}
-                  height={386}
-                  className="w-full h-full object-cover"
-                  unoptimized={true}
-                />
-              </Link>
+              {/* <Link href="/events"> */}
+              <Image
+                src="/images/kartsquare_main_categories/event.png"
+                alt="events222"
+                width={320}
+                height={386}
+                className="w-full h-full object-cover"
+                unoptimized={true}
+              />
+              {/* </Link> */}
               <Link
                 href="/events"
                 className="absolute w-full h-full bg-gradient-to-b from-black/0 to-black/80 top-full flex flex-col justify-between pl-2 pb-10 group-hover:top-0 duration-500"

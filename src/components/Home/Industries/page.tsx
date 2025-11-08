@@ -4,66 +4,22 @@ import { Icon } from "@iconify/react";
 import { useTranslations } from "next-intl";
 
 const industriesData = [
+  { name: "Tech", icon: "mdi:laptop", color: "bg-blue-500" },
+  { name: "Factories", icon: "mdi:factory", color: "bg-orange-500" },
+  { name: "Finance", icon: "mdi:bank", color: "bg-green-500" },
+  { name: "Health", icon: "mdi:hospital-building", color: "bg-red-500" },
+  { name: "Property", icon: "mdi:office-building", color: "bg-purple-500" },
+  { name: "Shopping", icon: "mdi:storefront", color: "bg-pink-500" },
+  { name: "Education", icon: "mdi:school", color: "bg-indigo-500" },
   {
-    name: "IT & Software",
-    icon: "mdi:laptop",
-    color: "bg-blue-500",
-  },
-  {
-    name: "Manufacturing",
-    icon: "mdi:factory",
-    color: "bg-orange-500",
-  },
-  {
-    name: "Banking & Finance",
-    icon: "mdi:bank",
-    color: "bg-green-500",
-  },
-  {
-    name: "Healthcare",
-    icon: "mdi:hospital-building",
-    color: "bg-red-500",
-  },
-  {
-    name: "Real Estate",
-    icon: "mdi:office-building",
-    color: "bg-purple-500",
-  },
-  {
-    name: "Retail & E-commerce",
-    icon: "mdi:storefront",
-    color: "bg-pink-500",
-  },
-  {
-    name: "Education",
-    icon: "mdi:school",
-    color: "bg-indigo-500",
-  },
-  {
-    name: "Hospitality",
+    name: "Food & Stay",
     icon: "mdi:silverware-fork-knife",
     color: "bg-yellow-500",
   },
-  {
-    name: "Automotive",
-    icon: "mdi:car",
-    color: "bg-gray-500",
-  },
-  {
-    name: "Telecommunications",
-    icon: "mdi:cellphone-wireless",
-    color: "bg-cyan-500",
-  },
-  {
-    name: "Energy & Power",
-    icon: "mdi:lightning-bolt",
-    color: "bg-amber-500",
-  },
-  {
-    name: "Pharmaceuticals",
-    icon: "mdi:pill",
-    color: "bg-teal-500",
-  },
+  { name: "Cars", icon: "mdi:car", color: "bg-gray-500" },
+  { name: "Mobile", icon: "mdi:cellphone-wireless", color: "bg-cyan-500" },
+  { name: "Energy", icon: "mdi:lightning-bolt", color: "bg-amber-500" },
+  { name: "Medicine", icon: "mdi:pill", color: "bg-teal-500" },
 ];
 
 const IndustriesOrbit: React.FC = () => {
@@ -91,12 +47,21 @@ const IndustriesOrbit: React.FC = () => {
               {t("badge")}
             </p>
           </div>
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-black dark:text-white mb-3">
+
+          <h2 className="text-2xl sm:text-40 text-40 lg:text-4xl font-medium text-black dark:text-white mb-3">
             {t("title")}
           </h2>
+
+          {/* 📝 Simple Paragraph for Users */}
+          <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400 max-w-5xl mx-auto mb-6">
+            {t("intro", {
+              default:
+                "Discover tailored services for your business sector. Whether you’re in IT, healthcare, or real estate, we connect you with trusted professionals to streamline your operations and help your business grow efficiently.",
+            })}
+          </p>
         </div>
 
-        {/* Industries Grid */}
+        {/* Industries Grid (unchanged) */}
         <div className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-6 gap-3 sm:gap-4 max-w-5xl mx-auto">
           {industries.map((industry, i) => (
             <div
@@ -112,7 +77,6 @@ const IndustriesOrbit: React.FC = () => {
                     : "bg-white dark:bg-gray-800 shadow-sm hover:shadow-md"
                 }`}
               >
-                {/* Icon */}
                 <div className="flex justify-center mb-2">
                   <Icon
                     icon={industry.icon}
@@ -122,7 +86,6 @@ const IndustriesOrbit: React.FC = () => {
                   />
                 </div>
 
-                {/* Industry Name */}
                 <h3
                   className={`text-xs sm:text-sm font-semibold mb-1 transition-colors duration-300 leading-tight ${
                     hoveredIndustry === i
@@ -133,7 +96,6 @@ const IndustriesOrbit: React.FC = () => {
                   {t.raw("industries")[i].name.split(" ")[0]}
                 </h3>
 
-                {/* Client Count */}
                 <div
                   className={`text-xs transition-colors duration-300 ${
                     hoveredIndustry === i ? "text-white/90" : "text-primary"

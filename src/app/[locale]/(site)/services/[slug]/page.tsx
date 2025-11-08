@@ -16,9 +16,9 @@ export default function Details() {
       <div className="container mx-auto max-w-8xl px-5 2xl:px-0">
         <div className="grid grid-cols-12 items-end gap-6">
           <div className="lg:col-span-8 col-span-12">
-            <h1 className="lg:text-52 text-40 font-semibold text-dark dark:text-white">
+            <h2 className="lg:text-52 text-40 font-semibold text-dark dark:text-white">
               {item?.name}
-            </h1>
+            </h2>
             <div className="flex gap-2.5">
               <Icon
                 icon="ph:map-pin"
