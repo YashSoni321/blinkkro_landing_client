@@ -8,10 +8,10 @@ import SessionProviderComp from "@/components/nextauth/SessionProvider";
 import ThemeProviderComp from "@/components/provider/ThemeProviderComp";
 import { Toaster } from "react-hot-toast";
 import FloatingButton from "@/components/Layout/FloatingButton";
-import {NextIntlClientProvider} from 'next-intl';
-import {getMessages} from 'next-intl/server';
-import {notFound} from 'next/navigation';
-import {routing} from '@/i18n/routing';
+import { NextIntlClientProvider } from "next-intl";
+import { getMessages } from "next-intl/server";
+import { notFound } from "next/navigation";
+import { routing } from "@/i18n/routing";
 
 const font = Bricolage_Grotesque({ subsets: ["latin"] });
 
@@ -120,17 +120,17 @@ export const metadata: Metadata = {
 
 export default async function RootLayout({
   children,
-  params
+  params,
 }: {
   children: React.ReactNode;
-  params: Promise<{locale: string}>;
+  params: Promise<{ locale: string }>;
 }) {
-  const {locale} = await params;
-  
+  const { locale } = await params;
+
   if (!routing.locales.includes(locale as any)) {
     notFound();
   }
- 
+
   const messages = await getMessages();
 
   return (

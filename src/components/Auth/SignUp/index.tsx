@@ -6,16 +6,16 @@ import SocialSignUp from "../SocialSignUp";
 import Logo from "@/components/Layout/Header/BrandLogo/Logo";
 import { useContext, useState } from "react";
 import AuthDialogContext from "@/app/context/AuthDialogContext";
-const SignUp = ({ signUpOpen }: { signUpOpen?: any }) => {
+const SignUp = ({}: { signUpOpen?: (open: boolean) => void }) => {
   const router = useRouter();
-  const [_, setLoading] = useState(false);
+  const [, setLoading] = useState(false);
   const authDialog = useContext(AuthDialogContext);
 
-  const handleSubmit = (e: any) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
     setLoading(true);
-    const data = new FormData(e.currentTarget);
+    const data = new FormData(e.currentTarget as HTMLFormElement);
     const value = Object.fromEntries(data.entries());
     const finalData = { ...value };
 
@@ -37,7 +37,7 @@ const SignUp = ({ signUpOpen }: { signUpOpen?: any }) => {
         setLoading(false);
       });
     setTimeout(() => {
-      signUpOpen(false);
+      // signUpOpen(false);
     }, 1200);
     authDialog?.setIsUserRegistered(true);
 

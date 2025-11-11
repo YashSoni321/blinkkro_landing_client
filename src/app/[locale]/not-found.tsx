@@ -40,10 +40,10 @@ const ErrorPage = () => {
           </p>
         </div>
         <h2 className="text-dark text-52 relative font-bold dark:text-white ">
-          Lost? Let's Help You Find Home.
+          Lost? Let&apos;s Help You Find Home.
         </h2>
         <p className="text-lg text-dark/50 dark:text-white/50 font-normal w-full mx-auto mb-8">
-          Looks like you've hit a dead end — but don't worry, we'll help you get
+          Looks like you&apos;ve hit a dead end — but don&apos;t worry, we&apos;ll help you get
           back on track
         </p>
         <Link

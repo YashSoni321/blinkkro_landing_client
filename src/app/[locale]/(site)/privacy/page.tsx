@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Privacy Policy - How KartSquare Protects Your Data | KartSquare",
   description:
-    "Your privacy is our priority. Read KartSquare's privacy policy to understand how we collect, use, and protect your personal information when you book services.",
+    "Your privacy is our priority. Read KartSquare&apos;s privacy policy to understand how we collect, use, and protect your personal information when you book services.",
   keywords: [
     "KartSquare privacy policy",
     "data protection",
@@ -200,7 +200,7 @@ export default function PrivacyPage() {
 
           <section className="mb-8">
             <h2 className="text-2xl font-semibold text-dark dark:text-white mb-4">
-              8. Children's Privacy
+              8. Children&apos;s Privacy
             </h2>
             <p className="mb-4">
               Our services are not intended for individuals under the age of 18.

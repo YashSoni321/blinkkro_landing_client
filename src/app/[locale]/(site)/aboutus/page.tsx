@@ -268,10 +268,12 @@ export default async function AboutUs() {
         <div className="max-w-7xl mx-auto px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Image Column */}
           <div className="relative h-96 w-full lg:h-[32rem]">
-            <img
+            <Image
               src="/images/team/team.JPG"
               alt="The KartSquare Team collaborating"
-              className="absolute inset-0 h-full w-full rounded-2xl bg-gray-50 object-cover shadow-xl"
+              fill
+              className="rounded-2xl bg-gray-50 object-cover shadow-xl"
+              unoptimized={true}
             />
           </div>
 

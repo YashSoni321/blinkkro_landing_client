@@ -7,13 +7,14 @@ import { Toaster } from "react-hot-toast";
 import AuthDialogContext from "@/app/context/AuthDialogContext";
 import Logo from "@/components/Layout/Header/BrandLogo/Logo";
 
-const Signin = ({ signInOpen }: { signInOpen?: any }) => {
+const Signin = ({ signInOpen }: { signInOpen?: (open: boolean) => void }) => {
   const [username, setUsername] = useState("admin");
   const [password, setPassword] = useState("admin123");
-  const [_, setError] = useState("");
+
+  const [, setError] = useState("");
   const authDialog = useContext(AuthDialogContext);
 
-  const handleSubmit = async (e: any) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     const result = await signIn("credentials", {
       redirect: false,
@@ -25,7 +26,7 @@ const Signin = ({ signInOpen }: { signInOpen?: any }) => {
     }
     if (result?.status === 200) {
       setTimeout(() => {
-        signInOpen(false);
+        // signInOpen;
       }, 1200);
       authDialog?.setIsSuccessDialogOpen(true);
       setTimeout(() => {

@@ -14,8 +14,8 @@ import { useTranslations } from "next-intl";
 
 const KartSquareSolutions: React.FC = () => {
   const [api, setApi] = React.useState<CarouselApi | undefined>(undefined);
-  const [current, setCurrent] = React.useState(0);
-  const [count, setCount] = React.useState(0);
+  const [, setCurrent] = React.useState(0);
+  const [, setCount] = React.useState(0);
   const t = useTranslations("kartSquareSolutions");
 
   React.useEffect(() => {
@@ -29,9 +29,7 @@ const KartSquareSolutions: React.FC = () => {
     });
   }, [api]);
 
-  const handleDotClick = (index: number) => {
-    if (api) api.scrollTo(index);
-  };
+
 
   return (
     <section>

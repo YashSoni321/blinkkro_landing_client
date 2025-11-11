@@ -13,8 +13,8 @@ import { useTranslations } from "next-intl";
 
 const Testimonial = () => {
   const [api, setApi] = React.useState<CarouselApi | undefined>(undefined);
-  const [current, setCurrent] = React.useState(0);
-  const [count, setCount] = React.useState(0);
+  const [, setCurrent] = React.useState(0);
+  const [, setCount] = React.useState(0);
   const t = useTranslations("testimonial");
 
   React.useEffect(() => {
@@ -40,12 +40,6 @@ const Testimonial = () => {
       api.off("select", onSelect);
     };
   }, [api]);
-
-  const handleDotClick = (index: number) => {
-    if (api) {
-      api.scrollTo(index);
-    }
-  };
 
   return (
     <section className="bg-dark relative overflow-hidden" id="testimonial">

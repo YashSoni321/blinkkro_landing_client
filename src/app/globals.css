@@ -12,7 +12,7 @@
   --color-dark: #172023;
   /* --color-primary: #8800FF;
   --color-secondary: #00B2FF; */
-  --color-gradient: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+  /* --color-gradient: linear-gradient(90deg, var(--color-primary), var(--color-secondary)); */
 
   /* Shadow */
   --shadow-3xl: 0px 4px 6px -2px #0000000D, 0px 10px 15px -3px #0000001A;
