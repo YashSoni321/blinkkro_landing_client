@@ -292,8 +292,8 @@
   },
   "servicesPage": {
     "metadata": {
-      "title": "All Services - Home, Beauty, Join Waitlist & More | BlinkKaro Service Marketplace",
-      "description": "Browse 50+ verified services on BlinkKaro. From home cleaning to event planning, beauty treatments to repairs - find trusted professionals with transparent pricing.",
+      "title": "All Services - Home, Beauty, Join Waitlist & More | KartSquare Service Marketplace",
+      "description": "Browse 50+ verified services on KartSquare. From home cleaning to event planning, beauty treatments to repairs - find trusted professionals with transparent pricing.",
       "keywords": [
         "home services",
         "beauty services",
@@ -301,7 +301,7 @@
         "repair services",
         "verified professionals",
         "service marketplace",
-        "BlinkKaro services"
+        "KartSquare services"
       ]
     },
     "hero": {
@@ -336,13 +336,13 @@
   "waitlistPage": {
     "hero": {
       "badge": "Join the Waitlist",
-      "title": "Be the First to Experience BlinkKaro",
-      "description": "Exciting things are on the way! Sign up now to join our exclusive waitlist and be the first to try BlinkKaro when we launch. Early access, exclusive updates, and special perks await our first users."
+      "title": "Be the First to Experience KartSquare",
+      "description": "Exciting things are on the way! Sign up now to join our exclusive waitlist and be the first to try KartSquare when we launch. Early access, exclusive updates, and special perks await our first users."
     },
     "contactCard": {
       "imageAlt": "waitlist illustration",
       "title": "Early Access",
-      "description": "Reserve your spot and get exclusive early access to BlinkKaro's upcoming app before anyone else.",
+      "description": "Reserve your spot and get exclusive early access to KartSquare's upcoming app before anyone else.",
       "perks": {
         "gift": "Special perks for early members",
         "notification": "Get notified at launch"
@@ -363,8 +363,8 @@
           "placeholder": "Phone Number*"
         },
         "message": {
-          "label": "Tell us why you're excited to join BlinkKaro...",
-          "placeholder": "Tell us why you're excited to join BlinkKaro..."
+          "label": "Tell us why you're excited to join KartSquare...",
+          "placeholder": "Tell us why you're excited to join KartSquare..."
         }
       },
       "countrySelect": {
@@ -466,7 +466,7 @@
     "description": "From emergency plumbing to weekend parties, from home cleaning to personal tutoring — get trusted professionals at your doorstep in just one tap. Because your time matters!",
     "buttons": {
       "earlyAccess": "Get Early Access",
-      "earn": "Earn with BlinkKaro"
+      "earn": "Earn with KartSquare"
     },
     "highlights": {
       "instantBooking": "Instant Booking",

@@ -53,7 +53,7 @@ export default function ContactUs() {
             <Image
               src={"/images/contactUs/contactUs.jpg"}
               alt="contact illustration"
-              width={497}
+              width={800}
               height={535}
               className="rounded-2xl brightness-50 h-full"
               unoptimized={true}
