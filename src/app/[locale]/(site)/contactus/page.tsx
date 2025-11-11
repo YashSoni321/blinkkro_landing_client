@@ -38,7 +38,7 @@ export default function ContactUs() {
           </p>
         </div>
         <div className="text-center">
-          <h3 className="text-4xl sm:text-52 font-medium tracking-tighter text-black dark:text-white mb-3 leading-10 sm:leading-14">
+          <h3 className=" text-3xl md:text-4xl lg:text-5xl sm:text-52 font-medium tracking-tighter text-black dark:text-white mb-3 leading-10 sm:leading-14">
             {t("contactPage.hero.title")}
           </h3>
           <p className="text-xm font-normal tracking-tight text-black/50 dark:text-white/50 leading-6">

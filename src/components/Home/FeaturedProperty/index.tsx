@@ -62,15 +62,15 @@ export default function AboutUs() {
                 icon="mdi:map-marker-path"
                 width={28}
                 height={26}
-                className="text-dark/50 dark:text-white/50"
+                className="text-dark/60 dark:text-white/50"
               />
-              <p className="text-dark/50 dark:text-white/50 text-base">
+              <p className="text-dark/60 dark:text-white/50 text-base">
                 {t("mapDescription")}
               </p>
             </div>
           </div>
 
-          <p className="text-base text-dark/50 dark:text-white/50">
+          <p className="text-base text-dark/60 dark:text-white/50">
             {t("description")}
           </p>
 

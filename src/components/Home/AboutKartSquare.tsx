@@ -169,7 +169,7 @@ export default function AboutKartSquare() {
                     <h4 className="font-semibold text-dark dark:text-white mb-1">
                       {feature.title}
                     </h4>
-                    <p className="text-sm text-dark/60 dark:text-white/60">
+                    <p className="md:text-sm text-dark/60 dark:text-white/60">
                       {feature.description}
                     </p>
                   </div>

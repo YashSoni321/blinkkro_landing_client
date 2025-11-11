@@ -42,7 +42,7 @@ export default function NotFound() {
             Go Home
           </Link>
           
-          <div className="text-sm text-dark/50 dark:text-white/50">
+          <div className="text-sm text-dark/60 dark:text-white/60">
             or{" "}
             <button 
               onClick={() => window.history.back()}

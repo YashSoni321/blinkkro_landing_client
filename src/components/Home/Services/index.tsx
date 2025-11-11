@@ -11,7 +11,6 @@ const Categories = () => {
   const t = useTranslations("categories");
 
   const sliderSettings = {
-    dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
@@ -19,6 +18,29 @@ const Categories = () => {
     autoplay: true,
     autoplaySpeed: 3000,
     arrows: false,
+    responsive: [
+      {
+        breakpoint: 1024, 
+        settings: {
+          slidesToShow: 3,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2, 
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 425, 
+        settings: {
+          slidesToShow: 1, 
+          dots: false,
+        },
+      },
+    ],
   };
 
   const categoryItems = [
@@ -67,14 +89,14 @@ const Categories = () => {
   ];
 
   const CategoryCard = ({ item }: { item: (typeof categoryItems)[0] }) => (
-    <div className="relative rounded-2xl overflow-hidden group h-80 sm:h-96 lg:h-96">
+    <div className="relative rounded-2xl overflow-hidden group h-96">
       <Link href={item.href}>
         <Image
           src={item.image}
           alt={item.alt}
           width={320}
           height={380}
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover bg-gray-100 rounded-xl"
           unoptimized={
             item.image.includes("event") ||
             item.image.includes("astro") ||
@@ -84,7 +106,7 @@ const Categories = () => {
       </Link>
       <Link
         href={item.href}
-        className="absolute w-full h-full bg-gradient-to-b from-black/0 to-black/80 top-full flex flex-col justify-between pl-2 pb-10 group-hover:top-0 duration-500"
+        className="absolute w-full h-full bg-gradient-to-b from-black/0 to-black/80 top-full flex flex-col justify-between p-4 sm:p-6 lg:p-8 pb-10 group-hover:top-0 duration-500"
       >
         <div className="flex justify-end mt-6 mr-6">
           <div className="bg-white text-dark rounded-full w-fit p-4">
@@ -131,10 +153,10 @@ const Categories = () => {
               />
               {t("badge")}
             </p>
-            <h2 className="lg:text-52 text-40 mt-4 mb-2 lg:max-w-full font-medium leading-[1.2] text-dark dark:text-white">
+            <h2 className="text-3xl sm:text-4xl lg:text-52 text-40 mt-4 mb-2 lg:max-w-full font-medium leading-[1.2] text-dark dark:text-white">
               {t("title")}
             </h2>
-            <p className="text-dark/50 dark:text-white/50 text-lg lg:max-w-full leading-[1.3] md:max-w-3/4">
+            <p className="text-dark/60 dark:text-white/50 text-lg lg:max-w-full leading-[1.3] md:max-w-3/4">
               {t("description")}
             </p>
             <Link

@@ -70,7 +70,7 @@ const Hero: React.FC = () => {
 
             <div className="flex flex-col sm:items-center gap-3">
               <Users className="w-8 h-8 text-sky-600 dark:text-sky-400" />
-              <p className="text-2xl sm:text-3xl font-semibold text-inherit">
+              <p className="text-sm md:text-2xl font-semibold text-inherit">
                 {t("highlights.users")}
               </p>
               <p className="text-sm sm:text-base font-normal text-black/50 dark:text-white/50">
