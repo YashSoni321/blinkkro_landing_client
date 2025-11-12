@@ -39,8 +39,8 @@ const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({ isHomepage = false,
             : "text-dark dark:text-white hover:text-primary"
         }`}
         aria-label="Change language"
-      >
-        <span className="text-lg">{currentLanguage.flag}</span>
+      > 
+        <span className="text-sm font-medium">{currentLanguage.flag}</span>
         <span className="hidden sm:block text-sm font-medium">{currentLanguage.code.toUpperCase()}</span>
         <Icon icon="ph:caret-down" width={16} height={16} className={`transition-transform ${isOpen ? 'rotate-180' : ''}`} />
       </button>

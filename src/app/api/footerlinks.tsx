@@ -6,13 +6,13 @@ export const useFooterLinks = () => {
   const t = useTranslations("footerLinksData");
 
   const FooterLinks: footerlinks[] = [
-    { label: t("homeServices"), href: "/home-services" },
-    { label: t("eventPlanning"), href: "/event-planning" },
-    { label: t("professionalServices"), href: "/professional-services" },
+    { label: t("homeServices"), href: "/" },
+    // { label: t("eventPlanning"), href: "/event-planning" },
+    // { label: t("professionalServices"), href: "/professional-services" },
     { label: t("contactUs"), href: "/contactus" },
-    { label: t("blog"), href: "/blogs" },
-    { label: t("becomeProvider"), href: "/provider-signup" },
-    { label: t("helpCenter"), href: "/help" },
+    // { label: t("blog"), href: "/blogs" },
+    // { label: t("becomeProvider"), href: "/provider-signup" },
+    // { label: t("helpCenter"), href: "/help" },
   ];
 
   return FooterLinks;

@@ -39,7 +39,7 @@ const FAQ: React.FC = () => {
             <h2 className="lg:text-52 text-40 leading-[1.2] font-medium text-dark dark:text-white">
               {t("title")}
             </h2>
-            <p className="text-dark/50 dark:text-white/50 pr-20">
+            <p className="text-dark/60 dark:text-white/50 pr-20 lg:text-xl">
               {t("description")}
             </p>
 

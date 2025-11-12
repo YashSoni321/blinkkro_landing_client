@@ -128,6 +128,12 @@
         }
       }
     },
+    "groupSection": {
+      "title": "More Than a Platform.  We're a <span>Partnership.</span>",
+      "description1": "Finding a reliable electrician or a skilled plumber in a bustling city like Jaipur has always been a challenge of trust and timing. At KartSquare, we're changing that narrative. We aren't just a booking app, we are the bridge connecting thousands of households with our community of vetted, skilled, and dedicated service professionals.",
+      "description2": "Our mission is twofold to bring you peace of mind with safe, high-quality home services, and to empower local technicians with the tools and opportunities to grow their businesses and secure their livelihoods.",
+      "imageAlt": "The KartSquare Team collaborating"
+    },
     "impact": {
       "title": "The Impact We're Making",
       "subtitle": "Numbers tell a story, but behind each number is a real person whose life we've made a little bit easier.",
@@ -149,6 +155,195 @@
       "providerButton": "Become a Provider"
     }
   },
+  "servicesPage": {
+    "metadata": {
+      "title": "All Services - Home, Beauty, Join Waitlist & More | KartSquare Service Marketplace",
+      "description": "Browse 50+ verified services on KartSquare. From home cleaning to event planning, beauty treatments to repairs - find trusted professionals with transparent pricing.",
+      "keywords": [
+        "home services",
+        "beauty services",
+        "event planning",
+        "repair services",
+        "verified professionals",
+        "service marketplace",
+        "KartSquare services"
+      ]
+    },
+    "hero": {
+      "title": "Connect with Verified Local Service Providers",
+      "description": "Kartsquare makes it easy to find trusted professionals for all your service needs. Every provider is ID-verified and admin-approved for your safety and peace of mind.",
+      "badge": "Services"
+    },
+    "offer": {
+      "subtitle": "What We Offer",
+      "title": "What Kind of Services We Offer",
+      "description1": "Kartsquare connects you with verified local service providers across multiple categories. From home maintenance to personal care, beauty services to event planning, find the right professional for every need.",
+      "description2": "Our platform offers a comprehensive range of services, all backed by our rigorous verification process. Every provider is ID-verified, and every service is admin-approved to ensure quality and reliability.",
+      "features": {
+        "verified": "Verified Providers",
+        "availability": "24/7 Availability",
+        "pricing": "Transparent Pricing",
+        "payments": "Secure Payments"
+      },
+      "imageAlt": "Kartsquare Services",
+      "imageTitle": "Your Trusted Service Marketplace",
+      "imageDescription": "Connect with verified professionals for all your service needs"
+    },
+    "categories": {
+      "subtitle": "Service Categories",
+      "title": "Categories of Services",
+      "description": "Explore our comprehensive range of verified service categories. Each category features professional, ID-verified providers ready to serve you.",
+      "vectorAlt": "vector",
+      "learnMore": "Learn More",
+      "data": {
+        "homeCleaning": {
+          "title": "Home Cleaning",
+          "description": "Professional house cleaning services including deep cleaning, regular maintenance, and specialized cleaning for your home.",
+          "features": [
+            "Deep Cleaning",
+            "Regular Maintenance",
+            "Move-in/out Cleaning"
+          ]
+        },
+        "plumbing": {
+          "title": "Plumbing Services",
+          "description": "Expert plumbing repairs, installations, and maintenance by verified professionals available 24/7.",
+          "features": ["Emergency Repairs", "Installations", "Maintenance"]
+        },
+        "beauty": {
+          "title": "Beauty & Salon",
+          "description": "Salon and spa services at your doorstep including haircuts, facials, massages, and beauty treatments.",
+          "features": ["Hair Services", "Facial & Skincare", "Massage Therapy"]
+        },
+        "homeServices": {
+          "title": "Home Services",
+          "description": "Comprehensive home maintenance including electrical work, carpentry, painting, and appliance repairs.",
+          "features": ["Electrical Work", "Carpentry", "Painting"]
+        },
+        "carWash": {
+          "title": "Car Wash",
+          "description": "Professional car cleaning services including exterior wash, interior detailing, and premium car care.",
+          "features": ["Exterior Wash", "Interior Detailing", "Premium Care"]
+        },
+        "fitness": {
+          "title": "Fitness & Wellness",
+          "description": "Personal trainers, yoga instructors, and wellness coaches available at your home or preferred location.",
+          "features": ["Personal Training", "Yoga Classes", "Wellness Coaching"]
+        },
+        "catering": {
+          "title": "Catering Services",
+          "description": "Professional catering for events, parties, and gatherings with customizable menus and expert chefs.",
+          "features": ["Event Catering", "Custom Menus", "Expert Chefs"]
+        },
+        "eventPlanning": {
+          "title": "Event Planning",
+          "description": "Complete event planning services for weddings, birthdays, corporate events, and special occasions.",
+          "features": [
+            "Wedding Planning",
+            "Corporate Events",
+            "Special Occasions"
+          ]
+        }
+      }
+    },
+    "booking": {
+      "subtitle": "Booking Process",
+      "title": "How Do I Book a Service?",
+      "description": "Booking a service on Kartsquare is simple, fast, and secure. Follow these easy steps to get started.",
+      "steps": {
+        "step1": {
+          "title": "Browse & Select Service",
+          "description": "Explore our wide range of verified services. Filter by category, location, and ratings to find the perfect service provider for your needs.",
+          "details": "Search through thousands of verified service providers, read reviews, and compare prices before making your selection."
+        },
+        "step2": {
+          "title": "Book Your Appointment",
+          "description": "Choose your preferred date and time. Our flexible scheduling system allows you to book services that fit your schedule perfectly.",
+          "details": "Select from available time slots, add special instructions, and confirm your booking with just a few clicks."
+        },
+        "step3": {
+          "title": "Service Provider Arrives",
+          "description": "Your verified service provider will arrive at the scheduled time. All providers are ID-verified and background-checked for your safety.",
+          "details": "Track your service provider's arrival in real-time, communicate directly through the app, and ensure everything meets your expectations."
+        },
+        "step4": {
+          "title": "Pay Securely After Service",
+          "description": "Review the completed work and pay securely through our platform. Payment is only processed after you confirm satisfaction with the service.",
+          "details": "Multiple payment options available including UPI, cards, and digital wallets. All transactions are secure and protected."
+        }
+      }
+    },
+    "provider": {
+      "subtitle": "Join as Provider",
+      "title": "How Do I Join Kartsquare?",
+      "description": "Ready to grow your service business? Join our network of verified providers and start receiving bookings today. Our simple onboarding process gets you started in no time.",
+      "button": "Start Your Provider Journey",
+      "steps": {
+        "step1": {
+          "title": "Create Your Account",
+          "description": "Sign up as a service provider with your basic information. The registration process is quick and straightforward.",
+          "details": "Provide your contact details, service area, and basic business information to get started."
+        },
+        "step2": {
+          "title": "Complete ID Verification",
+          "description": "Upload your government-issued ID and business documents. Our verification process ensures trust and safety for all users.",
+          "details": "Submit Aadhaar, PAN, or other valid ID proof along with any relevant business licenses or certifications."
+        },
+        "step3": {
+          "title": "Admin Review & Approval",
+          "description": "Our team reviews your documents and profile. Once approved, you'll receive access to the provider dashboard.",
+          "details": "Verification typically takes 24-48 hours. You'll be notified via email and SMS once your account is approved."
+        },
+        "step4": {
+          "title": "Add Your Services",
+          "description": "Create detailed service listings with pricing, availability, and service descriptions. Add photos to showcase your work.",
+          "details": "Set your service rates, define service areas, upload portfolio images, and specify your availability schedule."
+        },
+        "step5": {
+          "title": "Start Receiving Bookings",
+          "description": "Once your services are live, customers can book your services. Manage all bookings through your provider dashboard.",
+          "details": "Receive instant notifications for new bookings, manage your schedule, and build your reputation with customer reviews."
+        }
+      }
+    },
+    "safety": {
+      "subtitle": "Safety & Trust",
+      "title": "Trust & Safety",
+      "description": "Your safety and security are our top priorities. We've built multiple layers of protection and verification to ensure a safe, reliable experience for everyone on our platform.",
+      "stats": {
+        "verified": "ID Verified Providers",
+        "support": "24/7 Customer Support",
+        "payments": "Secure Payments"
+      },
+      "features": {
+        "verified": {
+          "title": "ID-Verified Providers",
+          "description": "Every service provider on Kartsquare undergoes mandatory ID verification. We verify government-issued identification documents to ensure authenticity and build trust."
+        },
+        "approved": {
+          "title": "Admin-Approved Services",
+          "description": "All service listings are manually reviewed and approved by our admin team before going live. We ensure quality, legitimacy, and accurate pricing for every service."
+        },
+        "support": {
+          "title": "24/7 Customer Support",
+          "description": "Our dedicated customer support team is available round the clock to assist with bookings, resolve issues, and answer any questions you may have."
+        },
+        "payments": {
+          "title": "Secure Payments",
+          "description": "All payments are processed through secure, encrypted channels. Your financial information is protected, and payments are only processed after service completion."
+        },
+        "rating": {
+          "title": "Rating & Review System",
+          "description": "Transparent rating and review system helps you make informed decisions. Read authentic customer feedback before booking any service."
+        },
+        "dispute": {
+          "title": "Dispute Resolution",
+          "description": "Our mediation team helps resolve any issues between customers and providers fairly and efficiently, ensuring satisfaction for all parties."
+        }
+      }
+    }
+  },
+
   "termsPage": {
     "title": "Terms and Conditions",
     "lastUpdated": "Last updated: 08-10-2025",
@@ -290,26 +485,6 @@
       "notifyButton": "Notify Me"
     }
   },
-  "servicesPage": {
-    "metadata": {
-      "title": "All Services - Home, Beauty, Join Waitlist & More | BlinkKaro Service Marketplace",
-      "description": "Browse 50+ verified services on BlinkKaro. From home cleaning to event planning, beauty treatments to repairs - find trusted professionals with transparent pricing.",
-      "keywords": [
-        "home services",
-        "beauty services",
-        "event planning",
-        "repair services",
-        "verified professionals",
-        "service marketplace",
-        "BlinkKaro services"
-      ]
-    },
-    "hero": {
-      "title": "All your favorite services in one app.",
-      "description": "From travel and food to wellness and more — KartSquare makes it safe, simple, and rewarding to book everything you need.",
-      "badge": "Services"
-    }
-  },
   "blogPage": {
     "metadata": {
       "title": "KartSquare Blog - Real Stories, Smart Tips & Service Secrets | India's #1 Service Platform",
@@ -336,13 +511,13 @@
   "waitlistPage": {
     "hero": {
       "badge": "Join the Waitlist",
-      "title": "Be the First to Experience BlinkKaro",
-      "description": "Exciting things are on the way! Sign up now to join our exclusive waitlist and be the first to try BlinkKaro when we launch. Early access, exclusive updates, and special perks await our first users."
+      "title": "Be the First to Experience KartSquare",
+      "description": "Exciting things are on the way! Sign up now to join our exclusive waitlist and be the first to try KartSquare when we launch. Early access, exclusive updates, and special perks await our first users."
     },
     "contactCard": {
       "imageAlt": "waitlist illustration",
       "title": "Early Access",
-      "description": "Reserve your spot and get exclusive early access to BlinkKaro's upcoming app before anyone else.",
+      "description": "Reserve your spot and get exclusive early access to KartSquare's upcoming app before anyone else.",
       "perks": {
         "gift": "Special perks for early members",
         "notification": "Get notified at launch"
@@ -363,8 +538,8 @@
           "placeholder": "Phone Number*"
         },
         "message": {
-          "label": "Tell us why you're excited to join BlinkKaro...",
-          "placeholder": "Tell us why you're excited to join BlinkKaro..."
+          "label": "Tell us why you're excited to join KartSquare...",
+          "placeholder": "Tell us why you're excited to join KartSquare..."
         }
       },
       "countrySelect": {
@@ -386,16 +561,20 @@
       "description": "Stay updated with the latest KartSquare news, service updates, and exclusive offers.",
       "emailPlaceholder": "Enter your email",
       "subscribeButton": "Subscribe",
-      "privacyNote": "By subscribing, you agree to receive KartSquare updates. You can unsubscribe at any time."
+      "privacyNote": "By subscribing, you agree to receive KartSquare updates. You can unsubscribe at any time.",
+      "quickLinks": "Quick Links"
     },
     "contact": {
       "title": "Simplify your bookings. Get started with KartSquare today.",
-      "button": "Contact Us"
+      "button": "Contact Us",
+      "getInTouch": "Get in Touch"
     },
     "bottomBar": {
       "copyright": "©2025 KartSquare — Designed & Developed with ❤️",
       "terms": "Terms of Service",
-      "privacy": "Privacy Policy"
+      "privacy": "Privacy Policy",
+      "termsShort": "Terms",
+      "privacyShort": "Privacy"
     }
   },
   "aboutKartSquare": {
@@ -466,7 +645,7 @@
     "description": "From emergency plumbing to weekend parties, from home cleaning to personal tutoring — get trusted professionals at your doorstep in just one tap. Because your time matters!",
     "buttons": {
       "earlyAccess": "Get Early Access",
-      "earn": "Earn with BlinkKaro"
+      "earn": "Earn with KartSquare"
     },
     "highlights": {
       "instantBooking": "Instant Booking",
@@ -565,7 +744,57 @@
   "properties": {
     "badge": "KartSquare Services",
     "title": "Your Favorite Services, Just a Tap Away",
-    "description": "Skip the hassle of finding reliable people. These are the services our customers love most — vetted professionals, transparent pricing, and guaranteed satisfaction."
+    "description": "Skip the hassle of finding reliable people. These are the services our customers love most — vetted professionals, transparent pricing, and guaranteed satisfaction.",
+    "serviceList" : {
+      "salon-at-home": {
+        "name": "Salon at Home",
+        "location": "Available in all major cities",
+        "duration": "60 - 90 min",
+        "category": "Beauty & Grooming"
+      },
+      "home-deep-cleaning": {
+        "name": "Home Deep Cleaning",
+        "location": "Trusted professionals near you",
+        "duration": "2 - 4 hrs",
+        "category": "Cleaning"
+      },
+      "plumber-services": {
+        "name": "Plumber Services",
+        "location": "Leak fixes • Installations • Repairs",
+        "duration": "30 - 90 min",
+        "category": "Home Repairs"
+      },
+      "personal-fitness-trainer": {
+        "name": "Personal Fitness Trainer",
+        "location": "Home & Online Sessions",
+        "duration": "45 - 60 min",
+        "category": "Fitness"
+      },
+      "catering-services": {
+        "name": "Catering Services",
+        "location": "Small parties to large events",
+        "duration": "Event-based",
+        "category": "Food & Catering"
+      },
+      "home-tutors": {
+        "name": "Home Tutors",
+        "location": "School • Competitive Exams • Skills",
+        "duration": "1 hr",
+        "category": "Education"
+      },
+      "event-photography": {
+        "name": "Event Photography",
+        "location": "Weddings • Birthdays • Corporate",
+        "duration": "Per Event",
+        "category": "Events"
+      },
+      "car-wash-at-home": {
+        "name": "Car Wash at Home",
+        "location": "Eco-friendly doorstep wash",
+        "duration": "45 min",
+        "category": "Automobile"
+      }
+    }
   },
   "categories": {
     "badge": "Categories",

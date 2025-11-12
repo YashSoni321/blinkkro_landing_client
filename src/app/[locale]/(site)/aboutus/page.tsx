@@ -5,6 +5,7 @@ import { Icon } from "@iconify/react";
 import HeroSub from "@/components/shared/HeroSub";
 import { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
+import StatCard from "@/app/common/StatCard";
 
 export const metadata: Metadata = {
   title:
@@ -61,7 +62,7 @@ export default async function AboutUs() {
               <h3 className="text-2xl font-bold text-dark dark:text-white mb-4">
                 {t("originStory.title")}
               </h3>
-              <p className="text-dark/70 dark:text-white/70 leading-relaxed">
+              <p className="text-dark/60 font-semibold dark:text-white/60 leading-relaxed">
                 {t("originStory.crisisText")}
               </p>
             </div>
@@ -80,15 +81,15 @@ export default async function AboutUs() {
               </p>
             </div>
 
-            <h2 className="text-4xl sm:text-52 font-bold text-dark dark:text-white mb-6">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-dark dark:text-white mb-6">
               &ldquo;{t("originStory.mainQuote")}&rdquo;
             </h2>
 
-            <p className="text-lg text-dark/70 dark:text-white/70 mb-6 leading-relaxed">
+            <p className="text-lg text-dark/60 dark:text-white/60 mb-6 leading-relaxed">
               {t("originStory.storyPart1")}
             </p>
 
-            <p className="text-lg text-dark/70 dark:text-white/70 mb-8 leading-relaxed">
+            <p className="text-lg text-dark/60 dark:text-white/60 mb-8 leading-relaxed">
               <strong>&ldquo;{t("originStory.storyPart2")}&rdquo;</strong>
             </p>
 
@@ -108,7 +109,7 @@ export default async function AboutUs() {
       <section className="bg-gray-50 dark:bg-gray-900 py-16">
         <div className="container max-w-8xl mx-auto px-4 sm:px-5 2xl:px-0">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-dark dark:text-white mb-4">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-dark dark:text-white mb-4">
               {t("journey.title")}
             </h2>
             <p className="text-lg text-dark/60 dark:text-white/60 max-w-2xl mx-auto">
@@ -142,7 +143,7 @@ export default async function AboutUs() {
       {/* Mission & Values */}
       <section className="container max-w-8xl mx-auto px-4 sm:px-5 2xl:px-0 py-16">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-dark dark:text-white mb-4">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-dark dark:text-white mb-4">
             {t("mission.title")}
           </h2>
           <p className="text-lg text-dark/60 dark:text-white/60 max-w-2xl mx-auto">
@@ -150,7 +151,7 @@ export default async function AboutUs() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-2 md:gap-16">
           <ValueCard
             icon="ph:heart"
             title={t("mission.values.customerFirst.title")}
@@ -178,7 +179,7 @@ export default async function AboutUs() {
       <section className="bg-gradient-to-br from-primary/5 to-primary/10 py-16">
         <div className="container max-w-8xl mx-auto px-4 sm:px-5 2xl:px-0">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-dark dark:text-white mb-4">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-dark dark:text-white mb-4">
               {t("team.title")}
             </h2>
             <p className="text-lg text-dark/60 dark:text-white/60 max-w-3xl mx-auto">
@@ -268,32 +269,30 @@ export default async function AboutUs() {
         <div className="max-w-7xl mx-auto px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Image Column */}
           <div className="relative h-96 w-full lg:h-[32rem]">
-            <img
+            <Image
               src="/images/team/team.JPG"
-              alt="The KartSquare Team collaborating"
-              className="absolute inset-0 h-full w-full rounded-2xl bg-gray-50 object-cover shadow-xl"
+              alt={t("groupSection.imageAlt")}
+              fill
+              className="rounded-2xl bg-gray-50 object-cover shadow-xl"
             />
           </div>
 
           {/* Content Column */}
           <div>
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
-              More Than a Platform. <br /> We&apos;re a{" "}
-              <span className="text-primary">Partnership.</span>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
+              {t.rich("groupSection.title", {
+                span: (chunks) => (
+                  <span className="text-primary">{chunks}</span>
+                ),
+              })}
             </h2>
+            {/* CHANGED: Hardcoded description */}
             <p className="mt-6 text-lg leading-8 text-gray-600 dark:text-white/80">
-              Finding a reliable electrician or a skilled plumber in a bustling
-              city like Jaipur has always been a challenge of trust and timing.
-              At KartSquare, we&apos;re changing that narrative. We aren&apos;t
-              just a booking app, we are the bridge connecting thousands of
-              households with our community of vetted, skilled, and dedicated
-              service professionals.
+              {t("groupSection.description1")}
             </p>
+            {/* CHANGED: Hardcoded description */}
             <p className="mt-4 text-lg leading-8 text-gray-600 dark:text-white/80">
-              Our mission is twofold to bring you peace of mind with safe,
-              high-quality home services, and to empower local technicians with
-              the tools and opportunities to grow their businesses and secure
-              their livelihoods.
+              {t("groupSection.description2")}
             </p>
           </div>
         </div>
@@ -302,7 +301,7 @@ export default async function AboutUs() {
       {/* Impact Stats */}
       <section className="container max-w-8xl mx-auto px-4 sm:px-5 2xl:px-0 py-16">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-dark dark:text-white mb-4">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-dark dark:text-white mb-4">
             {t("impact.title")}
           </h2>
           <p className="text-lg text-dark/60 dark:text-white/60 max-w-2xl mx-auto">
@@ -333,10 +332,10 @@ export default async function AboutUs() {
       {/* Join Us CTA */}
       <section className="bg-dark py-16">
         <div className="container max-w-8xl mx-auto px-4 sm:px-5 2xl:px-0 text-center">
-          <h2 className="text-4xl font-bold text-white mb-6">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
             {t("cta.title")}
           </h2>
-          <p className="text-xl text-white/80 mb-8 max-w-2xl mx-auto">
+          <p className="md:text-xl sm:text-lg text-white/80 mb-8 max-w-2xl mx-auto">
             {t("cta.description")}
           </p>
 
@@ -379,7 +378,7 @@ const JourneyCard = ({
     <h3 className="text-xl font-bold text-dark dark:text-white mb-3">
       {title}
     </h3>
-    <p className="text-dark/70 dark:text-white/70 mb-4 leading-relaxed">
+    <p className="text-dark/60 dark:text-white/60 mb-4 leading-relaxed">
       {description}
     </p>
     <div className="text-2xl font-bold text-primary">{stat}</div>
@@ -448,7 +447,7 @@ const FounderCard = ({
       <p className="text-primary font-medium">{role}</p>
     </div>
 
-    <p className="text-sm text-dark/70 dark:text-white/70 mb-4 leading-relaxed">
+    <p className="md:text-sm text-dark/70 dark:text-white/70 mb-4 leading-relaxed">
       {story}
     </p>
 
@@ -501,10 +500,10 @@ const TeamCard = ({
         {name}
       </h4>
       <p className="text-primary font-medium text-sm mb-1">{role}</p>
-      <p className="text-xs text-dark/60 dark:text-white/60 mb-3">
+      <p className="text-sm font-medium text-dark/60 dark:text-white/60 mb-3">
         {specialty}
       </p>
-      <p className="text-xs text-dark/60 dark:text-white/60 mb-3">{bio}</p>
+      <p className="text-sm text-dark/60 dark:text-white/60 mb-3">{bio}</p>
       <div className="flex justify-center gap-2">
         {socials.map((icon, i) => (
           <Icon
@@ -517,12 +516,5 @@ const TeamCard = ({
         ))}
       </div>
     </div>
-  </div>
-);
-
-const StatCard = ({ number, label }: { number: string; label: string }) => (
-  <div className="text-center p-6 bg-gradient-to-br from-primary/5 to-primary/10 rounded-2xl">
-    <div className="text-4xl font-bold text-primary mb-2">{number}</div>
-    <div className="text-dark/70 dark:text-white/70 font-medium">{label}</div>
   </div>
 );

@@ -114,7 +114,7 @@ export default function JoinWaitlist() {
           </p>
         </div>
         <div className="text-center">
-          <h3 className="text-4xl sm:text-52 font-medium tracking-tighter text-black dark:text-white mb-3 leading-10 sm:leading-14">
+          <h3 className=" text-3xl md:text-4xl lg:text-5xl sm:text-52 font-medium tracking-tighter text-black dark:text-white mb-3 leading-10 sm:leading-14">
             {t("waitlistPage.hero.title")}
           </h3>
           <p className="text-xm font-normal tracking-tight text-black/50 dark:text-white/50 leading-6">
@@ -126,13 +126,13 @@ export default function JoinWaitlist() {
       {/* form */}
       <div className="border border-black/10 dark:border-white/10 rounded-2xl p-4 shadow-xl dark:shadow-white/10">
         <div className="flex flex-col lg:flex-row lg:items-center gap-12">
-          <div className="relative w-fit">
+          <div className="lg:block relative hidden w-fit">
             <Image
               src={"/images/waitlist/waitlist.png"}
               alt={t("waitlistPage.contactCard.imageAlt")}
               width={497}
               height={535}
-              className="rounded-2xl brightness-50 h-full"
+              className="rounded-2xl brightness-50 w-96 h-full"
               unoptimized={true}
             />
 
