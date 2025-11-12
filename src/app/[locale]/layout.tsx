@@ -16,6 +16,7 @@ import {routing} from '@/i18n/routing';
 const font = Bricolage_Grotesque({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://kartsquare.com"),
   title:
     "KartSquare - Service Booking App | Book Home Services, Plumber, Electrician, Cleaning | KartSquare India",
   description:
@@ -127,7 +128,7 @@ export default async function RootLayout({
 }) {
   const {locale} = await params;
   
-  if (!routing.locales.includes(locale as any)) {
+  if (!routing.locales.includes(locale as "en" | "hi")) { 
     notFound();
   }
  

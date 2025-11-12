@@ -6,12 +6,12 @@ import SocialSignUp from "../SocialSignUp";
 import Logo from "@/components/Layout/Header/BrandLogo/Logo";
 import { useContext, useState } from "react";
 import AuthDialogContext from "@/app/context/AuthDialogContext";
-const SignUp = ({ signUpOpen }: { signUpOpen?: any }) => {
+const SignUp = ({ signUpOpen }: { signUpOpen }) => {
   const router = useRouter();
-  const [_, setLoading] = useState(false);
+  const [loading, setLoading] = useState(false);
   const authDialog = useContext(AuthDialogContext);
 
-  const handleSubmit = (e: any) => {
+  const handleSubmit = (e: { preventDefault: () => void; currentTarget: HTMLFormElement | undefined; }) => {
     e.preventDefault();
 
     setLoading(true);

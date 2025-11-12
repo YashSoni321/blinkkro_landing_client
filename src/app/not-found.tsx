@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import { Icon } from "@iconify/react";
 
@@ -15,10 +16,10 @@ export default function NotFound() {
         {/* Icon */}
         <div className="mb-6">
           <div className="inline-flex items-center justify-center w-20 h-20 bg-primary/10 rounded-full">
-            <Icon 
-              icon="ph:magnifying-glass" 
-              width={40} 
-              height={40} 
+            <Icon
+              icon="ph:magnifying-glass"
+              width={40}
+              height={40}
               className="text-primary"
             />
           </div>
@@ -29,7 +30,8 @@ export default function NotFound() {
           Page Not Found
         </h2>
         <p className="text-dark/60 dark:text-white/60 mb-8 leading-relaxed">
-          Sorry, we couldn't find the page you're looking for. It might have been moved, deleted, or you entered the wrong URL.
+          Sorry, we couldn&apos;t find the page you&apos;re looking for. It might have
+          been moved, deleted, or you entered the wrong URL.
         </p>
 
         {/* Actions */}
@@ -41,10 +43,10 @@ export default function NotFound() {
             <Icon icon="ph:house" width={18} height={18} />
             Go Home
           </Link>
-          
+
           <div className="text-sm text-dark/60 dark:text-white/60">
             or{" "}
-            <button 
+            <button
               onClick={() => window.history.back()}
               className="text-primary hover:underline"
             >
