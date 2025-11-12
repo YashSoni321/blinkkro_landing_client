@@ -81,13 +81,13 @@ const Footer = () => {
                   href="/terms"
                   className="text-white/50 hover:text-primary text-xs transition-colors duration-300"
                 >
-                  Terms
+                 {t("bottomBar.termsShort")}
                 </Link>
                 <Link
                   href="/privacy"
                   className="text-white/50 hover:text-primary text-xs transition-colors duration-300"
                 >
-                  Privacy
+                  {t("bottomBar.privacyShort")}
                 </Link>
               </div>
               <p className="text-white/50 text-xs">
@@ -156,7 +156,7 @@ const Footer = () => {
             {/* Quick Links */}
             <div>
               <h4 className="text-white font-semibold mb-6 text-lg">
-                Quick Links
+                {t("newsletter.quickLinks")}
               </h4>
               <div className="space-y-3">
                 {FooterLinks.slice(0, 4).map((item, index) => (
@@ -172,13 +172,13 @@ const Footer = () => {
                   href="/terms"
                   className="block text-white/60 hover:text-primary text-sm transition-all duration-300 hover:translate-x-1"
                 >
-                  Terms & Conditions
+                  {t("bottomBar.terms")}
                 </Link>
                 <Link
                   href="/privacy"
                   className="block text-white/60 hover:text-primary text-sm transition-all duration-300 hover:translate-x-1"
                 >
-                  Privacy Policy
+                  {t("bottomBar.privacy")}
                 </Link>
               </div>
             </div>
@@ -186,7 +186,7 @@ const Footer = () => {
             {/* Contact */}
             <div>
               <h4 className="text-white font-semibold mb-6 text-lg">
-                Get in Touch
+                {t("contact.getInTouch")}
               </h4>
               <Link
                 href="/contactus"

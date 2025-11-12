@@ -271,7 +271,7 @@ export default async function AboutUs() {
           <div className="relative h-96 w-full lg:h-[32rem]">
             <img
               src="/images/team/team.JPG"
-              alt="The KartSquare Team collaborating"
+              alt={t("groupSection.imageAlt")}
               className="absolute inset-0 h-full w-full rounded-2xl bg-gray-50 object-cover shadow-xl"
             />
           </div>
@@ -279,22 +279,19 @@ export default async function AboutUs() {
           {/* Content Column */}
           <div>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
-              More Than a Platform. <br /> We&apos;re a{" "}
-              <span className="text-primary">Partnership.</span>
+              {t.rich("groupSection.title", {
+                span: (chunks) => (
+                  <span className="text-primary">{chunks}</span>
+                ),
+              })}
             </h2>
+            {/* CHANGED: Hardcoded description */}
             <p className="mt-6 text-lg leading-8 text-gray-600 dark:text-white/80">
-              Finding a reliable electrician or a skilled plumber in a bustling
-              city like Jaipur has always been a challenge of trust and timing.
-              At KartSquare, we&apos;re changing that narrative. We aren&apos;t
-              just a booking app, we are the bridge connecting thousands of
-              households with our community of vetted, skilled, and dedicated
-              service professionals.
+              {t("groupSection.description1")}
             </p>
+            {/* CHANGED: Hardcoded description */}
             <p className="mt-4 text-lg leading-8 text-gray-600 dark:text-white/80">
-              Our mission is twofold to bring you peace of mind with safe,
-              high-quality home services, and to empower local technicians with
-              the tools and opportunities to grow their businesses and secure
-              their livelihoods.
+              {t("groupSection.description2")}
             </p>
           </div>
         </div>

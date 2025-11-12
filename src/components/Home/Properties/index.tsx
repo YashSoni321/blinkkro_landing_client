@@ -1,11 +1,12 @@
 "use client";
 import { Icon } from "@iconify/react";
 import PropertyCard from "./Card/Card";
-import { servicesTypes } from "@/app/api/propertyhomes";
+import { servicesTypes as staticServicesTypes } from "@/app/api/propertyhomes";
 import { useTranslations } from "next-intl";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { PropertyHomes } from "@/types/properyHomes";
 
 const Properties: React.FC = () => {
   const t = useTranslations("properties");
@@ -43,6 +44,13 @@ const Properties: React.FC = () => {
       }
     ],
   };
+  const servicesTypes: PropertyHomes[] = staticServicesTypes.map(service => ({
+    ...service,
+    name: t(`serviceList.${service.slug}.name`),
+    location: t(`serviceList.${service.slug}.location`),
+    duration: t(`serviceList.${service.slug}.duration`),
+    category: t(`serviceList.${service.slug}.category`),
+  }));
 
   return (
     <section>
@@ -72,7 +80,7 @@ const Properties: React.FC = () => {
         <div className="lg:hidden col-span-12">
           <Slider {...sliderSettings}>
             {servicesTypes.slice(0, 6).map((item, index) => (
-              <div key={index} className="px-2">
+              <div key={item.slug} className="px-2">
                 <PropertyCard item={item} />
               </div>
             ))}
@@ -82,7 +90,7 @@ const Properties: React.FC = () => {
         {/* Desktop Grid */}
         <div className="hidden lg:grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {servicesTypes.slice(0, 6).map((item, index) => (
-            <div key={index}>
+            <div key={item.slug}>
               <PropertyCard item={item} />
             </div>
           ))}
