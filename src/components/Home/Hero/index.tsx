@@ -32,12 +32,14 @@ const Hero: React.FC = () => {
               </Link>
             </div>
           </div>
-          <div className="hidden md:block absolute top-1/2 right-0 transform -translate-y-1/2 overflow-hidden h-full">
+          <div className="hidden md:block absolute top-1/2 right-0 transform -translate-y-1/2 overflow-hidden ">
             <Image
-              src="/images/hero/pair_hero_image.png"
+              src="/images/hero/heroSection_BG.png"
               alt="hero booking illustration"
-              width={800}
-              height={200}
+              width={500}
+              height={50}
+              // sizes="maz"
+              // className="w-full h-full object-cover"
               priority={false}
               unoptimized={true}
             />
