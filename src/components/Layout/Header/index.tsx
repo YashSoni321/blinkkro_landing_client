@@ -1,6 +1,7 @@
 "use client";
 import { navLinks } from "@/app/api/navlink";
 import { Icon } from "@iconify/react";
+import Image from "next/image";
 import { useEffect, useRef, useState, useCallback } from "react";
 import NavLink from "./Navigation/NavLink";
 import { useTheme } from "next-themes";
@@ -60,6 +61,7 @@ const Header: React.FC = () => {
         <div>
           <div className="flex items-center justify-center">
             <p className="text-xl sm:text-3xl md:text-4xl font-extrabold tracking-wide flex items-center gap-1">
+              <Image src="/images/logo/logo.png" alt="logo" width={40} height={40} />
               KartSquare
             </p>
           </div>

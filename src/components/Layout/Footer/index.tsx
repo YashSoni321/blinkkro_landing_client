@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Icon } from "@iconify/react";
 import { useFooterLinks } from "@/app/api/footerlinks";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 
 const Footer = () => {
   const t = useTranslations("footer");
@@ -18,10 +19,18 @@ const Footer = () => {
         {/* Mobile Layout */}
         <div className="md:hidden py-6">
           <div className="text-center space-y-4">
-            <h3 className="text-white text-2xl font-bold bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
-              KartSquare
-            </h3>
-            <p className="text-white/70 text-sm mb-6 leading-relaxed max-w-md">
+            <div className="flex items-center align-center justify-center gap-3 mb-4">
+              <Image
+                src="/images/logo/logo.png"
+                alt="logo"
+                width={40}
+                height={40}
+              />
+              <h3 className="text-white text-2xl font-bold bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
+                KartSquare
+              </h3>
+            </div>
+            <p className="text-white/70 text-sm mb-6 leading-relaxed max-w-md mx-auto">
               {t("newsletter.description")}
             </p>
             <div className="flex justify-center gap-6">
@@ -93,9 +102,17 @@ const Footer = () => {
           <div className="grid grid-cols-4 gap-8 mb-8">
             {/* Company Info */}
             <div className="col-span-2">
-              <h3 className="text-white text-3xl font-bold mb-4 bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
-                KartSquare
-              </h3>
+              <div className="flex items-center gap-3">
+                <Image
+                  src="/images/logo/logo.png"
+                  alt="logo"
+                  width={40}
+                  height={40}
+                />
+                <h3 className="text-white text-3xl font-bold bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
+                  KartSquare
+                </h3>
+              </div>
               <p className="text-white/70 text-sm mb-6 leading-relaxed max-w-md">
                 {t("newsletter.description")}
               </p>

@@ -2,13 +2,124 @@
 import React from "react";
 import Image from "next/image";
 import { Icon } from "@iconify/react";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
 import HeroSub from "@/components/shared/HeroSub";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import StatCard from "@/app/common/StatCard";
+
+const sliderSettings = {
+  infinite: true,
+  speed: 600,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 4000,
+  arrows: false,
+  dots: false,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+      },
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2,
+      },
+    },
+    {
+      breakpoint: 425,
+      settings: {
+        slidesToShow: 1,
+      },
+    },
+  ],
+};
+
+const CategoriesCard = ({ service }) => {
+  return (
+    <div className="group relative bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-3xl dark:hover:shadow-white/20 transition-all duration-300 border border-dark/10 dark:border-white/10 hover:border-primary/50 max-h-[36rem]">
+      {/* Image */}
+      <div className="relative h-48 overflow-hidden">
+        <Image
+          src={service.image}
+          alt={service.title}
+          fill
+          className="object-cover group-hover:scale-110 transition-transform duration-500"
+          unoptimized={true}
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+      </div>
+      {/* Content */}
+      <div className="p-6">
+        <div className="flex items-center mb-4">
+          <div
+            className={`bg-gradient-to-br ${service.color} p-3 rounded-xl group-hover:scale-110 transition-transform duration-300`}
+          >
+            <Icon
+              icon={service.icon}
+              width={24}
+              height={24}
+              className="text-white"
+            />
+          </div>
+        </div>
+        <h3 className="text-xl font-semibold text-dark dark:text-white mb-2 group-hover:text-primary transition-colors duration-300">
+          {service.title}
+        </h3>
+        <p className="text-dark/60 dark:text-white/60 mb-4 leading-relaxed">
+          {service.description}
+        </p>
+        <div className="space-y-2 mb-4">
+          {service.features.map((feature, idx) => (
+            <div
+              key={idx}
+              className="flex items-center gap-2 text-sm font-medium"
+            >
+              <Icon
+                icon="ph:check"
+                width={16}
+                height={16}
+                className="text-primary flex-shrink-0"
+              />
+              <span className="text-dark/70 dark:text-white/70">{feature}</span>
+            </div>
+          ))}
+        </div>
+        <div className="flex items-center gap-2 text-primary font-medium text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <span>Learn More</span>
+          <Icon icon="ph:arrow-right" width={16} height={16} />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+const SafetyFeaturesCard = ({ feature }) => {
+  return (
+    <div className="group bg-white dark:bg-gray-800 rounded-2xl p-6 lg:p-8 shadow-sm hover:shadow-3xl dark:hover:shadow-white/20 transition-all duration-300 border border-dark/10 dark:border-white/10 hover:border-primary/50 md:py-16 min-h-[32rem] max-h-[32rem] lg:min-h-full">
+      <div
+        className={`bg-gradient-to-br ${feature.color} p-4 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg`}
+      >
+        <Icon
+          icon={feature.icon}
+          width={32}
+          height={32}
+          className="text-white"
+        />
+      </div>
+      <h3 className="text-xl font-semibold text-dark dark:text-white mb-3 text-center">
+        {feature.title}
+      </h3>
+      <p className="text-dark/60 dark:text-white/60 text-center leading-relaxed">
+        {feature.description}
+      </p>
+    </div>
+  );
+};
 
 const ServicesPage = () => {
   // Service Categories with Images
@@ -328,30 +439,30 @@ const ServicesPage = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                  <h3 className="text-2xl font-bold mb-2">
+                  <h3 className="text-2xl font-bold mb-2 flex items-center gap-2">
+                    <div className="h-12 w-12 bg-green-400/20 rounded-full flex items-center justify-center animate-pulse">
+                      <Icon
+                        icon="ph:check-circle-fill"
+                        width={20}
+                        height={20}
+                        className="text-green-500"
+                      />
+                    </div>
                     Your Trusted Service Marketplace
                   </h3>
-                  <p className="text-white/90">
+                  <p className="text-white/90 ml-16">
                     Connect with verified professionals for all your service
                     needs
                   </p>
                 </div>
               </div>
               {/* Floating Elements */}
-              <div className="absolute -top-6 -right-6 w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center animate-bounce">
+              <div className="absolute -top-4 -right-4 w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center animate-bounce">
                 <Icon
                   icon="ph:star-fill"
                   width={24}
                   height={24}
                   className="text-primary"
-                />
-              </div>
-              <div className="absolute -bottom-4 -left-4 w-12 h-12 bg-green-400/20 rounded-full flex items-center justify-center animate-pulse">
-                <Icon
-                  icon="ph:check-circle-fill"
-                  width={20}
-                  height={20}
-                  className="text-green-500"
                 />
               </div>
             </div>
@@ -394,67 +505,18 @@ const ServicesPage = () => {
               to serve you.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+          <div className="lg:hidden">
+            <Slider {...sliderSettings}>
+              {serviceCategories.map((service, index) => (
+                <div key={index} className="px-3">
+                  <CategoriesCard service={service} />
+                </div>
+              ))}
+            </Slider>
+          </div>
+          <div className="hidden lg:grid lg:grid-cols-4 lg:gap-8">
             {serviceCategories.map((service, index) => (
-              <div
-                key={index}
-                className="group relative bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-3xl dark:hover:shadow-white/20 transition-all duration-300 border border-dark/10 dark:border-white/10 hover:border-primary/50"
-              >
-                {/* Image */}
-                <div className="relative h-48 overflow-hidden">
-                  <Image
-                    src={service.image}
-                    alt={service.title}
-                    fill
-                    className="object-cover group-hover:scale-110 transition-transform duration-500"
-                    unoptimized={true}
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                </div>
-                {/* Content */}
-                <div className="p-6">
-                  <div className="flex items-center mb-4">
-                    <div
-                      className={`bg-gradient-to-br ${service.color} p-3 rounded-xl group-hover:scale-110 transition-transform duration-300`}
-                    >
-                      <Icon
-                        icon={service.icon}
-                        width={24}
-                        height={24}
-                        className="text-white"
-                      />
-                    </div>
-                  </div>
-                  <h3 className="text-xl font-semibold text-dark dark:text-white mb-2 group-hover:text-primary transition-colors duration-300">
-                    {service.title}
-                  </h3>
-                  <p className="text-dark/60 dark:text-white/60 mb-4 text-sm leading-relaxed">
-                    {service.description}
-                  </p>
-                  <div className="space-y-2 mb-4">
-                    {service.features.map((feature, idx) => (
-                      <div
-                        key={idx}
-                        className="flex items-center gap-2 text-sm"
-                      >
-                        <Icon
-                          icon="ph:check"
-                          width={16}
-                          height={16}
-                          className="text-primary flex-shrink-0"
-                        />
-                        <span className="text-dark/70 dark:text-white/70">
-                          {feature}
-                        </span>
-                      </div>
-                    ))}
-                  </div>
-                  <div className="flex items-center gap-2 text-primary font-medium text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <span>Learn More</span>
-                    <Icon icon="ph:arrow-right" width={16} height={16} />
-                  </div>
-                </div>
-              </div>
+              <CategoriesCard key={index} service={service} />
             ))}
           </div>
         </div>
@@ -491,18 +553,18 @@ const ServicesPage = () => {
                       className="text-white"
                     />
                   </div>
-                  <div className="absolute -top-2 -right-2 bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold shadow-lg">
+                  <div className="absolute -top-2 lg:-right-2 bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold shadow-lg">
                     {step.step}
                   </div>
                 </div>
                 <h3 className="text-lg font-semibold text-dark dark:text-white mb-2">
                   {step.title}
                 </h3>
-                <p className="text-dark/60 dark:text-white/60 mb-3 text-sm">
+                <p className="text-dark/60 dark:text-white/60 mb-3">
                   {step.description}
                 </p>
                 <div className="mt-4 p-3 bg-gray-50 dark:bg-gray-700 rounded-lg text-left">
-                  <p className="text-xs text-dark/70 dark:text-white/70 leading-relaxed">
+                  <p className="text-sm font-medium text-dark/70 dark:text-white/70 leading-relaxed">
                     {step.details}
                   </p>
                 </div>
@@ -529,32 +591,32 @@ const ServicesPage = () => {
               onboarding process gets you started in no time.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-5 gap-6 lg:gap-8 mb-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6 lg:gap-8">
             {providerSteps.map((step, index) => (
               <div key={index} className="text-center group">
                 <div className="relative mb-4">
                   <div className="bg-white dark:bg-gray-800 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 border-2 border-primary text-primary group-hover:bg-primary group-hover:text-white transition-all duration-300 shadow-lg group-hover:scale-110">
                     <Icon icon={step.icon} width={24} height={24} />
                   </div>
-                  <div className="absolute -top-2 -right-2 bg-primary text-white rounded-full w-7 h-7 flex items-center justify-center text-xs font-bold shadow-lg">
+                  <div className="absolute -top-2 lg:-right-2 right-2 bg-primary text-white rounded-full w-7 h-7 flex items-center justify-center text-xs font-bold shadow-lg">
                     {step.step}
                   </div>
                 </div>
                 <h3 className="text-base font-semibold text-dark dark:text-white mb-2">
                   {step.title}
                 </h3>
-                <p className="text-sm text-dark/60 dark:text-white/60 mb-2">
+                <p className=" text-dark/60 dark:text-white/60 mb-2">
                   {step.description}
                 </p>
                 <div className="mt-3 p-2 bg-white/50 dark:bg-gray-700/50 rounded-lg text-left">
-                  <p className="text-xs text-dark/70 dark:text-white/70 leading-relaxed">
+                  <p className="text-sm font-medium text-dark/70 dark:text-white/70 leading-relaxed">
                     {step.details}
                   </p>
                 </div>
               </div>
             ))}
           </div>
-          <div className="text-center">
+          <div className="text-center mt-12">
             <button className="px-8 py-4 bg-primary text-white rounded-full font-semibold hover:bg-dark transition-colors duration-300 shadow-lg">
               Start Your Provider Journey
             </button>
@@ -582,52 +644,25 @@ const ServicesPage = () => {
               reliable experience for everyone on our platform.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-            {safetyFeatures.map((feature, index) => (
-              <div
-                key={index}
-                className="group bg-white dark:bg-gray-800 rounded-2xl p-6 lg:p-8 shadow-sm hover:shadow-3xl dark:hover:shadow-white/20 transition-all duration-300 border border-dark/10 dark:border-white/10 hover:border-primary/50"
-              >
-                <div
-                  className={`bg-gradient-to-br ${feature.color} p-4 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg`}
-                >
-                  <Icon
-                    icon={feature.icon}
-                    width={32}
-                    height={32}
-                    className="text-white"
-                  />
+
+          <div className="lg:hidden">
+            <Slider {...sliderSettings}>
+              {safetyFeatures.map((feature, index) => (
+                <div key={index} className="px-3">
+                  <SafetyFeaturesCard  feature={feature} />
                 </div>
-                <h3 className="text-xl font-semibold text-dark dark:text-white mb-3 text-center">
-                  {feature.title}
-                </h3>
-                <p className="text-dark/60 dark:text-white/60 text-center leading-relaxed">
-                  {feature.description}
-                </p>
-              </div>
+              ))}
+            </Slider>
+          </div>
+          <div className="hidden lg:grid lg:grid-cols-3 lg:gap-8">
+            {safetyFeatures.map((feature, index) => (
+              <SafetyFeaturesCard key={index} feature={feature} />
             ))}
           </div>
-          <div className="mt-12 bg-white dark:bg-gray-800 rounded-2xl p-8 border border-dark/10 dark:border-white/10">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
-              <div>
-                <div className="text-3xl font-bold text-primary mb-2">100%</div>
-                <p className="text-dark/60 dark:text-white/60">
-                  ID Verified Providers
-                </p>
-              </div>
-              <div>
-                <div className="text-3xl font-bold text-primary mb-2">24/7</div>
-                <p className="text-dark/60 dark:text-white/60">
-                  Customer Support
-                </p>
-              </div>
-              <div>
-                <div className="text-3xl font-bold text-primary mb-2">100%</div>
-                <p className="text-dark/60 dark:text-white/60">
-                  Secure Payments
-                </p>
-              </div>
-            </div>
+          <div className="grid lg:grid-cols-3 md:grid-cols-1 gap-8 lg:py-16 py-6">
+            <StatCard number="100%" label=" ID Verified Providers" />
+            <StatCard number="24/7" label="24/7 Customer Support" />
+            <StatCard number="100%" label="Secure Payments" />
           </div>
         </div>
       </section>
