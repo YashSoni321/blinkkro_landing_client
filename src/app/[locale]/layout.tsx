@@ -87,15 +87,15 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_IN",
-    url: "https://blinkkaro.com",
+    url: "https://kartsquare.com",
     title:
-      "BlinkKaro - India's #1 Service Booking App | Book Home Services Instantly",
+      "KartSquare - India's #1 Service Booking App | Book Home Services Instantly",
     description:
       "Book trusted home services in seconds! Verified plumbers, electricians, cleaners, AC repair, salon services & more. 50K+ services delivered across India. Same-day booking with transparent pricing.",
     siteName: "KartSquare",
     images: [
       {
-        url: "/images/hero/kartsquare-service-booking.jpg",
+        url: "/images/logo/logo.png",
         width: 1200,
         height: 630,
         alt: "KartSquare - Book Home Services Instantly",
@@ -108,7 +108,7 @@ export const metadata: Metadata = {
     description:
       "India's most trusted service booking platform. Book plumbers, electricians, cleaners & more in seconds. 50K+ services delivered with transparent pricing.",
     creator: "@KartSquare",
-    images: ["/images/hero/kartsquare-service-booking.jpg"],
+    images: ["/images/logo/logo.png"],
   },
   alternates: {
     canonical: "https://kartsquare.com",

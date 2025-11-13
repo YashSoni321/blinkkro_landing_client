@@ -31,7 +31,7 @@ const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({ isHomepage = false,
     <div className="relative">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className={`flex items-center gap-2 px-3 py-2 rounded-full transition-colors duration-200 ${
+        className={`flex items-center gap-2 md:px-3 px-0 py-2 rounded-full transition-colors duration-200 ${
           isHomepage
             ? sticky
               ? "text-dark dark:text-white hover:text-primary"
