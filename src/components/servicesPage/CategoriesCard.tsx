@@ -4,7 +4,7 @@ import Image from "next/image"
 import { Icon } from "@iconify/react";
 import { useTranslations } from "next-intl";
 
-export const CategoriesCard = memo(({ service }: { service: any }) => {
+function CategoriesCardComponent({ service }: { service: any }) {
   const t = useTranslations("servicesPage");
 
   return (
@@ -63,4 +63,5 @@ export const CategoriesCard = memo(({ service }: { service: any }) => {
       </div>
     </div>
   );
-});
+};
+export const CategoriesCard = memo(CategoriesCardComponent);
