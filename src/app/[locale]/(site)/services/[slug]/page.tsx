@@ -104,7 +104,6 @@ export default function Details() {
             {item?.images && item?.images[3] && (
               <Image
                 loading="lazy"
-                loading="lazy"
                 src={item.images[3]?.src}
                 alt="Property Image 4"
                 width={400}
