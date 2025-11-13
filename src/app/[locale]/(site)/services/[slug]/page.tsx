@@ -24,9 +24,9 @@ export default function Details() {
                 icon="ph:map-pin"
                 width={24}
                 height={24}
-                className="text-dark/50 dark:text-white/50"
+                className="text-gray-600 dark:text-gray-300"
               />
-              <p className="text-dark/50 dark:text-white/50 text-xm">
+              <p className="text-gray-600 dark:text-gray-300 text-xm">
                 {item?.location}
               </p>
             </div>
@@ -63,6 +63,7 @@ export default function Details() {
             {item?.images && item?.images[0] && (
               <div className="">
                 <Image
+                  loading="lazy"
                   src={item.images[0]?.src}
                   alt="Main Property Image"
                   width={400}
@@ -76,6 +77,7 @@ export default function Details() {
           <div className="lg:col-span-4 lg:block hidden">
             {item?.images && item?.images[1] && (
               <Image
+                loading="lazy"
                 src={item.images[1]?.src}
                 alt="Property Image 2"
                 width={400}
@@ -88,6 +90,7 @@ export default function Details() {
           <div className="lg:col-span-2 col-span-6">
             {item?.images && item?.images[2] && (
               <Image
+                loading="lazy"
                 src={item.images[2]?.src}
                 alt="Property Image 3"
                 width={400}
@@ -100,6 +103,7 @@ export default function Details() {
           <div className="lg:col-span-2 col-span-6">
             {item?.images && item?.images[3] && (
               <Image
+                loading="lazy"
                 src={item.images[3]?.src}
                 alt="Property Image 4"
                 width={400}
@@ -117,6 +121,7 @@ export default function Details() {
               <div className="flex items-center gap-6">
                 <div>
                   <Image
+                    loading="lazy"
                     src="/images/SVGs/property-details.svg"
                     width={400}
                     height={500}
@@ -125,6 +130,7 @@ export default function Details() {
                     unoptimized={true}
                   />
                   <Image
+                    loading="lazy"
                     src="/images/SVGs/property-details-white.svg"
                     width={400}
                     height={500}
@@ -137,7 +143,7 @@ export default function Details() {
                   <h3 className="text-dark dark:text-white text-xm">
                     Property details
                   </h3>
-                  <p className="text-base text-dark/50 dark:text-white/50">
+                  <p className="text-base text-gray-600 dark:text-gray-300">
                     One of the few homes in the area with a private pool.
                   </p>
                 </div>
@@ -145,6 +151,7 @@ export default function Details() {
               <div className="flex items-center gap-6">
                 <div>
                   <Image
+                    loading="lazy"
                     src="/images/SVGs/smart-home-access.svg"
                     width={400}
                     height={500}
@@ -153,6 +160,7 @@ export default function Details() {
                     unoptimized={true}
                   />
                   <Image
+                    loading="lazy"
                     src="/images/SVGs/smart-home-access-white.svg"
                     width={400}
                     height={500}
@@ -165,7 +173,7 @@ export default function Details() {
                   <h3 className="text-dark dark:text-white text-xm">
                     Smart home access
                   </h3>
-                  <p className="text-base text-dark/50 dark:text-white/50">
+                  <p className="text-base text-gray-600 dark:text-gray-300">
                     Easily check yourself in with a modern keypad system.
                   </p>
                 </div>
@@ -173,6 +181,7 @@ export default function Details() {
               <div className="flex items-center gap-6">
                 <div>
                   <Image
+                    loading="lazy"
                     src="/images/SVGs/energyefficient.svg"
                     width={400}
                     height={500}
@@ -181,6 +190,7 @@ export default function Details() {
                     unoptimized={true}
                   />
                   <Image
+                    loading="lazy"
                     src="/images/SVGs/energyefficient-white.svg"
                     width={400}
                     height={500}
@@ -193,7 +203,7 @@ export default function Details() {
                   <h3 className="text-dark dark:text-white text-xm">
                     Energy efficient
                   </h3>
-                  <p className="text-base text-dark/50 dark:text-white/50">
+                  <p className="text-base text-gray-600 dark:text-gray-300">
                     Built in 2025 with sustainable and smart-home features.
                   </p>
                 </div>
@@ -331,6 +341,7 @@ export default function Details() {
               </Link>
               <div className="absolute right-0 top-4 -z-[1]">
                 <Image
+                  loading="lazy"
                   src="/images/properties/vector.svg"
                   width={400}
                   height={500}
@@ -355,6 +366,7 @@ export default function Details() {
                 </p>
                 <div className="flex items-center gap-6">
                   <Image
+                    loading="lazy"
                     src={item.image}
                     alt={item.name}
                     width={400}

@@ -3,6 +3,7 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
+
 @theme {
   /* Gradient colors */
   --color-primary: #4e4dff;

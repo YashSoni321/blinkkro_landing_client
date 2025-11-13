@@ -63,17 +63,17 @@ const ServicesPage = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
             {/* Content */}
             <div>
-              <p className="text-dark/75 dark:text-white/75 text-base font-semibold flex gap-2.5 items-center mb-4">
+              <p className="text-gray-600 dark:text-gray-300 text-base font-semibold flex gap-2.5 items-center mb-4">
                 <Icon icon="ph:lightning" className="text-2xl text-primary" />
                 {t("offer.subtitle")}
               </p>
               <h2 className="text-3xl sm:text-4xl lg:text-52 font-medium text-dark dark:text-white mb-4">
                 {t("offer.title")}
               </h2>
-              <p className="text-lg text-dark/60 dark:text-white/60 mb-6 leading-relaxed">
+              <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
                 {t("offer.description1")}
               </p>
-              <p className="text-base text-dark/60 dark:text-white/60 mb-8 leading-relaxed">
+              <p className="text-base text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
                 {t("offer.description2")}
               </p>
               <div className="grid grid-cols-2 gap-4 mb-8">
@@ -86,7 +86,7 @@ const ServicesPage = () => {
                       className="text-primary"
                     />
                   </div>
-                  <span className="text-dark dark:text-white font-medium">
+                  <span className="text-gray-600 dark:text-gray-300font-medium">
                     {t("offer.features.verified")}
                   </span>
                 </div>
@@ -135,6 +135,7 @@ const ServicesPage = () => {
             <div className="relative hidden lg:block">
               <div className="relative rounded-2xl overflow-hidden ">
                 <Image
+                  loading="lazy"
                   src="/images/kartsquare_categories/Blinkkaro_hero.png"
                   alt={t("offer.imageAlt")}
                   width={600}
@@ -161,6 +162,7 @@ const ServicesPage = () => {
       <section className="relative overflow-hidden py-16 bg-gray-50 dark:bg-gray-900">
         <div className="absolute left-0 top-0">
           <Image
+            loading="lazy"
             src="/images/categories/Vector.svg"
             alt={"categories vectorAlt"}
             width={800}
@@ -169,6 +171,7 @@ const ServicesPage = () => {
             unoptimized={true}
           />
           <Image
+            loading="lazy"
             src="/images/categories/Vector-dark.svg"
             alt={t("categories.vectorAlt")}
             width={800}
@@ -179,14 +182,14 @@ const ServicesPage = () => {
         </div>
         <div className="container max-w-8xl mx-auto px-5 2xl:px-0 relative z-10">
           <div className="text-center mb-12">
-            <p className="text-dark/75 dark:text-white/75 text-base font-semibold flex gap-2.5 items-center justify-center mb-4">
+            <p className="text-gray-600 dark:text-gray-300 text-base font-semibold flex gap-2.5 items-center justify-center mb-4">
               <Icon icon="ph:grid-four" className="text-2xl text-primary" />
               {t("categories.subtitle")}
             </p>
             <h2 className="text-3xl sm:text-4xl lg:text-52 font-medium text-dark dark:text-white mb-4">
               {t("categories.title")}
             </h2>
-            <p className="text-dark/60 dark:text-white/60 text-lg max-w-2xl mx-auto">
+            <p className="text-gray-600 dark:text-gray-300 text-lg max-w-2xl mx-auto">
               {t("categories.description")}
             </p>
           </div>
@@ -211,7 +214,7 @@ const ServicesPage = () => {
       <section className="relative overflow-hidden py-16 bg-white dark:bg-gray-800">
         <div className="container max-w-8xl mx-auto px-5 2xl:px-0">
           <div className="text-center mb-12">
-            <p className="text-dark/75 dark:text-white/75 text-base font-semibold flex gap-2.5 items-center justify-center mb-4">
+            <p className="text-gray-600 dark:text-gray-300 text-base font-semibold flex gap-2.5 items-center justify-center mb-4">
               <Icon
                 icon="ph:calendar-check-fill"
                 className="text-2xl text-primary"
@@ -221,7 +224,7 @@ const ServicesPage = () => {
             <h2 className="text-3xl sm:text-4xl lg:text-52 font-medium text-dark dark:text-white mb-4">
               {t("booking.title")}
             </h2>
-            <p className="text-dark/60 dark:text-white/60 text-lg max-w-2xl mx-auto">
+            <p className="text-gray-600 dark:text-gray-300 text-lg max-w-2xl mx-auto">
               {t("booking.description")}
             </p>
           </div>
@@ -244,11 +247,11 @@ const ServicesPage = () => {
                 <h3 className="text-lg font-semibold text-dark dark:text-white mb-2">
                   {step.title}
                 </h3>
-                <p className="text-dark/60 dark:text-white/60 mb-3">
+                <p className="text-gray-600 dark:text-gray-300 mb-3">
                   {step.description}
                 </p>
                 <div className="mt-4 p-3 bg-gray-50 dark:bg-gray-700 rounded-lg text-left">
-                  <p className="text-sm font-medium text-dark/70 dark:text-white/70 leading-relaxed">
+                  <p className="text-sm font-medium text-gray-600 dark:text-gray-300 leading-relaxed">
                     {step.details}
                   </p>
                 </div>
@@ -262,14 +265,14 @@ const ServicesPage = () => {
       <section className="relative overflow-hidden py-16 bg-gradient-to-br from-primary/10 to-primary/5 dark:from-gray-900 dark:to-gray-800">
         <div className="container max-w-8xl mx-auto px-5 2xl:px-0">
           <div className="text-center mb-12">
-            <p className="text-dark/75 dark:text-white/75 text-base font-semibold flex gap-2.5 items-center justify-center mb-4">
+            <p className="text-gray-600 dark:text-gray-300 text-base font-semibold flex gap-2.5 items-center justify-center mb-4">
               <Icon icon="ph:rocket-launch" className="text-2xl text-primary" />
               {t("provider.subtitle")}
             </p>
             <h2 className="text-3xl sm:text-4xl lg:text-52 font-medium text-dark dark:text-white mb-4">
               {t("provider.title")}
             </h2>
-            <p className="text-lg text-dark/60 dark:text-white/60 max-w-2xl mx-auto">
+            <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
               {t("provider.description")}
             </p>
           </div>
@@ -287,11 +290,11 @@ const ServicesPage = () => {
                 <h3 className="text-base font-semibold text-dark dark:text-white mb-2">
                   {step.title}
                 </h3>
-                <p className=" text-dark/60 dark:text-white/60 mb-2">
+                <p className=" text-gray-600 dark:text-gray-300 mb-2">
                   {step.description}
                 </p>
                 <div className="mt-3 p-2 bg-white/50 dark:bg-gray-700/50 rounded-lg text-left">
-                  <p className="text-sm font-medium text-dark/70 dark:text-white/70 leading-relaxed">
+                  <p className="text-sm font-medium text-gray-600 dark:text-gray-300 leading-relaxed">
                     {step.details}
                   </p>
                 </div>
@@ -299,7 +302,7 @@ const ServicesPage = () => {
             ))}
           </div>
           <div className="text-center mt-12">
-            <button className="px-8 py-4 bg-primary text-white rounded-full font-semibold hover:bg-dark transition-colors duration-300 shadow-lg">
+            <button aria-label={t("provider.button")} className="px-8 py-4 bg-primary text-white rounded-full font-semibold hover:bg-dark transition-colors duration-300 shadow-lg">
               {t("provider.button")}
             </button>
           </div>
@@ -310,7 +313,7 @@ const ServicesPage = () => {
       <section className="relative overflow-hidden py-16 bg-gray-50 dark:bg-gray-900">
         <div className="container max-w-8xl mx-auto px-5 2xl:px-0">
           <div className="text-center mb-12">
-            <p className="text-dark/75 dark:text-white/75 text-base font-semibold flex gap-2.5 items-center justify-center mb-4">
+            <p className="text-gray-600 dark:text-gray-300 text-base font-semibold flex gap-2.5 items-center justify-center mb-4">
               <Icon
                 icon="ph:shield-check-fill"
                 className="text-2xl text-primary"
@@ -320,7 +323,7 @@ const ServicesPage = () => {
             <h2 className="text-3xl sm:text-4xl lg:text-52 font-medium text-dark dark:text-white mb-4">
               {t("safety.title")}
             </h2>
-            <p className="text-lg text-dark/60 dark:text-white/60 max-w-3xl mx-auto">
+            <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
               {t("safety.description")}
             </p>
           </div>

@@ -19,6 +19,7 @@ const ErrorPage = () => {
     <>
       <section className="flex justify-center pb-0!">
         <Image
+          loading="lazy"
           src="/images/404.png"
           alt="404"
           width={490}

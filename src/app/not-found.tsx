@@ -46,7 +46,7 @@ export default function NotFound() {
 
           <div className="text-sm text-dark/60 dark:text-white/60">
             or{" "}
-            <button
+            <button aria-label="go-back"
               onClick={() => window.history.back()}
               className="text-primary hover:underline"
             >

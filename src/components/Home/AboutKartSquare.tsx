@@ -60,7 +60,7 @@ export default function AboutKartSquare() {
                       <p className="font-medium text-sm text-dark dark:text-white">
                         {t("app.services.houseCleaning.name")}
                       </p>
-                      <p className="text-xs text-dark/60 dark:text-white/60">
+                      <p className="text-xs text-gray-600 dark:text-gray-300">
                         {t("app.services.houseCleaning.status")}
                       </p>
                     </div>
@@ -80,7 +80,7 @@ export default function AboutKartSquare() {
                       <p className="font-medium text-sm text-dark dark:text-white">
                         {t("app.services.plumbing.name")}
                       </p>
-                      <p className="text-xs text-dark/60 dark:text-white/60">
+                      <p className="text-xs text-gray-600 dark:text-gray-300">
                         {t("app.services.plumbing.status")}
                       </p>
                     </div>
@@ -88,7 +88,7 @@ export default function AboutKartSquare() {
                   </div>
                 </div>
 
-                <button className="w-full bg-primary text-white py-3 rounded-xl font-semibold mt-4">
+                <button aria-label={t("buttons.bookService")} className="w-full bg-primary text-white py-3 rounded-xl font-semibold mt-4">
                   {t("buttons.bookService")}
                 </button>
               </div>
@@ -142,13 +142,13 @@ export default function AboutKartSquare() {
               <span className="text-primary">{t("kartSquareText")}</span>
             </h2>
 
-            <p className="text-xm text-dark/70 dark:text-white/70 mb-8 leading-relaxed">
+            <p className="text-xm text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
               {t.rich("description1", {
                 bold: (chunks) => <strong>{chunks}</strong>,
               })}
             </p>
 
-            <p className="text-xm text-dark/70 dark:text-white/70 mb-8 leading-relaxed">
+            <p className="text-xm text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
               {t.rich("description2", {
                 bold: (chunks) => <strong>{chunks}</strong>,
               })}
@@ -169,7 +169,7 @@ export default function AboutKartSquare() {
                     <h4 className="font-semibold text-dark dark:text-white mb-1">
                       {feature.title}
                     </h4>
-                    <p className="md:text-sm text-dark/60 dark:text-white/60">
+                    <p className="md:text-sm text-gray-600 dark:text-gray-300">
                       {feature.description}
                     </p>
                   </div>
@@ -178,10 +178,10 @@ export default function AboutKartSquare() {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <button className="px-8 py-4 bg-primary text-white rounded-full font-semibold hover:bg-dark transition-colors duration-300">
+              <button aria-label={t("buttons.tryNow")} className="px-8 py-4 bg-primary text-white rounded-full font-semibold hover:bg-dark transition-colors duration-300">
                 {t("buttons.tryNow")}
               </button>
-              <button className="px-8 py-4 border-2 border-primary text-primary rounded-full font-semibold hover:bg-primary hover:text-white transition-all duration-300">
+              <button aria-label={t("buttons.startEarning")} className="px-8 py-4 border-2 border-primary text-primary rounded-full font-semibold hover:bg-primary hover:text-white transition-all duration-300">
                 {t("buttons.startEarning")}
               </button>
             </div>

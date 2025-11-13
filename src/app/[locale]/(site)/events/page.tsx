@@ -29,7 +29,7 @@ const Events = () => {
 
       <section className="flex flex-col items-center justify-center text-center">
         <div className="">
-          <button className="px-8 py-4 rounded-full bg-primary text-white font-semibold hover:bg-primary/80 transition">
+          <button aria-label={t("eventsPage.content.notifyButton")} className="px-8 py-4 rounded-full bg-primary text-white font-semibold hover:bg-primary/80 transition">
             {t("eventsPage.content.notifyButton")}
           </button>
         </div>

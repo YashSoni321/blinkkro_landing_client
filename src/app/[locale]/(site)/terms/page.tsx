@@ -27,8 +27,8 @@ export default async function TermsPage() {
           {t("title")}
         </h1>
 
-        <div className="prose prose-lg max-w-none text-dark/80 dark:text-white/80">
-          <p className="text-sm text-dark/60 dark:text-white/60 mb-8">
+        <div className="prose prose-lg max-w-none text-gray-600 dark:text-gray-300">
+          <p className="text-sm text-gray-600 dark:text-gray-300 mb-8">
             {t("lastUpdated")}
           </p>
 

@@ -54,6 +54,7 @@ const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({ isHomepage = false,
           <div className="absolute top-full right-0 mt-2 bg-white dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg shadow-lg z-20 min-w-[120px]">
             {languages.map((lang) => (
               <button
+                aria-label='country-flag'
                 key={lang.code}
                 onClick={() => handleLanguageChange(lang.code)}
                 className={`w-full flex items-center gap-3 px-4 py-3 text-left hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors first:rounded-t-lg last:rounded-b-lg ${

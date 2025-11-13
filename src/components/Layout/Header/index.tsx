@@ -62,6 +62,7 @@ const Header: React.FC = () => {
           <div className="flex items-center justify-center">
             <p className="text-xl md:text-4xl font-extrabold tracking-wide flex items-center gap-1">
               <Image
+                loading="lazy"
                 src="/images/logo/logo.png"
                 alt="logo"
                 width={40}
@@ -114,6 +115,7 @@ const Header: React.FC = () => {
             </Link>
           </div> */}
           <button
+            aria-label="Toggle theme"
             className="hidden md:block hover:cursor-pointer"
             onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
           >
@@ -199,6 +201,7 @@ const Header: React.FC = () => {
                 </svg>
               </button>
               <button
+                aria-label="Toggle theme"
                 className="block md:hidden hover:cursor-pointer"
                 onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
               >

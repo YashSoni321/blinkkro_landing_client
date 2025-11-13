@@ -36,6 +36,7 @@ const ThankYouModel = ({ onclose }) => {
         </p>
 
         <button
+          aria-label='explore-services'
           onClick={goToServices}
           className='mt-6 cursor-pointer rounded-full bg-green-600 px-6 py-3 text-base font-semibold text-white transition-colors duration-300 hover:bg-green-700 dark:bg-green-700 dark:hover:bg-green-800'
         >

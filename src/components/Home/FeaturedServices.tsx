@@ -20,14 +20,14 @@ export default function FeaturedServices() {
               height={20}
               className="text-primary"
             />
-            <p className="text-base font-semibold text-dark/75 dark:text-white/75">
+            <p className="text-base font-semibold text-gray-600 dark:text-gray-300">
               {t("title")}
             </p>
           </div>
           <h2 className="text-4xl sm:text-52 font-medium tracking-tighter text-black dark:text-white mb-3">
             {t("heading")}
           </h2>
-          <p className="text-xm font-normal text-black/50 dark:text-white/50">
+          <p className="text-xm font-normal text-gray-600 dark:text-gray-300">
             {t("subtitle")}
           </p>
         </div>
@@ -38,6 +38,7 @@ export default function FeaturedServices() {
               <div className="bg-white dark:bg-black rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
                 <div className="relative h-64 overflow-hidden">
                   <Image
+                    loading="lazy"
                     src={service.images[0]?.src || "/images/placeholder.jpg"}
                     alt={service.name}
                     fill
@@ -84,7 +85,7 @@ export default function FeaturedServices() {
                     {service.provider}
                   </p>
 
-                  <div className="flex items-center gap-4 mb-6 text-sm text-dark/70 dark:text-white/70">
+                  <div className="flex items-center gap-4 mb-6 text-sm text-gray-600 dark:text-gray-300">
                     <div className="flex items-center gap-1">
                       <Icon icon={"ph:clock"} width={16} height={16} />
                       <span>{service.duration}</span>
