@@ -420,7 +420,7 @@ const ServicesPage = () => {
             </div>
             {/* Image */}
             <div className="relative hidden lg:block">
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+              <div className="relative rounded-2xl overflow-hidden ">
                 <Image
                   src="/images/kartsquare_categories/Blinkkaro_hero.png"
                   alt={t("offer.imageAlt")}
@@ -429,23 +429,6 @@ const ServicesPage = () => {
                   className="w-full h-full object-cover"
                   unoptimized={true}
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-                <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                  <h3 className="text-2xl font-bold mb-2 flex items-center gap-2">
-                    <div className="h-12 w-12 bg-green-400/20 rounded-full flex items-center justify-center animate-pulse">
-                      <Icon
-                        icon="ph:check-circle-fill"
-                        width={20}
-                        height={20}
-                        className="text-green-500"
-                      />
-                    </div>
-                    {t("offer.imageTitle")}
-                  </h3>
-                  <p className="text-white/90 ml-16">
-                    {t("offer.imageDescription")}
-                  </p>
-                </div>
               </div>
               {/* Floating Elements */}
               <div className="absolute -top-4 -right-4 w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center animate-bounce">
@@ -644,15 +627,9 @@ const ServicesPage = () => {
             ))}
           </div>
           <div className="grid lg:grid-cols-3 md:grid-cols-1 gap-8 lg:py-16 py-6">
-            <StatCard
-              number="100%"
-              label={t("safety.stats.verified")}
-            />
+            <StatCard number="100%" label={t("safety.stats.verified")} />
             <StatCard number="24/7" label={t("safety.stats.support")} />
-            <StatCard
-              number="100%"
-              label={t("safety.stats.payments")}
-            />
+            <StatCard number="100%" label={t("safety.stats.payments")} />
           </div>
         </div>
       </section>
