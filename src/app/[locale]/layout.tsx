@@ -8,10 +8,10 @@ import SessionProviderComp from "@/components/nextauth/SessionProvider";
 import ThemeProviderComp from "@/components/provider/ThemeProviderComp";
 import { Toaster } from "react-hot-toast";
 import FloatingButton from "@/components/Layout/FloatingButton";
-import {NextIntlClientProvider} from 'next-intl';
-import {getMessages} from 'next-intl/server';
-import {notFound} from 'next/navigation';
-import {routing} from '@/i18n/routing';
+import { NextIntlClientProvider } from "next-intl";
+import { getMessages } from "next-intl/server";
+import { notFound } from "next/navigation";
+import { routing } from "@/i18n/routing";
 
 const font = Bricolage_Grotesque({ subsets: ["latin"] });
 
@@ -121,21 +121,33 @@ export const metadata: Metadata = {
 
 export default async function RootLayout({
   children,
-  params
+  params,
 }: {
   children: React.ReactNode;
-  params: Promise<{locale: string}>;
+  params: Promise<{ locale: string }>;
 }) {
-  const {locale} = await params;
-  
-  if (!routing.locales.includes(locale as "en" | "hi")) { 
+  const { locale } = await params;
+
+  if (!routing.locales.includes(locale as "en" | "hi")) {
     notFound();
   }
- 
-  const messages = await getMessages();
 
+  const messages = await getMessages();
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "KartSquare",
+    url: "https://kartsquare.com",
+    logo: "https://kartsquare.com/images/logo/logo.png",
+  };
   return (
     <html lang={locale} suppressHydrationWarning>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
+      </head>
       <body className={`${font.className} antialiased overflow-x-hidden`}>
         <NextIntlClientProvider messages={messages}>
           <NextTopLoader color="#07be8a" />
