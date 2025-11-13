@@ -44,6 +44,7 @@ const KartSquareSolutions: React.FC = () => {
                 {featuredProprty.slice(1).map((item, index) => (
                   <CarouselItem key={index}>
                     <Image
+                      loading="lazy"
                       src={item.scr}
                       alt={item.alt}
                       width={680}
@@ -59,7 +60,7 @@ const KartSquareSolutions: React.FC = () => {
           {/* Left Side - KartSquare Content */}
           <div className="flex flex-col gap-10 order-2 lg:order-1">
             <div>
-              <p className="text-dark/75 dark:text-white/75 text-base font-semibold flex gap-2">
+              <p className="text-gray-600 dark:text-gray-300 text-base font-semibold flex gap-2">
                 <Icon
                   icon="mdi:lightning-bolt"
                   className="text-2xl text-primary"
@@ -74,15 +75,15 @@ const KartSquareSolutions: React.FC = () => {
                   icon="mdi:target"
                   width={28}
                   height={26}
-                  className="text-dark/60 dark:text-white/50"
+                  className="text-gray-600 dark:text-gray-300"
                 />
-                <p className="text-dark/60 dark:text-white/50 text-base">
+                <p className="text-gray-600 dark:text-gray-300 text-base">
                   {t("targetDescription")}
                 </p>
               </div>
             </div>
 
-            <p className="text-base text-dark/60 dark:text-white/50">
+            <p className="text-base text-gray-600 dark:text-gray-300">
               {t("description")}
             </p>
 

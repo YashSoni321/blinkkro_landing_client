@@ -19,14 +19,14 @@ export default function ServiceCategories() {
               height={20}
               className="text-primary"
             />
-            <p className="text-base font-semibold text-dark/75 dark:text-white/75">
+            <p className="text-base font-semibold text-gray-600 dark:text-gray-300">
               {t("title")}
             </p>
           </div>
           <h2 className="text-4xl sm:text-52 font-medium tracking-tighter text-black dark:text-white mb-3">
             {t("heading")}
           </h2>
-          <p className="text-xm font-normal text-black/50 dark:text-white/50">
+          <p className="text-xm font-normal text-gray-600 dark:text-gray-300">
             {t("subtitle")}
           </p>
         </div>
@@ -54,12 +54,12 @@ export default function ServiceCategories() {
                     <h3 className="text-xl font-semibold text-dark dark:text-white group-hover:text-primary transition-colors">
                       {category.name}
                     </h3>
-                    <p className="text-sm text-dark/50 dark:text-white/50">
+                    <p className="text-sm text-gray-600 dark:text-gray-300">
                       {category.serviceCount} {t("services")}
                     </p>
                   </div>
                 </div>
-                <p className="text-base text-dark/70 dark:text-white/70">
+                <p className="text-base text-gray-600 dark:text-gray-300">
                   {category.description}
                 </p>
               </div>

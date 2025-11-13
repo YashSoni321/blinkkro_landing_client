@@ -59,9 +59,9 @@ export default async function AboutUs() {
               <div className="absolute top-4 right-4 text-6xl opacity-20">
                 💡
               </div>
-              <h3 className="text-2xl font-bold text-dark dark:text-white mb-4">
+              <h2 className="text-2xl font-bold text-dark dark:text-white mb-4">
                 {t("originStory.title")}
-              </h3>
+              </h2>
               <p className="text-dark/60 font-semibold dark:text-white/60 leading-relaxed">
                 {t("originStory.crisisText")}
               </p>
@@ -81,9 +81,9 @@ export default async function AboutUs() {
               </p>
             </div>
 
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-dark dark:text-white mb-6">
+            <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold text-dark dark:text-white mb-6">
               &ldquo;{t("originStory.mainQuote")}&rdquo;
-            </h2>
+            </h3>
 
             <p className="text-lg text-dark/60 dark:text-white/60 mb-6 leading-relaxed">
               {t("originStory.storyPart1")}
@@ -270,6 +270,7 @@ export default async function AboutUs() {
           {/* Image Column */}
           <div className="relative h-96 w-full lg:h-[32rem]">
             <Image
+              loading="lazy"
               src="/images/team/team.JPG"
               alt={t("groupSection.imageAlt")}
               fill
@@ -428,6 +429,7 @@ const FounderCard = ({
     <div className="relative mb-6">
       <div className="w-32 h-32 mx-auto rounded-full overflow-hidden ring-4 ring-primary/20">
         <Image
+          loading="lazy"
           src={img}
           alt={name}
           width={128}
@@ -488,6 +490,7 @@ const TeamCard = ({
   <div className="bg-white dark:bg-gray-800 p-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
     <div className="w-32 h-32 mx-auto rounded-full overflow-hidden ring-4 ring-primary/20">
       <Image
+        loading="lazy"
         src={img}
         alt={name}
         width={128}
@@ -500,10 +503,10 @@ const TeamCard = ({
         {name}
       </h4>
       <p className="text-primary font-medium text-sm mb-1">{role}</p>
-      <p className="text-sm font-medium text-dark/60 dark:text-white/60 mb-3">
+      <p className="text-sm font-medium text-gray-600 dark:text-gray-300 mb-3">
         {specialty}
       </p>
-      <p className="text-sm text-dark/60 dark:text-white/60 mb-3">{bio}</p>
+      <p className="text-sm text-gray-600 dark:text-gray-300 mb-3">{bio}</p>
       <div className="flex justify-center gap-2">
         {socials.map((icon, i) => (
           <Icon
@@ -511,7 +514,7 @@ const TeamCard = ({
             icon={icon}
             width={16}
             height={16}
-            className="text-dark/60 dark:text-white/60 hover:text-primary cursor-pointer transition-colors"
+            className="text-gray-600 dark:text-gray-300 hover:text-primary cursor-pointer transition-colors"
           />
         ))}
       </div>

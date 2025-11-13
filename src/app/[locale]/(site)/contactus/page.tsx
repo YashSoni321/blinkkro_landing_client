@@ -33,7 +33,7 @@ export default function ContactUs() {
               className="text-primary"
             />
           </span>
-          <p className="text-base font-semibold text-badge dark:text-white/90">
+          <p className="text-base font-semibold text-badge dark:text-gray-300">
             {t("contactPage.hero.badge")}
           </p>
         </div>
@@ -41,7 +41,7 @@ export default function ContactUs() {
           <h3 className=" text-3xl md:text-4xl lg:text-5xl sm:text-52 font-medium tracking-tighter text-black dark:text-white mb-3 leading-10 sm:leading-14">
             {t("contactPage.hero.title")}
           </h3>
-          <p className="text-xm font-normal tracking-tight text-black/50 dark:text-white/50 leading-6">
+          <p className="text-xm font-normal tracking-tight text-gray-600 dark:text-gray-300 leading-6">
             {t("contactPage.hero.description")}
           </p>
         </div>
@@ -51,6 +51,7 @@ export default function ContactUs() {
         <div className="flex flex-col lg:flex-row lg:items-center gap-12">
           <div className="relative w-fit">
             <Image
+              loading="lazy"
               src={"/images/contactUs/contactUs.jpg"}
               alt="contact illustration"
               width={800}
@@ -62,7 +63,7 @@ export default function ContactUs() {
               <h5 className="text-xl xs:text-2xl mobile:text-3xl font-medium tracking-tight text-white">
                 {t("contactPage.contactInfo.title")}
               </h5>
-              <p className="text-sm xs:text-base mobile:text-xm font-normal text-white/80">
+              <p className="text-sm xs:text-base mobile:text-xm font-normal text-gray-300">
                 {t("contactPage.contactInfo.description")}
               </p>
             </div>
@@ -132,7 +133,7 @@ export default function ContactUs() {
                   required
                   className="px-6 py-3.5 border border-black/10 dark:border-white/10 rounded-2xl outline-primary focus:outline"
                 ></textarea>
-                <button className="px-8 py-4 rounded-full bg-primary text-white text-base font-semibold w-full mobile:w-fit hover:cursor-pointer hover:bg-dark duration-300">
+                <button aria-label={t("contactPage.form.submit")} className="px-8 py-4 rounded-full bg-primary text-white text-base font-semibold w-full mobile:w-fit hover:cursor-pointer hover:bg-dark duration-300">
                   {t("contactPage.form.submit")}
                 </button>
               </div>

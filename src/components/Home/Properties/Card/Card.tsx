@@ -49,7 +49,7 @@ const ServiceCard: React.FC<{ item: PropertyHomes }> = ({ item }) => {
                   {name}
                 </h3>
               </Link>
-              <p className="text-sm sm:text-base text-black/50 dark:text-white/50">
+              <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300">
                 {location}
               </p>
             </div>
@@ -68,7 +68,7 @@ const ServiceCard: React.FC<{ item: PropertyHomes }> = ({ item }) => {
               <p className="text-xs sm:text-sm font-normal text-black dark:text-white text-center">
                 {duration}
               </p>
-              <p className="text-xs text-black/50 dark:text-white/50 text-center">
+              <p className="text-xs text-gray-600 dark:text-gray-300 text-center">
                 {t("infoLabels.duration")}
               </p>
             </div>
@@ -79,7 +79,7 @@ const ServiceCard: React.FC<{ item: PropertyHomes }> = ({ item }) => {
               <p className="text-xs sm:text-sm font-normal text-black dark:text-white text-center">
                 {rate}
               </p>
-              <p className="text-xs text-black/50 dark:text-white/50 text-center">
+              <p className="text-xs text-gray-600 dark:text-gray-300 text-center">
                 {t("infoLabels.price")}
               </p>
             </div>
@@ -90,7 +90,7 @@ const ServiceCard: React.FC<{ item: PropertyHomes }> = ({ item }) => {
               <p className="text-xs sm:text-sm font-normal text-black dark:text-white text-center">
                 {category}
               </p>
-              <p className="text-xs text-black/50 dark:text-white/50 text-center">
+              <p className="text-xs text-gray-600 dark:text-gray-300 text-center">
                 {t("infoLabels.category")}
               </p>
             </div>

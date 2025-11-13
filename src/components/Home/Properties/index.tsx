@@ -65,14 +65,14 @@ const Properties: React.FC = () => {
                 className="text-primary"
               />
             </span>
-            <p className="text-base font-semibold text-dark/75 dark:text-white/75">
+            <p className="text-base font-semibold text-gray-600 dark:text-gray-300">
               {t("badge")}
             </p>
           </div>
           <h2 className="text-40 lg:text-52 font-medium text-black dark:text-white text-center tracking-tight leading-11 mb-2">
             {t("title")} ✨
           </h2>
-          <p className="text-xm font-normal text-black/50 dark:text-white/50 text-center">
+          <p className="text-xm font-normal text-gray-600 dark:text-gray-300 text-center">
             {t("description")}
           </p>
         </div>

@@ -11,7 +11,8 @@ function CategoriesCardComponent({ service }: { service: any }) {
     <div className="group relative bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-3xl dark:hover:shadow-white/20 transition-all duration-300 border border-dark/10 dark:border-white/10 hover:border-primary/50 h-[36rem]">
       {/* Image */}
       <div className="relative h-48 overflow-hidden">
-        <Image
+        <Image 
+          loading="lazy"
           src={service.image}
           alt={service.title}
           fill
@@ -37,7 +38,7 @@ function CategoriesCardComponent({ service }: { service: any }) {
         <h3 className="text-xl font-semibold text-dark dark:text-white mb-2 group-hover:text-primary transition-colors duration-300">
           {service.title}
         </h3>
-        <p className="text-dark/60 dark:text-white/60 mb-4 leading-relaxed">
+        <p className="text-gray-600 dark:text-gray-300 mb-4 leading-relaxed">
           {service.description}
         </p>
         <div className="space-y-2 mb-4">
@@ -52,7 +53,7 @@ function CategoriesCardComponent({ service }: { service: any }) {
                 height={16}
                 className="text-primary flex-shrink-0"
               />
-              <span className="text-dark/70 dark:text-white/70">{feature}</span>
+              <span className="text-gray-600 dark:text-gray-300">{feature}</span>
             </div>
           ))}
         </div>

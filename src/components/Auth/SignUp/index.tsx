@@ -91,6 +91,8 @@ const SignUp = ({ signUpOpen }: { signUpOpen }) => {
         </div>
         <div className="mb-9">
           <button
+            aria-label="sign up"
+            disabled={loading}
             type="submit"
             className="flex w-full cursor-pointer items-center justify-center rounded-md bg-primary px-5 py-3 text-base text-white transition duration-300 ease-in-out hover:!bg-darkprimary dark:hover:!bg-darkprimary"
           >

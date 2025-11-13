@@ -21,6 +21,7 @@ const Footer = () => {
           <div className="text-center space-y-4">
             <div className="flex items-center align-center justify-center gap-3 mb-4">
               <Image
+                loading="lazy"
                 src="/images/logo/logo.png"
                 alt="logo"
                 width={40}
@@ -81,7 +82,7 @@ const Footer = () => {
                   href="/terms"
                   className="text-white/50 hover:text-primary text-xs transition-colors duration-300"
                 >
-                 {t("bottomBar.termsShort")}
+                  {t("bottomBar.termsShort")}
                 </Link>
                 <Link
                   href="/privacy"
@@ -104,6 +105,7 @@ const Footer = () => {
             <div className="col-span-2">
               <div className="flex items-center gap-3">
                 <Image
+                  loading="lazy"
                   src="/images/logo/logo.png"
                   alt="logo"
                   width={40}
@@ -200,17 +202,17 @@ const Footer = () => {
 
           {/* Bottom Bar */}
           <div className="flex justify-between items-center pt-8 border-t border-white/10">
-            <p className="text-white/50 text-sm">{t("bottomBar.copyright")}</p>
+            <p className="text-gray-300 text-sm">{t("bottomBar.copyright")}</p>
             <div className="flex gap-8">
               <Link
                 href="/terms"
-                className="text-white/50 hover:text-primary text-sm transition-colors duration-300"
+                className="text-gray-300 hover:text-primary text-sm transition-colors duration-300"
               >
                 {t("bottomBar.terms")}
               </Link>
               <Link
                 href="/privacy"
-                className="text-white/50 hover:text-primary text-sm transition-colors duration-300"
+                className="text-gray-300 hover:text-primary text-sm transition-colors duration-300"
               >
                 {t("bottomBar.privacy")}
               </Link>
