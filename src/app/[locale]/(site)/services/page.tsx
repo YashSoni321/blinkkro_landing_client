@@ -8,6 +8,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import StatCard from "@/app/common/StatCard";
 import { useTranslations } from "next-intl";
+import { getServicePageData } from "./data";
+import { CategoriesCard } from "@/components/servicesPage/CategoriesCard";
+import { SafetyFeaturesCard } from "@/components/servicesPage/SafetyFeaturesCard";
 
 const sliderSettings = {
   infinite: true,
@@ -22,13 +25,13 @@ const sliderSettings = {
     {
       breakpoint: 1024,
       settings: {
-        slidesToShow: 3,
+        slidesToShow: 2,
       },
     },
     {
       breakpoint: 768,
       settings: {
-        slidesToShow: 2,
+        slidesToShow: 1,
       },
     },
     {
@@ -40,300 +43,10 @@ const sliderSettings = {
   ],
 };
 
-const CategoriesCard = ({ service }) => {
-  const t = useTranslations("servicesPage");
-
-  return (
-    <div className="group relative bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-3xl dark:hover:shadow-white/20 transition-all duration-300 border border-dark/10 dark:border-white/10 hover:border-primary/50 max-h-[36rem]">
-      {/* Image */}
-      <div className="relative h-48 overflow-hidden">
-        <Image
-          src={service.image}
-          alt={service.title}
-          fill
-          className="object-cover group-hover:scale-110 transition-transform duration-500"
-          unoptimized={true}
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-      </div>
-      {/* Content */}
-      <div className="p-6">
-        <div className="flex items-center mb-4">
-          <div
-            className={`bg-gradient-to-br ${service.color} p-3 rounded-xl group-hover:scale-110 transition-transform duration-300`}
-          >
-            <Icon
-              icon={service.icon}
-              width={24}
-              height={24}
-              className="text-white"
-            />
-          </div>
-        </div>
-        <h3 className="text-xl font-semibold text-dark dark:text-white mb-2 group-hover:text-primary transition-colors duration-300">
-          {service.title}
-        </h3>
-        <p className="text-dark/60 dark:text-white/60 mb-4 leading-relaxed">
-          {service.description}
-        </p>
-        <div className="space-y-2 mb-4">
-          {service.features.map((feature, idx) => (
-            <div
-              key={idx}
-              className="flex items-center gap-2 text-sm font-medium"
-            >
-              <Icon
-                icon="ph:check"
-                width={16}
-                height={16}
-                className="text-primary flex-shrink-0"
-              />
-              <span className="text-dark/70 dark:text-white/70">{feature}</span>
-            </div>
-          ))}
-        </div>
-        <div className="flex items-center gap-2 text-primary font-medium text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-          <span>{t("categories.learnMore")}</span>
-          <Icon icon="ph:arrow-right" width={16} height={16} />
-        </div>
-      </div>
-    </div>
-  );
-};
-
-const SafetyFeaturesCard = ({ feature }) => {
-  return (
-    <div className="group bg-white dark:bg-gray-800 rounded-2xl p-6 lg:p-8 shadow-sm hover:shadow-3xl dark:hover:shadow-white/20 transition-all duration-300 border border-dark/10 dark:border-white/10 hover:border-primary/50 md:py-16 min-h-[32rem] max-h-[32rem] lg:min-h-full">
-      <div
-        className={`bg-gradient-to-br ${feature.color} p-4 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg`}
-      >
-        <Icon
-          icon={feature.icon}
-          width={32}
-          height={32}
-          className="text-white"
-        />
-      </div>
-      <h3 className="text-xl font-semibold text-dark dark:text-white mb-3 text-center">
-        {feature.title}
-      </h3>
-      <p className="text-dark/60 dark:text-white/60 text-center leading-relaxed">
-        {feature.description}
-      </p>
-    </div>
-  );
-};
-
 const ServicesPage = () => {
   const t = useTranslations("servicesPage");
-
-  const serviceCategories = [
-    {
-      icon: "ph:broom",
-      title: t("categories.data.homeCleaning.title"),
-      description: t("categories.data.homeCleaning.description"),
-      image: "/images/kartsquare_categories/blinkkaro_home_services-min.jpg",
-      color: "from-blue-500 to-blue-600",
-      features: [
-        t("categories.data.homeCleaning.features.0"),
-        t("categories.data.homeCleaning.features.1"),
-        t("categories.data.homeCleaning.features.2"),
-      ],
-    },
-    {
-      icon: "ph:wrench",
-      title: t("categories.data.plumbing.title"),
-      description: t("categories.data.plumbing.description"),
-      image: "/images/kartsquare_categories/blinkkaro_plumber-min.jpg",
-      color: "from-green-500 to-green-600",
-      features: [
-        t("categories.data.plumbing.features.0"),
-        t("categories.data.plumbing.features.1"),
-        t("categories.data.plumbing.features.2"),
-      ],
-    },
-    {
-      icon: "ph:sparkle",
-      title: t("categories.data.beauty.title"),
-      description: t("categories.data.beauty.description"),
-      image: "/images/kartsquare_categories/blinkkaro_salon_category-min.jpg",
-      color: "from-pink-500 to-pink-600",
-      features: [
-        t("categories.data.beauty.features.0"),
-        t("categories.data.beauty.features.1"),
-        t("categories.data.beauty.features.2"),
-      ],
-    },
-    {
-      icon: "ph:toolbox",
-      title: t("categories.data.homeServices.title"),
-      description: t("categories.data.homeServices.description"),
-      image: "/images/kartsquare_categories/blinkkaro_homeservices-min.jpg",
-      color: "from-orange-500 to-orange-600",
-      features: [
-        t("categories.data.homeServices.features.0"),
-        t("categories.data.homeServices.features.1"),
-        t("categories.data.homeServices.features.2"),
-      ],
-    },
-    {
-      icon: "ph:car",
-      title: t("categories.data.carWash.title"),
-      description: t("categories.data.carWash.description"),
-      image: "/images/kartsquare_categories/blinkkaro_home_services_1-min.jpg",
-      color: "from-purple-500 to-purple-600",
-      features: [
-        t("categories.data.carWash.features.0"),
-        t("categories.data.carWash.features.1"),
-        t("categories.data.carWash.features.2"),
-      ],
-    },
-    {
-      icon: "ph:dumbbell",
-      title: t("categories.data.fitness.title"),
-      description: t("categories.data.fitness.description"),
-      image: "/images/kartsquare_categories/blinkkaro_fitness_category-min.jpg",
-      color: "from-indigo-500 to-indigo-600",
-      features: [
-        t("categories.data.fitness.features.0"),
-        t("categories.data.fitness.features.1"),
-        t("categories.data.fitness.features.2"),
-      ],
-    },
-    {
-      icon: "ph:cake",
-      title: t("categories.data.catering.title"),
-      description: t("categories.data.catering.description"),
-      image:
-        "/images/kartsquare_categories/blinkkaro_catering_services-min.jpg",
-      color: "from-red-500 to-red-600",
-      features: [
-        t("categories.data.catering.features.0"),
-        t("categories.data.catering.features.1"),
-        t("categories.data.catering.features.2"),
-      ],
-    },
-    {
-      icon: "ph:calendar",
-      title: t("categories.data.eventPlanning.title"),
-      description: t("categories.data.eventPlanning.description"),
-      image: "/images/kartsquare_categories/blinkkaro_events_category-min.jpg",
-      color: "from-teal-500 to-teal-600",
-      features: [
-        t("categories.data.eventPlanning.features.0"),
-        t("categories.data.eventPlanning.features.1"),
-        t("categories.data.eventPlanning.features.2"),
-      ],
-    },
-  ];
-
-  const bookingSteps = [
-    {
-      step: 1,
-      icon: "ph:magnifying-glass",
-      title: t("booking.steps.step1.title"),
-      description: t("booking.steps.step1.description"),
-      details: t("booking.steps.step1.details"),
-    },
-    {
-      step: 2,
-      icon: "ph:calendar-check",
-      title: t("booking.steps.step2.title"),
-      description: t("booking.steps.step2.description"),
-      details: t("booking.steps.step2.details"),
-    },
-    {
-      step: 3,
-      icon: "ph:user-check",
-      title: t("booking.steps.step3.title"),
-      description: t("booking.steps.step3.description"),
-      details: t("booking.steps.step3.details"),
-    },
-    {
-      step: 4,
-      icon: "ph:credit-card",
-      title: t("booking.steps.step4.title"),
-      description: t("booking.steps.step4.description"),
-      details: t("booking.steps.step4.details"),
-    },
-  ];
-
-  const providerSteps = [
-    {
-      step: 1,
-      icon: "ph:user-plus",
-      title: t("provider.steps.step1.title"),
-      description: t("provider.steps.step1.description"),
-      details: t("provider.steps.step1.details"),
-    },
-    {
-      step: 2,
-      icon: "ph:identification-card",
-      title: t("provider.steps.step2.title"),
-      description: t("provider.steps.step2.description"),
-      details: t("provider.steps.step2.details"),
-    },
-    {
-      step: 3,
-      icon: "ph:shield-check",
-      title: t("provider.steps.step3.title"),
-      description: t("provider.steps.step3.description"),
-      details: t("provider.steps.step3.details"),
-    },
-    {
-      step: 4,
-      icon: "ph:plus-circle",
-      title: t("provider.steps.step4.title"),
-      description: t("provider.steps.step4.description"),
-      details: t("provider.steps.step4.details"),
-    },
-    {
-      step: 5,
-      icon: "ph:calendar-star",
-      title: t("provider.steps.step5.title"),
-      description: t("provider.steps.step5.description"),
-      details: t("provider.steps.step5.details"),
-    },
-  ];
-
-  const safetyFeatures = [
-    {
-      icon: "ph:shield-check",
-      title: t("safety.features.verified.title"),
-      description: t("safety.features.verified.description"),
-      color: "from-green-500 to-green-600",
-    },
-    {
-      icon: "ph:check-circle",
-      title: t("safety.features.approved.title"),
-      description: t("safety.features.approved.description"),
-      color: "from-blue-500 to-blue-600",
-    },
-    {
-      icon: "ph:headset",
-      title: t("safety.features.support.title"),
-      description: t("safety.features.support.description"),
-      color: "from-purple-500 to-purple-600",
-    },
-    {
-      icon: "ph:lock",
-      title: t("safety.features.payments.title"),
-      description: t("safety.features.payments.description"),
-      color: "from-orange-500 to-orange-600",
-    },
-    {
-      icon: "ph:star",
-      title: t("safety.features.rating.title"),
-      description: t("safety.features.rating.description"),
-      color: "from-yellow-500 to-yellow-600",
-    },
-    {
-      icon: "ph:handshake",
-      title: t("safety.features.dispute.title"),
-      description: t("safety.features.dispute.description"),
-      color: "from-pink-500 to-pink-600",
-    },
-  ];
+  const { serviceCategories, bookingSteps, providerSteps, safetyFeatures } =
+    React.useMemo(() => getServicePageData(t), [t]);
 
   return (
     <div className="bg-white dark:bg-gray-900 transition-colors duration-300">
@@ -584,7 +297,7 @@ const ServicesPage = () => {
                   <div className="bg-white dark:bg-gray-800 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 border-2 border-primary text-primary group-hover:bg-primary group-hover:text-white transition-all duration-300 shadow-lg group-hover:scale-110">
                     <Icon icon={step.icon} width={24} height={24} />
                   </div>
-                  <div className="absolute -top-2 lg:-right-2 right-2 bg-primary text-white rounded-full w-7 h-7 flex items-center justify-center text-xs font-bold shadow-lg">
+                  <div className="absolute -top-2 lg:-right-2 bg-primary text-white rounded-full w-7 h-7 flex items-center justify-center text-xs font-bold shadow-lg">
                     {step.step}
                   </div>
                 </div>
@@ -644,15 +357,9 @@ const ServicesPage = () => {
             ))}
           </div>
           <div className="grid lg:grid-cols-3 md:grid-cols-1 gap-8 lg:py-16 py-6">
-            <StatCard
-              number="100%"
-              label={t("safety.stats.verified")}
-            />
+            <StatCard number="100%" label={t("safety.stats.verified")} />
             <StatCard number="24/7" label={t("safety.stats.support")} />
-            <StatCard
-              number="100%"
-              label={t("safety.stats.payments")}
-            />
+            <StatCard number="100%" label={t("safety.stats.payments")} />
           </div>
         </div>
       </section>
