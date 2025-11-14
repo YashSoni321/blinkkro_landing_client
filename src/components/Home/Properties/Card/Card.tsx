@@ -12,7 +12,7 @@ const ServiceCard: React.FC<{ item: PropertyHomes }> = ({ item }) => {
 
   return (
     <div className="w-full">
-      <div className="relative rounded-2xl border border-dark/10 dark:border-white/10 group hover:shadow-3xl duration-300 dark:hover:shadow-white/20 bg-white dark:bg-dark">
+      <div className="relative rounded-2xl border border-dark/10 dark:border-white/10 group hover:shadow-3xl duration-300 dark:hover:shadow-white/20 bg-white dark:bg-dark lg:h-[34rem] md:h-[30rem] h-[26rem]">
         {/* Image */}
         <div className="h-48 sm:h-64 lg:h-80 relative overflow-hidden rounded-t-2xl bg-gray-100">
           {/* <Link href={`/properties/${slug}`}> */}

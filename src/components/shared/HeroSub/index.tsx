@@ -11,7 +11,7 @@ const HeroSub: FC<HeroSubProps> = ({ title, description, badge }) => {
 
     return (
         <>
-            <section className="text-center bg-cover !pt-40 pb-20 relative overflow-x-hidden" >
+            <section className="text-center bg-cover lg:!pt-40 !pt-20 pb-20 relative overflow-x-hidden" >
                 <div className='flex gap-2.5 mb-5 items-center justify-center'>
                     <span>
                         <Icon

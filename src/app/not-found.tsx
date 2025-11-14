@@ -29,7 +29,7 @@ export default function NotFound() {
         <h2 className="text-2xl md:text-3xl font-semibold text-dark dark:text-white mb-4">
           Page Not Found
         </h2>
-        <p className="text-dark/60 dark:text-white/60 mb-8 leading-relaxed">
+        <p className="text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
           Sorry, we couldn&apos;t find the page you&apos;re looking for. It might have
           been moved, deleted, or you entered the wrong URL.
         </p>
@@ -44,7 +44,7 @@ export default function NotFound() {
             Go Home
           </Link>
 
-          <div className="text-sm text-dark/60 dark:text-white/60">
+          <div className="text-sm text-gray-600 dark:text-gray-300">
             or{" "}
             <button aria-label="go-back"
               onClick={() => window.history.back()}

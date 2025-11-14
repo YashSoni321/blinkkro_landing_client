@@ -128,13 +128,12 @@ export default function JoinWaitlist() {
         <div className="flex flex-col lg:flex-row lg:items-center gap-12">
           <div className="lg:block relative hidden w-fit">
             <Image
-              loading="lazy"
+              priority={true}
               src={"/images/waitlist/waitlist.png"}
               alt={t("waitlistPage.contactCard.imageAlt")}
               width={497}
               height={535}
               className="rounded-2xl brightness-50 w-96 h-full"
-              unoptimized={true}
             />
 
             <div className="absolute top-6 left-6 lg:top-12 lg:left-12 flex flex-col gap-2">

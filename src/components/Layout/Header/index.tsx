@@ -60,7 +60,7 @@ const Header: React.FC = () => {
       >
         <div>
           <div className="flex items-center justify-center">
-            <p className="text-xl md:text-4xl font-extrabold tracking-wide flex items-center gap-1">
+            <p className="text-lg md:text-4xl font-extrabold tracking-wide flex items-center gap-1">
               <Image
                 loading="lazy"
                 src="/images/logo/logo.png"

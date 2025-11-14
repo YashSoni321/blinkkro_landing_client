@@ -62,7 +62,7 @@ export default async function AboutUs() {
               <h2 className="text-2xl font-bold text-dark dark:text-white mb-4">
                 {t("originStory.title")}
               </h2>
-              <p className="text-dark/60 font-semibold dark:text-white/60 leading-relaxed">
+              <p className=" font-semibold text-gray-600 dark:text-gray-300 leading-relaxed">
                 {t("originStory.crisisText")}
               </p>
             </div>
@@ -85,11 +85,11 @@ export default async function AboutUs() {
               &ldquo;{t("originStory.mainQuote")}&rdquo;
             </h3>
 
-            <p className="text-lg text-dark/60 dark:text-white/60 mb-6 leading-relaxed">
+            <p className="text-lg ttext-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
               {t("originStory.storyPart1")}
             </p>
 
-            <p className="text-lg text-dark/60 dark:text-white/60 mb-8 leading-relaxed">
+            <p className="text-lg text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
               <strong>&ldquo;{t("originStory.storyPart2")}&rdquo;</strong>
             </p>
 
@@ -97,7 +97,7 @@ export default async function AboutUs() {
               <p className="text-dark dark:text-white font-medium italic">
                 &ldquo;{t("originStory.founderQuote")}&rdquo;
               </p>
-              <p className="text-sm text-dark/60 dark:text-white/60 mt-2">
+              <p className="text-sm text-gray-600 dark:text-gray-300 mt-2">
                 {t("originStory.founderName")}
               </p>
             </div>
@@ -112,7 +112,7 @@ export default async function AboutUs() {
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-dark dark:text-white mb-4">
               {t("journey.title")}
             </h2>
-            <p className="text-lg text-dark/60 dark:text-white/60 max-w-2xl mx-auto">
+            <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
               {t("journey.subtitle")}
             </p>
           </div>
@@ -146,7 +146,7 @@ export default async function AboutUs() {
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-dark dark:text-white mb-4">
             {t("mission.title")}
           </h2>
-          <p className="text-lg text-dark/60 dark:text-white/60 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
             {t("mission.subtitle")}
           </p>
         </div>
@@ -182,7 +182,7 @@ export default async function AboutUs() {
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-dark dark:text-white mb-4">
               {t("team.title")}
             </h2>
-            <p className="text-lg text-dark/60 dark:text-white/60 max-w-3xl mx-auto">
+            <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
               {t("team.subtitle")}
             </p>
           </div>
@@ -288,11 +288,11 @@ export default async function AboutUs() {
               })}
             </h2>
             {/* CHANGED: Hardcoded description */}
-            <p className="mt-6 text-lg leading-8 text-gray-600 dark:text-white/80">
+            <p className="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-300">
               {t("groupSection.description1")}
             </p>
             {/* CHANGED: Hardcoded description */}
-            <p className="mt-4 text-lg leading-8 text-gray-600 dark:text-white/80">
+            <p className="mt-4 text-lg leading-8 text-gray-600 dark:text-gray-300">
               {t("groupSection.description2")}
             </p>
           </div>
@@ -305,7 +305,7 @@ export default async function AboutUs() {
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-dark dark:text-white mb-4">
             {t("impact.title")}
           </h2>
-          <p className="text-lg text-dark/60 dark:text-white/60 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
             {t("impact.subtitle")}
           </p>
         </div>
@@ -336,7 +336,7 @@ export default async function AboutUs() {
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
             {t("cta.title")}
           </h2>
-          <p className="md:text-xl sm:text-lg text-white/80 mb-8 max-w-2xl mx-auto">
+          <p className="md:text-xl sm:text-lg text-gray-300 mb-8 max-w-2xl mx-auto">
             {t("cta.description")}
           </p>
 
@@ -379,7 +379,7 @@ const JourneyCard = ({
     <h3 className="text-xl font-bold text-dark dark:text-white mb-3">
       {title}
     </h3>
-    <p className="text-dark/60 dark:text-white/60 mb-4 leading-relaxed">
+    <p className="text-gray-600 dark:text-gray-300 mb-4 leading-relaxed">
       {description}
     </p>
     <div className="text-2xl font-bold text-primary">{stat}</div>
@@ -402,7 +402,7 @@ const ValueCard = ({
     <h3 className="text-xl font-bold text-dark dark:text-white mb-3">
       {title}
     </h3>
-    <p className="text-dark/70 dark:text-white/70 leading-relaxed">
+    <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
       {description}
     </p>
   </div>
@@ -449,7 +449,7 @@ const FounderCard = ({
       <p className="text-primary font-medium">{role}</p>
     </div>
 
-    <p className="md:text-sm text-dark/70 dark:text-white/70 mb-4 leading-relaxed">
+    <p className="md:text-sm ttext-gray-600 dark:text-gray-300 mb-4 leading-relaxed">
       {story}
     </p>
 
@@ -465,7 +465,7 @@ const FounderCard = ({
           icon={icon}
           width={20}
           height={20}
-          className="text-dark/60 dark:text-white/60 hover:text-primary cursor-pointer transition-colors"
+          className="text-gray-600 dark:text-gray-300 hover:text-primary cursor-pointer transition-colors"
         />
       ))}
     </div>

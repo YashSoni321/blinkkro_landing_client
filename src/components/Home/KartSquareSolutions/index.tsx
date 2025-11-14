@@ -147,7 +147,7 @@ const KartSquareSolutions: React.FC = () => {
                 <h4 className="text-3xl text-dark dark:text-white font-medium">
                   {t("cta.averageTime")}
                 </h4>
-                <p className="text-base text-dark/50">
+                <p className="text-base ttext-gray-600 ">
                   {t("cta.confirmation")}
                 </p>
               </div>
