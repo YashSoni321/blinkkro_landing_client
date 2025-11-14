@@ -330,7 +330,7 @@ export default function Details() {
               <h4 className="text-dark text-3xl font-medium dark:text-white">
                 {item?.rate}
               </h4>
-              <p className="text-sm text-dark/50 dark:text-white">
+              <p className="text-sm text-gray-600 dark:text-gray-300">
                 Discounted Price
               </p>
               <Link
@@ -378,7 +378,7 @@ export default function Details() {
                     <h3 className="text-xm text-dark dark:text-white">
                       {item.name}
                     </h3>
-                    <h4 className="text-base text-dark/50 dark:text-white/50">
+                    <h4 className="text-base text-gray-600 dark:text-gray-300">
                       {item.position}
                     </h4>
                   </div>

@@ -51,13 +51,12 @@ export default function ContactUs() {
         <div className="flex flex-col lg:flex-row lg:items-center gap-12">
           <div className="relative w-fit">
             <Image
-              loading="lazy"
+              priority={true}
               src={"/images/contactUs/contactUs.jpg"}
               alt="contact illustration"
               width={800}
               height={535}
               className="rounded-2xl brightness-50 h-full"
-              unoptimized={true}
             />
             <div className="absolute top-6 left-6 lg:top-12 lg:left-12 flex flex-col gap-2">
               <h5 className="text-xl xs:text-2xl mobile:text-3xl font-medium tracking-tight text-white">

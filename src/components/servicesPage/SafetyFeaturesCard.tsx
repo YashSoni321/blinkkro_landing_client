@@ -18,7 +18,7 @@ function SafetyFeaturesCardComponent({ feature } : { feature: any }) {
       <h3 className="text-xl font-semibold text-dark dark:text-white mb-3 text-center">
         {feature.title}
       </h3>
-      <p className="text-dark/60 dark:text-white/60 text-center leading-relaxed">
+      <p className="text-gray-600 dark:text-gray-300 text-center leading-relaxed">
         {feature.description}
       </p>
     </div>
