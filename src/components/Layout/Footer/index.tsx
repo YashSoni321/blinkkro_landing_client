@@ -200,17 +200,17 @@ const Footer = () => {
 
           {/* Bottom Bar */}
           <div className="flex justify-between items-center pt-8 border-t border-white/10">
-            <p className="text-white/50 text-sm">{t("bottomBar.copyright")}</p>
+            <p className="text-gray-300 text-sm">{t("bottomBar.copyright")}</p>
             <div className="flex gap-8">
               <Link
                 href="/terms"
-                className="text-white/50 hover:text-primary text-sm transition-colors duration-300"
+                className="text-gray-300 hover:text-primary text-sm transition-colors duration-300"
               >
                 {t("bottomBar.terms")}
               </Link>
               <Link
                 href="/privacy"
-                className="text-white/50 hover:text-primary text-sm transition-colors duration-300"
+                className="text-gray-300 hover:text-primary text-sm transition-colors duration-300"
               >
                 {t("bottomBar.privacy")}
               </Link>

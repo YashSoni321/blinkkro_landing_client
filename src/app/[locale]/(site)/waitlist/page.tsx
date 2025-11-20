@@ -128,12 +128,12 @@ export default function JoinWaitlist() {
         <div className="flex flex-col lg:flex-row lg:items-center gap-12">
           <div className="lg:block relative hidden w-fit">
             <Image
+              priority={true}
               src={"/images/waitlist/waitlist.png"}
               alt={t("waitlistPage.contactCard.imageAlt")}
               width={497}
               height={535}
               className="rounded-2xl brightness-50 w-96 h-full"
-              unoptimized={true}
             />
 
             <div className="absolute top-6 left-6 lg:top-12 lg:left-12 flex flex-col gap-2">
@@ -191,7 +191,8 @@ export default function JoinWaitlist() {
                 </div>
                 <div className="flex flex-col lg:flex-row gap-6">
                   <div className="relative w-full">
-                    <button
+                    <button 
+                      aria-label="country Select label"
                       type="button"
                       onClick={() => setIsDropdownOpen(!isDropdownOpen)}
                       className="px-6 py-3.5 border border-black/10 dark:border-white/10 rounded-full outline-primary focus:outline w-full text-left flex items-center justify-between"
@@ -228,6 +229,7 @@ export default function JoinWaitlist() {
                           {filteredCountries.length > 0 ? (
                             filteredCountries.map((country) => (
                               <button
+                                aria-label={country.name}
                                 key={country.code}
                                 type="button"
                                 onClick={() =>
@@ -278,6 +280,7 @@ export default function JoinWaitlist() {
                   className="px-6 py-3.5 border border-black/10 dark:border-white/10 rounded-2xl outline-primary focus:outline"
                 ></textarea>
                 <button
+                  aria-label="submit"
                   type="submit"
                   disabled={isSubmitting}
                   className="px-8 py-4 rounded-full bg-primary text-white text-base font-semibold w-full mobile:w-fit hover:cursor-pointer hover:bg-dark duration-300 disabled:opacity-50 disabled:cursor-not-allowed"

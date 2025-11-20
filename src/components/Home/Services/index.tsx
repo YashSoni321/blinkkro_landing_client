@@ -20,7 +20,7 @@ const Categories = () => {
     arrows: false,
     responsive: [
       {
-        breakpoint: 1024, 
+        breakpoint: 1024,
         settings: {
           slidesToShow: 3,
           dots: true,
@@ -29,14 +29,14 @@ const Categories = () => {
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 2, 
+          slidesToShow: 2,
           dots: true,
         },
       },
       {
-        breakpoint: 425, 
+        breakpoint: 425,
         settings: {
-          slidesToShow: 1, 
+          slidesToShow: 1,
           dots: false,
         },
       },
@@ -92,6 +92,7 @@ const Categories = () => {
     <div className="relative rounded-2xl overflow-hidden group h-96">
       <Link href={item.href}>
         <Image
+          loading="lazy"
           src={item.image}
           alt={item.alt}
           width={320}
@@ -115,7 +116,7 @@ const Categories = () => {
         </div>
         <div className="flex flex-col gap-2.5">
           <h3 className="text-white text-2xl font-bold">{item.title}</h3>
-          <p className="text-white/80 text-base leading-6">
+          <p className="text-gray-300 text-base leading-6">
             {item.description}
           </p>
         </div>
@@ -127,6 +128,7 @@ const Categories = () => {
     <section className="relative overflow-hidden">
       <div className="absolute left-0 top-0">
         <Image
+          loading="lazy"
           src="/images/categories/Vector.svg"
           alt="vector"
           width={800}
@@ -135,6 +137,7 @@ const Categories = () => {
           unoptimized={true}
         />
         <Image
+          loading="lazy"
           src="/images/categories/Vector-dark.svg"
           alt="vector"
           width={800}
@@ -146,7 +149,7 @@ const Categories = () => {
       <div className="container max-w-8xl mx-auto px-5 2xl:px-0 relative z-10">
         <div className="grid grid-cols-12 items-start gap-4 sm:gap-6 lg:gap-10">
           <div className="lg:col-span-6 col-span-12 mb-6 lg:mb-0">
-            <p className="text-dark/75 dark:text-white/75 text-base font-semibold flex gap-2.5">
+            <p className="text-gray-600 dark:text-gray-300 text-base font-semibold flex gap-2.5">
               <Icon
                 icon="ph:calendar-check-fill"
                 className="text-2xl text-primary"
@@ -156,7 +159,7 @@ const Categories = () => {
             <h2 className="text-3xl sm:text-4xl lg:text-52 text-40 mt-4 mb-2 lg:max-w-full font-medium leading-[1.2] text-dark dark:text-white">
               {t("title")}
             </h2>
-            <p className="text-dark/60 dark:text-white/50 text-lg lg:max-w-full leading-[1.3] md:max-w-3/4">
+            <p className="text-gray-600 dark:text-gray-300 text-lg lg:max-w-full leading-[1.3] md:max-w-3/4">
               {t("description")}
             </p>
             <Link

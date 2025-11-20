@@ -12,7 +12,7 @@ const ServiceCard: React.FC<{ item: PropertyHomes }> = ({ item }) => {
 
   return (
     <div className="w-full">
-      <div className="relative rounded-2xl border border-dark/10 dark:border-white/10 group hover:shadow-3xl duration-300 dark:hover:shadow-white/20 bg-white dark:bg-dark">
+      <div className="relative rounded-2xl border border-dark/10 dark:border-white/10 group hover:shadow-3xl duration-300 dark:hover:shadow-white/20 bg-white dark:bg-dark lg:h-[34rem] md:h-[30rem] h-[26rem]">
         {/* Image */}
         <div className="h-48 sm:h-64 lg:h-80 relative overflow-hidden rounded-t-2xl bg-gray-100">
           {/* <Link href={`/properties/${slug}`}> */}
@@ -49,7 +49,7 @@ const ServiceCard: React.FC<{ item: PropertyHomes }> = ({ item }) => {
                   {name}
                 </h3>
               </Link>
-              <p className="text-sm sm:text-base text-black/50 dark:text-white/50">
+              <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300">
                 {location}
               </p>
             </div>
@@ -68,7 +68,7 @@ const ServiceCard: React.FC<{ item: PropertyHomes }> = ({ item }) => {
               <p className="text-xs sm:text-sm font-normal text-black dark:text-white text-center">
                 {duration}
               </p>
-              <p className="text-xs text-black/50 dark:text-white/50 text-center">
+              <p className="text-xs text-gray-600 dark:text-gray-300 text-center">
                 {t("infoLabels.duration")}
               </p>
             </div>
@@ -79,7 +79,7 @@ const ServiceCard: React.FC<{ item: PropertyHomes }> = ({ item }) => {
               <p className="text-xs sm:text-sm font-normal text-black dark:text-white text-center">
                 {rate}
               </p>
-              <p className="text-xs text-black/50 dark:text-white/50 text-center">
+              <p className="text-xs text-gray-600 dark:text-gray-300 text-center">
                 {t("infoLabels.price")}
               </p>
             </div>
@@ -90,7 +90,7 @@ const ServiceCard: React.FC<{ item: PropertyHomes }> = ({ item }) => {
               <p className="text-xs sm:text-sm font-normal text-black dark:text-white text-center">
                 {category}
               </p>
-              <p className="text-xs text-black/50 dark:text-white/50 text-center">
+              <p className="text-xs text-gray-600 dark:text-gray-300 text-center">
                 {t("infoLabels.category")}
               </p>
             </div>

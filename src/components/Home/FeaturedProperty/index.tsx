@@ -47,7 +47,7 @@ export default function AboutUs() {
         {/* Content */}
         <div className="flex flex-col gap-10">
           <div>
-            <p className="text-dark/75 dark:text-white/75 text-base font-semibold flex gap-2">
+            <p className="text-gray-600 dark:text-gray-300 text-base font-semibold flex gap-2">
               <Icon
                 icon="mdi:lightning-bolt"
                 className="text-2xl text-primary"
@@ -62,15 +62,15 @@ export default function AboutUs() {
                 icon="mdi:map-marker-path"
                 width={28}
                 height={26}
-                className="text-dark/60 dark:text-white/50"
+                className="text-gray-600 dark:text-gray-300"
               />
-              <p className="text-dark/60 dark:text-white/50 text-base">
+              <p className="text-gray-600 dark:text-gray-300 text-base">
                 {t("mapDescription")}
               </p>
             </div>
           </div>
 
-          <p className="text-base text-dark/60 dark:text-white/50">
+          <p className="text-base text-gray-600 dark:text-gray-300">
             {t("description")}
           </p>
 
@@ -111,7 +111,7 @@ export default function AboutUs() {
               <h4 className="text-2xl sm:text-4xl font-semibold text-dark dark:text-white">
                 {t("cta.rating")}
               </h4>
-              <p className="text-sm sm:text-base text-dark/60 dark:text-white/70">
+              <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300">
                 {t("cta.customers")}
               </p>
             </div>

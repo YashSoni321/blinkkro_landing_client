@@ -31,7 +31,7 @@ const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({ isHomepage = false,
     <div className="relative">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className={`flex items-center gap-2 px-3 py-2 rounded-full transition-colors duration-200 ${
+        className={`flex items-center gap-2 md:px-3 px-0 py-2 rounded-full transition-colors duration-200 ${
           isHomepage
             ? sticky
               ? "text-dark dark:text-white hover:text-primary"
@@ -54,6 +54,7 @@ const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({ isHomepage = false,
           <div className="absolute top-full right-0 mt-2 bg-white dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg shadow-lg z-20 min-w-[120px]">
             {languages.map((lang) => (
               <button
+                aria-label='country-flag'
                 key={lang.code}
                 onClick={() => handleLanguageChange(lang.code)}
                 className={`w-full flex items-center gap-3 px-4 py-3 text-left hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors first:rounded-t-lg last:rounded-b-lg ${

@@ -992,5 +992,13 @@
       "category": "Home Services",
       "duration": "1-3 hours"
     }
+  },
+  "thankYouModal": {
+    "iconTitle": "Success",
+    "title": "Thank You!",
+    "description": "We've successfully added you to the waitlist for Kart Square. You'll be among the first to know when we launch! Stay connected with us for updates and sneak peeks.",
+    "buttonAriaLabel": "Explore Our Services",
+    "buttonText": "Explore Our Services",
+    "returnToHome": "Or, return to the <link>Homepage</link>"
   }
 }

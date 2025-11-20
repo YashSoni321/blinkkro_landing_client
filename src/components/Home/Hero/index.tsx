@@ -34,14 +34,11 @@ const Hero: React.FC = () => {
           </div>
           <div className="hidden md:block absolute top-1/2 right-0 transform -translate-y-1/2 overflow-hidden ">
             <Image
+              priority={true}
               src="/images/hero/heroSection_BG.png"
               alt="hero booking illustration"
               width={500}
               height={50}
-              // sizes="maz"
-              // className="w-full h-full object-cover"
-              priority={false}
-              unoptimized={true}
             />
           </div>
         </div>
@@ -75,7 +72,7 @@ const Hero: React.FC = () => {
               <p className="text-sm md:text-2xl font-semibold text-inherit">
                 {t("highlights.users")}
               </p>
-              <p className="text-sm sm:text-base font-normal text-black/50 dark:text-white/50">
+              <p className="text-sm sm:text-base font-normal text-gray-600 dark:text-gray-300">
                 {t("highlights.usersSubtext")}
               </p>
             </div>

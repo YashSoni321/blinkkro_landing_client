@@ -13,7 +13,7 @@ const GetInTouch: React.FC = () => {
             autoPlay
             loop
             muted
-            aria-label="Video background showing luxurious real estate"
+            aria-hidden="true"
           >
             <source
               src="https://videos.pexels.com/video-files/7233782/7233782-hd_1920_1080_25fps.mp4"

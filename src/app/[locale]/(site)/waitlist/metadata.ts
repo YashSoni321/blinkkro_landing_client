@@ -2,23 +2,23 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Join the BlinkKaro Waitlist - Be the First to Experience Our App",
+  title: "Join the KartSquare Waitlist - Be the First to Experience Our App",
   description:
-    "Sign up for the BlinkKaro waitlist and be among the first to access our upcoming application. Early access, exclusive updates, and special rewards await!",
+    "Sign up for the KartSquare waitlist and be among the first to access our upcoming application. Early access, exclusive updates, and special rewards await!",
   keywords: [
-    "BlinkKaro waitlist",
+    "KartSquare waitlist",
     "early access app",
-    "BlinkKaro signup",
+    "KartSquare signup",
     "exclusive access",
-    "join waitlist BlinkKaro",
-    "upcoming app BlinkKaro",
+    "join waitlist KartSquare",
+    "upcoming app KartSquare",
   ],
   openGraph: {
-    title: "Join the BlinkKaro Waitlist - Early Access to Our App",
+    title: "Join the KartSquare Waitlist - Early Access to Our App",
     description:
-      "Reserve your spot on the BlinkKaro waitlist today and get notified when we launch. Limited early access slots available!",
+      "Reserve your spot on the KartSquare waitlist today and get notified when we launch. Limited early access slots available!",
     url: "https://blinkkaro.com/waitlist",
-    siteName: "BlinkKaro",
+    siteName: "KartSquare",
     type: "website",
   },
   alternates: {

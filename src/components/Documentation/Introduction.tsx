@@ -46,7 +46,7 @@ export const Introduction = () => {
           <h3 className=" text-black text-2xl mt-4 font-semibold mb-6 dark:text-white">
             Pacakge Versions
           </h3>
-          <button onClick={() => setDocNavbarOpen(true)} className="p-0">
+          <button aria-label="menu" onClick={() => setDocNavbarOpen(true)} className="p-0">
             {" "}
             <Icon icon="gg:menu-right" className="text-3xl lg:hidden block" />
           </button>
@@ -61,6 +61,7 @@ export const Introduction = () => {
                   className="lg:w-1/5 md:w-full text-center lg:border-b-0 border-b lg:border-e lg:last:border-e-0 last:border-b-0 border-black/10 dark:border-white/20"
                 >
                   <Image
+                    loading="lazy"
                     src={item.img}
                     alt="npm-package"
                     className=" mx-auto w-10 h-10 "

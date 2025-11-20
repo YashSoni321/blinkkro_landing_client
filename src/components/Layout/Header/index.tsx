@@ -114,7 +114,8 @@ const Header: React.FC = () => {
             </Link>
           </div> */}
           <button
-            className="hover:cursor-pointer"
+            aria-label="Toggle theme"
+            className="hidden md:block hover:cursor-pointer"
             onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
           >
             <Icon
@@ -175,7 +176,7 @@ const Header: React.FC = () => {
       >
         <div className="flex flex-col h-full justify-between">
           <div className="">
-            <div className="flex items-center justify-start py-6 sm:py-8 lg:py-10">
+            <div className="flex items-center justify-between py-6 sm:py-8 lg:py-10">
               <button
                 onClick={() => setNavbarOpen(false)}
                 aria-label="Close mobile menu"
@@ -197,6 +198,30 @@ const Header: React.FC = () => {
                     d="M6 18L18 6M6 6l12 12"
                   />
                 </svg>
+              </button>
+              <button
+                aria-label="Toggle theme"
+                className="block md:hidden hover:cursor-pointer"
+                onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+              >
+                <Icon
+                  icon={"solar:sun-bold"}
+                  width={32}
+                  height={32}
+                  className={`dark:hidden block ${
+                    isHomepage
+                      ? sticky
+                        ? "text-dark"
+                        : "text-white"
+                      : "text-dark"
+                  }`}
+                />
+                <Icon
+                  icon={"solar:moon-bold"}
+                  width={32}
+                  height={32}
+                  className="dark:block hidden text-white"
+                />
               </button>
             </div>
             <nav className="flex flex-col items-start gap-2 sm:gap-4">

@@ -16,7 +16,7 @@ const NavLink: React.FC<NavLinkProps> = ({ item, onClick }) => {
   // text-xl xs:text-xl sm:text-2xl md:text-3xl lg:text35xl
 
   const linkclasses = clsx(
-    "py-2 sm:py-3 text-lg  font-bold text-white/40 rounded-full group-hover:text-primary transition-all duration-300",
+    "py-2 sm:py-3 text-lg  font-bold text-gray-300 rounded-full group-hover:text-primary transition-all duration-300",
     {
       "!text-primary": item.href === path,
       "text-primary": path.startsWith(itemLabelToPath),
