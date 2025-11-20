@@ -21,7 +21,7 @@ const Footer = () => {
           <div className="text-center space-y-4">
             <div className="flex items-center align-center justify-center gap-3 mb-4">
               <Image
-                src="/images/logo/logo.png"
+                src="/images/logo/kartsquare.png"
                 alt="logo"
                 width={40}
                 height={40}
@@ -81,7 +81,7 @@ const Footer = () => {
                   href="/terms"
                   className="text-white/50 hover:text-primary text-xs transition-colors duration-300"
                 >
-                 {t("bottomBar.termsShort")}
+                  {t("bottomBar.termsShort")}
                 </Link>
                 <Link
                   href="/privacy"
@@ -104,7 +104,7 @@ const Footer = () => {
             <div className="col-span-2">
               <div className="flex items-center gap-3">
                 <Image
-                  src="/images/logo/logo.png"
+                  src="/images/logo/kartsquare.png"
                   alt="logo"
                   width={40}
                   height={40}

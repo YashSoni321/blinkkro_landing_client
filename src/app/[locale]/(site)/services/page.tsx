@@ -44,15 +44,16 @@ const CategoriesCard = ({ service }) => {
   const t = useTranslations("servicesPage");
 
   return (
-    <div className="group relative bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-3xl dark:hover:shadow-white/20 transition-all duration-300 border border-dark/10 dark:border-white/10 hover:border-primary/50 max-h-[36rem]">
-      {/* Image */}
+    <div className="group relative bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-3xl dark:hover:shadow-white/20 transition-all duration-300 border border-dark/10 dark:border-white/10 hover:border-primary/50">
+      {/* Optimized Image */}
       <div className="relative h-48 overflow-hidden">
         <Image
           src={service.image}
           alt={service.title}
           fill
           className="object-cover group-hover:scale-110 transition-transform duration-500"
-          unoptimized={true}
+          quality={85}
+          priority={false}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
       </div>
@@ -132,7 +133,7 @@ const ServicesPage = () => {
       icon: "ph:broom",
       title: t("categories.data.homeCleaning.title"),
       description: t("categories.data.homeCleaning.description"),
-      image: "/images/kartsquare_categories/blinkkaro_home_services-min.jpg",
+      image: "/images/services/home-cleaning.png",
       color: "from-blue-500 to-blue-600",
       features: [
         t("categories.data.homeCleaning.features.0"),
@@ -144,7 +145,7 @@ const ServicesPage = () => {
       icon: "ph:wrench",
       title: t("categories.data.plumbing.title"),
       description: t("categories.data.plumbing.description"),
-      image: "/images/kartsquare_categories/blinkkaro_plumber-min.jpg",
+      image: "/images/services/plumbing.png",
       color: "from-green-500 to-green-600",
       features: [
         t("categories.data.plumbing.features.0"),
@@ -156,7 +157,7 @@ const ServicesPage = () => {
       icon: "ph:sparkle",
       title: t("categories.data.beauty.title"),
       description: t("categories.data.beauty.description"),
-      image: "/images/kartsquare_categories/blinkkaro_salon_category-min.jpg",
+      image: "/images/services/beauty.png",
       color: "from-pink-500 to-pink-600",
       features: [
         t("categories.data.beauty.features.0"),
@@ -168,7 +169,7 @@ const ServicesPage = () => {
       icon: "ph:toolbox",
       title: t("categories.data.homeServices.title"),
       description: t("categories.data.homeServices.description"),
-      image: "/images/kartsquare_categories/blinkkaro_homeservices-min.jpg",
+      image: "/images/services/home-services.png",
       color: "from-orange-500 to-orange-600",
       features: [
         t("categories.data.homeServices.features.0"),
@@ -180,7 +181,7 @@ const ServicesPage = () => {
       icon: "ph:car",
       title: t("categories.data.carWash.title"),
       description: t("categories.data.carWash.description"),
-      image: "/images/kartsquare_categories/blinkkaro_home_services_1-min.jpg",
+      image: "/images/services/car-wash.png",
       color: "from-purple-500 to-purple-600",
       features: [
         t("categories.data.carWash.features.0"),
@@ -192,7 +193,7 @@ const ServicesPage = () => {
       icon: "ph:dumbbell",
       title: t("categories.data.fitness.title"),
       description: t("categories.data.fitness.description"),
-      image: "/images/kartsquare_categories/blinkkaro_fitness_category-min.jpg",
+      image: "/images/services/fitness.png",
       color: "from-indigo-500 to-indigo-600",
       features: [
         t("categories.data.fitness.features.0"),
@@ -204,8 +205,7 @@ const ServicesPage = () => {
       icon: "ph:cake",
       title: t("categories.data.catering.title"),
       description: t("categories.data.catering.description"),
-      image:
-        "/images/kartsquare_categories/blinkkaro_catering_services-min.jpg",
+      image: "/images/services/catering.png",
       color: "from-red-500 to-red-600",
       features: [
         t("categories.data.catering.features.0"),
@@ -217,7 +217,7 @@ const ServicesPage = () => {
       icon: "ph:calendar",
       title: t("categories.data.eventPlanning.title"),
       description: t("categories.data.eventPlanning.description"),
-      image: "/images/kartsquare_categories/blinkkaro_events_category-min.jpg",
+      image: "/images/services/event-planning.jpg",
       color: "from-teal-500 to-teal-600",
       features: [
         t("categories.data.eventPlanning.features.0"),
