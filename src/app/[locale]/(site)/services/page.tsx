@@ -2,42 +2,11 @@
 import React from "react";
 import HeroSub from "@/components/shared/HeroSub";
 import { useTranslations } from "next-intl";
+import OfferSection from "@/components/servicesPage/OfferSection";
 import CategoriesSection from "@/components/servicesPage/CategoriesSection";
 import BookingStepsSection from "@/components/servicesPage/BookingStepsSection";
 import ProviderStepsSection from "@/components/servicesPage/ProviderStepsSection";
 import SafetyFeaturesSection from "@/components/servicesPage/SafetyFeaturesSection";
-import OfferSection from "@/components/servicesPage/OfferSection";
-
-const sliderSettings = {
-  infinite: true,
-  speed: 600,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  autoplay: true,
-  autoplaySpeed: 4000,
-  arrows: false,
-  dots: false,
-  responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 3,
-      },
-    },
-    {
-      breakpoint: 768,
-      settings: {
-        slidesToShow: 2,
-      },
-    },
-    {
-      breakpoint: 425,
-      settings: {
-        slidesToShow: 1,
-      },
-    },
-  ],
-};
 
 const ServicesPage = () => {
   const t = useTranslations("servicesPage");
