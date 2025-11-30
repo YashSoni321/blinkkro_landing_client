@@ -7,14 +7,13 @@ import { Toaster } from "react-hot-toast";
 import AuthDialogContext from "@/app/context/AuthDialogContext";
 import Logo from "@/components/Layout/Header/BrandLogo/Logo";
 
-const Signin = ({ signInOpen }: { signInOpen?: (open: boolean) => void }) => {
+const Signin = ({ signInOpen }: { signInOpen }) => {
   const [username, setUsername] = useState("admin");
   const [password, setPassword] = useState("admin123");
-
-  const [, setError] = useState("");
+  const [error, setError] = useState("");
   const authDialog = useContext(AuthDialogContext);
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = async (e: { preventDefault: () => void }) => {
     e.preventDefault();
     const result = await signIn("credentials", {
       redirect: false,
@@ -79,6 +78,7 @@ const Signin = ({ signInOpen }: { signInOpen?: (open: boolean) => void }) => {
         </div>
         <div className="mb-9">
           <button
+            aria-label="sign in"
             type="submit"
             className="flex w-full cursor-pointer items-center justify-center rounded-2xl border border-primary bg-primary hover:bg-transparent hover:text-primary px-5 py-3 text-base text-white transition duration-300 ease-in-out "
           >

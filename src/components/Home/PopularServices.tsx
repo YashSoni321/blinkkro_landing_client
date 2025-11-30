@@ -20,14 +20,14 @@ export default function PopularServices() {
               height={20}
               className="text-primary"
             />
-            <p className="text-base font-semibold text-dark/75 dark:text-white/75">
+            <p className="text-base font-semibold text-gray-600 dark:text-gray-300">
               {t("title")}
             </p>
           </div>
           <h2 className="text-4xl sm:text-52 font-medium tracking-tighter text-black dark:text-white mb-3">
             {t("heading")}
           </h2>
-          <p className="text-xm font-normal text-black/50 dark:text-white/50">
+          <p className="text-xm font-normal text-gray-600 dark:text-gray-300">
             {t("subtitle")}
           </p>
         </div>
@@ -42,6 +42,7 @@ export default function PopularServices() {
               <div className="bg-white dark:bg-black border border-black/10 dark:border-white/10 rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-300">
                 <div className="relative h-48 overflow-hidden">
                   <Image
+                    loading="lazy"
                     src={service.images[0]?.src || "/images/placeholder.jpg"}
                     alt={service.name}
                     fill
@@ -68,7 +69,7 @@ export default function PopularServices() {
                         {service.rating}
                       </span>
                     </div>
-                    <span className="text-sm text-dark/50 dark:text-white/50">
+                    <span className="text-sm text-gray-600 dark:text-gray-300">
                       ({service.reviews} {t("reviews")})
                     </span>
                   </div>
@@ -77,12 +78,12 @@ export default function PopularServices() {
                     {service.name}
                   </h3>
 
-                  <p className="text-sm text-dark/70 dark:text-white/70 mb-3">
+                  <p className="text-sm text-gray-600 dark:text-gray-300 mb-3">
                     {t("by")} {service.provider}
                   </p>
 
                   <div className="flex items-center justify-between">
-                    <span className="text-sm text-dark/50 dark:text-white/50">
+                    <span className="text-sm text-gray-600 dark:text-gray-300">
                       {service.duration}
                     </span>
                     <span className="text-sm bg-primary/10 text-primary px-2 py-1 rounded-full">

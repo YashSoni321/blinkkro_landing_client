@@ -3,16 +3,19 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
+
 @theme {
   /* Gradient colors */
-  --color-primary: #4e4dff;
+  /* --color-primary: #2a5576; */
+  --color-primary: #8e27b2;
+  --color-primary2: #9762c1;
   /* --color-primary: #a70bd1; */
   --color-skyblue: #79adff;
   --color-lightskyblue: #9cc2dd;
   --color-dark: #172023;
-  /* --color-primary: #8800FF;
-  --color-secondary: #00B2FF; */
-  /* --color-gradient: linear-gradient(90deg, var(--color-primary), var(--color-secondary)); */
+  /* --color-primary: #8800FF; */
+  --color-secondary: #00B2FF; 
+  --color-gradient: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
 
   /* Shadow */
   --shadow-3xl: 0px 4px 6px -2px #0000000D, 0px 10px 15px -3px #0000001A;

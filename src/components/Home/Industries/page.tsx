@@ -48,12 +48,12 @@ const IndustriesOrbit: React.FC = () => {
             </p>
           </div>
 
-          <h2 className="text-2xl sm:text-40 text-40 lg:text-4xl font-medium text-black dark:text-white mb-3">
+          <h2 className="text-3xl sm:text-4xl lg:text-52 text-40 font-medium text-black dark:text-white mb-3">
             {t("title")}
           </h2>
 
           {/* 📝 Simple Paragraph for Users */}
-          <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400 max-w-5xl mx-auto mb-6">
+          <p className="sm:text-base text-gray-600 dark:text-gray-400 max-w-5xl mx-auto mb-6">
             {t("intro", {
               default:
                 "Discover tailored services for your business sector. Whether you’re in IT, healthcare, or real estate, we connect you with trusted professionals to streamline your operations and help your business grow efficiently.",
@@ -87,7 +87,7 @@ const IndustriesOrbit: React.FC = () => {
                 </div>
 
                 <h3
-                  className={`text-xs sm:text-sm font-semibold mb-1 transition-colors duration-300 leading-tight ${
+                  className={`text-sm sm:text-sm font-semibold mb-1 transition-colors duration-300 leading-tight ${
                     hoveredIndustry === i
                       ? "text-white"
                       : "text-gray-800 dark:text-white"
@@ -97,7 +97,7 @@ const IndustriesOrbit: React.FC = () => {
                 </h3>
 
                 <div
-                  className={`text-xs transition-colors duration-300 ${
+                  className={`text-xs transition-colors duration-300 font-semibold ${
                     hoveredIndustry === i ? "text-white/90" : "text-primary"
                   }`}
                 >
@@ -114,7 +114,7 @@ const IndustriesOrbit: React.FC = () => {
             <div className="text-xl sm:text-2xl font-bold text-primary">
               2500+
             </div>
-            <div className="text-xs sm:text-sm text-gray-600 dark:text-gray-400">
+            <div className="text-xs font-semibold sm:text-sm text-gray-600 dark:text-gray-400">
               {t("stats.companies")}
             </div>
           </div>
@@ -122,7 +122,7 @@ const IndustriesOrbit: React.FC = () => {
             <div className="text-xl sm:text-2xl font-bold text-primary">
               50K+
             </div>
-            <div className="text-xs sm:text-sm text-gray-600 dark:text-gray-400">
+            <div className="text-xs font-semibold sm:text-sm text-gray-600 dark:text-gray-400">
               {t("stats.services")}
             </div>
           </div>
@@ -130,7 +130,7 @@ const IndustriesOrbit: React.FC = () => {
             <div className="text-xl sm:text-2xl font-bold text-primary">
               99.2%
             </div>
-            <div className="text-xs sm:text-sm text-gray-600 dark:text-gray-400">
+            <div className="text-xs font-semibold sm:text-sm text-gray-600 dark:text-gray-400">
               {t("stats.satisfaction")}
             </div>
           </div>

@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import { Metadata } from "next";
 import { Icon } from "@iconify/react/dist/iconify.js";
@@ -18,6 +19,7 @@ const ErrorPage = () => {
     <>
       <section className="flex justify-center pb-0!">
         <Image
+          loading="lazy"
           src="/images/404.png"
           alt="404"
           width={490}
@@ -35,7 +37,7 @@ const ErrorPage = () => {
               className="text-primary"
             />
           </span>
-          <p className="text-base font-semibold text-dark/75 dark:text-white/75">
+          <p className="text-base font-semibold text-gray-600 dark:text-gray-300">
             Error 404
           </p>
         </div>
@@ -43,8 +45,8 @@ const ErrorPage = () => {
           Lost? Let&apos;s Help You Find Home.
         </h2>
         <p className="text-lg text-dark/50 dark:text-white/50 font-normal w-full mx-auto mb-8">
-          Looks like you&apos;ve hit a dead end — but don&apos;t worry, we&apos;ll help you get
-          back on track
+          Looks like you&apos;ve hit a dead end — but don&apos;t worry,
+          we&apos;ll help you get back on track
         </p>
         <Link
           href="/"

@@ -2,31 +2,24 @@ import { Testimonial } from "@/types/testimonial";
 
 export const testimonials: Testimonial[] = [
   {
-    image: "/images/testimonial/smiths.jpg",
-    name: "Priya Sharma",
+    image: "/images/testimonial/indian_user_1.jpg",
+    name: "Rajesh Kumar",
     review:
-      "I used KartSquare to book a beauty salon appointment just a day before a family wedding. The process was super quick, and the service provider was exactly as promised. Saved me from so much last-minute stress!",
-    position: "Working Professional",
+      "I used KartSquare to find a plumber for my shop. The service was quick and the professional was very skilled. Highly recommended for quick fixes!",
+    position: "Small Business Owner",
   },
   {
-    image: "/images/testimonial/johns.jpg",
-    name: "Amit Verma",
+    image: "/images/testimonial/indian_user_2.jpg",
+    name: "Anjali Singh",
     review:
-      "Booked a cab and a doctor's appointment for my parents through KartSquare. Both were hassle-free, and the notifications kept me updated at every step. This app really makes managing daily services easier.",
-    position: "Son & Caregiver",
+      "Booking home cleaning services has never been this easy. The team was punctual and did a fantastic job. My apartment looks brand new!",
+    position: "Software Engineer",
   },
   {
-    image: "/images/testimonial/smiths.jpg",
-    name: "Neha Kapoor",
+    image: "/images/testimonial/indian_user_3.jpg",
+    name: "Vikram Malhotra",
     review:
-      "I planned my anniversary dinner with KartSquare by booking a restaurant and spa package together. Everything was perfectly timed, and it felt like a premium experience without the extra effort!",
-    position: "Homemaker",
-  },
-  {
-    image: "/images/testimonial/johns.jpg",
-    name: "Rahul Mehta",
-    review:
-      "I often travel for work, and KartSquare helps me book hotel rooms and local rides in minutes. It's reliable and saves me from juggling multiple apps. Highly recommended for frequent travelers.",
-    position: "Business Traveler",
+      "I needed an electrician urgently. KartSquare connected me with a verified expert within minutes. Great service and very reasonable pricing.",
+    position: "Retired Banker",
   },
 ];

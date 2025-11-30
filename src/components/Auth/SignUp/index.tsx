@@ -6,12 +6,15 @@ import SocialSignUp from "../SocialSignUp";
 import Logo from "@/components/Layout/Header/BrandLogo/Logo";
 import { useContext, useState } from "react";
 import AuthDialogContext from "@/app/context/AuthDialogContext";
-const SignUp = ({}: { signUpOpen?: (open: boolean) => void }) => {
+const SignUp = ({ signUpOpen }: { signUpOpen }) => {
   const router = useRouter();
-  const [, setLoading] = useState(false);
+  const [loading, setLoading] = useState(false);
   const authDialog = useContext(AuthDialogContext);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e: {
+    preventDefault: () => void;
+    currentTarget: HTMLFormElement | undefined;
+  }) => {
     e.preventDefault();
 
     setLoading(true);
@@ -91,6 +94,8 @@ const SignUp = ({}: { signUpOpen?: (open: boolean) => void }) => {
         </div>
         <div className="mb-9">
           <button
+            aria-label="sign up"
+            disabled={loading}
             type="submit"
             className="flex w-full cursor-pointer items-center justify-center rounded-md bg-primary px-5 py-3 text-base text-white transition duration-300 ease-in-out hover:!bg-darkprimary dark:hover:!bg-darkprimary"
           >

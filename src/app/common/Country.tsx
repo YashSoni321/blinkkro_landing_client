@@ -40,6 +40,7 @@ export default function CountrySelector({ value, onChange }: Props) {
   return (
     <div className="relative w-full">
       <button
+        aria-label="country code Select label"
         type="button"
         onClick={() => setOpen(!open)}
         className="flex justify-between items-center px-4 py-3.5 border border-black/10 dark:border-white/10 rounded-full w-full bg-white dark:bg-dark"

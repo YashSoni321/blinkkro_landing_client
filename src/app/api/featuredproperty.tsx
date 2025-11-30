@@ -2,7 +2,7 @@ import { FeaturedProperty } from "@/types/featuredProperty";
 
 export const featuredProprty: FeaturedProperty[] = [
   {
-    scr: "/images/kartsquare_main_categories/home_services.png",
+    scr: "/images/service_categories_images/service_type11.png",
     alt: "property6",
   },
   {

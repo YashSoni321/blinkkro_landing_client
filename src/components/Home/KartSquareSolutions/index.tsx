@@ -36,28 +36,32 @@ const KartSquareSolutions: React.FC = () => {
       <div className="container max-w-8xl mx-auto px-5 2xl:px-0">
         <div className="grid lg:grid-cols-2 gap-10 items-center">
           {/* Right Side - Carousel */}
-          <div className="relative order-1 lg:order-2 h-96 sm:h-96 md:h-96">
-            <Carousel setApi={setApi} opts={{ loop: true }}>
-              <CarouselContent>
-                {featuredProprty.slice(1).map((item, index) => (
-                  <CarouselItem key={index}>
-                    <Image
-                      src={item.scr}
-                      alt={item.alt}
-                      width={680}
-                      height={530}
-                      className="rounded-2xl w-full object-contain h-540"
-                      unoptimized={true}
-                    />
-                  </CarouselItem>
-                ))}
-              </CarouselContent>
-            </Carousel>
+          <div className="w-full flex justify-center items-center px-4 py-6">
+            <div
+              className="
+        relative 
+        w-full 
+        max-w-2xl 
+        h-80 
+        sm:h-112 
+        md:h-112 
+        lg:h-112
+      "
+            >
+              <Image
+                loading="lazy"
+                src="/images/service_categories_images/service_type11.png"
+                alt="featured_image"
+                fill
+                className="rounded-2xl object-contain"
+                unoptimized
+              />
+            </div>
           </div>
           {/* Left Side - KartSquare Content */}
           <div className="flex flex-col gap-10 order-2 lg:order-1">
             <div>
-              <p className="text-dark/75 dark:text-white/75 text-base font-semibold flex gap-2">
+              <p className="text-gray-600 dark:text-gray-300 text-base font-semibold flex gap-2">
                 <Icon
                   icon="mdi:lightning-bolt"
                   className="text-2xl text-primary"
@@ -72,15 +76,15 @@ const KartSquareSolutions: React.FC = () => {
                   icon="mdi:target"
                   width={28}
                   height={26}
-                  className="text-dark/50 dark:text-white/50"
+                  className="text-gray-600 dark:text-gray-300"
                 />
-                <p className="text-dark/50 dark:text-white/50 text-base">
+                <p className="text-gray-600 dark:text-gray-300 text-base">
                   {t("targetDescription")}
                 </p>
               </div>
             </div>
 
-            <p className="text-base text-dark/50 dark:text-white/50">
+            <p className="text-base text-gray-600 dark:text-gray-300">
               {t("description")}
             </p>
 
@@ -144,7 +148,7 @@ const KartSquareSolutions: React.FC = () => {
                 <h4 className="text-3xl text-dark dark:text-white font-medium">
                   {t("cta.averageTime")}
                 </h4>
-                <p className="text-base text-dark/50">
+                <p className="text-base ttext-gray-600 ">
                   {t("cta.confirmation")}
                 </p>
               </div>

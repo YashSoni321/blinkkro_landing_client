@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Icon } from "@iconify/react";
 import { useFooterLinks } from "@/app/api/footerlinks";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 
 const Footer = () => {
   const t = useTranslations("footer");
@@ -18,10 +19,18 @@ const Footer = () => {
         {/* Mobile Layout */}
         <div className="md:hidden py-6">
           <div className="text-center space-y-4">
-            <h3 className="text-white text-2xl font-bold bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
-              KartSquare
-            </h3>
-            <p className="text-white/70 text-sm mb-6 leading-relaxed max-w-md">
+            <div className="flex items-center align-center justify-center gap-3 mb-4">
+              <Image
+                src="/images/logo/ks_logo.png"
+                alt="logo"
+                width={40}
+                height={40}
+              />
+              <h3 className="text-white text-2xl font-bold bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
+                KartSquare
+              </h3>
+            </div>
+            <p className="text-white/70 text-sm mb-6 leading-relaxed max-w-md mx-auto">
               {t("newsletter.description")}
             </p>
             <div className="flex justify-center gap-6">
@@ -72,13 +81,13 @@ const Footer = () => {
                   href="/terms"
                   className="text-white/50 hover:text-primary text-xs transition-colors duration-300"
                 >
-                  Terms
+                  {t("bottomBar.termsShort")}
                 </Link>
                 <Link
                   href="/privacy"
                   className="text-white/50 hover:text-primary text-xs transition-colors duration-300"
                 >
-                  Privacy
+                  {t("bottomBar.privacyShort")}
                 </Link>
               </div>
               <p className="text-white/50 text-xs">
@@ -93,9 +102,17 @@ const Footer = () => {
           <div className="grid grid-cols-4 gap-8 mb-8">
             {/* Company Info */}
             <div className="col-span-2">
-              <h3 className="text-white text-3xl font-bold mb-4 bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
-                KartSquare
-              </h3>
+              <div className="flex items-center gap-3">
+                <Image
+                  src="/images/logo/ks_logo.png"
+                  alt="logo"
+                  width={40}
+                  height={40}
+                />
+                <h3 className="text-white text-3xl font-bold bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
+                  KartSquare
+                </h3>
+              </div>
               <p className="text-white/70 text-sm mb-6 leading-relaxed max-w-md">
                 {t("newsletter.description")}
               </p>
@@ -139,7 +156,7 @@ const Footer = () => {
             {/* Quick Links */}
             <div>
               <h4 className="text-white font-semibold mb-6 text-lg">
-                Quick Links
+                {t("newsletter.quickLinks")}
               </h4>
               <div className="space-y-3">
                 {FooterLinks.slice(0, 4).map((item, index) => (
@@ -155,13 +172,13 @@ const Footer = () => {
                   href="/terms"
                   className="block text-white/60 hover:text-primary text-sm transition-all duration-300 hover:translate-x-1"
                 >
-                  Terms & Conditions
+                  {t("bottomBar.terms")}
                 </Link>
                 <Link
                   href="/privacy"
                   className="block text-white/60 hover:text-primary text-sm transition-all duration-300 hover:translate-x-1"
                 >
-                  Privacy Policy
+                  {t("bottomBar.privacy")}
                 </Link>
               </div>
             </div>
@@ -169,7 +186,7 @@ const Footer = () => {
             {/* Contact */}
             <div>
               <h4 className="text-white font-semibold mb-6 text-lg">
-                Get in Touch
+                {t("contact.getInTouch")}
               </h4>
               <Link
                 href="/contactus"
@@ -183,17 +200,17 @@ const Footer = () => {
 
           {/* Bottom Bar */}
           <div className="flex justify-between items-center pt-8 border-t border-white/10">
-            <p className="text-white/50 text-sm">{t("bottomBar.copyright")}</p>
+            <p className="text-gray-300 text-sm">{t("bottomBar.copyright")}</p>
             <div className="flex gap-8">
               <Link
                 href="/terms"
-                className="text-white/50 hover:text-primary text-sm transition-colors duration-300"
+                className="text-gray-300 hover:text-primary text-sm transition-colors duration-300"
               >
                 {t("bottomBar.terms")}
               </Link>
               <Link
                 href="/privacy"
-                className="text-white/50 hover:text-primary text-sm transition-colors duration-300"
+                className="text-gray-300 hover:text-primary text-sm transition-colors duration-300"
               >
                 {t("bottomBar.privacy")}
               </Link>

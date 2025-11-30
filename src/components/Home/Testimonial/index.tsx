@@ -45,6 +45,7 @@ const Testimonial = () => {
     <section className="bg-dark relative overflow-hidden" id="testimonial">
       <div className="absolute right-0">
         <Image
+          loading="lazy"
           src="/images/testimonial/Vector.png"
           alt="victor"
           width={700}
@@ -78,6 +79,7 @@ const Testimonial = () => {
                 <div className="lg:flex items-center gap-11 sm:gap-5">
                   <div className="w-full h-full rounded-2xl overflow-hidden">
                     <Image
+                      loading="lazy"
                       src={item.image}
                       alt={item.name}
                       width={440}
@@ -101,6 +103,7 @@ const Testimonial = () => {
                       </h4>
                       <div className="flex items-center mt-8 gap-6">
                         <Image
+                          loading="lazy"
                           src={item.image}
                           alt={item.name}
                           width={80}
@@ -112,7 +115,7 @@ const Testimonial = () => {
                           <h6 className="text-white text-xm font-medium">
                             {item.name}
                           </h6>
-                          <p className="text-white/40">{item.position}</p>
+                          <p className="text-gray-300">{item.position}</p>
                         </div>
                       </div>
                     </div>

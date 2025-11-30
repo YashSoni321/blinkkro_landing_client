@@ -1,6 +1,7 @@
 "use client";
 import { Icon } from "@iconify/react";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 
 export default function AboutKartSquare() {
   const t = useTranslations("aboutKartSquareQuestions");
@@ -36,62 +37,13 @@ export default function AboutKartSquare() {
           <div className="relative hidden lg:block">
             <div className="relative z-10">
               {/* Main Phone Mockup */}
-              <div className="bg-white dark:bg-gray-800 rounded-3xl p-4 sm:p-6 shadow-2xl mx-auto w-full max-w-80">
-                <div className="bg-gradient-to-br from-primary to-primary/80 rounded-2xl p-6 text-white mb-4">
-                  <div className="flex items-center justify-between mb-4">
-                    <h3 className="font-bold text-lg">{t("app.title")}</h3>
-                    <Icon icon={"ph:bell"} width={24} height={24} />
-                  </div>
-                  <p className="text-sm opacity-90">{t("app.subtitle")}</p>
-                </div>
-
-                {/* Service Cards */}
-                <div className="space-y-3">
-                  <div className="flex items-center gap-3 p-3 bg-gray-50 dark:bg-gray-700 rounded-xl">
-                    <div className="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center">
-                      <Icon
-                        icon={"ph:broom"}
-                        width={20}
-                        height={20}
-                        className="text-primary"
-                      />
-                    </div>
-                    <div className="flex-1">
-                      <p className="font-medium text-sm text-dark dark:text-white">
-                        {t("app.services.houseCleaning.name")}
-                      </p>
-                      <p className="text-xs text-dark/60 dark:text-white/60">
-                        {t("app.services.houseCleaning.status")}
-                      </p>
-                    </div>
-                    <span className="text-primary font-bold text-sm">₹50</span>
-                  </div>
-
-                  <div className="flex items-center gap-3 p-3 bg-gray-50 dark:bg-gray-700 rounded-xl">
-                    <div className="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center">
-                      <Icon
-                        icon={"ph:wrench"}
-                        width={20}
-                        height={20}
-                        className="text-primary"
-                      />
-                    </div>
-                    <div className="flex-1">
-                      <p className="font-medium text-sm text-dark dark:text-white">
-                        {t("app.services.plumbing.name")}
-                      </p>
-                      <p className="text-xs text-dark/60 dark:text-white/60">
-                        {t("app.services.plumbing.status")}
-                      </p>
-                    </div>
-                    <span className="text-primary font-bold text-sm">₹75</span>
-                  </div>
-                </div>
-
-                <button className="w-full bg-primary text-white py-3 rounded-xl font-semibold mt-4">
-                  {t("buttons.bookService")}
-                </button>
-              </div>
+              <Image
+                src="/images/logo/ks_logo.png"
+                alt="KartSquare logo"
+                width={150}
+                height={150}
+                className="object-contain w-150 h-150"
+              />
             </div>
 
             {/* Floating Elements */}
@@ -142,13 +94,13 @@ export default function AboutKartSquare() {
               <span className="text-primary">{t("kartSquareText")}</span>
             </h2>
 
-            <p className="text-xm text-dark/70 dark:text-white/70 mb-8 leading-relaxed">
+            <p className="text-xm text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
               {t.rich("description1", {
                 bold: (chunks) => <strong>{chunks}</strong>,
               })}
             </p>
 
-            <p className="text-xm text-dark/70 dark:text-white/70 mb-8 leading-relaxed">
+            <p className="text-xm text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
               {t.rich("description2", {
                 bold: (chunks) => <strong>{chunks}</strong>,
               })}
@@ -169,7 +121,7 @@ export default function AboutKartSquare() {
                     <h4 className="font-semibold text-dark dark:text-white mb-1">
                       {feature.title}
                     </h4>
-                    <p className="text-sm text-dark/60 dark:text-white/60">
+                    <p className="md:text-sm text-gray-600 dark:text-gray-300">
                       {feature.description}
                     </p>
                   </div>
@@ -178,10 +130,16 @@ export default function AboutKartSquare() {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <button className="px-8 py-4 bg-primary text-white rounded-full font-semibold hover:bg-dark transition-colors duration-300">
+              <button
+                aria-label={t("buttons.tryNow")}
+                className="px-8 py-4 bg-primary text-white rounded-full font-semibold hover:bg-dark transition-colors duration-300"
+              >
                 {t("buttons.tryNow")}
               </button>
-              <button className="px-8 py-4 border-2 border-primary text-primary rounded-full font-semibold hover:bg-primary hover:text-white transition-all duration-300">
+              <button
+                aria-label={t("buttons.startEarning")}
+                className="px-8 py-4 border-2 border-primary text-primary rounded-full font-semibold hover:bg-primary hover:text-white transition-all duration-300"
+              >
                 {t("buttons.startEarning")}
               </button>
             </div>

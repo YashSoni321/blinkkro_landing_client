@@ -18,6 +18,7 @@ const FAQ: React.FC = () => {
           {/* Image Section */}
           <div className="lg:mx-0 mx-auto  ">
             <Image
+              loading="lazy"
               src="/images/hero/girl_hero_section.png"
               alt="faq-image"
               width={600}
@@ -29,7 +30,7 @@ const FAQ: React.FC = () => {
 
           {/* FAQ Content */}
           <div className="lg:px-12">
-            <p className="text-dark/75 dark:text-white/75 text-base font-semibold flex gap-2">
+            <p className="text-gray-600 dark:text-gray-300 text-base font-semibold flex gap-2">
               <Icon
                 icon="mdi:comment-question-outline"
                 className="text-2xl text-primary "
@@ -39,7 +40,7 @@ const FAQ: React.FC = () => {
             <h2 className="lg:text-52 text-40 leading-[1.2] font-medium text-dark dark:text-white">
               {t("title")}
             </h2>
-            <p className="text-dark/50 dark:text-white/50 pr-20">
+            <p className="text-gray-600 dark:text-gray-300 pr-20 lg:text-xl">
               {t("description")}
             </p>
 

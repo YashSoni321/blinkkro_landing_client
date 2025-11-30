@@ -8,7 +8,7 @@ const Hero: React.FC = () => {
 
   return (
     <section className="!py-0">
-      <div className="bg-gradient-to-b from-skyblue via-lightskyblue dark:via-[#4298b0] to-white/10 dark:to-black/10 overflow-x-hidden relative">
+      <div className="bg-gradient-to-b from-primary2 via-lightskyblue dark:via-[#15acda] to-white/10 dark:to-black/10 overflow-x-hidden relative">
         <div className="container max-w-8xl mx-auto px-4 sm:px-5 2xl:px-0 pt-32 md:pt-60 md:pb-68">
           <div className="text-center md:text-left max-w-2xl">
             <h1 className="text-4xl md:text-6xl font-extrabold text-white dark:text-gray-100 leading-tight mb-6">
@@ -32,14 +32,13 @@ const Hero: React.FC = () => {
               </Link>
             </div>
           </div>
-          <div className="hidden md:block absolute top-1/2 right-0 transform -translate-y-1/2">
+          <div className="hidden md:block absolute top-1/2 right-0 transform -translate-y-1/2 overflow-hidden ">
             <Image
-              src="/images/hero/pair_hero_image.png"
+              priority={true}
+              src="/images/hero/heroImage.png"
               alt="hero booking illustration"
-              width={400}
-              height={100}
-              priority={false}
-              unoptimized={true}
+              width={600}
+              height={180}
             />
           </div>
         </div>
@@ -70,10 +69,10 @@ const Hero: React.FC = () => {
 
             <div className="flex flex-col sm:items-center gap-3">
               <Users className="w-8 h-8 text-sky-600 dark:text-sky-400" />
-              <p className="text-2xl sm:text-3xl font-semibold text-inherit">
+              <p className="text-sm md:text-2xl font-semibold text-inherit">
                 {t("highlights.users")}
               </p>
-              <p className="text-sm sm:text-base font-normal text-black/50 dark:text-white/50">
+              <p className="text-sm sm:text-base font-normal text-gray-600 dark:text-gray-300">
                 {t("highlights.usersSubtext")}
               </p>
             </div>
