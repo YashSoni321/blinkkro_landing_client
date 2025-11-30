@@ -12,8 +12,8 @@
   "common": {
     "menu": "Menu",
     "contact": "Contact",
-    "phone": "+1-212-456-7890",
-    "email": "hello@kartsquare.com"
+    "phone": "+91 7375863649",
+    "email": "contact@kartsquare.com"
   },
 
   "aboutPage": {
@@ -98,33 +98,35 @@
           "nickname": "The Visionary",
           "name": "Yash Soni",
           "role": "Co-Founder & CEO",
-          "story": "The guy whose flooded apartment started it all. Now he's obsessed with making sure no one else has to go through 47 phone calls to find help.",
+          "story": "A flooded apartment sparked his mission to make finding help simple and stress-free.",
           "superpower": "Turning problems into opportunities"
         },
         "gaurang": {
           "nickname": "The Builder",
           "name": "Gaurang Tyagi",
           "role": "Co-Founder & CTO",
-          "story": "The tech wizard who built our rock-solid platform. When others see problems, Gaurang sees elegant solutions waiting to be coded.",
-          "superpower": "Building scalable tech magic"
+          "story": "The tech mind behind our platform, always creating smart, reliable solutions.",
+          "superpower": "Building scalable tech"
         },
         "rahul": {
           "name": "Rahul Chanchlani",
           "role": "Software Engineer",
-          "bio": "Rahul is a frontend and mobile engineer who loves building intuitive, high-performance apps with a user-first approach.",
+          "bio": "Frontend and mobile engineer focused on smooth, user-friendly experiences.",
           "specialty": "Frontend & Mobile"
         },
         "bhinsar": {
           "name": "Bhinsar Jagdish",
           "role": "Software Engineer",
-          "bio": "Bhinsar is a backend and DevOps specialist focused on scalable systems, automation, and reliable infrastructure.",
+          "bio": "Backend and DevOps engineer building stable, efficient systems.",
           "specialty": "Backend & DevOps"
         },
         "pratham": {
+          "nickname": "The Brand Brain",
           "name": "Pratham Mittal",
-          "role": "Head of Marketing",
-          "bio": "Pratham drives growth and brand strategy, blending creativity with data-driven insights to scale impact and engagement.",
-          "specialty": "Growth & Brand"
+          "role": "Director & Head of Marketing",
+          "story": "A marketer who turns ideas into clear messaging and strong brand growth.",
+          "superpower": "Creating memorable brand impact",
+          "specialty": "Growth & Brand Strategy"
         }
       }
     },
@@ -745,42 +747,42 @@
     "badge": "KartSquare Services",
     "title": "Your Favorite Services, Just a Tap Away",
     "description": "Skip the hassle of finding reliable people. These are the services our customers love most — vetted professionals, transparent pricing, and guaranteed satisfaction.",
-    "serviceList" : {
-      "salon-at-home": {
-        "name": "Salon at Home",
+    "serviceList": {
+      "ac-service-repair": {
+        "name": "AC Service & Repair",
         "location": "Available in all major cities",
         "duration": "60 - 90 min",
-        "category": "Beauty & Grooming"
+        "category": "Home Appliances"
       },
-      "home-deep-cleaning": {
-        "name": "Home Deep Cleaning",
+      "electrician-services": {
+        "name": "Electrician Services",
         "location": "Trusted professionals near you",
-        "duration": "2 - 4 hrs",
-        "category": "Cleaning"
-      },
-      "plumber-services": {
-        "name": "Plumber Services",
-        "location": "Leak fixes • Installations • Repairs",
-        "duration": "30 - 90 min",
+        "duration": "30 - 120 min",
         "category": "Home Repairs"
       },
-      "personal-fitness-trainer": {
-        "name": "Personal Fitness Trainer",
-        "location": "Home & Online Sessions",
-        "duration": "45 - 60 min",
-        "category": "Fitness"
+      "carpenter-services": {
+        "name": "Carpenter Services",
+        "location": "Furniture repair • Installations • Custom work",
+        "duration": "60 - 180 min",
+        "category": "Home Repairs"
       },
-      "catering-services": {
-        "name": "Catering Services",
-        "location": "Small parties to large events",
-        "duration": "Event-based",
-        "category": "Food & Catering"
+      "pest-control": {
+        "name": "Pest Control",
+        "location": "Home • Office • Commercial spaces",
+        "duration": "45 - 120 min",
+        "category": "Home Care"
       },
-      "home-tutors": {
-        "name": "Home Tutors",
-        "location": "School • Competitive Exams • Skills",
-        "duration": "1 hr",
-        "category": "Education"
+      "ro-service": {
+        "name": "Sink Clean Service",
+        "location": "Filter change • Deep cleaning • Repair",
+        "duration": "30 - 60 min",
+        "category": "Home Appliances"
+      },
+      "refrigerator-repair": {
+        "name": "Refrigerator Repair",
+        "location": "Single door • Double door • Side-by-side",
+        "duration": "60 - 120 min",
+        "category": "Home Appliances"
       },
       "event-photography": {
         "name": "Event Photography",

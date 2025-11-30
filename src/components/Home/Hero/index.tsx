@@ -8,7 +8,7 @@ const Hero: React.FC = () => {
 
   return (
     <section className="!py-0">
-      <div className="bg-gradient-to-b from-skyblue via-lightskyblue dark:via-[#4298b0] to-white/10 dark:to-black/10 overflow-x-hidden relative">
+      <div className="bg-gradient-to-b from-primary2 via-lightskyblue dark:via-[#15acda] to-white/10 dark:to-black/10 overflow-x-hidden relative">
         <div className="container max-w-8xl mx-auto px-4 sm:px-5 2xl:px-0 pt-32 md:pt-60 md:pb-68">
           <div className="text-center md:text-left max-w-2xl">
             <h1 className="text-4xl md:text-6xl font-extrabold text-white dark:text-gray-100 leading-tight mb-6">
@@ -35,10 +35,10 @@ const Hero: React.FC = () => {
           <div className="hidden md:block absolute top-1/2 right-0 transform -translate-y-1/2 overflow-hidden ">
             <Image
               priority={true}
-              src="/images/hero/heroSection_BG.png"
+              src="/images/hero/heroImage.png"
               alt="hero booking illustration"
-              width={500}
-              height={50}
+              width={600}
+              height={180}
             />
           </div>
         </div>

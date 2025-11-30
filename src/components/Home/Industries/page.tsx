@@ -48,7 +48,7 @@ const IndustriesOrbit: React.FC = () => {
             </p>
           </div>
 
-          <h2 className="text-2xl sm:text-40 text-40 lg:text-4xl font-medium text-black dark:text-white mb-3">
+          <h2 className="text-3xl sm:text-4xl lg:text-52 text-40 font-medium text-black dark:text-white mb-3">
             {t("title")}
           </h2>
 

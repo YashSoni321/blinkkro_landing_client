@@ -62,11 +62,11 @@ const Header: React.FC = () => {
           <div className="flex items-center justify-center">
             <p className="text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-wide inline-flex items-center gap-3">
               <Image
-                src="/images/logo/kartsquare.png"
+                src="/images/logo/ks_logo.png"
                 alt="KartSquare logo"
                 width={40}
                 height={40}
-                className="object-contain w-10 h-10"
+                className="object-contain w-12 h-14"
               />
               KartSquare
             </p>

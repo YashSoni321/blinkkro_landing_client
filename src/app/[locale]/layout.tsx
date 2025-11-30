@@ -95,7 +95,7 @@ export const metadata: Metadata = {
     siteName: "KartSquare",
     images: [
       {
-        url: "/images/logo/logo.png",
+        url: "/images/logo/ks_logo.png",
         width: 1200,
         height: 630,
         alt: "KartSquare - Book Home Services Instantly",
@@ -108,7 +108,7 @@ export const metadata: Metadata = {
     description:
       "India's most trusted service booking platform. Book plumbers, electricians, cleaners & more in seconds. 50K+ services delivered with transparent pricing.",
     creator: "@KartSquare",
-    images: ["/images/logo/logo.png"],
+    images: ["/images/logo/ks_logo.png"],
   },
   alternates: {
     canonical: "https://kartsquare.com",
@@ -138,14 +138,16 @@ export default async function RootLayout({
     "@type": "Organization",
     name: "KartSquare",
     url: "https://kartsquare.com",
-    logo: "https://kartsquare.com/images/logo/logo.png",
+    logo: "https://kartsquare.com/images/logo/ks_logo.png",
   };
   return (
     <html lang={locale} suppressHydrationWarning>
       <head>
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(organizationSchema),
+          }}
         />
       </head>
       <body className={`${font.className} antialiased overflow-x-hidden`}>

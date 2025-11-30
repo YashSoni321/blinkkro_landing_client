@@ -21,7 +21,7 @@ const Footer = () => {
           <div className="text-center space-y-4">
             <div className="flex items-center align-center justify-center gap-3 mb-4">
               <Image
-                src="/images/logo/kartsquare.png"
+                src="/images/logo/ks_logo.png"
                 alt="logo"
                 width={40}
                 height={40}
@@ -104,7 +104,7 @@ const Footer = () => {
             <div className="col-span-2">
               <div className="flex items-center gap-3">
                 <Image
-                  src="/images/logo/kartsquare.png"
+                  src="/images/logo/ks_logo.png"
                   alt="logo"
                   width={40}
                   height={40}

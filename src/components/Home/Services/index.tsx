@@ -12,11 +12,11 @@ const Categories = () => {
 
   const sliderSettings = {
     infinite: true,
-    speed: 500,
+    speed: 0, // instant transition (optional)
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 1000, // 1 second / slide
     arrows: false,
     responsive: [
       {
@@ -46,42 +46,42 @@ const Categories = () => {
   const categoryItems = [
     {
       href: "/house_services",
-      image: "/images/kartsquare_main_categories/house_cleaning.png",
+      image: "/images/kartsquare_main_categories/home_services_real.jpg",
       alt: "house_services",
-      title: t("categoriesList.wellness.title") + " 121",
-      description: t("categoriesList.wellness.description") + " 121",
+      title: t("categoriesList.wellness.title"),
+      description: t("categoriesList.wellness.description"),
     },
     {
       href: "/wellness",
-      image: "/images/kartsquare_main_categories/home_services.png",
+      image: "/images/kartsquare_main_categories/house_cleaning_real.jpg",
       alt: "wellness",
       title: t("categoriesList.cleaning.title"),
       description: t("categoriesList.cleaning.description"),
     },
     {
       href: "/events",
-      image: "/images/kartsquare_main_categories/event.png",
+      image: "/images/kartsquare_main_categories/event_real.jpg",
       alt: "events222",
       title: t("categoriesList.events.title"),
       description: t("categoriesList.events.description"),
     },
     {
       href: "/entertainment",
-      image: "/images/kartsquare_main_categories/astro.png",
+      image: "/images/kartsquare_main_categories/astro_real.jpg",
       alt: "Astrology & Consultation",
       title: t("categoriesList.astrology.title"),
       description: t("categoriesList.astrology.description"),
     },
     {
       href: "/home-services",
-      image: "/images/kartsquare_main_categories/chef.png",
+      image: "/images/kartsquare_main_categories/chef_real.jpg",
       alt: "home services",
       title: t("categoriesList.chefs.title"),
       description: t("categoriesList.chefs.description"),
     },
     {
       href: "/personal-chefs",
-      image: "/images/kartsquare_main_categories/tutor.png",
+      image: "/images/kartsquare_main_categories/tutor_real.jpg",
       alt: "tutor",
       title: t("categoriesList.tutors.title"),
       description: t("categoriesList.tutors.description"),
@@ -98,11 +98,7 @@ const Categories = () => {
           width={320}
           height={380}
           className="w-full h-full object-cover bg-gray-100 rounded-xl"
-          unoptimized={
-            item.image.includes("event") ||
-            item.image.includes("astro") ||
-            item.image.includes("tutor")
-          }
+          unoptimized={false}
         />
       </Link>
       <Link

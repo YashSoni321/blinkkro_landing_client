@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useTranslations } from "next-intl";
 
 const ServiceCard: React.FC<{ item: PropertyHomes }> = ({ item }) => {
-  const { name, location, duration, rate, category, slug, images } = item;
+  const { name, location, rate, category, slug, images } = item;
   const t = useTranslations("serviceCard");
 
   const mainImage = images[0]?.src;
@@ -63,15 +63,6 @@ const ServiceCard: React.FC<{ item: PropertyHomes }> = ({ item }) => {
           {/* Info Row */}
           <div className="flex divide-x divide-black/10 dark:divide-white/20 text-xs sm:text-sm">
             {/* Duration */}
-            <div className="flex flex-1 flex-col items-center gap-1 px-2 sm:px-4">
-              <Icon icon="solar:clock-circle-linear" width={18} height={18} />
-              <p className="text-xs sm:text-sm font-normal text-black dark:text-white text-center">
-                {duration}
-              </p>
-              <p className="text-xs text-gray-600 dark:text-gray-300 text-center">
-                {t("infoLabels.duration")}
-              </p>
-            </div>
 
             {/* Price */}
             <div className="flex flex-1 flex-col items-center gap-1 px-2 sm:px-4">
