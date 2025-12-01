@@ -138,7 +138,7 @@ export default async function RootLayout({
     "@type": "Organization",
     name: "KartSquare",
     url: "https://kartsquare.com",
-    logo: "https://kartsquare.com/images/logo/ks_logo.png",
+    logo: "https://kartsquare.com/images/logo/logo.png",
   };
   return (
     <html lang={locale} suppressHydrationWarning>
@@ -148,6 +148,10 @@ export default async function RootLayout({
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(organizationSchema),
           }}
+        />
+        <meta
+          name="google-site-verification"
+          content="Yfbnd3DWw9lR9F5XE8Slu1TmjyMtTjM7DIjs5OjNtck"
         />
       </head>
       <body className={`${font.className} antialiased overflow-x-hidden`}>
