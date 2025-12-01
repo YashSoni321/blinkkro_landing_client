@@ -12,6 +12,7 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
+import Script from "next/script";
 
 const font = Bricolage_Grotesque({ subsets: ["latin"] });
 
@@ -153,8 +154,25 @@ export default async function RootLayout({
           name="google-site-verification"
           content="Yfbnd3DWw9lR9F5XE8Slu1TmjyMtTjM7DIjs5OjNtck"
         />
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-KMXX7Z2JZ7"
+        ></script>
       </head>
       <body className={`${font.className} antialiased overflow-x-hidden`}>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-KMXX7Z2JZ7"
+          strategy="afterInteractive"
+        />
+
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-KMXX7Z2JZ7');
+          `}
+        </Script>
         <NextIntlClientProvider messages={messages}>
           <NextTopLoader color="#07be8a" />
           <SessionProviderComp>
