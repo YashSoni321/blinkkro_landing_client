@@ -40,9 +40,9 @@ export default function AboutKartSquare() {
               <Image
                 src="/images/logo/ks_logo.png"
                 alt="KartSquare logo"
-                width={150}
-                height={150}
-                className="object-contain w-150 h-150"
+                width={100}
+                height={100}
+                className="object-contain mx-auto w-100 h-100"
               />
             </div>
 

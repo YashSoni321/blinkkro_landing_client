@@ -60,15 +60,28 @@ const Header: React.FC = () => {
       >
         <div>
           <div className="flex items-center justify-center">
-            <p className="text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-wide inline-flex items-center gap-3">
+            <p
+              className="flex items-center justify-center gap-2 font-extrabold tracking-wide 
+             text-xl sm:text-2xl md:text-3xl"
+            >
               <Image
                 src="/images/logo/ks_logo.png"
                 alt="KartSquare logo"
                 width={40}
                 height={40}
-                className="object-contain w-12 h-14"
+                className="object-contain
+               w-10 h-10
+               sm:w-12 sm:h-12
+               md:w-14 md:h-14"
               />
-              KartSquare
+
+              <span
+                className="font-semibold tracking-tight 
+                   text-[20px] sm:text-[24px] md:text-[30px]
+                   leading-none"
+              >
+                KartSquare
+              </span>
             </p>
           </div>
         </div>
