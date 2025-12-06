@@ -24,7 +24,7 @@ const ErrorPage = () => {
           alt="404"
           width={490}
           height={450}
-          unoptimized={true}
+          unoptimized={false}
         />
       </section>
       <section className="text-center bg-cover relative overflow-x-hidden">

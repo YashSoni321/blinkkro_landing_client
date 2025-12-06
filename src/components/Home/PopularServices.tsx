@@ -47,7 +47,6 @@ export default function PopularServices() {
                     alt={service.name}
                     fill
                     className="object-contain group-hover:scale-105 transition-transform duration-300"
-                    unoptimized={true}
                   />
                   <div className="absolute top-4 right-4 bg-white/90 dark:bg-black/90 px-2 py-1 rounded-full">
                     <span className="text-sm font-semibold text-primary">

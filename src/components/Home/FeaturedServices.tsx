@@ -43,7 +43,6 @@ export default function FeaturedServices() {
                     alt={service.name}
                     fill
                     className="object-contain group-hover:scale-105 transition-transform duration-300"
-                    unoptimized={true}
                   />
                   <div className="absolute top-4 left-4 bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold">
                     {t("featured")}

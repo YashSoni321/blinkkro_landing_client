@@ -12,11 +12,11 @@ const Categories = () => {
 
   const sliderSettings = {
     infinite: true,
-    speed: 0, // instant transition (optional)
+    speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 1000, // 1 second / slide
+    autoplaySpeed: 3000, // 3 seconds / slide - optimized for performance
     arrows: false,
     responsive: [
       {
@@ -130,7 +130,6 @@ const Categories = () => {
           width={800}
           height={1050}
           className="dark:hidden"
-          unoptimized={true}
         />
         <Image
           loading="lazy"
@@ -139,7 +138,6 @@ const Categories = () => {
           width={800}
           height={1050}
           className="hidden dark:block"
-          unoptimized={true}
         />
       </div>
       <div className="container max-w-8xl mx-auto px-5 2xl:px-0 relative z-10">

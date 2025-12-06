@@ -78,7 +78,6 @@ const FAQ: React.FC = () => {
               width={600}
               height={600}
               className="object-contain lg:h-[600px] h-[350px]"
-              unoptimized={true}
             />
           </div>
         </div>

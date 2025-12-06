@@ -69,7 +69,6 @@ export default function Details() {
                   width={400}
                   height={500}
                   className="rounded-2xl w-full h-540"
-                  unoptimized={true}
                 />
               </div>
             )}
@@ -83,7 +82,6 @@ export default function Details() {
                 width={400}
                 height={500}
                 className="rounded-2xl w-full h-full"
-                unoptimized={true}
               />
             )}
           </div>
@@ -96,7 +94,6 @@ export default function Details() {
                 width={400}
                 height={500}
                 className="rounded-2xl w-full h-full"
-                unoptimized={true}
               />
             )}
           </div>
@@ -109,7 +106,6 @@ export default function Details() {
                 width={400}
                 height={500}
                 className="rounded-2xl w-full h-full"
-                unoptimized={true}
               />
             )}
           </div>
@@ -127,7 +123,6 @@ export default function Details() {
                     height={500}
                     alt=""
                     className="w-8 h-8 dark:hidden"
-                    unoptimized={true}
                   />
                   <Image
                     loading="lazy"
@@ -136,7 +131,6 @@ export default function Details() {
                     height={500}
                     alt=""
                     className="w-8 h-8 dark:block hidden"
-                    unoptimized={true}
                   />
                 </div>
                 <div>
@@ -157,7 +151,6 @@ export default function Details() {
                     height={500}
                     alt=""
                     className="w-8 h-8 dark:hidden"
-                    unoptimized={true}
                   />
                   <Image
                     loading="lazy"
@@ -166,7 +159,6 @@ export default function Details() {
                     height={500}
                     alt=""
                     className="w-8 h-8 dark:block hidden"
-                    unoptimized={true}
                   />
                 </div>
                 <div>
@@ -187,7 +179,6 @@ export default function Details() {
                     height={500}
                     alt=""
                     className="w-8 h-8 dark:hidden"
-                    unoptimized={true}
                   />
                   <Image
                     loading="lazy"
@@ -196,7 +187,6 @@ export default function Details() {
                     height={500}
                     alt=""
                     className="w-8 h-8 dark:block hidden"
-                    unoptimized={true}
                   />
                 </div>
                 <div>
@@ -346,7 +336,6 @@ export default function Details() {
                   width={400}
                   height={500}
                   alt="vector"
-                  unoptimized={true}
                 />
               </div>
             </div>
@@ -372,7 +361,6 @@ export default function Details() {
                     width={400}
                     height={500}
                     className="w-20 h-20 rounded-2xl"
-                    unoptimized={true}
                   />
                   <div className="">
                     <h3 className="text-xm text-dark dark:text-white">

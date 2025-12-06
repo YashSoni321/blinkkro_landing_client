@@ -11,13 +11,12 @@ function CategoriesCardComponent({ service }: { service: any }) {
     <div className="group relative bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-3xl dark:hover:shadow-white/20 transition-all duration-300 border border-dark/10 dark:border-white/10 hover:border-primary/50 h-[36rem]">
       {/* Image */}
       <div className="relative h-48 overflow-hidden">
-        <Image 
+        <Image
           loading="lazy"
           src={service.image}
           alt={service.title}
           fill
           className="object-cover group-hover:scale-110 transition-transform duration-500"
-          unoptimized={true}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
       </div>

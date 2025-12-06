@@ -50,7 +50,6 @@ const Testimonial = () => {
           alt="victor"
           width={700}
           height={1039}
-          unoptimized={true}
         />
       </div>
       <div className="container max-w-8xl mx-auto px-5 sm:px-0">
@@ -85,7 +84,6 @@ const Testimonial = () => {
                       width={440}
                       height={440}
                       className="lg:block hidden"
-                      unoptimized={true}
                     />
                   </div>
                   <div className="flex items-start gap-11 sm:gap-5 lg:pr-20">
@@ -109,7 +107,6 @@ const Testimonial = () => {
                           width={80}
                           height={80}
                           className="rounded-full lg:hidden block"
-                          unoptimized={true}
                         />
                         <div>
                           <h6 className="text-white text-xm font-medium">

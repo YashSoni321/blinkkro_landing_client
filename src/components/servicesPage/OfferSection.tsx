@@ -92,7 +92,6 @@ export default function OfferSection({ t }: OfferSectionProps) {
                 width={600}
                 height={600}
                 className="w-full h-full object-cover"
-                unoptimized={true}
               />
             </div>
             {/* Floating Elements */}
