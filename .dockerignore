@@ -6,17 +6,5 @@ npm-debug.log
 .env*.local
 .git
 .github
-README.md
-.gitignore
 .idea
 .vscode
-*.md
-public
-.eslintrc.json
-eslint.config.mjs
-tsconfig.json
-postcss.config.mjs
-components.json
-next-env.d.ts
-yarn.lock
-package-lock.json

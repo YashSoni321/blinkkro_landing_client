@@ -9,7 +9,7 @@ WORKDIR /app
 COPY package*.json ./
 
 # Install dependencies
-RUN npm i
+RUN npm ci
 
 # Copy all source code
 COPY . .
@@ -32,7 +32,7 @@ COPY --from=builder /app/public ./public
 COPY --from=builder /app/.next ./.next
 
 # Install only production dependencies
-RUN npm i --omit=dev
+RUN npm ci --omit=dev
 
 # Expose Next.js port
 EXPOSE 3000
