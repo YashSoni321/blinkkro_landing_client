@@ -23,7 +23,10 @@ const sliderSettings = {
   dots: false,
 };
 
-export default function SafetyFeaturesSection({ t, safetyFeatures }: SafetyFeaturesSectionProps) {
+export default function SafetyFeaturesSection({
+  t,
+  safetyFeatures,
+}: SafetyFeaturesSectionProps) {
   return (
     <section className="relative overflow-hidden py-16 bg-gray-50 dark:bg-gray-900">
       <div className="container max-w-8xl mx-auto px-5 2xl:px-0">

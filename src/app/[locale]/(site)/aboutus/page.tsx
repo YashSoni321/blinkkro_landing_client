@@ -403,7 +403,6 @@ const FounderCard = ({
   role,
   story,
   superpower,
-  socials,
 }: {
   img: string;
   name: string;

@@ -4,24 +4,11 @@ import type { NextConfig } from "next";
 const withNextIntl = createNextIntlPlugin();
 
 const nextConfig: NextConfig = {
-  // Image Optimization
-  images: {
-    formats: ["image/webp", "image/avif"],
-    deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
-    imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
-    minimumCacheTTL: 60,
-    dangerouslyAllowSVG: true,
-    contentDispositionType: "attachment",
-    contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
-  },
-
   // Compiler Optimizations
   compiler: {
     removeConsole:
       process.env.NODE_ENV === "production"
-        ? {
-            exclude: ["error", "warn"],
-          }
+        ? { exclude: ["error", "warn"] }
         : false,
   },
 
@@ -29,13 +16,13 @@ const nextConfig: NextConfig = {
   poweredByHeader: false,
   compress: true,
 
-  // Output Configuration for Standalone Deployment
+  // ✅ Standalone Output (Important!)
   output: "standalone",
 
-  // Experimental Features for Better Performance
+  // Experimental Features
   experimental: {
     optimizePackageImports: ["@iconify/react", "lucide-react"],
   },
-} as NextConfig;
+};
 
 export default withNextIntl(nextConfig);

@@ -4,7 +4,6 @@ import Hero from "@/components/Home/Hero";
 import Properties from "@/components/Home/Properties";
 import Services from "@/components/Home/Services";
 import Testimonial from "@/components/Home/Testimonial";
-import GetInTouch from "@/components/Home/GetInTouch";
 import FAQ from "@/components/Home/FAQs";
 import AboutKartSquare from "@/components/Home/AboutKartSquare";
 import KartSquareSolutions from "@/components/Home/KartSquareSolutions";

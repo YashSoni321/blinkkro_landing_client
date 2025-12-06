@@ -87,7 +87,7 @@ export default function DeleteAccountPage() {
           Delete Your Account
         </h1>
         <p className="text-gray-600 dark:text-gray-300 mb-8">
-          We're sorry to see you go. Please fill out the form below to request account deletion. This process may take up to 30 days to complete.
+          We&apos;re sorry to see you go. Please fill out the form below to request account deletion. This process may take up to 30 days to complete.
         </p>
 
         <form onSubmit={handleSendOTP} className="space-y-6">
@@ -113,7 +113,7 @@ export default function DeleteAccountPage() {
               value={reason}
               onChange={(e) => setReason(e.target.value)}
               rows={4}
-              placeholder="Help us improve by telling us why you're leaving"
+              placeholder="Help us improve by telling us why you&apos;re leaving"
               className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-800 text-dark dark:text-white focus:ring-2 focus:ring-primary focus:border-transparent"
             />
           </div>
@@ -131,7 +131,7 @@ export default function DeleteAccountPage() {
               </li>
               <li className="flex items-start gap-2">
                 <Icon icon="ph:check" className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                <span>Reviews and ratings you've provided</span>
+                <span>Reviews and ratings you&apos;ve provided</span>
               </li>
               <li className="flex items-start gap-2">
                 <Icon icon="ph:check" className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
@@ -236,7 +236,7 @@ export default function DeleteAccountPage() {
                 onClick={handleSendOTP}
                 className="w-full text-sm text-primary hover:underline"
               >
-                Didn't receive code? Resend
+                Didn&apos;t receive code? Resend
               </button>
             </form>
           </div>

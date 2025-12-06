@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import Image from "next/image";
 import Slider from "react-slick";
 import { Icon } from "@iconify/react";
 import { CategoriesCard } from "@/components/servicesPage/CategoriesCard";
@@ -28,7 +27,10 @@ const sliderSettings = {
   ],
 };
 
-export default function CategoriesSection({ t, serviceCategories }: CategoriesSectionProps) {
+export default function CategoriesSection({
+  t,
+  serviceCategories,
+}: CategoriesSectionProps) {
   return (
     <section className="relative overflow-hidden py-16 bg-gray-50 dark:bg-gray-900">
       {/* <div className="absolute left-0 top-0">

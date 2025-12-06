@@ -2,18 +2,12 @@
 import * as React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { featuredProprty } from "@/app/api/featuredproperty";
 import { Icon } from "@iconify/react";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  type CarouselApi,
-} from "@/components/ui/carousel";
+import { type CarouselApi } from "@/components/ui/carousel";
 import { useTranslations } from "next-intl";
 
 const KartSquareSolutions: React.FC = () => {
-  const [api, setApi] = React.useState<CarouselApi | undefined>(undefined);
+  const [api] = React.useState<CarouselApi | undefined>(undefined);
   const [, setCurrent] = React.useState(0);
   const [, setCount] = React.useState(0);
   const t = useTranslations("kartSquareSolutions");
@@ -28,8 +22,6 @@ const KartSquareSolutions: React.FC = () => {
       setCurrent(api.selectedScrollSnap() + 1);
     });
   }, [api]);
-
-
 
   return (
     <section>

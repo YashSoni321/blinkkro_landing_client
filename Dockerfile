@@ -1,41 +1,57 @@
 # ===========================
-# 1️⃣ Build Stage
+# 1️⃣ Install Dependencies
 # ===========================
-FROM node:20-alpine AS builder
-
+FROM node:20-alpine AS deps
 WORKDIR /app
 
-# Copy package files first
 COPY package*.json ./
+RUN npm ci --omit=dev && npm cache clean --force
 
-# Install dependencies
-RUN npm ci
 
-# Copy all source code
+# ===========================
+# 2️⃣ Build Stage
+# ===========================
+FROM node:20-alpine AS builder
+WORKDIR /app
+
+COPY package*.json ./
+RUN npm ci && npm cache clean --force
+
+# Copy source files
 COPY . .
 
-# Build the Next.js app
+ENV NEXT_TELEMETRY_DISABLED=1
+
+# Build Next.js (Standalone mode)
 RUN npm run build
 
+
 # ===========================
-# 2️⃣ Production Stage
+# 3️⃣ Production Runner
 # ===========================
 FROM node:20-alpine AS runner
-
 WORKDIR /app
 
 ENV NODE_ENV=production
+ENV NEXT_TELEMETRY_DISABLED=1
+ENV PORT=3000
 
-# Copy built output and package files from builder
-COPY --from=builder /app/package*.json ./
-COPY --from=builder /app/public ./public
-COPY --from=builder /app/.next ./.next
+# Create non-root user
+RUN addgroup -S nodejs && adduser -S nextjs -G nodejs
 
-# Install only production dependencies
-RUN npm ci --omit=dev
+# Copy standalone server output
+COPY --from=builder --chown=nextjs:nodejs /app/.next/standalone ./
 
-# Expose Next.js port
-EXPOSE 3000
+# Copy static assets
+COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
 
-# Start the app
-CMD ["npm", "run", "start", "--", "-p", "80"]
+# Copy public folder
+COPY --from=builder --chown=nextjs:nodejs /app/public ./public
+
+USER nextjs
+
+EXPOSE 80
+
+# Start the standalone server
+CMD ["node", "server.js", "--port", "80"]
+
