@@ -69,7 +69,7 @@ export default function JoinWaitlist() {
 
     try {
       const response = await axios.post(
-        "http://72.60.201.14/api/v1/waitlist/join",
+        "https://api.kartsquare.com/api/v1/waitlist/join",
         formData
       );
       console.log("Response:", response);
@@ -191,7 +191,7 @@ export default function JoinWaitlist() {
                 </div>
                 <div className="flex flex-col lg:flex-row gap-6">
                   <div className="relative w-full">
-                    <button 
+                    <button
                       aria-label="country Select label"
                       type="button"
                       onClick={() => setIsDropdownOpen(!isDropdownOpen)}

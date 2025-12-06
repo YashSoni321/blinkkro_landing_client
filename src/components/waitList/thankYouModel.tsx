@@ -25,13 +25,13 @@ const ThankYouModel = ({ onclose }) => {
     >
       <div
         onClick={handleModalContentClick}
-        className='w-150 rounded-lg bg-white p-8 shadow-2xl dark:bg-gray-800'
+        className='w-150 rounded-lg bg-white items-center text-center p-8 shadow-2xl dark:bg-gray-800'
       >
         <CheckIcon
           className='text-green-700/80 w-30 h-40 mx-auto mb-10'
         />
 
-        <h2 className='mt-6 text-4xl font-bold text-gray-900 dark:text-gray-100'>
+        <h2 className='mt-6 text-4xl font-bold text-center text-gray-900 dark:text-gray-100'>
           {t("title")}
         </h2>
 
@@ -42,7 +42,7 @@ const ThankYouModel = ({ onclose }) => {
         <button
           aria-label={t("buttonAriaLabel")}
           onClick={goToServices}
-          className='mt-6 cursor-pointer rounded-full bg-green-600 px-6 py-3 text-base font-semibold text-white transition-colors duration-300 hover:bg-green-700 dark:bg-green-700 dark:hover:bg-green-800'
+          className='mt-6 cursor-pointer  rounded-full bg-green-600 px-6 py-3 text-base font-semibold text-white transition-colors duration-300 hover:bg-green-700 dark:bg-green-700 dark:hover:bg-green-800'
         >
           {t("buttonText")}
         </button>
