@@ -1,9 +1,9 @@
 import createNextIntlPlugin from 'next-intl/plugin';
+import type { NextConfig } from 'next';
  
 const withNextIntl = createNextIntlPlugin();
  
-/** @type {import('next').NextConfig} */
-const nextConfig = {
+const nextConfig: NextConfig = {
   // Image Optimization
   images: {
     formats: ['image/webp', 'image/avif'],
@@ -34,6 +34,6 @@ const nextConfig = {
   experimental: {
     optimizePackageImports: ['@iconify/react', 'lucide-react'],
   },
-};
+} as NextConfig;
  
 export default withNextIntl(nextConfig);
