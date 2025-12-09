@@ -16,7 +16,7 @@ const Categories = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 3000, // 3 seconds / slide - optimized for performance
+    autoplaySpeed: 6000, // 5 seconds - optimized for performance
     arrows: false,
     responsive: [
       {
