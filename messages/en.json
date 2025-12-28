@@ -31,16 +31,16 @@
       ]
     },
     "hero": {
-      "title": "The Story Behind Your Favorite Service App",
-      "description": "What started as a midnight crisis became India's most trusted service platform. This is the story of 3 friends who refused to accept that finding reliable help should be this hard.",
+      "title": "How It All Began",
+      "description": "KartSquare did not begin in an office with position and style. Frustration, friendship, and an emergency in the middle of the night that has transformed everything were its origins. A trip to get some assistance was a move towards ensuring that all of India found it easier, safer and more reliable to go about daily tasks..",
       "badge": "Our Story"
     },
     "originStory": {
-      "title": "It Started with a Crisis",
-      "crisisText": "2 AM, Bangalore. Yash's apartment was flooding. The pipe had burst, water everywhere, and he desperately needed a plumber. After 47 phone calls, 3 hours of waiting, and ₹2000 later, he realized something was fundamentally broken.",
+      "title": "An Incidental Event That Resulted in a Grand Theory.",
+      "crisisText": "It was a bad night and nothing was going on right. There was a burst pipe, a flooded room, and nobody picked up the phone. Many hours of search, waiting, and excessive payment later it became evident that reliable help is not so difficult to get. That event posed a question which lingered in their minds: Why is it difficult to find reliable service when required?.  Three friends who had seen enough of similar chaos thought that time had come to do things differently. They were not creating a business plan or a startup pitch. They just wanted to make the lives of millions of people easier.",
       "revelation": "The Midnight Revelation",
-      "mainQuote": "Why Is Finding Help So Damn Hard?",
-      "storyPart1": "That night, Yash called his college buddies Ankit and Gaurang. They'd all faced the same frustration - unreliable contacts, hidden charges, no-shows, and zero accountability.",
+      "mainQuote": "The Call That Changed their Way.",
+      "storyPart1": "That night, Yash called his school buddies Pratham and Gaurang . They'd all faced the same frustration - unreliable contacts, hidden charges, no-shows, and zero accountability.",
       "storyPart2": "What if we could fix this for everyone? That question changed everything.",
       "founderQuote": "We weren't trying to build a unicorn. We just wanted to solve a problem that affected millions of Indians every single day.",
       "founderName": "- Yash, Co-Founder"
@@ -71,26 +71,26 @@
       "subtitle": "Everything we do is guided by these core beliefs that keep us grounded and focused on what matters most.",
       "values": {
         "customerFirst": {
-          "title": "Customer First",
-          "description": "Every decision we make starts with 'How does this help our customers?'"
+          "title": "Putting People First",
+          "description": " Here we have a question, does this make life easier with our customers, or does it not? to each of our products, features and updates."
         },
         "trust": {
-          "title": "Trust & Transparency",
-          "description": "No hidden fees, no fake reviews, no empty promises. Just honest service."
+          "title": "Honesty You Can Trust",
+          "description": "Precise prices, unbiased reviews, reliable specialists. No under charges, no loopholes, no justifications. "
         },
         "speed": {
-          "title": "Speed & Simplicity",
-          "description": "Life's complicated enough. We make getting help as simple as ordering food."
+          "title": "Simplicity Above All",
+          "description": "Life is not easy- bookkeeping assistance should not be. Our every interaction is supposed to be fast, convenient, and stress-free."
         },
         "empowering": {
-          "title": "Empowering Providers",
-          "description": "We don't just serve customers - we help service providers build better businesses."
+          "title": "Growing Together",
+          "description": "Everyone is helped by us, and so is the service provider. We assist them to acquire capabilities, increase salaries, and creatively discover new chances."
         }
       }
     },
     "team": {
       "title": "Meet Our Team",
-      "subtitle": "From founders to engineers to marketing - the passionate team building India's most trusted service platform.",
+      "subtitle": "KartSquare happens to have behind it some passionate builders - founders, developers, designers, support workers, and creative thinkers all who are dedicated to changing the way India works. It is not simply a platform we are making; it is a community that is full of trust and convenience.",
       "founders": "Founders",
       "coreTeam": "Core Team",
       "members": {
@@ -131,14 +131,14 @@
       }
     },
     "groupSection": {
-      "title": "More Than a Platform.  We're a <span>Partnership.</span>",
-      "description1": "Finding a reliable electrician or a skilled plumber in a bustling city like Jaipur has always been a challenge of trust and timing. At KartSquare, we're changing that narrative. We aren't just a booking app, we are the bridge connecting thousands of households with our community of vetted, skilled, and dedicated service professionals.",
-      "description2": "Our mission is twofold to bring you peace of mind with safe, high-quality home services, and to empower local technicians with the tools and opportunities to grow their businesses and secure their livelihoods.",
+      "title": "Not a Simple App, but a Companion in <span> Your Daily Life.</span>",
+      "description1": "A good person to be able to have a sudden electrical problem or fix a leaky tap in Jaipur, a city, is usually a matter of chance and not convenience. KartSquare is the one which is going to alter this. We are not just a booking platform; we are a match-maker of families that require high-quality assistance provided by skilled professionals who are verified and approved.",
+      "description2": "We intend to do more than merely offering services. We would like to make your home a better and easier place to live in with quality work that you can rely on and we also help local professionals get the tools, exposure, and opportunities they deserve. By utilizing KartSquare, you are not only paying to work with a service, you are assisting a professional in self-developing, making money, and creating a future to settle in the long-term.",
       "imageAlt": "The KartSquare Team collaborating"
     },
     "impact": {
-      "title": "The Impact We're Making",
-      "subtitle": "Numbers tell a story, but behind each number is a real person whose life we've made a little bit easier.",
+      "title": "Every Number Represents a Life Made Simpler",
+      "subtitle": "Statistics are impressive, but what matters most are the people behind them — the homes we have helped, the problems we have solved, and the daily moments we have made smoother and stress-free.",
       "stats": {
         "customers": "50K+",
         "customersLabel": "Happy Customers",
@@ -151,8 +151,8 @@
       }
     },
     "cta": {
-      "title": "Want to Be Part of Our Story?",
-      "description": "Whether you're a customer looking for reliable services or a professional wanting to grow your business, there's a place for you in the KartSquare family.",
+      "title": "Get Involved in Creating Our Future with us.",
+      "description": "The person who needs the services that you can trust or is an experienced professional and wants to reach a larger number of customers and become more prosperous is welcome here. KartSquare is open to everyone — and we would love to have you on our adventure.",
       "customerButton": "Join as a Customer",
       "providerButton": "Become a Provider"
     }
@@ -408,7 +408,7 @@
     },
     "governingLaw": {
       "heading": "11. Governing Law and Dispute Resolution",
-      "paragraph1": "These Terms and Conditions shall be governed by and construed in accordance with the laws of India. Any disputes arising out of or in connection with these terms shall be subject to the exclusive jurisdiction of the courts in Bangalore, Karnataka."
+      "paragraph1": "These Terms and Conditions shall be governed by and construed in accordance with the laws of India. Any disputes arising out of or in connection with these terms shall be subject to the exclusive jurisdiction of the courts in Rajasthan , Karnataka."
     },
     "changes": {
       "heading": "12. Changes to Terms",
@@ -416,7 +416,7 @@
     },
     "contact": {
       "heading": "13. Contact Information",
-      "paragraph1": "For any questions or support regarding these Terms, please contact us at <email>support@kartsquare.com</email> or visit our <contactLink>Contact Page</contactLink>."
+      "paragraph1": "For any questions or support regarding these Terms, please contact us at <email>contact@kartsquare.com</email> or visit our <contactLink>Contact Page</contactLink>."
     }
   },
 
@@ -435,15 +435,15 @@
     },
     "hero": {
       "badge": "Contact us",
-      "title": "Have questions? We're here to help.",
-      "description": "KartSquare is built to be easy, safe, and valuable for everyone. Reach out to us anytime — whether it's about our services, your account, or how we can make your experience even better."
+      "title": "Need Assistance? We are Always Here for You.",
+      "description": "We have modelled KartSquare in a way that is easy, safe and truly useful to all our users. Want to get in touch with us? Have any questions? Booking service, asking us to improve, or just want to give us some feedback, we are within a couple of taps as well as respond to you at any moment at any time."
     },
     "contactInfo": {
       "title": "Contact information",
       "description": "Have a question or need support? We'll respond quickly and guide you with care.",
-      "phone": "+1 0239 0310 1122",
-      "email": "support@kartsquare.com",
-      "address": "KartSquare HQ, Bangalore, India"
+      "phone": "+91 7375863649",
+      "email": "contact@kartsquare.com",
+      "address": "KartSquare HQ, Rajasthan , India"
     },
     "form": {
       "name": {
@@ -513,8 +513,8 @@
   "waitlistPage": {
     "hero": {
       "badge": "Join the Waitlist",
-      "title": "Be the First to Experience KartSquare",
-      "description": "Exciting things are on the way! Sign up now to join our exclusive waitlist and be the first to try KartSquare when we launch. Early access, exclusive updates, and special perks await our first users."
+      "title": "Get First Dibs on KartSquare",
+      "description": "You have read about small business in the future, and we want you to be among the first to join us. Add your name to our waitlist and be among the first of the first to see everything KartSquare has to offer. Get access to all the early stuff, updates, and other perks that are specific to our first community"
     },
     "contactCard": {
       "imageAlt": "waitlist illustration",
@@ -587,43 +587,47 @@
   "faq": {
     "badge": "FAQs",
     "title": "Everything about KartSquare",
-    "description": "We believe booking services should be simple, safe, and valuable. Here are some frequently asked questions to help you trust and use KartSquare with ease.",
+    "description": "Providing the appropriate service does not leave you in confusion, and that is why we have provided a fast-list of frequently asked questions to help you to make sense of how KartSquare operates. These also deal with the essentials thus you can make a reservation without hesitation and have a hassle-free experience.",
     "questions": {
       "easyToUse": {
         "question": "Is KartSquare easy to use?",
-        "answer": "Yes! KartSquare is designed with a simple and intuitive interface. Search, compare, and book services in just a few taps — no confusion, just convenience."
+        "answer": "Yes, KartSquare is to be easy to anyone. Services can be searched, compared, and booked within a handful of taps. It requires no technical expertise; most of the work is done by the platform as it takes you through every step to ensure that you never miss a step."
       },
       "safeSecure": {
-        "question": "Is KartSquare safe and secure?",
-        "answer": "Absolutely. We use secure payment gateways, verified service providers, and trusted reviews so you can book with confidence and peace of mind."
+        "question": "Is it safe? ",
+        "answer": "Absolutely. The safety of you is among our priorities. All service providers within KartSquare undergo an extensive vetting procedure, background checks and confirmation of identity. We also certify performance and ratings to make sure that you are attentively aware of getting time and again reliable and trustworthy service "
       },
       "provideValue": {
-        "question": "How does KartSquare provide value?",
-        "answer": "KartSquare saves you time and effort by connecting you to trending services instantly. From real-time availability to exclusive offers, we make sure you always get the best deal and experience."
+        "question": "How do payments work?",
+        "answer": "Money transfer is absolutely safe and easy. It is only on the offing that you can pay once the service has been completed with a lot of confidence and control. Your data will be safe with our secure payment system and you will not be charged without a clear structure before you approves anything."
       }
     }
   },
   "howItWorks": {
-    "badge": "How KartSquare Works",
+    "badge": "How it Works",
     "title": "3 Simple Steps to Get Any Service Done",
-    "mapDescription": "No more calling multiple people, comparing prices, or worrying about quality. Just tell us what you need!",
+    "mapDescription": "Finding help is easy with KartSquare just move with 3 simple steps and get the best service at your door steps.",
     "description": "Whether you need a plumber at midnight or a chef for tomorrow's party, KartSquare makes it happen. Our smart matching connects you with the perfect professional in your area, handles payments securely, and ensures quality every time.",
     "steps": {
       "step1": {
         "number": "1",
-        "title": "Tell Us What You Need"
+        "title": "List what you require",
+        "description": "describe briefly what you need to do such as repairing something, cleaning up the house or getting a tutor."
       },
       "step2": {
         "number": "2",
-        "title": "Pick Your Time Slot"
+        "title": "Select a convenient time",
+        "description": "select a slot most convenient to you."
       },
       "step3": {
         "number": "3",
-        "title": "Pay After Service"
+        "title": "Pay later when the job is complete",
+        "description": "pay safely and worry free after you are satisfied with the service. "
       },
       "step4": {
         "number": "4",
-        "title": "Rate Your Experience"
+        "title": "Write your feedback",
+        "description": "review the service to keep it going up."
       }
     },
     "cta": {
@@ -643,8 +647,8 @@
     }
   },
   "hero": {
-    "title": "Life's Too Short for Service Hassles",
-    "description": "From emergency plumbing to weekend parties, from home cleaning to personal tutoring — get trusted professionals at your doorstep in just one tap. Because your time matters!",
+    "title": "Life is too short to take service hassles",
+    "description": "Eschew long phone calls and incomprehensible quotes. KartSquare will enable you to find and hire real professionals in only a few taps in anything you require. It could be a hole in the pipe at midnight, or a birthday party we can be there...",
     "buttons": {
       "earlyAccess": "Get Early Access",
       "earn": "Earn with KartSquare"
@@ -659,8 +663,8 @@
   },
   "industriesOrbit": {
     "badge": "Trusted Industries",
-    "intro": "Discover tailored services for your business sector. Whether you’re in IT, healthcare, or real estate, we connect you with trusted professionals to streamline your operations and help your business grow efficiently.",
-    "title": "Serving 2500+ Companies Across India",
+    "intro": "We provide all services that meet your industry requirements. In all areas of work, whether tech, healthcare, real estate, and so on, we find you trusted professionals who can simplify your work and help develop your business.",
+    "title": "Relied by the best to serve the best, Served 2500 + Corporates in India.",
     "industries": [
       {
         "name": "Tech",
@@ -745,8 +749,8 @@
   },
   "properties": {
     "badge": "KartSquare Services",
-    "title": "Your Favorite Services, Just a Tap Away",
-    "description": "Skip the hassle of finding reliable people. These are the services our customers love most — vetted professionals, transparent pricing, and guaranteed satisfaction.",
+    "title": "Pick most booked services backed with experts and loved by customers",
+    "description": "You need not worry about seeking a person you can trust. Such options are the highly appreciated by our clients constantly revisiting, trusted experts, straightforward pricing, and a service that you can always expect.",
     "serviceList": {
       "ac-service-repair": {
         "name": "AC Service & Repair",
@@ -800,8 +804,8 @@
   },
   "categories": {
     "badge": "Categories",
-    "title": "Every Service You Need, Right Here",
-    "description": "From fixing your morning coffee machine to planning your dream wedding — we've curated the most trusted professionals across every category. No more hunting through contacts or taking chances with strangers.",
+    "title": "Don’t worry, we have all your solution are in one place",
+    "description": "In need of a fast solution concerning the coffee machine or assisting with the organization of your dream wedding, we have contacted trusted specialists to do any task. There is no more need of endless search or conjecture; the correct help is present at the right time. ",
     "ctaButton": "Explore All Services",
     "categoriesList": {
       "wellness": {
@@ -848,9 +852,9 @@
   },
   "aboutKartSquareQuestions": {
     "title": "What is KartSquare?",
-    "heading": "Why Waste Time When You Can",
-    "kartSquareText": "KartSquare?",
-    "description1": "KartSquare makes life effortless by bringing **everyday services to your fingertips**. Whether it's fixing a leaky tap, getting a quick AC repair, booking a salon at home, or planning your next big celebration—KartSquare connects you with **trusted, verified professionals in seconds**.",
+    "heading": "Your needs, our",
+    "kartSquareText": "Service",
+    "description1": "KartSquare will deliver everyday services right at your door any time you require them. Active on your birthday party and need a tutor, plumber, deep cleaner, or a DJ? You need not worry because we are able to match you with background-verified professionals in a fast manner.",
     "description2": "No more long searches, confusing prices, or unreliable providers. With KartSquare, you get **speed, transparency, and peace of mind**—all in one square ✨.",
     "features": {
       "bookSeconds": {

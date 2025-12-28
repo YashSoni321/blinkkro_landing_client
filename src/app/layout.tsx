@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     "service booking platform India",
     "Delhi service booking",
     "Mumbai home services",
-    "Bangalore service providers",
+    "Rajasthan  service providers",
     "Chennai home services",
     "Hyderabad service booking",
     "Pune home services",

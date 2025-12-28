@@ -27,17 +27,17 @@ export default function PrivacyPage() {
             Last updated: October 8, 2025
           </p>
           <p className="mb-8">
-            Kartsquare (&quot;we&quot;, &quot;our&quot;, or &quot;us&quot;) is a global service, event
-            booking, and social media platform where customers (&quot;Users&quot;) can
-            book services, purchase products, and interact with Service
-            Providers, Organizations, and Influencers. Your privacy is important
-            to us. This Privacy Policy explains what information we collect, how
-            we use and share it, how we keep it secure, and your rights. We
-            follow applicable data protection laws worldwide (for example,
-            California&apos;s CalOPPA and CCPA, the EU&apos;s GDPR, Canada&apos;s PIPEDA,
-            etc.). In compliance with Google Play and Apple App Store
-            requirements, this policy is linked in our app listing and within
-            the app itself.
+            Kartsquare (&quot;we&quot;, &quot;our&quot;, or &quot;us&quot;) is a
+            global service, event booking, and social media platform where
+            customers (&quot;Users&quot;) can book services, purchase products,
+            and interact with Service Providers, Organizations, and Influencers.
+            Your privacy is important to us. This Privacy Policy explains what
+            information we collect, how we use and share it, how we keep it
+            secure, and your rights. We follow applicable data protection laws
+            worldwide (for example, California&apos;s CalOPPA and CCPA, the
+            EU&apos;s GDPR, Canada&apos;s PIPEDA, etc.). In compliance with
+            Google Play and Apple App Store requirements, this policy is linked
+            in our app listing and within the app itself.
           </p>
 
           <section className="mb-8">
@@ -76,11 +76,12 @@ export default function PrivacyPage() {
               </li>
               <li>
                 <strong>Camera and Media:</strong> Certain app features may
-                require access to your device&apos;s camera or photo library (for
-                example, to upload a profile picture, capture proof-of-service
-                photos, or share images with the community). We only access your
-                camera or photos with your permission and use the captured
-                images/videos solely for the purposes you authorize.
+                require access to your device&apos;s camera or photo library
+                (for example, to upload a profile picture, capture
+                proof-of-service photos, or share images with the community). We
+                only access your camera or photos with your permission and use
+                the captured images/videos solely for the purposes you
+                authorize.
               </li>
               <li>
                 <strong>Communications:</strong> Records of messages between you
@@ -180,9 +181,9 @@ export default function PrivacyPage() {
                 (e.g. hosting, SMS/email services, analytics). In particular, we
                 use Google Firebase for hosting and analytics; Firebase receives
                 certain user data (such as user IDs, device info, and usage
-                logs) as permitted by Google&apos;s terms. Firebase and other third
-                parties are required to protect your data in accordance with
-                their own privacy policies.
+                logs) as permitted by Google&apos;s terms. Firebase and other
+                third parties are required to protect your data in accordance
+                with their own privacy policies.
               </li>
               <li>
                 <strong>With Payment Processors:</strong> We share your payment
@@ -269,12 +270,20 @@ export default function PrivacyPage() {
                 hold about you.
               </li>
               <li>
-                <strong>Deletion (&quot;Right to be Forgotten&quot;):</strong> You may
-                request deletion of your account and personal data at any time
-                (subject to legal or contractual retention requirements). Upon
-                your request, we will delete or anonymize your personal data as
-                soon as feasible. Note that we may retain certain information
-                (like transaction records) to comply with legal obligations. To request account deletion, visit our <Link href="/delete-account" className="text-primary underline font-semibold">Account Deletion Page</Link>.
+                <strong>Deletion (&quot;Right to be Forgotten&quot;):</strong>{" "}
+                You may request deletion of your account and personal data at
+                any time (subject to legal or contractual retention
+                requirements). Upon your request, we will delete or anonymize
+                your personal data as soon as feasible. Note that we may retain
+                certain information (like transaction records) to comply with
+                legal obligations. To request account deletion, visit our{" "}
+                <Link
+                  href="/delete-account"
+                  className="text-primary underline font-semibold"
+                >
+                  Account Deletion Page
+                </Link>
+                .
               </li>
               <li>
                 <strong>Opt-Out of Marketing:</strong> You can unsubscribe or
@@ -348,9 +357,9 @@ export default function PrivacyPage() {
               changes in our practices, technology, or legal requirements. When
               we make significant changes, we will notify you by email, in-app
               message, or by posting a notice on the app. We will also update
-              the &quot;Last Updated&quot; date at the top. Your continued use of
-              Kartsquare after such changes will constitute your acceptance of
-              the revised policy.
+              the &quot;Last Updated&quot; date at the top. Your continued use
+              of Kartsquare after such changes will constitute your acceptance
+              of the revised policy.
             </p>
           </section>
 
@@ -365,7 +374,7 @@ export default function PrivacyPage() {
               <Link href="/contactus" className="text-primary underline">
                 Contact Page
               </Link>{" "}
-              or via support@kartsquare.com. We will do our best to address your
+              or via contact@kartsquare.com. We will do our best to address your
               inquiries promptly.
             </p>
           </section>
