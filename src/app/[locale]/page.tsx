@@ -14,14 +14,14 @@ import { generateConversationalContent } from "@/lib/seo-utils";
 export async function generateMetadata(): Promise<Metadata> {
   return {
     title:
-      "KartSquare - India's #1 Service Booking Platform | Book Home Services Instantly",
+      "KartSquare Home Page - India's #1 Service Booking Platform | Book Home Services Instantly",
     description:
       "Book trusted home services in 60 seconds with KartSquare. 50,000+ verified professionals for plumbing, electrical, cleaning, AC repair & more. Same-day service, transparent pricing, 4.8★ rating across India.",
     keywords:
       "service booking app, home services near me, book plumber online, electrician booking, cleaning services, AC repair, salon at home, verified service providers, same day booking, transparent pricing, KartSquare India",
     openGraph: {
       title:
-        "KartSquare - Book Home Services in 60 Seconds | 50K+ Services Delivered",
+        "KartSquare Home Page - Book Home Services in 60 Seconds | 50K+ Services Delivered",
       description:
         "India's most trusted service platform. Instant booking for plumbers, electricians, cleaners & more. 4.8★ rating, verified professionals, same-day service guaranteed.",
       type: "website",

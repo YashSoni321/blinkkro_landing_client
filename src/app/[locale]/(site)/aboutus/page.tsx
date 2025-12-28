@@ -9,7 +9,7 @@ import StatCard from "@/app/common/StatCard";
 
 export const metadata: Metadata = {
   title:
-    "Our Story - How 3 Friends Built India's Most Loved Service Platform | KartSquare",
+    "KartSquare About Us Page - How 3 Friends Built India's Most Loved Service Platform | Our Story",
   description:
     "From a midnight plumbing crisis to building KartSquare - discover the inspiring journey of 3 friends who solved India's biggest service booking problem. Join 50K+ happy customers today!",
   keywords: [
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title:
-      "Our Story - How 3 Friends Built India's Most Loved Service Platform",
+      "KartSquare About Us Page - How 3 Friends Built India's Most Loved Service Platform",
     description:
       "From a midnight crisis to serving 50K+ customers - the inspiring KartSquare story. Meet the founders who revolutionized how India books services.",
     url: "https://kartsquare.com/aboutus",

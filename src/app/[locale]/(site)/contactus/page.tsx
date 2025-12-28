@@ -5,17 +5,34 @@ import { Metadata } from "next";
 import { useTranslations } from "next-intl"; // or your i18n library
 
 export const metadata: Metadata = {
-  title: "contactPage.metadata.title",
-  description: "contactPage.metadata.description",
-  keywords: "contactPage.metadata.keywords",
+  title: "KartSquare Contact Us Page - Get Help & Support | Customer Service",
+  description: "Need help with KartSquare services? Contact our customer support team for assistance with bookings, payments, or any questions. Available 24/7 to help you.",
+  keywords: [
+    "KartSquare contact",
+    "customer support",
+    "help center",
+    "service support",
+    "contact customer service",
+    "KartSquare help",
+    "booking assistance",
+    "technical support"
+  ],
   openGraph: {
-    title: "Contact KartSquare - Get Help & Support",
-    description: "contactPage.metadata.description",
+    title: "KartSquare Contact Us Page - Get Help & Support",
+    description: "Need help with KartSquare services? Contact our customer support team for assistance with bookings, payments, or any questions.",
     url: "https://kartsquare.com/contactus",
+    type: "website",
+    locale: "en_IN",
+    siteName: "KartSquare"
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Contact KartSquare - Customer Support & Help",
+    description: "Get help with your KartSquare bookings and services. 24/7 customer support available."
   },
   alternates: {
-    canonical: "https://kartsquare.com/contactus",
-  },
+    canonical: "https://kartsquare.com/contactus"
+  }
 };
 
 export default function ContactUs() {
