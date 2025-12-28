@@ -42,7 +42,14 @@ export default function AboutKartSquare() {
                 alt="KartSquare logo"
                 width={100}
                 height={100}
-                className="object-contain mx-auto w-100 h-100"
+                className="object-contain mx-auto w-100 h-100 dark:hidden"
+              />
+              <Image
+                src="/images/logo/ks_logo1.png"
+                alt="KartSquare logo"
+                width={100}
+                height={100}
+                className="object-contain mx-auto w-100 h-100 hidden dark:block"
               />
             </div>
 
