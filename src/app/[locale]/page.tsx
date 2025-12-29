@@ -9,6 +9,7 @@ import AboutKartSquare from "@/components/Home/AboutKartSquare";
 import KartSquareSolutions from "@/components/Home/KartSquareSolutions";
 import IndustriesSection from "@/components/Home/Industries/page";
 import GEOOptimization from "@/components/SEO/GEOOptimization";
+import TrustRegistrations from "@/components/Home/TrustRegistrations";
 import { generateConversationalContent } from "@/lib/seo-utils";
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -119,9 +120,11 @@ export default function Home() {
       />
       <main className="overflow-x-hidden">
         <Hero />
+
         <AboutKartSquare />
         <Services />
         <Properties />
+        <TrustRegistrations />
         <IndustriesSection />
         <FeaturedProperty />
         <Testimonial />

@@ -205,7 +205,7 @@ export default async function RootLayout({
                 }}
               />
               {children}
-              <FloatingButton />
+              {/* <FloatingButton /> */}
               <Footer />
             </ThemeProviderComp>
           </SessionProviderComp>

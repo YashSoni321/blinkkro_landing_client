@@ -651,7 +651,9 @@
     "description": "Eschew long phone calls and incomprehensible quotes. KartSquare will enable you to find and hire real professionals in only a few taps in anything you require. It could be a hole in the pipe at midnight, or a birthday party we can be there...",
     "buttons": {
       "earlyAccess": "Get Early Access",
-      "earn": "Earn with KartSquare"
+      "earn": "Earn with KartSquare",
+      "tryNow": "Try KartSquare Now",
+      "startEarning": "Start Earning with KartSquare"
     },
     "highlights": {
       "instantBooking": "Instant Booking",
@@ -664,7 +666,7 @@
   "industriesOrbit": {
     "badge": "Trusted Industries",
     "intro": "We provide all services that meet your industry requirements. In all areas of work, whether tech, healthcare, real estate, and so on, we find you trusted professionals who can simplify your work and help develop your business.",
-    "title": "Relied by the best to serve the best, Served 2500 + Corporates in India.",
+    "title": "Relied by the best to serve the best, Served 2500+ Corporates in India.",
     "industries": [
       {
         "name": "Tech",
