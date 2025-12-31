@@ -195,7 +195,7 @@ export default async function AboutUs() {
             <div className="grid lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
               <FounderCard
                 nickName={t("team.members.yash.nickname")}
-                img="/images/team/yash_dp.jpeg"
+                img="/images/team/yashimg.jpg"
                 name={t("team.members.yash.name")}
                 role={t("team.members.yash.role")}
                 story={t("team.members.yash.story")}
