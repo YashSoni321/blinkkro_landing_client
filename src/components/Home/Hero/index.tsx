@@ -1,6 +1,5 @@
 "use client";
 import { CalendarDays, Headset, ShieldCheck, Users } from "lucide-react";
-import Link from "next/link";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { useState } from "react";
