@@ -9,7 +9,8 @@ const nextConfig: NextConfig = {
   poweredByHeader: false,
   reactStrictMode: false,
   compiler: {
-    removeConsole: process.env.NODE_ENV === "production" ? { exclude: ["error"] } : false,
+    removeConsole:
+      process.env.NODE_ENV === "production" ? { exclude: ["error"] } : false,
   },
   experimental: {
     optimizePackageImports: ["@iconify/react", "lucide-react"],
@@ -19,41 +20,41 @@ const nextConfig: NextConfig = {
   async headers() {
     return [
       {
-        source: '/(.*)',
+        source: "/(.*)",
         headers: [
           {
-            key: 'X-Content-Type-Options',
-            value: 'nosniff',
+            key: "X-Content-Type-Options",
+            value: "nosniff",
           },
           {
-            key: 'X-Frame-Options',
-            value: 'DENY',
+            key: "X-Frame-Options",
+            value: "DENY",
           },
           {
-            key: 'X-XSS-Protection',
-            value: '1; mode=block',
+            key: "X-XSS-Protection",
+            value: "1; mode=block",
           },
           {
-            key: 'Referrer-Policy',
-            value: 'origin-when-cross-origin',
+            key: "Referrer-Policy",
+            value: "origin-when-cross-origin",
           },
         ],
       },
       {
-        source: '/sitemap.xml',
+        source: "/sitemap.xml",
         headers: [
           {
-            key: 'Cache-Control',
-            value: 'public, max-age=86400, s-maxage=86400',
+            key: "Cache-Control",
+            value: "public, max-age=86400, s-maxage=86400",
           },
         ],
       },
       {
-        source: '/robots.txt',
+        source: "/robots.txt",
         headers: [
           {
-            key: 'Cache-Control',
-            value: 'public, max-age=86400, s-maxage=86400',
+            key: "Cache-Control",
+            value: "public, max-age=86400, s-maxage=86400",
           },
         ],
       },
@@ -63,41 +64,20 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       {
-        source: '/home',
-        destination: '/',
+        source: "/home",
+        destination: "/",
         permanent: true,
       },
       {
-        source: '/index',
-        destination: '/',
-        permanent: true,
-      },
-      // Service redirects for better SEO
-      {
-        source: '/plumber',
-        destination: '/en/services/plumbing',
-        permanent: true,
-      },
-      {
-        source: '/electrician',
-        destination: '/en/services/electrical',
-        permanent: true,
-      },
-      {
-        source: '/cleaning',
-        destination: '/en/services/cleaning',
-        permanent: true,
-      },
-      {
-        source: '/ac-repair',
-        destination: '/en/services/ac-repair',
+        source: "/index",
+        destination: "/",
         permanent: true,
       },
     ];
   },
   // Image optimization
   images: {
-    formats: ['image/webp', 'image/avif'],
+    formats: ["image/webp", "image/avif"],
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
     minimumCacheTTL: 60,
