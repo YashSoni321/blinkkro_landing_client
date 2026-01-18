@@ -8,32 +8,42 @@ import { getTranslations } from "next-intl/server";
 import StatCard from "@/app/common/StatCard";
 
 export const metadata: Metadata = {
-  title:
-    "KartSquare About Us Page - How 3 Friends Built India's Most Loved Service Platform | Our Story",
+  title: "About KartSquare – Our Story & Mission to Simplify Services",
   description:
-    "From a midnight plumbing crisis to building KartSquare - discover the inspiring journey of 3 friends who solved India's biggest service booking problem. Join 50K+ happy customers today!",
+    "Discover how three friends built KartSquare to make finding trusted services easy in India. Our story, mission, values & the team behind the platform.",
   keywords: [
-    "KartSquare founders story",
-    "startup journey India",
-    "service booking revolution",
-    "trusted home services",
-    "Indian startup success",
-    "service platform founders",
-    "KartSquare mission vision",
+    "About KartSquare",
+    "KartSquare story",
+    "service platform India",
+    "trusted service app",
+    "KartSquare founders",
+    "our mission",
+    "home services startup",
+    "on-demand services India",
   ],
   openGraph: {
-    title:
-      "KartSquare About Us Page - How 3 Friends Built India's Most Loved Service Platform",
+    title: "About KartSquare – Our Story & Mission to Simplify Services",
     description:
-      "From a midnight crisis to serving 50K+ customers - the inspiring KartSquare story. Meet the founders who revolutionized how India books services.",
+      "Discover how three friends built KartSquare to make finding trusted services easy in India. Our story, mission, values & the team behind the platform.",
     url: "https://kartsquare.com/aboutus",
     type: "website",
+    siteName: "KartSquare",
+    locale: "en_IN",
+    images: [
+      {
+        url: "/images/team/team.JPG", // Using a relevant image from the page
+        width: 1200,
+        height: 630,
+        alt: "About KartSquare - Team",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "The KartSquare Story - 3 Friends, 1 Mission",
+    title: "About KartSquare – Our Story & Mission to Simplify Services",
     description:
-      "How a midnight plumbing crisis led to India's most trusted service platform.",
+      "Discover how three friends built KartSquare to make finding trusted services easy in India. Our story, mission, values & the team behind the platform.",
+    images: ["/images/team/team.JPG"],
   },
   alternates: {
     canonical: "https://kartsquare.com/aboutus",
@@ -259,7 +269,7 @@ export default async function AboutUs() {
           <div className="relative h-96 w-full lg:h-[32rem]">
             <Image
               loading="lazy"
-              src="/images/team/team.JPG"
+              src="/images/team/team1.jpeg"
               alt={t("groupSection.imageAlt")}
               fill
               className="rounded-2xl bg-gray-50 object-cover shadow-xl"

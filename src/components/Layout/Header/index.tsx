@@ -70,26 +70,26 @@ const Header: React.FC = () => {
               }`}
             >
               <Image
-                src="/images/logo/ks_logo.png"
+                src="/images/logo/KS_purcle__bg.png"
                 alt="KartSquare logo"
-                width={40}
-                height={40}
-                className="object-contain w-10 h-10 dark:hidden sm:w-12 sm:h-12 md:w-14 md:h-14"
+                width={60}
+                height={60}
+                className="object-contain w-10 h-15 dark:hidden sm:w-15 sm:h-15 md:w-20  md:h-12"
               />
               <Image
-                src="/images/logo/ks_logo1.png"
+                src="/images/logo/KS_white_bg.png"
                 alt="KartSquare logo"
                 width={40}
                 height={40}
-                className="object-contain w-10 h-10 hidden dark:block sm:w-12 sm:h-12 md:w-14 md:h-14"
+                className="object-contain w-10 h-15 hidden dark:block sm:w-15 sm:h-15 md:w-20  md:h-12"
               />
 
               <span
                 className="font-semibold tracking-tight 
                    text-[20px] sm:text-[24px] md:text-[30px]
-                   leading-none"
+                   leading-none pl-0 "
               >
-                KartSquare
+                Kartsquare
               </span>
             </p>
           </div>
@@ -117,7 +117,7 @@ const Header: React.FC = () => {
           </ul>
 
           {/* Language Switcher */}
-          <LanguageSwitcher isHomepage={isHomepage} sticky={sticky} />
+          {/* <LanguageSwitcher isHomepage={isHomepage} sticky={sticky} /> */}
 
           {/* Phone Number (still only on md+ screens) */}
           {/* <div className="hidden md:block">
@@ -256,7 +256,7 @@ const Header: React.FC = () => {
                   />
                 ))}
                 <li className="flex flex-col xs:flex-row items-start xs:items-center gap-3 xs:gap-4 pt-4">
-                  <Link
+                  {/* <Link
                     href="/signin"
                     className="py-3 px-6 sm:py-4 sm:px-8 bg-primary text-sm sm:text-base leading-4 block w-full xs:w-fit text-center text-white rounded-full border border-primary font-semibold hover:bg-transparent hover:text-primary duration-300"
                   >
@@ -267,7 +267,7 @@ const Header: React.FC = () => {
                     className="py-3 px-6 sm:py-4 sm:px-8 bg-transparent border border-primary text-sm sm:text-base leading-4 block w-full xs:w-fit text-center text-primary rounded-full font-semibold hover:bg-primary hover:text-white duration-300"
                   >
                     {t("navigation.signup")}
-                  </Link>
+                  </Link> */}
                 </li>
               </ul>
             </nav>

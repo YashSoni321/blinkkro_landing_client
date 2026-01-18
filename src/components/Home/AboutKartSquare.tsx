@@ -36,22 +36,50 @@ export default function AboutKartSquare() {
           {/* Right Visual */}
           <div className="relative hidden lg:block">
             <div className="relative z-10">
-              {/* Main Phone Mockup */}
               <Image
-                src="/images/logo/ks_logo.png"
+                src="/images/logo/KS_purcle__bg.png"
                 alt="KartSquare logo"
                 width={100}
                 height={100}
-                className="object-contain mx-auto w-100 h-100 dark:hidden"
+                className="object-contain mx-auto w-100 h-80 dark:hidden"
               />
               <Image
-                src="/images/logo/ks_logo1.png"
+                src="/images/logo/KS_white_bg.png"
                 alt="KartSquare logo"
                 width={100}
                 height={100}
-                className="object-contain mx-auto w-100 h-100 hidden dark:block"
+                className="object-contain mx-auto w-100 h-80 hidden dark:block"
               />
             </div>
+
+            {/* <div
+              style={{
+                position: "relative",
+                paddingBottom: "76.25%",
+                alignItems: "center",
+                justifyContent: "center",
+                overflow: "hidden",
+                height: 0,
+                display: "flex",
+                width: "100%",
+              }}
+            >
+              <iframe
+                src="https://www.youtube.com/embed/PdncKIIEQyY"
+                title="KartSquare Video"
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                style={{
+                  position: "absolute",
+                  top: 0,
+                  // left: 0,
+                  width: "50%",
+                  height: "100%",
+                  border: "0",
+                }}
+              /> 
+            </div> */}
 
             {/* Floating Elements */}
             <div className="absolute -top-8 -right-8 w-20 h-20 bg-primary/20 rounded-full flex items-center justify-center animate-bounce">
